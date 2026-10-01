@@ -187,5 +187,14 @@
       "type": "file",
       "xetHash": "01982882b1f0a1fc0979717cee5036b1b41a0026cea19b6ad382a3dd5a959031"
     }
-  ]
+  ],
+  "selection_correction": {
+    "date": "2026-10-01",
+    "actual_candidate_subset": "TAR archives; ZIP archives were omitted",
+    "omitted_smaller_archives": [
+      "output_qwen3.8-27b-vllm.zip",
+      "output_qwen3.8-max.zip"
+    ],
+    "note": "Original selection_rule wording above was inaccurate across all formats. This correction does not claim that TAR-only eligibility was specified prospectively. File-size selection preceded extension score inspection; the sample remains a convenience sample."
+  }
 }

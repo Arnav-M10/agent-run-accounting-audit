@@ -27,7 +27,7 @@ for model in models:
     roles = Counter(json.loads(r['trajectory'])[-1]['role'] for r in selected)
     trace_summary[model] = dict(roles)
 
-# Preselected by smallest public raw-output archive, before reading outcomes.
+# Preselected by smallest TAR raw-output archive, before reading outcomes.
 selected_model = 'Claude Fable 5'
 selected = [r for r in rows if r['model_name'] == selected_model]
 scores = {}
@@ -77,7 +77,7 @@ result = {
     'last_role_by_model': trace_summary,
     'nonassistant_ending_total': sum(sum(v for k, v in d.items() if k != 'assistant') for d in trace_summary.values()),
     'selected_model': selected_model,
-    'selection_reason': 'Smallest raw-output archive, selected before examining task scores',
+    'selection_reason': 'Size-guided TAR archive convenience selection before task scores; smaller ZIP archives omitted',
     'selected_model_summary': {
         'all_runs': len(run_data), 'all_mean_score': all_mean,
         'assistant_ending_runs': len(assistant), 'assistant_ending_mean_score': mean(assistant),

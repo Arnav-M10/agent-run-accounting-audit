@@ -5,7 +5,7 @@ import pyarrow.parquet as pq
 root=Path(__file__).resolve().parent; data=root/'independent_data/wildclaw'
 rows=pq.read_table(data/'train.parquet').to_pylist()
 cohorts=[('Claude Fable 5','claude_fable5'),('Kimi K3','kimi_k3'),('GLM 5.2','glm52')]
-result={'revision':'d2816016a7a7b41fa6b7ba368b28ddafcb54fd93','selection_rule':'Three smallest available score archives; the two additional archives were selected by pinned file size before score inspection.','models':{},'runs':[]}
+result={'revision':'d2816016a7a7b41fa6b7ba368b28ddafcb54fd93','selection_rule':'Three smallest TAR score archives; smaller ZIP archives omitted. Extension file sizes inspected before scores; original all-format rule wording corrected.','models':{},'runs':[]}
 for model,slug in cohorts:
     source=[r for r in rows if r['model_name']==model]
     scores={}; published=[]

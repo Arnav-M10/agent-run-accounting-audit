@@ -44,14 +44,14 @@ When causes are supported, report agent, endpoint/harness, and unresolved failur
 
 ## What these cases establish
 
-CMU supplies total attempt counts but lacks identifiers for its earliest 329 exclusions. Its all-attempt summaries therefore use aggregate counts; only independently identifiable grids support more detailed reconstruction. WildClawBench supplies all 720 released model–task pairs. The selected model supplies 60 scores and execution-status records, allowing the final-role/status cross-tabulation. Neither release establishes the absence of unpublished retries or failures.
+CMU supplies total attempt counts but lacks identifiers for its earliest 329 exclusions. Its all-attempt summaries therefore use aggregate counts; only independently identifiable grids support more detailed reconstruction. WildClawBench supplies all 720 released model–task pairs. The three selected models supply 180 scores and execution-status records, allowing the final-role/status cross-tabulation. Neither release establishes the absence of unpublished retries or failures.
 
 These checks use released records and local computation. They require no new model inference or paid API calls.
 
 ## Implemented exports
 
-The audit scripts write `run_accounting/cmu_attempts.jsonl` (9,769 released attempts), `cmu_search_slots.jsonl` (3,980 scheduled search slots), `cmu_unreleased_counts.json` (329 aggregate-only exclusions), and `wildclaw_released_pairs.jsonl` (720 released pairs). The WildClawBench export has examined scores/statuses for 60 pairs; the other 660 retain null availability, score, and status. CMU execution status and retry history remain unknown in these exports. Cleaning disposition is recorded separately and is not converted into native execution status.
+The audit scripts write `run_accounting/cmu_attempts.jsonl` (9,769 released attempts), `cmu_search_slots.jsonl` (3,980 scheduled search slots), `cmu_unreleased_counts.json` (329 aggregate-only exclusions), and `wildclaw_released_pairs.jsonl` (720 released pairs). The WildClawBench export has examined scores/statuses for 180 pairs; the other 540 retain null availability, score, and status. CMU execution status and retry history remain unknown in these exports. Cleaning disposition is recorded separately and is not converted into native execution status.
 
-The search slot with no released record has a null attempt ID and an aggregate-only coverage label; it is not labeled as an uninitiated attempt. `verify_accounting.py` checks ledger reconciliation and reproduces the selected model's alternative score means from the exports.
+The search slot with no released record has a null attempt ID and an aggregate-only coverage label; it is not labeled as an uninitiated attempt. `verify_accounting.py` checks ledger reconciliation and reproduces the three selected models' alternative score means from the exports.
 
 The later three-model extension replaces the WildClawBench ledger with 180 examined grades/statuses and 540 unexamined pairs. The original one-model script retains its initial outputs for reproducibility; run extension_audit.py before final verification. Stop reasons are recorded for all released pairs directly from their terminal events. The verifier reads all 720 source terminal events and all 180 examined native session headers, in addition to consistency checks against generated summaries.

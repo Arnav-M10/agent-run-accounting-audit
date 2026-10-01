@@ -632,7 +632,7 @@
       "error": 4
     }
   },
-  "selection_reason": "Smallest raw-output archive, selected before examining task scores",
+  "selection_reason": "Size-guided TAR archive convenience selection before task scores; smaller ZIP archives omitted",
   "sha256": {
     "output_claude_fable5.tar.gz": "a95dd7e17205341d9ca3f46d8e499ea1225bb6ce35bc9e6a668f65140ac6c1f4",
     "train.parquet": "9be080beb826b4c620d0a5d2987d1a0d3be758248076dfff48807fb11fcb4c17"

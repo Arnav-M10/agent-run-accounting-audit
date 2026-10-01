@@ -23,7 +23,7 @@ Run `python3 audit.py` from this directory to regenerate `audit_results.json`. T
 
 Dataset: [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories). Downloaded 29 September 2026 through the official CLI. Pinned revision: `d2816016a7a7b41fa6b7ba368b28ddafcb54fd93`.
 
-The 720-row `train.parquet` table contains the same 60 task IDs for each of 12 models. The score audit selects Claude Fable 5 because its raw-output archive was the smallest available, before examining scores. Its archive contains 60 score files; its session directory provides 60 status headers. This is a convenience sample for independent case evidence, not a random sample of models.
+The 720-row `train.parquet` table contains the same 60 task IDs for each of 12 models. The score audit selects Claude Fable 5 because its TAR archive was the smallest TAR available, before examining scores; smaller ZIP archives were omitted and the original all-format smallest-archive wording was inaccurate. Its archive contains 60 score files; its session directory provides 60 status headers. This is a convenience sample for independent case evidence, not a random sample of models.
 
 | File | SHA-256 |
 |---|---|
@@ -41,3 +41,5 @@ The scripts export run accounting under `run_accounting/`; `verify_accounting.py
 ## Outcome-independent extension
 
 EXTENSION_PLAN.json records the two additional archives selected by pinned file size before outcome inspection: Kimi K3 and GLM 5.2. Together with the original Claude Fable 5 case, extension_results.json covers 180 scores and session headers. source_hashes.json contains all 193 source-file hashes, including every status-header file. Model-level mean scores were reproduced from each archive before conditional analyses. Native stop reasons and exporter status are preserved separately.
+
+Selection correction (1 October 2026): the recorded plan called these the smallest available archives, but omitted two smaller Qwen ZIP files. It is retained with a correction rather than retrospectively claiming TAR-only eligibility was preregistered. Results describe the selected three-model convenience sample.

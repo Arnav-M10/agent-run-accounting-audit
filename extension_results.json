@@ -1720,5 +1720,5 @@
       "trace_status": "completed"
     }
   ],
-  "selection_rule": "Three smallest available score archives; the two additional archives were selected by pinned file size before score inspection."
+  "selection_rule": "Three smallest TAR score archives; smaller ZIP archives omitted. Extension file sizes inspected before scores; original all-format rule wording corrected."
 }

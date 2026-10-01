@@ -21,15 +21,17 @@ Expected validation output includes reconciliation of 9,769 CMU released attempt
 
 ## Outputs
 
+Final reporting outputs: extension_results.json, policy_comparison.json, SEARCH_DOMAIN_TABLE.md, and run_accounting/ after the full pipeline. independent_results.json and the illustrative figures preserve the historical initial one-model analysis. New corpora require extraction adapters for the reusable ledger schema in RUN_ACCOUNTING.md.
+
 - audit_results.json: CMU benchmark/model/domain and four-pass summaries.
 - independent_results.json: original one-model WildClawBench case.
-- extension_results.json: three archive-size-selected models on 60 shared tasks, with stop-reason/export-status comparisons.
+- extension_results.json: three size-guided TAR-selected models on 60 shared tasks, with stop-reason/export-status comparisons.
 - policy_comparison.json: complete search-model and model-by-domain summaries, group composition, and scoring-policy sensitivities.
 - run_accounting/: metadata-only attempt/slot/pair exports. The original script exports the initial 60 scored runs; extension_audit.py replaces the WildClawBench pair ledger with all 180 examined runs. The remaining 540 pairs have null grade availability and status, meaning unexamined rather than absent source grades.
 - figures/: descriptive PNG and SVG produced by plot_results.py (the initial illustrative comparison, not a complete three-model summary).
 
 ## Scope
 
-CMU comparisons are exploratory. EXTENSION_PLAN.json records selection of the next two smallest archives before reading their grades, following the original smallest-archive case. These are three convenience-selected models, not a random sample of the full roster. The 720 released pairs cannot establish the absence of unpublished attempts. A source-documented scheduled grid and observed attempt IDs remain distinct.
+CMU comparisons are exploratory. EXTENSION_PLAN.json records selection of the next two smallest TAR archives before reading their grades, following the original smallest-archive case. Two smaller ZIP archives were omitted; the original all-format selection description was inaccurate. The original plan and dated correction are preserved. These are three convenience-selected models, not a random sample of the full roster. The 720 released pairs cannot establish the absence of unpublished attempts. A source-documented scheduled grid and observed attempt IDs remain distinct.
 
 Native scores are never silently overwritten. Exclusion-zero policies and conditional score means answer different questions. Exporter `completed` is a native label, not independently verified clean termination; some such records have aborted or length-limited native stop reasons. The analyses distinguish native grade from verified task achievement. RUN_ACCOUNTING.md documents the proposal and unknown-value rules.
