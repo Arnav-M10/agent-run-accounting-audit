@@ -1,0 +1,256 @@
+{
+  "benchmark_native_policy": {
+    "mathhay": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 0.41,
+      "zero_exclusions_mean": 0.41
+    },
+    "mcpbench": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 2.8547435897435913,
+      "zero_exclusions_mean": 2.737692307692309
+    },
+    "search": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 0.1814070351758794,
+      "zero_exclusions_mean": 0.1814070351758794
+    },
+    "swebench": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 0.16633266533066132,
+      "zero_exclusions_mean": 0.16032064128256512
+    },
+    "tau2bench": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 0.385,
+      "zero_exclusions_mean": 0.385
+    },
+    "terminalbench": {
+      "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
+      "preserve_released_scores_mean": 0.17341772151898735,
+      "zero_exclusions_mean": 0.17341772151898735
+    }
+  },
+  "search_domains": [
+    {
+      "attempt_zero_rate": 0.012096774193548387,
+      "domain": "browsecomp",
+      "model": "DeepSeek-R1",
+      "retained": 201,
+      "retained_rate": 0.029850746268656716,
+      "scheduled_slots": 496,
+      "successes": 6
+    },
+    {
+      "attempt_zero_rate": 0.025,
+      "domain": "mind2web",
+      "model": "DeepSeek-R1",
+      "retained": 28,
+      "retained_rate": 0.03571428571428571,
+      "scheduled_slots": 40,
+      "successes": 1
+    },
+    {
+      "attempt_zero_rate": 0.5615384615384615,
+      "domain": "webvoyager",
+      "model": "DeepSeek-R1",
+      "retained": 250,
+      "retained_rate": 0.584,
+      "scheduled_slots": 260,
+      "successes": 146
+    },
+    {
+      "attempt_zero_rate": 0.13911290322580644,
+      "domain": "browsecomp",
+      "model": "DeepSeek-V3.2",
+      "retained": 160,
+      "retained_rate": 0.43125,
+      "scheduled_slots": 496,
+      "successes": 69
+    },
+    {
+      "attempt_zero_rate": 0.0,
+      "domain": "mind2web",
+      "model": "DeepSeek-V3.2",
+      "retained": 33,
+      "retained_rate": 0.0,
+      "scheduled_slots": 40,
+      "successes": 0
+    },
+    {
+      "attempt_zero_rate": 0.47692307692307695,
+      "domain": "webvoyager",
+      "model": "DeepSeek-V3.2",
+      "retained": 248,
+      "retained_rate": 0.5,
+      "scheduled_slots": 260,
+      "successes": 124
+    },
+    {
+      "attempt_zero_rate": 0.028225806451612902,
+      "domain": "browsecomp",
+      "model": "Gemini-2.5-Flash",
+      "retained": 496,
+      "retained_rate": 0.028225806451612902,
+      "scheduled_slots": 496,
+      "successes": 14
+    },
+    {
+      "attempt_zero_rate": 0.0,
+      "domain": "mind2web",
+      "model": "Gemini-2.5-Flash",
+      "retained": 40,
+      "retained_rate": 0.0,
+      "scheduled_slots": 40,
+      "successes": 0
+    },
+    {
+      "attempt_zero_rate": 0.3423076923076923,
+      "domain": "webvoyager",
+      "model": "Gemini-2.5-Flash",
+      "retained": 256,
+      "retained_rate": 0.34765625,
+      "scheduled_slots": 260,
+      "successes": 89
+    },
+    {
+      "attempt_zero_rate": 0.04032258064516129,
+      "domain": "browsecomp",
+      "model": "Qwen3-235B",
+      "retained": 470,
+      "retained_rate": 0.0425531914893617,
+      "scheduled_slots": 496,
+      "successes": 20
+    },
+    {
+      "attempt_zero_rate": 0.0,
+      "domain": "mind2web",
+      "model": "Qwen3-235B",
+      "retained": 37,
+      "retained_rate": 0.0,
+      "scheduled_slots": 40,
+      "successes": 0
+    },
+    {
+      "attempt_zero_rate": 0.36153846153846153,
+      "domain": "webvoyager",
+      "model": "Qwen3-235B",
+      "retained": 255,
+      "retained_rate": 0.3686274509803922,
+      "scheduled_slots": 260,
+      "successes": 94
+    },
+    {
+      "attempt_zero_rate": 0.020161290322580645,
+      "domain": "browsecomp",
+      "model": "Qwen3-Next",
+      "retained": 496,
+      "retained_rate": 0.020161290322580645,
+      "scheduled_slots": 496,
+      "successes": 10
+    },
+    {
+      "attempt_zero_rate": 0.05,
+      "domain": "mind2web",
+      "model": "Qwen3-Next",
+      "retained": 40,
+      "retained_rate": 0.05,
+      "scheduled_slots": 40,
+      "successes": 2
+    },
+    {
+      "attempt_zero_rate": 0.5653846153846154,
+      "domain": "webvoyager",
+      "model": "Qwen3-Next",
+      "retained": 260,
+      "retained_rate": 0.5653846153846154,
+      "scheduled_slots": 260,
+      "successes": 147
+    }
+  ],
+  "search_group_composition": {
+    "complete": {
+      "groups": 722,
+      "oracle_successes": 263
+    },
+    "incomplete": {
+      "groups": 273,
+      "oracle_successes": 32
+    }
+  },
+  "search_models": [
+    {
+      "all_group_successes": 59,
+      "all_groups": 199,
+      "attempt_zero_success_rate": 0.1922110552763819,
+      "complete_group_successes": 50,
+      "complete_groups": 79,
+      "model": "DeepSeek-R1",
+      "retained": 479,
+      "retained_success_rate": 0.31941544885177453,
+      "retention_rate": 0.6017587939698492,
+      "scheduled_slots": 796,
+      "successes": 153
+    },
+    {
+      "all_group_successes": 76,
+      "all_groups": 199,
+      "attempt_zero_success_rate": 0.24246231155778894,
+      "complete_group_successes": 53,
+      "complete_groups": 74,
+      "model": "DeepSeek-V3.2",
+      "retained": 441,
+      "retained_success_rate": 0.4376417233560091,
+      "retention_rate": 0.5540201005025126,
+      "scheduled_slots": 796,
+      "successes": 193
+    },
+    {
+      "all_group_successes": 45,
+      "all_groups": 199,
+      "attempt_zero_success_rate": 0.12939698492462312,
+      "complete_group_successes": 45,
+      "complete_groups": 198,
+      "model": "Gemini-2.5-Flash",
+      "retained": 792,
+      "retained_success_rate": 0.13005050505050506,
+      "retention_rate": 0.9949748743718593,
+      "scheduled_slots": 796,
+      "successes": 103
+    },
+    {
+      "all_group_successes": 53,
+      "all_groups": 199,
+      "attempt_zero_success_rate": 0.14321608040201006,
+      "complete_group_successes": 53,
+      "complete_groups": 172,
+      "model": "Qwen3-235B",
+      "retained": 762,
+      "retained_success_rate": 0.14960629921259844,
+      "retention_rate": 0.957286432160804,
+      "scheduled_slots": 796,
+      "successes": 114
+    },
+    {
+      "all_group_successes": 62,
+      "all_groups": 199,
+      "attempt_zero_success_rate": 0.19974874371859297,
+      "complete_group_successes": 62,
+      "complete_groups": 199,
+      "model": "Qwen3-Next",
+      "retained": 796,
+      "retained_success_rate": 0.19974874371859297,
+      "retention_rate": 1.0,
+      "scheduled_slots": 796,
+      "successes": 159
+    }
+  ],
+  "wildclaw_error_policy": {
+    "all_tasks": 60,
+    "drop_errors_mean": 0.6516357142857142,
+    "error_zero_mean": 0.6081933333333333,
+    "explicit_errors": 4,
+    "native_mean": 0.620045,
+    "positive_score_errors": 2
+  }
+}

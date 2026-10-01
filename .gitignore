@@ -1,0 +1,7 @@
+data/
+independent_data/
+__pycache__/
+*.pyc
+.hf*
+.cache/
+.venv/

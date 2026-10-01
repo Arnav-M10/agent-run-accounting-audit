@@ -1,0 +1,11 @@
+{
+  "note": "329 aggregate-only removals have no released attempt IDs. The single missing search slot is identifiable; no attempt ID is invented.",
+  "round1_by_benchmark": {
+    "mathhay": 0,
+    "mcpbench": 84,
+    "search": 1,
+    "swebench": 101,
+    "tau2bench": 15,
+    "terminalbench": 128
+  }
+}

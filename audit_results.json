@@ -1,0 +1,3952 @@
+{
+  "benchmark": {
+    "mathhay": {
+      "attempt_mean_reward_removed_zero": 0.41,
+      "original_attempts": 1500,
+      "positive_removed_count": 0,
+      "positive_removed_reward_sum": 0,
+      "positive_retained": 615,
+      "retained": 1324,
+      "retained_mean_reward": 0.4645015105740181,
+      "retained_reward_sum": 615.0,
+      "retained_reward_values": [
+        0.0,
+        1.0
+      ],
+      "round1_unreleased": 0,
+      "round2_truncated": 0,
+      "round3_incomplete": 176
+    },
+    "mcpbench": {
+      "attempt_mean_reward_removed_zero": 2.737692307692309,
+      "original_attempts": 1040,
+      "positive_removed_count": 55,
+      "positive_removed_reward_sum": 121.73333333333338,
+      "positive_retained": 873,
+      "retained": 899,
+      "retained_mean_reward": 3.1670745272525043,
+      "retained_reward_sum": 2847.200000000001,
+      "retained_reward_values": "continuous",
+      "round1_unreleased": 84,
+      "round2_truncated": 57,
+      "round3_incomplete": 0
+    },
+    "search": {
+      "attempt_mean_reward_removed_zero": 0.1814070351758794,
+      "original_attempts": 3980,
+      "positive_removed_count": 0,
+      "positive_removed_reward_sum": 0,
+      "positive_retained": 722,
+      "retained": 3270,
+      "retained_mean_reward": 0.22079510703363914,
+      "retained_reward_sum": 722.0,
+      "retained_reward_values": [
+        0.0,
+        1.0
+      ],
+      "round1_unreleased": 1,
+      "round2_truncated": 0,
+      "round3_incomplete": 709
+    },
+    "swebench": {
+      "attempt_mean_reward_removed_zero": 0.16032064128256512,
+      "original_attempts": 998,
+      "positive_removed_count": 6,
+      "positive_removed_reward_sum": 6.0,
+      "positive_retained": 160,
+      "retained": 747,
+      "retained_mean_reward": 0.214190093708166,
+      "retained_reward_sum": 160.0,
+      "retained_reward_values": [
+        0.0,
+        1.0
+      ],
+      "round1_unreleased": 101,
+      "round2_truncated": 148,
+      "round3_incomplete": 2
+    },
+    "tau2bench": {
+      "attempt_mean_reward_removed_zero": 0.385,
+      "original_attempts": 1000,
+      "positive_removed_count": 0,
+      "positive_removed_reward_sum": 0,
+      "positive_retained": 385,
+      "retained": 984,
+      "retained_mean_reward": 0.391260162601626,
+      "retained_reward_sum": 385.0,
+      "retained_reward_values": [
+        0.0,
+        1.0
+      ],
+      "round1_unreleased": 15,
+      "round2_truncated": 0,
+      "round3_incomplete": 1
+    },
+    "terminalbench": {
+      "attempt_mean_reward_removed_zero": 0.17341772151898735,
+      "original_attempts": 1580,
+      "positive_removed_count": 0,
+      "positive_removed_reward_sum": 0,
+      "positive_retained": 274,
+      "retained": 1429,
+      "retained_mean_reward": 0.19174247725682295,
+      "retained_reward_sum": 274.0,
+      "retained_reward_values": [
+        0.0,
+        1.0
+      ],
+      "round1_unreleased": 128,
+      "round2_truncated": 23,
+      "round3_incomplete": 0
+    }
+  },
+  "checks": {
+    "positive_removed_count": 61,
+    "removed_incomplete_last_role": {
+      "tool": 597,
+      "user": 291
+    },
+    "removed_truncated_last_role": {
+      "tool": 228
+    }
+  },
+  "domain_model": {
+    "mathhay/3s3d": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.45,
+        "known_attempt_mean_reward_removed_zero": 0.45,
+        "known_removed": 0,
+        "retained": 300,
+        "retained_reward_sum": 135.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.4625,
+        "known_attempt_mean_reward_removed_zero": 0.37,
+        "known_removed": 60,
+        "retained": 240,
+        "retained_reward_sum": 111.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.47435897435897434,
+        "known_attempt_mean_reward_removed_zero": 0.37,
+        "known_removed": 66,
+        "retained": 234,
+        "retained_reward_sum": 111.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.384,
+        "known_attempt_mean_reward_removed_zero": 0.32,
+        "known_removed": 50,
+        "retained": 250,
+        "retained_reward_sum": 96.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.54,
+        "known_attempt_mean_reward_removed_zero": 0.54,
+        "known_removed": 0,
+        "retained": 300,
+        "retained_reward_sum": 162.0
+      }
+    },
+    "mcpbench/Bibliomantic": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.691666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.691666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.766666666666667
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.483333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.483333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.933333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.166666666666667,
+        "known_attempt_mean_reward_removed_zero": 4.166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.666666666666668
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.825,
+        "known_attempt_mean_reward_removed_zero": 3.825,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.3
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 4.1,
+        "known_attempt_mean_reward_removed_zero": 4.1,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.4
+      }
+    },
+    "mcpbench/BioMCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.125,
+        "known_attempt_mean_reward_removed_zero": 2.125,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.5
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.6583333333333332,
+        "known_attempt_mean_reward_removed_zero": 1.6583333333333332,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.633333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.2166666666666663,
+        "known_attempt_mean_reward_removed_zero": 2.2166666666666663,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.866666666666665
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.2416666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.2416666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.966666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.958333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.958333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.833333333333332
+      }
+    },
+    "mcpbench/Call for Papers": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.8444444444444443,
+        "known_attempt_mean_reward_removed_zero": 1.8444444444444443,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 5.533333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.325,
+        "known_attempt_mean_reward_removed_zero": 3.325,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.3
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.1166666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.1166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.466666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.441666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.441666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.766666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.1,
+        "known_attempt_mean_reward_removed_zero": 2.1,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.4
+      }
+    },
+    "mcpbench/Car Price Evaluator": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.2333333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.2333333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.933333333333334
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.6,
+        "known_attempt_mean_reward_removed_zero": 1.6,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.4
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.6416666666666666,
+        "known_attempt_mean_reward_removed_zero": 2.6416666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.566666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.8499999999999996,
+        "known_attempt_mean_reward_removed_zero": 3.8499999999999996,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.399999999999999
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.3166666666666664,
+        "known_attempt_mean_reward_removed_zero": 3.3166666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.266666666666666
+      }
+    },
+    "mcpbench/Context7": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.5999999999999996,
+        "known_attempt_mean_reward_removed_zero": 2.5999999999999996,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.399999999999999
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.5,
+        "known_attempt_mean_reward_removed_zero": 3.5,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.1,
+        "known_attempt_mean_reward_removed_zero": 4.1,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.4
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.7583333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.7583333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.033333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.1583333333333337,
+        "known_attempt_mean_reward_removed_zero": 3.1583333333333337,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.633333333333335
+      }
+    },
+    "mcpbench/DEX Paprika": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.8833333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.8833333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.533333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.522222222222222,
+        "known_attempt_mean_reward_removed_zero": 2.6416666666666666,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 10.566666666666666
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.9833333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.9833333333333334,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 7.966666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.644444444444444,
+        "known_attempt_mean_reward_removed_zero": 2.733333333333333,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 10.933333333333332
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.9916666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.9916666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.966666666666667
+      }
+    },
+    "mcpbench/DEX Paprika+OKX Exchange": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.0,
+        "known_attempt_mean_reward_removed_zero": 1.0,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 1.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.9666666666666668,
+        "known_attempt_mean_reward_removed_zero": 1.475,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 5.9
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.533333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.2666666666666666,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 5.066666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.8166666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.8166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.266666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.9833333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.9833333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.933333333333334
+      }
+    },
+    "mcpbench/FruityVice": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 6.166666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.055555555555556,
+        "known_removed": 2,
+        "retained": 1,
+        "retained_reward_sum": 6.166666666666667
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.8555555555555543,
+        "known_attempt_mean_reward_removed_zero": 2.8916666666666657,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 11.566666666666663
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.691666666666667,
+        "known_attempt_mean_reward_removed_zero": 4.691666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.76666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 4.675000000000001,
+        "known_attempt_mean_reward_removed_zero": 4.675000000000001,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.700000000000003
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 5.283333333333334,
+        "known_attempt_mean_reward_removed_zero": 5.283333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 21.133333333333336
+      }
+    },
+    "mcpbench/Game Trends": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": null,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 3,
+        "retained": 0,
+        "retained_reward_sum": 0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.05,
+        "known_attempt_mean_reward_removed_zero": 4.05,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.2
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.025,
+        "known_attempt_mean_reward_removed_zero": 4.025,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.1
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.291666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.291666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.166666666666668
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.8083333333333327,
+        "known_attempt_mean_reward_removed_zero": 3.8083333333333327,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.23333333333333
+      }
+    },
+    "mcpbench/Game Trends+Reddit": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.5666666666666664,
+        "known_attempt_mean_reward_removed_zero": 3.5666666666666664,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 3.5666666666666664
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.188888888888889,
+        "known_attempt_mean_reward_removed_zero": 4.188888888888889,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 12.566666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.9333333333333336,
+        "known_attempt_mean_reward_removed_zero": 3.9333333333333336,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.733333333333334
+      }
+    },
+    "mcpbench/Google Maps": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.866666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.866666666666667,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 3.866666666666667
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.175,
+        "known_attempt_mean_reward_removed_zero": 3.175,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.7
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.1666666666666665,
+        "known_attempt_mean_reward_removed_zero": 3.1666666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.666666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.266666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.266666666666667,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 9.8
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 4.333333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.333333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.333333333333336
+      }
+    },
+    "mcpbench/Google Maps+National Parks": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.75,
+        "known_attempt_mean_reward_removed_zero": 2.75,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 5.5
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": null,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 4,
+        "retained": 0,
+        "retained_reward_sum": 0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.55,
+        "known_attempt_mean_reward_removed_zero": 3.55,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.2
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.3166666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.3166666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.266666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.275,
+        "known_attempt_mean_reward_removed_zero": 2.275,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.1
+      }
+    },
+    "mcpbench/Google Maps+Weather Data": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.2750000000000004,
+        "known_attempt_mean_reward_removed_zero": 2.2750000000000004,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.100000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.366666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.366666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.466666666666669
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.6416666666666666,
+        "known_attempt_mean_reward_removed_zero": 3.6416666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.566666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.2583333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.2583333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.033333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.408333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.408333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.633333333333333
+      }
+    },
+    "mcpbench/Google Maps+Weather Data+National Parks": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.7166666666666663,
+        "known_attempt_mean_reward_removed_zero": 2.7166666666666663,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.866666666666665
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.7916666666666665,
+        "known_attempt_mean_reward_removed_zero": 2.7916666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.166666666666666
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.5583333333333336,
+        "known_attempt_mean_reward_removed_zero": 3.5583333333333336,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.233333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.255555555555556,
+        "known_attempt_mean_reward_removed_zero": 1.6916666666666669,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 6.7666666666666675
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.6666666666666665,
+        "known_attempt_mean_reward_removed_zero": 1.6666666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.666666666666666
+      }
+    },
+    "mcpbench/Huge Icons": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.3000000000000003,
+        "known_attempt_mean_reward_removed_zero": 0.7666666666666667,
+        "known_removed": 2,
+        "retained": 1,
+        "retained_reward_sum": 2.3000000000000003
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.408333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.408333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.633333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.8666666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.9333333333333333,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 7.733333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.533333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.533333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.133333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.5916666666666663,
+        "known_attempt_mean_reward_removed_zero": 2.5916666666666663,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.366666666666665
+      }
+    },
+    "mcpbench/Hugging Face": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.875,
+        "known_attempt_mean_reward_removed_zero": 1.875,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.5
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.033333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.525,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 6.1
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.0583333333333336,
+        "known_attempt_mean_reward_removed_zero": 2.0583333333333336,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.233333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.1916666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.1916666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.766666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.3416666666666666,
+        "known_attempt_mean_reward_removed_zero": 1.3416666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 5.366666666666666
+      }
+    },
+    "mcpbench/Hugging Face+Paper Search": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.2083333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.2083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.833333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.066666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.0333333333333334,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 4.133333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.4777777777777774,
+        "known_attempt_mean_reward_removed_zero": 1.8583333333333332,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 7.433333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.9833333333333332,
+        "known_attempt_mean_reward_removed_zero": 0.9916666666666666,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 3.9666666666666663
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.6166666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.6166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.466666666666667
+      }
+    },
+    "mcpbench/Hugging Face+Paper Search+Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.0250000000000004,
+        "known_attempt_mean_reward_removed_zero": 2.0250000000000004,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.100000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.7000000000000002,
+        "known_attempt_mean_reward_removed_zero": 1.2750000000000001,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 5.1000000000000005
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.166666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.666666666666668
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.075,
+        "known_attempt_mean_reward_removed_zero": 2.075,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.3
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.15,
+        "known_attempt_mean_reward_removed_zero": 2.15,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.6
+      }
+    },
+    "mcpbench/Math MCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.1,
+        "known_attempt_mean_reward_removed_zero": 2.1,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 6.3
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 6.233333333333333,
+        "known_attempt_mean_reward_removed_zero": 6.233333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 24.933333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.258333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.258333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.03333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 5.141666666666667,
+        "known_attempt_mean_reward_removed_zero": 5.141666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 20.566666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.3666666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.3666666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.466666666666667
+      }
+    },
+    "mcpbench/Medical Calculator": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.3333333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.3333333333333333,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 4.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.833333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.833333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.333333333333332
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.675,
+        "known_attempt_mean_reward_removed_zero": 4.675,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.7
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.55,
+        "known_attempt_mean_reward_removed_zero": 1.775,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 7.1
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 4.375,
+        "known_attempt_mean_reward_removed_zero": 4.375,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.5
+      }
+    },
+    "mcpbench/Medical Calculator+FruityVice+BioMCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.833333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.833333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.333333333333332
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.3416666666666668,
+        "known_attempt_mean_reward_removed_zero": 1.3416666666666668,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 5.366666666666667
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.058333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.058333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.23333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 4.441666666666667,
+        "known_attempt_mean_reward_removed_zero": 4.441666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.76666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 4.675,
+        "known_attempt_mean_reward_removed_zero": 4.675,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.7
+      }
+    },
+    "mcpbench/Medical Calculator+Wikipedia+FruityVice": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 4.933333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.933333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.733333333333334
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 6.483333333333334,
+        "known_attempt_mean_reward_removed_zero": 6.483333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 25.933333333333337
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 7.141666666666667,
+        "known_attempt_mean_reward_removed_zero": 7.141666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 28.566666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 6.816666666666666,
+        "known_attempt_mean_reward_removed_zero": 6.816666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 27.266666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 6.1499999999999995,
+        "known_attempt_mean_reward_removed_zero": 6.1499999999999995,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 24.599999999999998
+      }
+    },
+    "mcpbench/Metropolitan Museum": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.65,
+        "known_attempt_mean_reward_removed_zero": 1.325,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 5.3
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 5.05,
+        "known_attempt_mean_reward_removed_zero": 5.05,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 20.2
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 5.55,
+        "known_attempt_mean_reward_removed_zero": 5.55,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 22.2
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 5.508333333333333,
+        "known_attempt_mean_reward_removed_zero": 5.508333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 22.03333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 5.3999999999999995,
+        "known_attempt_mean_reward_removed_zero": 5.3999999999999995,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 21.599999999999998
+      }
+    },
+    "mcpbench/Metropolitan Museum+Huge Icons+Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.9416666666666664,
+        "known_attempt_mean_reward_removed_zero": 3.9416666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.766666666666666
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.6666666666666665,
+        "known_attempt_mean_reward_removed_zero": 3.6666666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.666666666666666
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.0416666666666665,
+        "known_attempt_mean_reward_removed_zero": 3.0416666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.166666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.3499999999999996,
+        "known_attempt_mean_reward_removed_zero": 3.3499999999999996,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.399999999999999
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.8166666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.8166666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.266666666666666
+      }
+    },
+    "mcpbench/Metropolitan Museum+Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.941666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.941666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.766666666666667
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.566666666666666,
+        "known_attempt_mean_reward_removed_zero": 4.566666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.266666666666666
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.133333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.133333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.53333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.1444444444444444,
+        "known_attempt_mean_reward_removed_zero": 2.1444444444444444,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 6.433333333333334
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.2333333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.2333333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.933333333333334
+      }
+    },
+    "mcpbench/Movie Recommender": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.25,
+        "known_attempt_mean_reward_removed_zero": 0.625,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 2.5
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.7833333333333334,
+        "known_attempt_mean_reward_removed_zero": 1.7833333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.133333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.0666666666666664,
+        "known_attempt_mean_reward_removed_zero": 3.0666666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.266666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.5166666666666666,
+        "known_attempt_mean_reward_removed_zero": 2.5166666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.066666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.35,
+        "known_attempt_mean_reward_removed_zero": 2.35,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.4
+      }
+    },
+    "mcpbench/NASA Data": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.6833333333333331,
+        "known_attempt_mean_reward_removed_zero": 1.6833333333333331,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.7333333333333325
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.2583333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.2583333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.033333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.3555555555555556,
+        "known_attempt_mean_reward_removed_zero": 2.3555555555555556,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 7.066666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.5083333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.5083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.033333333333333
+      }
+    },
+    "mcpbench/NASA Data+Google Maps+Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.5500000000000003,
+        "known_attempt_mean_reward_removed_zero": 3.5500000000000003,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.200000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.2583333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.2583333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.033333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 1.5222222222222224,
+        "known_attempt_mean_reward_removed_zero": 1.5222222222222224,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 4.566666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.4916666666666663,
+        "known_attempt_mean_reward_removed_zero": 3.4916666666666663,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.966666666666665
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.7749999999999995,
+        "known_attempt_mean_reward_removed_zero": 3.7749999999999995,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.099999999999998
+      }
+    },
+    "mcpbench/National Parks": {
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 3,
+        "retained": 1,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.1333333333333337,
+        "known_attempt_mean_reward_removed_zero": 1.5666666666666669,
+        "known_removed": 1,
+        "retained": 1,
+        "retained_reward_sum": 3.1333333333333337
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.9416666666666664,
+        "known_attempt_mean_reward_removed_zero": 1.9416666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.766666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.8583333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.8583333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.433333333333334
+      }
+    },
+    "mcpbench/National Parks+Weather Data": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.6555555555555554,
+        "known_attempt_mean_reward_removed_zero": 2.6555555555555554,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 7.966666666666667
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.5666666666666664,
+        "known_attempt_mean_reward_removed_zero": 0.8916666666666666,
+        "known_removed": 3,
+        "retained": 1,
+        "retained_reward_sum": 3.5666666666666664
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.841666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.841666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.366666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.9777777777777779,
+        "known_attempt_mean_reward_removed_zero": 1.4833333333333334,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 5.933333333333334
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.3583333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.3583333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.433333333333334
+      }
+    },
+    "mcpbench/NixOS": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.7500000000000002,
+        "known_attempt_mean_reward_removed_zero": 1.7500000000000002,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.000000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.5583333333333336,
+        "known_attempt_mean_reward_removed_zero": 3.5583333333333336,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.233333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.0416666666666665,
+        "known_attempt_mean_reward_removed_zero": 3.0416666666666665,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.166666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.25,
+        "known_attempt_mean_reward_removed_zero": 2.25,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 4.5
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.908333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.908333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.633333333333333
+      }
+    },
+    "mcpbench/NixOS+Context7": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.5250000000000004,
+        "known_attempt_mean_reward_removed_zero": 2.5250000000000004,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.100000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.3499999999999996,
+        "known_attempt_mean_reward_removed_zero": 3.3499999999999996,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 13.399999999999999
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.0833333333333335,
+        "known_attempt_mean_reward_removed_zero": 3.0833333333333335,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.333333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.875,
+        "known_attempt_mean_reward_removed_zero": 2.875,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.5
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.341666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.341666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.366666666666667
+      }
+    },
+    "mcpbench/OKX Exchange": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.1166666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.5583333333333333,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 6.233333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.5666666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.5666666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.266666666666666
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.2499999999999996,
+        "known_attempt_mean_reward_removed_zero": 3.2499999999999996,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.999999999999998
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.408333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.408333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.633333333333336
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.075,
+        "known_attempt_mean_reward_removed_zero": 3.075,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.3
+      }
+    },
+    "mcpbench/OSINT Intelligence": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.475,
+        "known_attempt_mean_reward_removed_zero": 2.475,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.9
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.966666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.966666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.866666666666667
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.533333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.533333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.133333333333336
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 4.808333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.808333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.233333333333334
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.35,
+        "known_attempt_mean_reward_removed_zero": 2.35,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.4
+      }
+    },
+    "mcpbench/OpenAPI Explorer": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.658333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.658333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.633333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.8333333333333335,
+        "known_attempt_mean_reward_removed_zero": 2.125,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 8.5
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.1111111111111107,
+        "known_attempt_mean_reward_removed_zero": 3.1111111111111107,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 9.333333333333332
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.0083333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.0083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.033333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.4583333333333335,
+        "known_attempt_mean_reward_removed_zero": 2.4583333333333335,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.833333333333334
+      }
+    },
+    "mcpbench/OpenAPI Explorer+Paper Search+Hugging Face": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.15,
+        "known_attempt_mean_reward_removed_zero": 1.15,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.6
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 3.0222222222222226,
+        "known_attempt_mean_reward_removed_zero": 2.266666666666667,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 9.066666666666668
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.858333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.858333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.433333333333335
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.933333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.933333333333333,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 5.799999999999999
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.2333333333333334,
+        "known_attempt_mean_reward_removed_zero": 1.2333333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.933333333333334
+      }
+    },
+    "mcpbench/Paper Search": {
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.8083333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.8083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 3.2333333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.0666666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.0666666666666664,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 6.199999999999999
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.8555555555555554,
+        "known_attempt_mean_reward_removed_zero": 1.8555555555555554,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 5.566666666666666
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.6583333333333332,
+        "known_attempt_mean_reward_removed_zero": 1.6583333333333332,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.633333333333333
+      }
+    },
+    "mcpbench/Paper Search+BioMCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.3,
+        "known_attempt_mean_reward_removed_zero": 2.3,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.2
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.3666666666666663,
+        "known_attempt_mean_reward_removed_zero": 1.1833333333333331,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 4.7333333333333325
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.25,
+        "known_attempt_mean_reward_removed_zero": 2.25,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.9777777777777776,
+        "known_attempt_mean_reward_removed_zero": 1.9777777777777776,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 5.933333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.0500000000000003,
+        "known_attempt_mean_reward_removed_zero": 2.0500000000000003,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.200000000000001
+      }
+    },
+    "mcpbench/Paper Search+Call for Papers+Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.1750000000000003,
+        "known_attempt_mean_reward_removed_zero": 2.1750000000000003,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.700000000000001
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.2666666666666666,
+        "known_attempt_mean_reward_removed_zero": 0.6333333333333333,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 2.533333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.1166666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.1166666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.466666666666667
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.658333333333334,
+        "known_attempt_mean_reward_removed_zero": 2.658333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.633333333333336
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.158333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.158333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.633333333333333
+      }
+    },
+    "mcpbench/Reddit": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.1333333333333337,
+        "known_attempt_mean_reward_removed_zero": 3.1333333333333337,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 6.2666666666666675
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.225,
+        "known_attempt_mean_reward_removed_zero": 4.225,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.9
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.933333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.933333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 11.733333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.6500000000000004,
+        "known_attempt_mean_reward_removed_zero": 3.6500000000000004,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.600000000000001
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.5166666666666666,
+        "known_attempt_mean_reward_removed_zero": 2.5166666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.066666666666666
+      }
+    },
+    "mcpbench/Reddit+DEX Paprika": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.3166666666666664,
+        "known_attempt_mean_reward_removed_zero": 2.3166666666666664,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.266666666666666
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.777777777777778,
+        "known_attempt_mean_reward_removed_zero": 2.0833333333333335,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 8.333333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.3000000000000003,
+        "known_attempt_mean_reward_removed_zero": 1.1500000000000001,
+        "known_removed": 1,
+        "retained": 1,
+        "retained_reward_sum": 2.3000000000000003
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.641666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.641666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.566666666666668
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.675,
+        "known_attempt_mean_reward_removed_zero": 2.675,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.7
+      }
+    },
+    "mcpbench/Scientific Computing": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.6083333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.6083333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.433333333333334
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.683333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.683333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.733333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.758333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.758333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.033333333333335
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.7833333333333337,
+        "known_attempt_mean_reward_removed_zero": 3.7833333333333337,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 15.133333333333335
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 4.533333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.533333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 18.133333333333333
+      }
+    },
+    "mcpbench/Scientific Computing+BioMCP+Math MCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 2.966666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.966666666666667,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 5.933333333333334
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 6.666666666666666,
+        "known_attempt_mean_reward_removed_zero": 6.666666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 26.666666666666664
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 6.75,
+        "known_attempt_mean_reward_removed_zero": 6.75,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 27.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 6.558333333333333,
+        "known_attempt_mean_reward_removed_zero": 6.558333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 26.23333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 7.225,
+        "known_attempt_mean_reward_removed_zero": 7.225,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 28.9
+      }
+    },
+    "mcpbench/Scientific Computing+Math MCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.7666666666666666,
+        "known_attempt_mean_reward_removed_zero": 1.7666666666666666,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 1.7666666666666666
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 7.233333333333333,
+        "known_attempt_mean_reward_removed_zero": 7.233333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 28.933333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 7.733333333333333,
+        "known_attempt_mean_reward_removed_zero": 7.733333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 30.933333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 4.958333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.958333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.833333333333332
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.4083333333333334,
+        "known_attempt_mean_reward_removed_zero": 1.4083333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 5.633333333333334
+      }
+    },
+    "mcpbench/Scientific Computing+Unit Converter": {
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 5.049999999999999,
+        "known_attempt_mean_reward_removed_zero": 5.049999999999999,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 20.199999999999996
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.2,
+        "known_attempt_mean_reward_removed_zero": 4.2,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 12.6
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 4.875,
+        "known_attempt_mean_reward_removed_zero": 4.875,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 19.5
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.7416666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.7416666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.966666666666667
+      }
+    },
+    "mcpbench/Time MCP": {
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 5.208333333333332,
+        "known_attempt_mean_reward_removed_zero": 5.208333333333332,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 20.83333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.133333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.133333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.53333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 5.358333333333333,
+        "known_attempt_mean_reward_removed_zero": 5.358333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 21.433333333333334
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 2.2750000000000004,
+        "known_attempt_mean_reward_removed_zero": 2.2750000000000004,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.100000000000001
+      }
+    },
+    "mcpbench/Unit Converter": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 4.5,
+        "known_attempt_mean_reward_removed_zero": 4.5,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 4.5
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 4.383333333333333,
+        "known_attempt_mean_reward_removed_zero": 4.383333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 17.53333333333333
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.050000000000001,
+        "known_attempt_mean_reward_removed_zero": 4.050000000000001,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.200000000000003
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.7750000000000001,
+        "known_attempt_mean_reward_removed_zero": 1.7750000000000001,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.1000000000000005
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.0499999999999998,
+        "known_attempt_mean_reward_removed_zero": 1.0499999999999998,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.199999999999999
+      }
+    },
+    "mcpbench/Unit Converter+Math MCP": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.3,
+        "known_attempt_mean_reward_removed_zero": 1.3,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 1.3
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 5.611111111111112,
+        "known_attempt_mean_reward_removed_zero": 5.611111111111112,
+        "known_removed": 0,
+        "retained": 3,
+        "retained_reward_sum": 16.833333333333336
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.077777777777778,
+        "known_attempt_mean_reward_removed_zero": 3.0583333333333336,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 12.233333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.725,
+        "known_attempt_mean_reward_removed_zero": 3.725,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.9
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.5999999999999999,
+        "known_attempt_mean_reward_removed_zero": 1.5999999999999999,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.3999999999999995
+      }
+    },
+    "mcpbench/Weather Data": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 3.6083333333333334,
+        "known_attempt_mean_reward_removed_zero": 3.6083333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.433333333333334
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.475,
+        "known_attempt_mean_reward_removed_zero": 2.475,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 9.9
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 4.191666666666666,
+        "known_attempt_mean_reward_removed_zero": 4.191666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 16.766666666666666
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 3.7416666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.7416666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 14.966666666666667
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 3.0166666666666666,
+        "known_attempt_mean_reward_removed_zero": 3.0166666666666666,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 12.066666666666666
+      }
+    },
+    "mcpbench/Wikipedia": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.466666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.466666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 5.866666666666668
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.9500000000000002,
+        "known_attempt_mean_reward_removed_zero": 1.9500000000000002,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.800000000000001
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 2.1333333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.1333333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 8.533333333333333
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.5083333333333333,
+        "known_attempt_mean_reward_removed_zero": 2.5083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.033333333333333
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.5083333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.5083333333333333,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.033333333333333
+      }
+    },
+    "mcpbench/Wikipedia+NASA Data": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.8,
+        "known_attempt_mean_reward_removed_zero": 1.8,
+        "known_removed": 0,
+        "retained": 2,
+        "retained_reward_sum": 3.6
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 2.0,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 3,
+        "retained": 1,
+        "retained_reward_sum": 2.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 3.1,
+        "known_attempt_mean_reward_removed_zero": 3.1,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 3.1
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 2.625,
+        "known_attempt_mean_reward_removed_zero": 2.625,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 10.5
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.65,
+        "known_attempt_mean_reward_removed_zero": 1.65,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 6.6
+      }
+    },
+    "mcpbench/Wikipedia+Paper Search": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 1.2333333333333332,
+        "known_attempt_mean_reward_removed_zero": 1.2333333333333332,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.933333333333333
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 1.8333333333333335,
+        "known_attempt_mean_reward_removed_zero": 1.8333333333333335,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 7.333333333333334
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 1.4833333333333334,
+        "known_attempt_mean_reward_removed_zero": 1.4833333333333334,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 5.933333333333334
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 1.9333333333333331,
+        "known_attempt_mean_reward_removed_zero": 0.9666666666666666,
+        "known_removed": 2,
+        "retained": 2,
+        "retained_reward_sum": 3.8666666666666663
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 1.1916666666666667,
+        "known_attempt_mean_reward_removed_zero": 1.1916666666666667,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.766666666666667
+      }
+    },
+    "search/browsecomp": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.029850746268656716,
+        "known_attempt_mean_reward_removed_zero": 0.012121212121212121,
+        "known_removed": 294,
+        "retained": 201,
+        "retained_reward_sum": 6.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.43125,
+        "known_attempt_mean_reward_removed_zero": 0.13911290322580644,
+        "known_removed": 336,
+        "retained": 160,
+        "retained_reward_sum": 69.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.028225806451612902,
+        "known_attempt_mean_reward_removed_zero": 0.028225806451612902,
+        "known_removed": 0,
+        "retained": 496,
+        "retained_reward_sum": 14.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0425531914893617,
+        "known_attempt_mean_reward_removed_zero": 0.04032258064516129,
+        "known_removed": 26,
+        "retained": 470,
+        "retained_reward_sum": 20.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.020161290322580645,
+        "known_attempt_mean_reward_removed_zero": 0.020161290322580645,
+        "known_removed": 0,
+        "retained": 496,
+        "retained_reward_sum": 10.0
+      }
+    },
+    "search/mind2web": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.03571428571428571,
+        "known_attempt_mean_reward_removed_zero": 0.025,
+        "known_removed": 12,
+        "retained": 28,
+        "retained_reward_sum": 1.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 7,
+        "retained": 33,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 40,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 3,
+        "retained": 37,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.05,
+        "known_attempt_mean_reward_removed_zero": 0.05,
+        "known_removed": 0,
+        "retained": 40,
+        "retained_reward_sum": 2.0
+      }
+    },
+    "search/webvoyager": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.584,
+        "known_attempt_mean_reward_removed_zero": 0.5615384615384615,
+        "known_removed": 10,
+        "retained": 250,
+        "retained_reward_sum": 146.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.47692307692307695,
+        "known_removed": 12,
+        "retained": 248,
+        "retained_reward_sum": 124.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.34765625,
+        "known_attempt_mean_reward_removed_zero": 0.3423076923076923,
+        "known_removed": 4,
+        "retained": 256,
+        "retained_reward_sum": 89.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.3686274509803922,
+        "known_attempt_mean_reward_removed_zero": 0.36153846153846153,
+        "known_removed": 5,
+        "retained": 255,
+        "retained_reward_sum": 94.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.5653846153846154,
+        "known_attempt_mean_reward_removed_zero": 0.5653846153846154,
+        "known_removed": 0,
+        "retained": 260,
+        "retained_reward_sum": 147.0
+      }
+    },
+    "swebench/astropy": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 2,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 6,
+        "retained": 2,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 5,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/django": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.288135593220339,
+        "known_attempt_mean_reward_removed_zero": 0.2328767123287671,
+        "known_removed": 14,
+        "retained": 59,
+        "retained_reward_sum": 17.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.41304347826086957,
+        "known_attempt_mean_reward_removed_zero": 0.2289156626506024,
+        "known_removed": 37,
+        "retained": 46,
+        "retained_reward_sum": 19.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.17045454545454544,
+        "known_attempt_mean_reward_removed_zero": 0.17045454545454544,
+        "known_removed": 0,
+        "retained": 88,
+        "retained_reward_sum": 15.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.3333333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.29508196721311475,
+        "known_removed": 7,
+        "retained": 54,
+        "retained_reward_sum": 18.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.11627906976744186,
+        "known_attempt_mean_reward_removed_zero": 0.11627906976744186,
+        "known_removed": 0,
+        "retained": 86,
+        "retained_reward_sum": 10.0
+      }
+    },
+    "swebench/matplotlib": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 6,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 2,
+        "retained": 10,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 6,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/mwaskom": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": null,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 4,
+        "retained": 0,
+        "retained_reward_sum": 0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/pallets": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 2.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 2.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 1.0,
+        "known_attempt_mean_reward_removed_zero": 1.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 4.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.75,
+        "known_attempt_mean_reward_removed_zero": 0.75,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 3.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 2.0
+      }
+    },
+    "swebench/psf": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 3,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/pydata": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": null,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 7,
+        "retained": 0,
+        "retained_reward_sum": 0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.375,
+        "known_attempt_mean_reward_removed_zero": 0.375,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 3.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.125,
+        "known_attempt_mean_reward_removed_zero": 0.125,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 1.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 7,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/pylint-dev": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 3,
+        "retained": 1,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": null,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 4,
+        "retained": 0,
+        "retained_reward_sum": 0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 1,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/pytest-dev": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 2,
+        "retained": 5,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.8,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 3,
+        "retained": 5,
+        "retained_reward_sum": 4.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.2857142857142857,
+        "known_attempt_mean_reward_removed_zero": 0.2857142857142857,
+        "known_removed": 0,
+        "retained": 7,
+        "retained_reward_sum": 2.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.42857142857142855,
+        "known_attempt_mean_reward_removed_zero": 0.42857142857142855,
+        "known_removed": 0,
+        "retained": 7,
+        "retained_reward_sum": 3.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.375,
+        "known_attempt_mean_reward_removed_zero": 0.375,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 3.0
+      }
+    },
+    "swebench/scikit-learn": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.16666666666666666,
+        "known_removed": 8,
+        "retained": 4,
+        "retained_reward_sum": 2.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.2857142857142857,
+        "known_removed": 3,
+        "retained": 4,
+        "retained_reward_sum": 2.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 6.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.4444444444444444,
+        "known_removed": 1,
+        "retained": 8,
+        "retained_reward_sum": 4.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.08333333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.08333333333333333,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 1.0
+      }
+    },
+    "swebench/sphinx-doc": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 6,
+        "retained": 7,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 10,
+        "retained": 2,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 10,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 15,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "swebench/sympy": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.2777777777777778,
+        "known_attempt_mean_reward_removed_zero": 0.1724137931034483,
+        "known_removed": 11,
+        "retained": 18,
+        "retained_reward_sum": 5.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.5384615384615384,
+        "known_attempt_mean_reward_removed_zero": 0.4375,
+        "known_removed": 6,
+        "retained": 26,
+        "retained_reward_sum": 14.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.1935483870967742,
+        "known_attempt_mean_reward_removed_zero": 0.1875,
+        "known_removed": 1,
+        "retained": 31,
+        "retained_reward_sum": 6.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.5,
+        "known_attempt_mean_reward_removed_zero": 0.4166666666666667,
+        "known_removed": 4,
+        "retained": 20,
+        "retained_reward_sum": 10.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.06666666666666667,
+        "known_attempt_mean_reward_removed_zero": 0.06666666666666667,
+        "known_removed": 0,
+        "retained": 30,
+        "retained_reward_sum": 2.0
+      }
+    },
+    "tau2bench/airline": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.4,
+        "known_attempt_mean_reward_removed_zero": 0.4,
+        "known_removed": 0,
+        "retained": 35,
+        "retained_reward_sum": 14.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.475,
+        "known_attempt_mean_reward_removed_zero": 0.475,
+        "known_removed": 0,
+        "retained": 40,
+        "retained_reward_sum": 19.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.3076923076923077,
+        "known_attempt_mean_reward_removed_zero": 0.3076923076923077,
+        "known_removed": 0,
+        "retained": 39,
+        "retained_reward_sum": 12.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.38461538461538464,
+        "known_attempt_mean_reward_removed_zero": 0.375,
+        "known_removed": 1,
+        "retained": 39,
+        "retained_reward_sum": 15.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.425,
+        "known_attempt_mean_reward_removed_zero": 0.425,
+        "known_removed": 0,
+        "retained": 40,
+        "retained_reward_sum": 17.0
+      }
+    },
+    "tau2bench/retail": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.29333333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.29333333333333333,
+        "known_removed": 0,
+        "retained": 75,
+        "retained_reward_sum": 22.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.6125,
+        "known_attempt_mean_reward_removed_zero": 0.6125,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 49.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.2625,
+        "known_attempt_mean_reward_removed_zero": 0.2625,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 21.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.5875,
+        "known_attempt_mean_reward_removed_zero": 0.5875,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 47.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.825,
+        "known_attempt_mean_reward_removed_zero": 0.825,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 66.0
+      }
+    },
+    "tau2bench/telecom": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.08860759493670886,
+        "known_attempt_mean_reward_removed_zero": 0.08860759493670886,
+        "known_removed": 0,
+        "retained": 79,
+        "retained_reward_sum": 7.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.38461538461538464,
+        "known_attempt_mean_reward_removed_zero": 0.38461538461538464,
+        "known_removed": 0,
+        "retained": 78,
+        "retained_reward_sum": 30.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.46835443037974683,
+        "known_attempt_mean_reward_removed_zero": 0.46835443037974683,
+        "known_removed": 0,
+        "retained": 79,
+        "retained_reward_sum": 37.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.1125,
+        "known_attempt_mean_reward_removed_zero": 0.1125,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 9.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.25,
+        "known_attempt_mean_reward_removed_zero": 0.25,
+        "known_removed": 0,
+        "retained": 80,
+        "retained_reward_sum": 20.0
+      }
+    },
+    "terminalbench/data-science": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.2857142857142857,
+        "known_attempt_mean_reward_removed_zero": 0.2857142857142857,
+        "known_removed": 0,
+        "retained": 21,
+        "retained_reward_sum": 6.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.2857142857142857,
+        "known_attempt_mean_reward_removed_zero": 0.2857142857142857,
+        "known_removed": 0,
+        "retained": 28,
+        "retained_reward_sum": 8.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.37037037037037035,
+        "known_attempt_mean_reward_removed_zero": 0.37037037037037035,
+        "known_removed": 0,
+        "retained": 27,
+        "retained_reward_sum": 10.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.37037037037037035,
+        "known_attempt_mean_reward_removed_zero": 0.37037037037037035,
+        "known_removed": 0,
+        "retained": 27,
+        "retained_reward_sum": 10.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.19230769230769232,
+        "known_attempt_mean_reward_removed_zero": 0.19230769230769232,
+        "known_removed": 0,
+        "retained": 26,
+        "retained_reward_sum": 5.0
+      }
+    },
+    "terminalbench/debugging": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.5294117647058824,
+        "known_attempt_mean_reward_removed_zero": 0.5,
+        "known_removed": 1,
+        "retained": 17,
+        "retained_reward_sum": 9.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.30434782608695654,
+        "known_attempt_mean_reward_removed_zero": 0.2916666666666667,
+        "known_removed": 1,
+        "retained": 23,
+        "retained_reward_sum": 7.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.375,
+        "known_attempt_mean_reward_removed_zero": 0.375,
+        "known_removed": 0,
+        "retained": 24,
+        "retained_reward_sum": 9.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.2916666666666667,
+        "known_attempt_mean_reward_removed_zero": 0.2916666666666667,
+        "known_removed": 0,
+        "retained": 24,
+        "retained_reward_sum": 7.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 24,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "terminalbench/file-operations": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.14814814814814814,
+        "known_attempt_mean_reward_removed_zero": 0.13793103448275862,
+        "known_removed": 2,
+        "retained": 27,
+        "retained_reward_sum": 4.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.21875,
+        "known_attempt_mean_reward_removed_zero": 0.21875,
+        "known_removed": 0,
+        "retained": 32,
+        "retained_reward_sum": 7.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.3125,
+        "known_attempt_mean_reward_removed_zero": 0.3125,
+        "known_removed": 0,
+        "retained": 32,
+        "retained_reward_sum": 10.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.375,
+        "known_attempt_mean_reward_removed_zero": 0.375,
+        "known_removed": 0,
+        "retained": 32,
+        "retained_reward_sum": 12.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0625,
+        "known_attempt_mean_reward_removed_zero": 0.0625,
+        "known_removed": 0,
+        "retained": 32,
+        "retained_reward_sum": 2.0
+      }
+    },
+    "terminalbench/games": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 9,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 9,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 12,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "terminalbench/model-training": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 4,
+        "retained": 7,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.10714285714285714,
+        "known_attempt_mean_reward_removed_zero": 0.10714285714285714,
+        "known_removed": 0,
+        "retained": 28,
+        "retained_reward_sum": 3.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.038461538461538464,
+        "known_attempt_mean_reward_removed_zero": 0.038461538461538464,
+        "known_removed": 0,
+        "retained": 26,
+        "retained_reward_sum": 1.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.12,
+        "known_attempt_mean_reward_removed_zero": 0.12,
+        "known_removed": 0,
+        "retained": 25,
+        "retained_reward_sum": 3.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 28,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "terminalbench/scientific-computing": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 4,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 8,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 1,
+        "retained": 7,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "terminalbench/security": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.14705882352941177,
+        "known_attempt_mean_reward_removed_zero": 0.13513513513513514,
+        "known_removed": 3,
+        "retained": 34,
+        "retained_reward_sum": 5.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.25,
+        "known_attempt_mean_reward_removed_zero": 0.25,
+        "known_removed": 0,
+        "retained": 48,
+        "retained_reward_sum": 12.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.2708333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.2708333333333333,
+        "known_removed": 0,
+        "retained": 48,
+        "retained_reward_sum": 13.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.3958333333333333,
+        "known_attempt_mean_reward_removed_zero": 0.3958333333333333,
+        "known_removed": 0,
+        "retained": 48,
+        "retained_reward_sum": 19.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.1875,
+        "known_attempt_mean_reward_removed_zero": 0.1875,
+        "known_removed": 0,
+        "retained": 48,
+        "retained_reward_sum": 9.0
+      }
+    },
+    "terminalbench/software-engineering": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.20588235294117646,
+        "known_attempt_mean_reward_removed_zero": 0.175,
+        "known_removed": 6,
+        "retained": 34,
+        "retained_reward_sum": 7.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.2537313432835821,
+        "known_attempt_mean_reward_removed_zero": 0.25,
+        "known_removed": 1,
+        "retained": 67,
+        "retained_reward_sum": 17.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.15384615384615385,
+        "known_attempt_mean_reward_removed_zero": 0.15151515151515152,
+        "known_removed": 1,
+        "retained": 65,
+        "retained_reward_sum": 10.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.2698412698412698,
+        "known_attempt_mean_reward_removed_zero": 0.2698412698412698,
+        "known_removed": 0,
+        "retained": 63,
+        "retained_reward_sum": 17.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.07462686567164178,
+        "known_attempt_mean_reward_removed_zero": 0.07462686567164178,
+        "known_removed": 0,
+        "retained": 67,
+        "retained_reward_sum": 5.0
+      }
+    },
+    "terminalbench/swe-sample": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 0.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.1875,
+        "known_attempt_mean_reward_removed_zero": 0.1875,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 3.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 0.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.0,
+        "known_attempt_mean_reward_removed_zero": 0.0,
+        "known_removed": 0,
+        "retained": 16,
+        "retained_reward_sum": 0.0
+      }
+    },
+    "terminalbench/system-administration": {
+      "DeepSeek-R1": {
+        "complete_mean_reward": 0.3125,
+        "known_attempt_mean_reward_removed_zero": 0.3125,
+        "known_removed": 0,
+        "retained": 32,
+        "retained_reward_sum": 10.0
+      },
+      "DeepSeek-V3.2": {
+        "complete_mean_reward": 0.19607843137254902,
+        "known_attempt_mean_reward_removed_zero": 0.19607843137254902,
+        "known_removed": 0,
+        "retained": 51,
+        "retained_reward_sum": 10.0
+      },
+      "Gemini-2.5-Flash": {
+        "complete_mean_reward": 0.1568627450980392,
+        "known_attempt_mean_reward_removed_zero": 0.1568627450980392,
+        "known_removed": 0,
+        "retained": 51,
+        "retained_reward_sum": 8.0
+      },
+      "Qwen3-235B": {
+        "complete_mean_reward": 0.18,
+        "known_attempt_mean_reward_removed_zero": 0.17647058823529413,
+        "known_removed": 1,
+        "retained": 50,
+        "retained_reward_sum": 9.0
+      },
+      "Qwen3-Next": {
+        "complete_mean_reward": 0.1346153846153846,
+        "known_attempt_mean_reward_removed_zero": 0.1346153846153846,
+        "known_removed": 0,
+        "retained": 52,
+        "retained_reward_sum": 7.0
+      }
+    }
+  },
+  "four_pass": {
+    "mathhay": {
+      "complete_case_best_of_four_mean": 0.6134751773049646,
+      "four_known_pass_groups": 375,
+      "four_retained_pass_groups": 282,
+      "known_model_task_groups": 375,
+      "known_pass_histogram": {
+        "4": 375
+      },
+      "observed_groups_best_available_mean": 0.5866666666666667,
+      "retained_pass_histogram": {
+        "0": 4,
+        "1": 24,
+        "2": 23,
+        "3": 42,
+        "4": 282
+      }
+    },
+    "mcpbench": {
+      "complete_case_best_of_four_mean": 4.063350785340313,
+      "four_known_pass_groups": 219,
+      "four_retained_pass_groups": 191,
+      "known_model_task_groups": 253,
+      "known_pass_histogram": {
+        "1": 7,
+        "2": 8,
+        "3": 19,
+        "4": 219
+      },
+      "observed_groups_best_available_mean": 3.808563899868246,
+      "retained_pass_histogram": {
+        "0": 2,
+        "1": 14,
+        "2": 17,
+        "3": 29,
+        "4": 191
+      }
+    },
+    "search": {
+      "complete_case_best_of_four_mean": 0.36426592797783935,
+      "four_known_pass_groups": 994,
+      "four_retained_pass_groups": 722,
+      "known_model_task_groups": 995,
+      "known_pass_histogram": {
+        "3": 1,
+        "4": 994
+      },
+      "observed_groups_best_available_mean": 0.2964824120603015,
+      "retained_pass_histogram": {
+        "0": 102,
+        "1": 51,
+        "2": 29,
+        "3": 91,
+        "4": 722
+      }
+    },
+    "swebench": {
+      "complete_case_best_of_four_mean": 0.35036496350364965,
+      "four_known_pass_groups": 192,
+      "four_retained_pass_groups": 137,
+      "known_model_task_groups": 246,
+      "known_pass_histogram": {
+        "1": 11,
+        "2": 11,
+        "3": 32,
+        "4": 192
+      },
+      "observed_groups_best_available_mean": 0.26422764227642276,
+      "retained_pass_histogram": {
+        "0": 16,
+        "1": 31,
+        "2": 18,
+        "3": 44,
+        "4": 137
+      }
+    },
+    "tau2bench": {
+      "complete_case_best_of_four_mean": 0.6160337552742616,
+      "four_known_pass_groups": 238,
+      "four_retained_pass_groups": 237,
+      "known_model_task_groups": 250,
+      "known_pass_histogram": {
+        "2": 3,
+        "3": 9,
+        "4": 238
+      },
+      "observed_groups_best_available_mean": 0.596,
+      "retained_pass_histogram": {
+        "2": 3,
+        "3": 10,
+        "4": 237
+      }
+    },
+    "terminalbench": {
+      "complete_case_best_of_four_mean": 0.34055727554179566,
+      "four_known_pass_groups": 336,
+      "four_retained_pass_groups": 323,
+      "known_model_task_groups": 383,
+      "known_pass_histogram": {
+        "1": 9,
+        "2": 15,
+        "3": 23,
+        "4": 336
+      },
+      "observed_groups_best_available_mean": 0.33159268929503916,
+      "retained_pass_histogram": {
+        "0": 3,
+        "1": 8,
+        "2": 18,
+        "3": 31,
+        "4": 323
+      }
+    }
+  },
+  "model_benchmark": {
+    "mathhay": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.45,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 300,
+        "retained_reward_mean": 0.45,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 0.8,
+        "known_attempt_reward_mean_removed_zero": 0.37,
+        "known_removed": 60,
+        "positive_removed_count": 0,
+        "retained": 240,
+        "retained_reward_mean": 0.4625,
+        "round2_truncated": 0,
+        "round3_incomplete": 60
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 0.78,
+        "known_attempt_reward_mean_removed_zero": 0.37,
+        "known_removed": 66,
+        "positive_removed_count": 0,
+        "retained": 234,
+        "retained_reward_mean": 0.47435897435897434,
+        "round2_truncated": 0,
+        "round3_incomplete": 66
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.8333333333333334,
+        "known_attempt_reward_mean_removed_zero": 0.32,
+        "known_removed": 50,
+        "positive_removed_count": 0,
+        "retained": 250,
+        "retained_reward_mean": 0.384,
+        "round2_truncated": 0,
+        "round3_incomplete": 50
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.54,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 300,
+        "retained_reward_mean": 0.54,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      }
+    },
+    "mcpbench": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 0.9182389937106918,
+        "known_attempt_reward_mean_removed_zero": 2.3316561844863735,
+        "known_removed": 13,
+        "positive_removed_count": 12,
+        "retained": 146,
+        "retained_reward_mean": 2.5392694063926946,
+        "round2_truncated": 13,
+        "round3_incomplete": 0
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 0.8669950738916257,
+        "known_attempt_reward_mean_removed_zero": 3.0054187192118196,
+        "known_removed": 27,
+        "positive_removed_count": 26,
+        "retained": 176,
+        "retained_reward_mean": 3.466477272727269,
+        "round2_truncated": 27,
+        "round3_incomplete": 0
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 0.9578947368421052,
+        "known_attempt_reward_mean_removed_zero": 3.425789473684208,
+        "known_removed": 8,
+        "positive_removed_count": 8,
+        "retained": 182,
+        "retained_reward_mean": 3.576373626373624,
+        "round2_truncated": 8,
+        "round3_incomplete": 0
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.9540816326530612,
+        "known_attempt_reward_mean_removed_zero": 3.1705782312925157,
+        "known_removed": 9,
+        "positive_removed_count": 9,
+        "retained": 187,
+        "retained_reward_mean": 3.323172905525845,
+        "round2_truncated": 9,
+        "round3_incomplete": 0
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 2.8559294871794867,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 208,
+        "retained_reward_mean": 2.8559294871794867,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      }
+    },
+    "search": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 0.6025157232704402,
+        "known_attempt_reward_mean_removed_zero": 0.19245283018867926,
+        "known_removed": 316,
+        "positive_removed_count": 0,
+        "retained": 479,
+        "retained_reward_mean": 0.31941544885177453,
+        "round2_truncated": 0,
+        "round3_incomplete": 316
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 0.5540201005025126,
+        "known_attempt_reward_mean_removed_zero": 0.24246231155778894,
+        "known_removed": 355,
+        "positive_removed_count": 0,
+        "retained": 441,
+        "retained_reward_mean": 0.4376417233560091,
+        "round2_truncated": 0,
+        "round3_incomplete": 355
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 0.9949748743718593,
+        "known_attempt_reward_mean_removed_zero": 0.12939698492462312,
+        "known_removed": 4,
+        "positive_removed_count": 0,
+        "retained": 792,
+        "retained_reward_mean": 0.13005050505050506,
+        "round2_truncated": 0,
+        "round3_incomplete": 4
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.957286432160804,
+        "known_attempt_reward_mean_removed_zero": 0.14321608040201006,
+        "known_removed": 34,
+        "positive_removed_count": 0,
+        "retained": 762,
+        "retained_reward_mean": 0.14960629921259844,
+        "round2_truncated": 0,
+        "round3_incomplete": 34
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.19974874371859297,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 796,
+        "retained_reward_mean": 0.19974874371859297,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      }
+    },
+    "swebench": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 0.6358381502890174,
+        "known_attempt_reward_mean_removed_zero": 0.15028901734104047,
+        "known_removed": 63,
+        "positive_removed_count": 0,
+        "retained": 110,
+        "retained_reward_mean": 0.23636363636363636,
+        "round2_truncated": 61,
+        "round3_incomplete": 2
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 0.6182795698924731,
+        "known_attempt_reward_mean_removed_zero": 0.23655913978494625,
+        "known_removed": 71,
+        "positive_removed_count": 6,
+        "retained": 115,
+        "retained_reward_mean": 0.3826086956521739,
+        "round2_truncated": 71,
+        "round3_incomplete": 0
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 0.9949748743718593,
+        "known_attempt_reward_mean_removed_zero": 0.1658291457286432,
+        "known_removed": 1,
+        "positive_removed_count": 0,
+        "retained": 198,
+        "retained_reward_mean": 0.16666666666666666,
+        "round2_truncated": 1,
+        "round3_incomplete": 0
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.896551724137931,
+        "known_attempt_reward_mean_removed_zero": 0.2689655172413793,
+        "known_removed": 15,
+        "positive_removed_count": 0,
+        "retained": 130,
+        "retained_reward_mean": 0.3,
+        "round2_truncated": 15,
+        "round3_incomplete": 0
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.09278350515463918,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 194,
+        "retained_reward_mean": 0.09278350515463918,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      }
+    },
+    "tau2bench": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.2275132275132275,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 189,
+        "retained_reward_mean": 0.2275132275132275,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.494949494949495,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 198,
+        "retained_reward_mean": 0.494949494949495,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.35353535353535354,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 198,
+        "retained_reward_mean": 0.35353535353535354,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.995,
+        "known_attempt_reward_mean_removed_zero": 0.355,
+        "known_removed": 1,
+        "positive_removed_count": 0,
+        "retained": 199,
+        "retained_reward_mean": 0.35678391959798994,
+        "round2_truncated": 0,
+        "round3_incomplete": 1
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 1.0,
+        "known_attempt_reward_mean_removed_zero": 0.515,
+        "known_removed": 0,
+        "positive_removed_count": 0,
+        "retained": 200,
+        "retained_reward_mean": 0.515,
+        "round2_truncated": 0,
+        "round3_incomplete": 0
+      }
+    },
+    "terminalbench": {
+      "DeepSeek-R1": {
+        "known_attempt_completion": 0.9245283018867925,
+        "known_attempt_reward_mean_removed_zero": 0.19339622641509435,
+        "known_removed": 16,
+        "positive_removed_count": 0,
+        "retained": 196,
+        "retained_reward_mean": 0.20918367346938777,
+        "round2_truncated": 16,
+        "round3_incomplete": 0
+      },
+      "DeepSeek-V3.2": {
+        "known_attempt_completion": 0.9936507936507937,
+        "known_attempt_reward_mean_removed_zero": 0.2126984126984127,
+        "known_removed": 2,
+        "positive_removed_count": 0,
+        "retained": 313,
+        "retained_reward_mean": 0.21405750798722045,
+        "round2_truncated": 2,
+        "round3_incomplete": 0
+      },
+      "Gemini-2.5-Flash": {
+        "known_attempt_completion": 0.9935064935064936,
+        "known_attempt_reward_mean_removed_zero": 0.19805194805194806,
+        "known_removed": 2,
+        "positive_removed_count": 0,
+        "retained": 306,
+        "retained_reward_mean": 0.19934640522875818,
+        "round2_truncated": 2,
+        "round3_incomplete": 0
+      },
+      "Qwen3-235B": {
+        "known_attempt_completion": 0.993421052631579,
+        "known_attempt_reward_mean_removed_zero": 0.2532894736842105,
+        "known_removed": 2,
+        "positive_removed_count": 0,
+        "retained": 302,
+        "retained_reward_mean": 0.25496688741721857,
+        "round2_truncated": 2,
+        "round3_incomplete": 0
+      },
+      "Qwen3-Next": {
+        "known_attempt_completion": 0.9968051118210862,
+        "known_attempt_reward_mean_removed_zero": 0.08945686900958466,
+        "known_removed": 1,
+        "positive_removed_count": 0,
+        "retained": 312,
+        "retained_reward_mean": 0.08974358974358974,
+        "round2_truncated": 1,
+        "round3_incomplete": 0
+      }
+    }
+  },
+  "positive_removed": [
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass1",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__sympy__sympy__sympy-19346__pass1",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass3",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass3",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass4",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "swebench",
+      "disposition": "removed_truncated",
+      "id": "swebench__DeepSeek-V3.2__sympy__sympy__sympy-13031__pass4",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Huge Icons__mcpbench_12__pass1",
+      "reward": 1.3999999999999995,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass1",
+      "reward": 6.366666666666667,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Movie Recommender__mcpbench_20__pass1",
+      "reward": 1.0,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass1",
+      "reward": 3.1,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Game Trends__mcpbench_11__pass2",
+      "reward": 2.2333333333333334,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__FruityVice__mcpbench_10__pass3",
+      "reward": 4.366666666666667,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Game Trends__mcpbench_11__pass3",
+      "reward": 1.4000000000000001,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Huge Icons__mcpbench_12__pass3",
+      "reward": 1.6333333333333335,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass3",
+      "reward": 3.1999999999999993,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Game Trends__mcpbench_11__pass4",
+      "reward": 1.4333333333333333,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__Movie Recommender__mcpbench_20__pass4",
+      "reward": 1.5,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass4",
+      "reward": 3.533333333333334,
+      "source_model": "DeepSeek-R1"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Hugging Face__mcpbench_13__pass1",
+      "reward": 1.5,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks__mcpbench_18__pass1",
+      "reward": 1.3666666666666667,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass1",
+      "reward": 1.9333333333333333,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks+Weather Data__mcpbench_37__pass1",
+      "reward": 3.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Reddit+DEX Paprika__mcpbench_42__pass1",
+      "reward": 1.766666666666667,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__OpenAPI Explorer__mcpbench_0__pass2",
+      "reward": 4.066666666666666,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__FruityVice__mcpbench_10__pass2",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Wikipedia+NASA Data__mcpbench_29__pass2",
+      "reward": 2.1,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Hugging Face+Paper Search__mcpbench_36__pass2",
+      "reward": 2.0333333333333337,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Paper Search+Call for Papers+Wikipedia__mcpbench_45__pass2",
+      "reward": 1.3999999999999995,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__DEX Paprika__mcpbench_9__pass2",
+      "reward": 3.3999999999999995,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks__mcpbench_18__pass3",
+      "reward": 2.233333333333333,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Paper Search+BioMCP__mcpbench_28__pass3",
+      "reward": 1.2333333333333334,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Wikipedia+NASA Data__mcpbench_29__pass3",
+      "reward": 2.1333333333333333,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass3",
+      "reward": 1.5666666666666669,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+      "reward": 2.066666666666667,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Hugging Face+Paper Search__mcpbench_36__pass3",
+      "reward": 1.5,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks+Weather Data__mcpbench_37__pass3",
+      "reward": 1.2333333333333334,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Paper Search+Call for Papers+Wikipedia__mcpbench_45__pass3",
+      "reward": 1.7333333333333332,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__OpenAPI Explorer+Paper Search+Hugging Face__mcpbench_51__pass3",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks__mcpbench_18__pass4",
+      "reward": 1.8333333333333333,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Paper Search+BioMCP__mcpbench_28__pass4",
+      "reward": 1.4333333333333336,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Wikipedia+NASA Data__mcpbench_29__pass4",
+      "reward": 1.0,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass4",
+      "reward": 1.1333333333333333,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__National Parks+Weather Data__mcpbench_37__pass4",
+      "reward": 1.5,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__DeepSeek-V3.2__Hugging Face+Paper Search+Wikipedia__mcpbench_44__pass4",
+      "reward": 2.4,
+      "source_model": "DeepSeek-V3.2"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__National Parks__mcpbench_18__pass1",
+      "reward": 2.1333333333333333,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__Reddit+DEX Paprika__mcpbench_42__pass2",
+      "reward": 3.333333333333334,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__Huge Icons__mcpbench_12__pass3",
+      "reward": 1.5666666666666664,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+      "reward": 2.0,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__Hugging Face+Paper Search__mcpbench_36__pass3",
+      "reward": 1.7333333333333334,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__Huge Icons__mcpbench_12__pass4",
+      "reward": 2.633333333333333,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__DEX Paprika+OKX Exchange__mcpbench_33__pass4",
+      "reward": 1.766666666666667,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Gemini-2.5-Flash__Unit Converter+Math MCP__mcpbench_38__pass4",
+      "reward": 4.566666666666666,
+      "source_model": "Gemini-2.5-Flash"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Hugging Face+Paper Search__mcpbench_36__pass1",
+      "reward": 2.4333333333333336,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Google Maps+Weather Data+National Parks__mcpbench_43__pass1",
+      "reward": 2.9333333333333336,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Medical Calculator__mcpbench_27__pass2",
+      "reward": 4.133333333333333,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Wikipedia+Paper Search__mcpbench_41__pass2",
+      "reward": 1.3,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__National Parks+Weather Data__mcpbench_37__pass3",
+      "reward": 1.8999999999999997,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__DEX Paprika__mcpbench_9__pass3",
+      "reward": 3.4666666666666663,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Medical Calculator__mcpbench_27__pass4",
+      "reward": 4.3999999999999995,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Hugging Face+Paper Search__mcpbench_36__pass4",
+      "reward": 1.6333333333333335,
+      "source_model": "Qwen3-235B"
+    },
+    {
+      "benchmark": "mcpbench",
+      "disposition": "removed_truncated",
+      "id": "mcpbench__Qwen3-235B__Wikipedia+Paper Search__mcpbench_41__pass4",
+      "reward": 1.0666666666666667,
+      "source_model": "Qwen3-235B"
+    }
+  ],
+  "record_counts": {
+    "removed_incomplete": 888,
+    "removed_truncated": 228,
+    "retained": 8653
+  },
+  "search_rank_reversal": {
+    "attempt_difference_bootstrap_95": [
+      -0.038944723618090454,
+      0.022613065326633167
+    ],
+    "attempt_difference_r1_minus_qwen_next": -0.007537688442211055,
+    "attempts_per_model": 796,
+    "bootstrap_seed": 7,
+    "bootstrap_task_resamples": 10000,
+    "complete_difference_bootstrap_95": [
+      0.07207544072449362,
+      0.1675536542181375
+    ],
+    "complete_difference_r1_minus_qwen_next": 0.11966670513318156,
+    "missing_record": {
+      "domain": "browsecomp",
+      "model": "DeepSeek-R1",
+      "pass": 3,
+      "task_id": "44"
+    },
+    "qwen_next_retained": 796,
+    "qwen_next_successes": 159.0,
+    "r1_retained": 479,
+    "r1_successes": 153.0,
+    "shared_tasks": 199
+  },
+  "source": "Local records from cx-cmu/agent_trajectories; original and round1 counts from CLEANING_SUMMARY.md"
+}
