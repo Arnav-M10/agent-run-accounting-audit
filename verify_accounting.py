@@ -110,6 +110,16 @@ for model in sorted({r['model'] for r in slots}):
         domains.append({'model':model,'domain':domain,'scheduled_slots':n,'retained':len(kept),'successes':success,'retained_rate':success/len(kept) if kept else None,'attempt_zero_rate':success/n})
 assert len(domains)==15
 policies['search_domains']=domains
+policies['search_gap_decomposition']={}
+for model in sorted({r['model'] for r in domains}):
+    cells=[r for r in domains if r['model']==model]
+    n=sum(r['scheduled_slots'] for r in cells); c=sum(r['retained'] for r in cells)
+    within=sum(r['scheduled_slots']/n*(r['retained_rate']-r['attempt_zero_rate']) for r in cells)
+    composition=sum((r['retained']/c-r['scheduled_slots']/n)*r['retained_rate'] for r in cells)
+    global_gap=sum(r['successes'] for r in cells)/c-sum(r['successes'] for r in cells)/n
+    assert abs(within+composition-global_gap)<1e-12
+    policies['search_gap_decomposition'][model]={'total_gap':global_gap,'within_domain_retention':within,'domain_composition':composition}
+
 (ROOT/'policy_comparison.json').write_text(json.dumps(policies,indent=2,sort_keys=True)+'\n')
 print('Verified: 9,769 CMU attempts, 3,980 search slots, 720 WildClawBench pairs; native-score preservation and aggregate reconciliation passed.')
 

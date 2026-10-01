@@ -168,6 +168,33 @@
       "successes": 147
     }
   ],
+  "search_gap_decomposition": {
+    "DeepSeek-R1": {
+      "domain_composition": 0.10826652727159218,
+      "total_gap": 0.12720439357539262,
+      "within_domain_retention": 0.01893786630380044
+    },
+    "DeepSeek-V3.2": {
+      "domain_composition": 0.005606547476612073,
+      "total_gap": 0.19517941179822015,
+      "within_domain_retention": 0.18957286432160808
+    },
+    "Gemini-2.5-Flash": {
+      "domain_composition": -0.001093496205776356,
+      "total_gap": 0.0006535201258819345,
+      "within_domain_retention": 0.00174701633165829
+    },
+    "Qwen3-235B": {
+      "domain_composition": 0.002684791381410775,
+      "total_gap": 0.006390218810588377,
+      "within_domain_retention": 0.0037054274291776043
+    },
+    "Qwen3-Next": {
+      "domain_composition": 0.0,
+      "total_gap": 0.0,
+      "within_domain_retention": 0.0
+    }
+  },
   "search_group_composition": {
     "complete": {
       "groups": 722,
