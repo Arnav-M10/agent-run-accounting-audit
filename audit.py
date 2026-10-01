@@ -15,15 +15,15 @@ DATA = ROOT / "data"
 BENCHMARKS = (
     "tau2bench", "swebench", "terminalbench", "mathhay", "search", "mcpbench"
 )
-# Published original counts and first-round removals in CLEANING_SUMMARY.md.
-ORIGINAL = {
-    "tau2bench": 1000, "swebench": 998, "terminalbench": 1580,
-    "mathhay": 1500, "search": 3980, "mcpbench": 1040,
-}
-ROUND1 = {
-    "tau2bench": 15, "swebench": 101, "terminalbench": 128,
-    "mathhay": 0, "search": 1, "mcpbench": 84,
-}
+# Read original counts and first-round removals from the pinned source table.
+ORIGINAL, ROUND1 = {}, {}
+for line in (DATA / 'CLEANING_SUMMARY.md').read_text().split('## 各Benchmark删除情况', 1)[1].splitlines():
+    cells = [part.strip() for part in line.split('|')]
+    if len(cells)>4 and cells[1] in BENCHMARKS and cells[1] not in ORIGINAL and cells[3].replace(',', '').lstrip('-').isdigit():
+        ORIGINAL[cells[1]] = int(cells[2].replace(',', ''))
+        ROUND1[cells[1]] = abs(int(cells[3].replace(',', '')))
+assert set(ORIGINAL)==set(ROUND1)==set(BENCHMARKS)
+assert sum(ORIGINAL.values())==10098 and sum(ROUND1.values())==329
 
 
 def get_meta(record, disposition):

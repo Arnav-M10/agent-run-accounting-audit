@@ -76,6 +76,7 @@ for bench, d in cmu_result['benchmark'].items():
 assert sum(r['retention'] != 'retained' and r['native_score'] > 0 for r in cmu) == 61
 assert len(wild) == 720 and len({(r['model'], r['task_id']) for r in wild}) == len(wild)
 all_scored = [r for r in wild if r['score_available'] is True]
+cohort_models={'Claude Fable 5','Kimi K3','GLM 5.2'}
 scored = [r for r in all_scored if r['model'] == wild_result['selected_model']]
 assert len(scored) == 60
 assert all(r['native_score'] is None and r['execution_status'] is None and r['score_available'] is None
@@ -126,7 +127,9 @@ print('Verified: 9,769 CMU attempts, 3,980 search slots, 720 WildClawBench pairs
 if (ROOT/'extension_results.json').exists():
     import pyarrow.parquet as pq
     extension=json.loads((ROOT/'extension_results.json').read_text())
-    assert len(all_scored)==len(extension['runs'])==180
+    status_scored=[r for r in all_scored if r['model'] in cohort_models]
+    assert len(status_scored)==len(extension['runs'])==180
+    assert len(all_scored)==(720 if (ROOT/'full_roster_results.json').exists() else 300)
     originals=pq.read_table(ROOT/'independent_data/wildclaw/train.parquet').to_pylist()
     exported={(r['model'],r['task_id']):r for r in wild}
     assert len(originals)==len(exported)==720
@@ -141,13 +144,40 @@ if (ROOT/'extension_results.json').exists():
     for source in extension['runs']:
         r=exported[(source['model'],source['task_id'])]
         assert (r['last_original_role'],r['native_stop_reason'],r['execution_status'],r['native_score']) == (source['last_role'],source['stop_reason'],source['trace_status'],source['score'])
-    assert sum((r['last_original_role']=='assistant')!=(r['execution_status']=='completed') for r in all_scored)==33
-    assert sum(r['native_score']>0 and r['last_original_role']=='toolResult' for r in all_scored)==5
-    assert sum(r['native_score']>0 and r['execution_status']!='completed' for r in all_scored)==5
-    assert sum(r['execution_status']=='completed' and r['native_stop_reason'] in ('aborted','length') for r in all_scored)==10
+    assert sum((r['last_original_role']=='assistant')!=(r['execution_status']=='completed') for r in status_scored)==33
+    assert sum(r['native_score']>0 and r['last_original_role']=='toolResult' for r in status_scored)==5
+    assert sum(r['native_score']>0 and r['execution_status']!='completed' for r in status_scored)==5
+    assert sum(r['execution_status']=='completed' and r['native_stop_reason'] in ('aborted','length') for r in status_scored)==10
     slugs={'Claude Fable 5':'claude_fable5','Kimi K3':'kimi_k3','GLM 5.2':'glm52'}
-    for r in all_scored:
+    for r in status_scored:
         path=ROOT/'independent_data/wildclaw/sessions'/slugs[r['model']]/(r['task_id']+'.jsonl')
         with path.open() as handle: header=json.loads(handle.readline())
         assert header['task_id']==r['task_id'] and header['trace_status']==r['execution_status']
     print('Verified source terminal events for all 720 pairs and native session joins/grade accounting for 180 runs.')
+
+zip_results=json.loads((ROOT/'zip_score_results.json').read_text())
+assert len(zip_results['runs'])==120
+for source in zip_results['runs']:
+    record=exported[(source['model'],source['task_id'])]
+    assert record['native_score']==source['score'] and record['execution_status'] is None
+    assert record['last_original_role']==source['last_role'] and record['native_stop_reason']==source['stop_reason']
+assert sum(r['score_available'] is None for r in wild)==(0 if (ROOT/'full_roster_results.json').exists() else 420)
+print('Verified ZIP extension: 120 recorded grades, unknown exporter status; total score coverage 300/720.')
+
+if (ROOT/'full_roster_results.json').exists():
+    full=json.loads((ROOT/'full_roster_results.json').read_text())
+    assert len(full['runs'])==720
+    assert len({(r['model'],r['task_id']) for r in full['runs']})==720
+    for source in full['runs']:
+        record=exported[(source['model'],source['task_id'])]
+        assert record['native_score']==source['score'] and record['execution_status']==source['trace_status']
+        assert record['last_original_role']==source['last_role'] and record['native_stop_reason']==source['stop_reason']
+    assert sum(r['execution_status'] is not None for r in wild)==600
+    for directory in (ROOT/'independent_data/wildclaw/sessions').iterdir():
+        for path in directory.glob('*.jsonl'):
+            with path.open() as handle: header=json.loads(handle.readline())
+            # Directory slug is paired to model by the full-roster adapter.
+            candidates=[r for r in full['runs'] if r['task_id']==header['task_id'] and r['model'] in full['models'] and full['models'][r['model']].get('session_slug')==directory.name]
+            assert len(candidates)==1
+            assert candidates[0]['trace_status']==header['trace_status']
+    print('Verified full roster: 720 recorded grades, 600 native session joins, 120 unknown exporter statuses.')

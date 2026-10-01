@@ -1,45 +1,19 @@
-# Data provenance for the denominator audit
+# Data provenance and staged analysis
 
-Dataset: [cx-cmu/agent_trajectories](https://huggingface.co/datasets/cx-cmu/agent_trajectories)  
-Downloaded: 28 September 2026 through the official Hugging Face CLI using the account granted access to the dataset.  
-Repository revision recorded in the CLI local cache: `88e2af82c116a9a57f29be6f21b9924da081c2bd`.
+## Pinned releases
 
-The eight record files remain in `data/`. The study uses the six retained JSONL files and two JSON files containing later exclusions. `removal_log.json` and the dataset's [cleaning summary](https://huggingface.co/datasets/cx-cmu/agent_trajectories/blob/main/CLEANING_SUMMARY.md) provide the original-attempt and earliest-round exclusion counts. The earliest 329 removed records are not among the eight record files.
+CMU: cx-cmu/agent_trajectories, revision 88e2af82c116a9a57f29be6f21b9924da081c2bd. Inputs are six retained JSONL benchmarks, removed_incomplete.json, removed_truncated.json, removal_log.json, README.md, and CLEANING_SUMMARY.md. The original-attempt and first-round counts are parsed from the pinned cleaning table. The source documents contain aggregate-only information for 329 exclusions, not released execution IDs.
 
-| File | Bytes | SHA-256 |
-|---|---:|---|
-| `mathhay.jsonl` | 678,662,533 | `e677e4fd64d4a69f1264db377003472f2b1fcc5b2bd6c2ea965474989057229a` |
-| `mcpbench.jsonl` | 107,910,468 | `056d02cff3e888003c4de2a2fa05a6017adb3b7d8772ff210889cda6a33bf153` |
-| `search.jsonl` | 160,074,333 | `701b282d9e2e6f6ebbe9cd0996c5c36cc8c12dcb725d775aa4b48921d1de7116` |
-| `swebench.jsonl` | 150,701,297 | `361d3e13f0c72f743f2ffbe53960ab462b9e1027eaea0d15ec052b75fa10a24c` |
-| `tau2bench.jsonl` | 67,082,285 | `8a691492668a3105219113f849d0bb9e23534789b37ce45b6b780ce2d3fd083c` |
-| `terminalbench.jsonl` | 125,247,375 | `cd4a41777814ab53dfe2491c8567b33fdc4902fb2681e1450ef8b23ec6255860` |
-| `removed_incomplete.json` | 131,083,743 | `f8755cf6fb2f7fdfa6713d842b6c3d289d3c55941683ca77c182f981201971e2` |
-| `removed_truncated.json` | 45,982,530 | `cf0c3d14761f6ce1aa8e4354b4e6a44784a0634c2e33f2c1483fd54a6711d17b` |
+WildClawBench: internlm/WildClawBench-Trajectories, revision d2816016a7a7b41fa6b7ba368b28ddafcb54fd93. Inputs are train.parquet, all 12 score archives, and all 600 released session files from ten model directories. The table is 12 models by the same 60 tasks. Two ZIP models have native grades but no released exporter-session directories at this revision; their exporter status remains unknown.
 
-Run `python3 audit.py` from this directory to regenerate `audit_results.json`. This analysis uses no model API.
+## Historical stages and corrected selection description
 
-## Independent WildClawBench case
+The initial Claude Fable 5 case was followed by a TAR-only extension to Kimi K3 and GLM 5.2. The original plan inaccurately described the chosen TAR archives as the smallest across all formats, omitting two smaller Qwen ZIP files. EXTENSION_PLAN.json preserves that original text and a dated correction; it does not retrospectively claim TAR-only eligibility was preregistered.
 
-Dataset: [internlm/WildClawBench-Trajectories](https://huggingface.co/datasets/internlm/WildClawBench-Trajectories). Downloaded 29 September 2026 through the official CLI. Pinned revision: `d2816016a7a7b41fa6b7ba368b28ddafcb54fd93`.
+ZIP_EXTENSION_PLAN.json records adding both ZIP models after the three-model results and before reading their scores. FULL_ROSTER_PLAN.json records subsequently acquiring the remaining seven score archives and every available session directory. Final full-roster results cover the entire pinned released roster; the original staged summaries remain historical outputs.
 
-The 720-row `train.parquet` table contains the same 60 task IDs for each of 12 models. The score audit selects Claude Fable 5 because its TAR archive was the smallest TAR available, before examining scores; smaller ZIP archives were omitted and the original all-format smallest-archive wording was inaccurate. Its archive contains 60 score files; its session directory provides 60 status headers. This is a convenience sample for independent case evidence, not a random sample of models.
+## What is verified
 
-| File | SHA-256 |
-|---|---|
-| `train.parquet` | `9be080beb826b4c620d0a5d2987d1a0d3be758248076dfff48807fb11fcb4c17` |
-| `output_claude_fable5.tar.gz` | `a95dd7e17205341d9ca3f46d8e499ea1225bb6ce35bc9e6a668f65140ac6c1f4` |
+Source_hashes.json pins every local source input. Source-to-ledger checks compare all terminal event roles/reasons, join every available native session header, and preserve each recorded native score. Each model's all-task mean is reproduced from its archive summary before alternative filters are calculated. Original events, synthetic export warning markers, exporter status, and native stop reasons remain distinct.
 
-Run `independent_audit.py` using Python with PyArrow to regenerate `independent_results.json`. The audit reads archives in place and does not extract or execute archived files. `plot_results.py` uses Matplotlib to render the figure from both JSON audit outputs. The original native task scores are preserved even for explicit error-status runs.
-
-The Open Agent Leaderboard summary was inspected as another candidate. Its aggregate fields use different notions of finished sessions and completed records, so it is not included as a quantitative replication in this draft.
-
-## Metadata exports
-
-The scripts export run accounting under `run_accounting/`; `verify_accounting.py` reconciles those exports with the audit summaries. Null availability in the WildClawBench ledger means unexamined source evidence, not a missing native source score. No trace text is included in the exports.
-
-## Outcome-independent extension
-
-EXTENSION_PLAN.json records the two additional archives selected by pinned file size before outcome inspection: Kimi K3 and GLM 5.2. Together with the original Claude Fable 5 case, extension_results.json covers 180 scores and session headers. source_hashes.json contains all 193 source-file hashes, including every status-header file. Model-level mean scores were reproduced from each archive before conditional analyses. Native stop reasons and exporter status are preserved separately.
-
-Selection correction (1 October 2026): the recorded plan called these the smallest available archives, but omitted two smaller Qwen ZIP files. It is retained with a correction rather than retrospectively claiming TAR-only eligibility was preregistered. Results describe the selected three-model convenience sample.
+No archived task outputs are executed. Raw archives, traces, and credentials are not redistributed in the public artifact. The analyses are local and require no new model execution or paid inference. Verification checks recorded evidence, not independent task achievement, unreleased retries, or causal failure attribution.

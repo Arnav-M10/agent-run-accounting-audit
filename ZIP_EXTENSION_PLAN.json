@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-01",
+  "revision": "d2816016a7a7b41fa6b7ba368b28ddafcb54fd93",
+  "stage": "after original three-model results and selection-wording correction; before reading ZIP grades",
+  "selection": "Add both previously omitted ZIP archives, yielding the five smallest archive files at the pinned revision; convenience sample, not random and not an original preregistration",
+  "files": [
+    "output_qwen3.8-27b-vllm.zip",
+    "output_qwen3.8-max.zip"
+  ],
+  "procedure": "Join all scores and native session headers by task ID; reproduce released means; report all selected models without selecting by effect magnitude."
+}

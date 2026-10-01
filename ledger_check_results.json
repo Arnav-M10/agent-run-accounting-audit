@@ -1,0 +1,619 @@
+{
+  "cmu_attempts.jsonl": {
+    "ledger": "run_accounting/cmu_attempts.jsonl",
+    "rows": 9769,
+    "identity_fields": [
+      "attempt_id"
+    ],
+    "valid": true,
+    "issue_counts": {},
+    "issue_examples": [],
+    "duplicate_identity_examples": [],
+    "numeric_scores": 9769,
+    "scores_without_range_evidence": 0,
+    "categories": {
+      "retention": [
+        {
+          "fields": {
+            "retention": {
+              "present": true,
+              "value": "removed_incomplete"
+            }
+          },
+          "count": 888
+        },
+        {
+          "fields": {
+            "retention": {
+              "present": true,
+              "value": "removed_truncated"
+            }
+          },
+          "count": 228
+        },
+        {
+          "fields": {
+            "retention": {
+              "present": true,
+              "value": "retained"
+            }
+          },
+          "count": 8653
+        }
+      ],
+      "score_available": [
+        {
+          "fields": {
+            "score_available": {
+              "present": true,
+              "value": true
+            }
+          },
+          "count": 9769
+        }
+      ],
+      "execution_status": [
+        {
+          "fields": {
+            "execution_status": {
+              "present": true,
+              "value": null
+            }
+          },
+          "count": 9769
+        }
+      ],
+      "last_original_role": [
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "assistant"
+            }
+          },
+          "count": 8653
+        },
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "tool"
+            }
+          },
+          "count": 825
+        },
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "user"
+            }
+          },
+          "count": 291
+        }
+      ],
+      "native_stop_reason": [
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": false
+            }
+          },
+          "count": 9769
+        }
+      ],
+      "coverage": [
+        {
+          "fields": {
+            "coverage": {
+              "present": false
+            }
+          },
+          "count": 9769
+        }
+      ]
+    },
+    "role_status_grade_availability": [
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "assistant"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 8653
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "tool"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 825
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "user"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 291
+      }
+    ],
+    "reference_check": null
+  },
+  "cmu_search_slots.jsonl": {
+    "ledger": "run_accounting/cmu_search_slots.jsonl",
+    "rows": 3980,
+    "identity_fields": [
+      "benchmark",
+      "domain",
+      "model",
+      "task_id",
+      "pass"
+    ],
+    "valid": true,
+    "issue_counts": {},
+    "issue_examples": [],
+    "duplicate_identity_examples": [],
+    "numeric_scores": 0,
+    "scores_without_range_evidence": 0,
+    "categories": {
+      "retention": [
+        {
+          "fields": {
+            "retention": {
+              "present": false
+            }
+          },
+          "count": 3980
+        }
+      ],
+      "score_available": [
+        {
+          "fields": {
+            "score_available": {
+              "present": false
+            }
+          },
+          "count": 3980
+        }
+      ],
+      "execution_status": [
+        {
+          "fields": {
+            "execution_status": {
+              "present": false
+            }
+          },
+          "count": 3980
+        }
+      ],
+      "last_original_role": [
+        {
+          "fields": {
+            "last_original_role": {
+              "present": false
+            }
+          },
+          "count": 3980
+        }
+      ],
+      "native_stop_reason": [
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": false
+            }
+          },
+          "count": 3980
+        }
+      ],
+      "coverage": [
+        {
+          "fields": {
+            "coverage": {
+              "present": true,
+              "value": "aggregate_only_removal"
+            }
+          },
+          "count": 1
+        },
+        {
+          "fields": {
+            "coverage": {
+              "present": true,
+              "value": "released"
+            }
+          },
+          "count": 3979
+        }
+      ]
+    },
+    "role_status_grade_availability": [
+      {
+        "fields": {
+          "last_original_role": {
+            "present": false
+          },
+          "execution_status": {
+            "present": false
+          },
+          "score_available": {
+            "present": false
+          }
+        },
+        "count": 3980
+      }
+    ],
+    "reference_check": {
+      "field": "observed_attempt_id",
+      "target_field": "attempt_id",
+      "linked_rows": 3979,
+      "unlinked_categories": [
+        {
+          "fields": {
+            "observed_attempt_id": {
+              "present": true,
+              "value": null
+            }
+          },
+          "count": 1
+        }
+      ]
+    }
+  },
+  "wildclaw_released_pairs.jsonl": {
+    "ledger": "run_accounting/wildclaw_released_pairs.jsonl",
+    "rows": 720,
+    "identity_fields": [
+      "model",
+      "task_id"
+    ],
+    "valid": true,
+    "issue_counts": {},
+    "issue_examples": [],
+    "duplicate_identity_examples": [],
+    "numeric_scores": 720,
+    "scores_without_range_evidence": 0,
+    "categories": {
+      "retention": [
+        {
+          "fields": {
+            "retention": {
+              "present": true,
+              "value": "released"
+            }
+          },
+          "count": 720
+        }
+      ],
+      "score_available": [
+        {
+          "fields": {
+            "score_available": {
+              "present": true,
+              "value": true
+            }
+          },
+          "count": 720
+        }
+      ],
+      "execution_status": [
+        {
+          "fields": {
+            "execution_status": {
+              "present": true,
+              "value": "completed"
+            }
+          },
+          "count": 567
+        },
+        {
+          "fields": {
+            "execution_status": {
+              "present": true,
+              "value": "error"
+            }
+          },
+          "count": 7
+        },
+        {
+          "fields": {
+            "execution_status": {
+              "present": true,
+              "value": "interrupted"
+            }
+          },
+          "count": 26
+        },
+        {
+          "fields": {
+            "execution_status": {
+              "present": true,
+              "value": null
+            }
+          },
+          "count": 120
+        }
+      ],
+      "last_original_role": [
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "assistant"
+            }
+          },
+          "count": 666
+        },
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "toolResult"
+            }
+          },
+          "count": 50
+        },
+        {
+          "fields": {
+            "last_original_role": {
+              "present": true,
+              "value": "user"
+            }
+          },
+          "count": 4
+        }
+      ],
+      "native_stop_reason": [
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": "aborted"
+            }
+          },
+          "count": 79
+        },
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": "error"
+            }
+          },
+          "count": 8
+        },
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": "length"
+            }
+          },
+          "count": 13
+        },
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": "stop"
+            }
+          },
+          "count": 545
+        },
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": "toolUse"
+            }
+          },
+          "count": 21
+        },
+        {
+          "fields": {
+            "native_stop_reason": {
+              "present": true,
+              "value": null
+            }
+          },
+          "count": 54
+        }
+      ],
+      "coverage": [
+        {
+          "fields": {
+            "coverage": {
+              "present": false
+            }
+          },
+          "count": 720
+        }
+      ]
+    },
+    "role_status_grade_availability": [
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "assistant"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "completed"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 523
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "assistant"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "error"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 7
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "assistant"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "interrupted"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 24
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "assistant"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 112
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "toolResult"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "completed"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 44
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "toolResult"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "interrupted"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 1
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "toolResult"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 5
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "user"
+          },
+          "execution_status": {
+            "present": true,
+            "value": "interrupted"
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 1
+      },
+      {
+        "fields": {
+          "last_original_role": {
+            "present": true,
+            "value": "user"
+          },
+          "execution_status": {
+            "present": true,
+            "value": null
+          },
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 3
+      }
+    ],
+    "reference_check": null
+  }
+}

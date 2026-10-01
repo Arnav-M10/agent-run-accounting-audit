@@ -42,16 +42,26 @@ When causes are supported, report agent, endpoint/harness, and unresolved failur
 5. Cross-tabulate final role against explicit execution status and score availability. Report disagreement rather than treating either field as task success.
 6. Reproduce released aggregate scores before calculating alternative inclusion policies. Explain any mismatch.
 
-## What these cases establish
+## Current coverage and implemented exports
 
-CMU supplies total attempt counts but lacks identifiers for its earliest 329 exclusions. Its all-attempt summaries therefore use aggregate counts; only independently identifiable grids support more detailed reconstruction. WildClawBench supplies all 720 released model–task pairs. The three selected models supply 180 scores and execution-status records, allowing the final-role/status cross-tabulation. Neither release establishes the absence of unpublished retries or failures.
+Final WildClawBench coverage: all 720 recorded grades and terminal events; 600 exporter-status headers, 120 unknown statuses. The source manifest covers 624 inputs.
 
-These checks use released records and local computation. They require no new model inference or paid API calls.
+CMU supplies 9,769 released attempt rows plus 329 aggregate-only earliest exclusions with no released IDs. Search supplies a reconstructed 3,980-slot grid with one aggregate-only coverage slot. Retry histories remain unknown.
 
-## Implemented exports
+The pipeline writes run_accounting/cmu_attempts.jsonl, cmu_search_slots.jsonl, cmu_unreleased_counts.json, and wildclaw_released_pairs.jsonl. Cleaning disposition remains separate from native execution status. Unknown coverage is never converted to zero or a fabricated attempt ID.
 
-The audit scripts write `run_accounting/cmu_attempts.jsonl` (9,769 released attempts), `cmu_search_slots.jsonl` (3,980 scheduled search slots), `cmu_unreleased_counts.json` (329 aggregate-only exclusions), and `wildclaw_released_pairs.jsonl` (720 released pairs). The WildClawBench export has examined scores/statuses for 180 pairs; the other 540 retain null availability, score, and status. CMU execution status and retry history remain unknown in these exports. Cleaning disposition is recorded separately and is not converted into native execution status.
+Historical stages: independent_audit.py records the original 60-grade case; extension_audit.py records three models/180 grades and statuses; zip_score_audit.py adds 120 grades with unknown exporter status. The original archive-selection wording is preserved with a dated correction in EXTENSION_PLAN.json. ZIP_EXTENSION_PLAN.json records the subsequent addition before ZIP outcomes were read. FULL_ROSTER_PLAN.json records completion of the released roster after that stage.
 
-The search slot with no released record has a null attempt ID and an aggregate-only coverage label; it is not labeled as an uninitiated attempt. `verify_accounting.py` checks ledger reconciliation and reproduces the three selected models' alternative score means from the exports.
+terminal_measurement_audit.py reads native event metadata for every released pair. check_ledger.py provides reusable consistency checks with explicit identity fields and preserves absent versus null values. Corpus-specific adapters perform extraction; verify_accounting.py checks pinned sources and reconciliation. No independent artifact regrading or paid inference is performed.
 
-The later three-model extension replaces the WildClawBench ledger with 180 examined grades/statuses and 540 unexamined pairs. The original one-model script retains its initial outputs for reproducibility; run extension_audit.py before final verification. Stop reasons are recorded for all released pairs directly from their terminal events. The verifier reads all 720 source terminal events and all 180 examined native session headers, in addition to consistency checks against generated summaries.
+## Worked analysis example
+
+An analyst who averages only Claude Fable 5 assistant-ending traces reports 67.64% over 55 runs instead of the released native mean 62.00% over 60. The pair ledger exposes last_original_role and native_score for the five omitted tool-ending runs, while score_available distinguishes a missing grade from zero. To report the source's scored population, keep all 60 recorded grades; to study assistant-ending traces, report the conditional population explicitly. This does not prove either is the right metric for every question.
+
+For a new corpus using these field names:
+
+```sh
+python check_ledger.py my_pairs.jsonl --identity model,task_id
+```
+
+The result reports valid, rows, numeric_scores, issue counts, and category cross-tabs. A passing check establishes metadata consistency, not source truth or task achievement. Use extraction and source verification appropriate to that corpus.

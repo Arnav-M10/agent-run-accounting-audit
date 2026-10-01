@@ -18,14 +18,14 @@
       "round3_incomplete": 176
     },
     "mcpbench": {
-      "attempt_mean_reward_removed_zero": 2.737692307692309,
+      "attempt_mean_reward_removed_zero": 2.7376923076923076,
       "original_attempts": 1040,
       "positive_removed_count": 55,
-      "positive_removed_reward_sum": 121.73333333333338,
+      "positive_removed_reward_sum": 121.73333333333333,
       "positive_retained": 873,
       "retained": 899,
-      "retained_mean_reward": 3.1670745272525043,
-      "retained_reward_sum": 2847.200000000001,
+      "retained_mean_reward": 3.1670745272525025,
+      "retained_reward_sum": 2847.2,
       "retained_reward_values": "continuous",
       "round1_unreleased": 84,
       "round2_truncated": 57,
@@ -164,11 +164,11 @@
         "retained_reward_sum": 17.933333333333334
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.166666666666667,
-        "known_attempt_mean_reward_removed_zero": 4.166666666666667,
+        "complete_mean_reward": 4.166666666666666,
+        "known_attempt_mean_reward_removed_zero": 4.166666666666666,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 16.666666666666668
+        "retained_reward_sum": 16.666666666666664
       },
       "Qwen3-235B": {
         "complete_mean_reward": 3.825,
@@ -201,11 +201,11 @@
         "retained_reward_sum": 6.633333333333333
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 2.2166666666666663,
-        "known_attempt_mean_reward_removed_zero": 2.2166666666666663,
+        "complete_mean_reward": 2.216666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.216666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 8.866666666666665
+        "retained_reward_sum": 8.866666666666667
       },
       "Qwen3-235B": {
         "complete_mean_reward": 2.2416666666666667,
@@ -215,11 +215,11 @@
         "retained_reward_sum": 8.966666666666667
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 1.958333333333333,
-        "known_attempt_mean_reward_removed_zero": 1.958333333333333,
+        "complete_mean_reward": 1.9583333333333333,
+        "known_attempt_mean_reward_removed_zero": 1.9583333333333333,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 7.833333333333332
+        "retained_reward_sum": 7.833333333333333
       }
     },
     "mcpbench/Call for Papers": {
@@ -231,11 +231,11 @@
         "retained_reward_sum": 5.533333333333333
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 3.325,
-        "known_attempt_mean_reward_removed_zero": 3.325,
+        "complete_mean_reward": 3.3249999999999997,
+        "known_attempt_mean_reward_removed_zero": 3.3249999999999997,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 13.3
+        "retained_reward_sum": 13.299999999999999
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 2.1166666666666667,
@@ -319,11 +319,11 @@
         "retained_reward_sum": 16.4
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 3.7583333333333333,
-        "known_attempt_mean_reward_removed_zero": 3.7583333333333333,
+        "complete_mean_reward": 3.7583333333333337,
+        "known_attempt_mean_reward_removed_zero": 3.7583333333333337,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 15.033333333333333
+        "retained_reward_sum": 15.033333333333335
       },
       "Qwen3-Next": {
         "complete_mean_reward": 3.1583333333333337,
@@ -423,25 +423,25 @@
         "retained_reward_sum": 11.566666666666663
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.691666666666667,
-        "known_attempt_mean_reward_removed_zero": 4.691666666666667,
+        "complete_mean_reward": 4.691666666666666,
+        "known_attempt_mean_reward_removed_zero": 4.691666666666666,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 18.76666666666667
+        "retained_reward_sum": 18.766666666666666
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 4.675000000000001,
-        "known_attempt_mean_reward_removed_zero": 4.675000000000001,
+        "complete_mean_reward": 4.675,
+        "known_attempt_mean_reward_removed_zero": 4.675,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 18.700000000000003
+        "retained_reward_sum": 18.7
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 5.283333333333334,
-        "known_attempt_mean_reward_removed_zero": 5.283333333333334,
+        "complete_mean_reward": 5.283333333333333,
+        "known_attempt_mean_reward_removed_zero": 5.283333333333333,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 21.133333333333336
+        "retained_reward_sum": 21.133333333333333
       }
     },
     "mcpbench/Game Trends": {
@@ -460,11 +460,11 @@
         "retained_reward_sum": 16.2
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.025,
-        "known_attempt_mean_reward_removed_zero": 4.025,
+        "complete_mean_reward": 4.0249999999999995,
+        "known_attempt_mean_reward_removed_zero": 4.0249999999999995,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 16.1
+        "retained_reward_sum": 16.099999999999998
       },
       "Qwen3-235B": {
         "complete_mean_reward": 3.291666666666667,
@@ -564,11 +564,11 @@
         "retained_reward_sum": 14.2
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 2.3166666666666664,
-        "known_attempt_mean_reward_removed_zero": 2.3166666666666664,
+        "complete_mean_reward": 2.316666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.316666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 9.266666666666666
+        "retained_reward_sum": 9.266666666666667
       },
       "Qwen3-Next": {
         "complete_mean_reward": 2.275,
@@ -580,18 +580,18 @@
     },
     "mcpbench/Google Maps+Weather Data": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 2.2750000000000004,
-        "known_attempt_mean_reward_removed_zero": 2.2750000000000004,
+        "complete_mean_reward": 2.275,
+        "known_attempt_mean_reward_removed_zero": 2.275,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 9.100000000000001
+        "retained_reward_sum": 9.1
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 3.366666666666667,
-        "known_attempt_mean_reward_removed_zero": 3.366666666666667,
+        "complete_mean_reward": 3.3666666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.3666666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 13.466666666666669
+        "retained_reward_sum": 13.466666666666667
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 3.6416666666666666,
@@ -682,11 +682,11 @@
         "retained_reward_sum": 10.133333333333333
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 2.5916666666666663,
-        "known_attempt_mean_reward_removed_zero": 2.5916666666666663,
+        "complete_mean_reward": 2.591666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.591666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 10.366666666666665
+        "retained_reward_sum": 10.366666666666667
       }
     },
     "mcpbench/Hugging Face": {
@@ -742,11 +742,11 @@
         "retained_reward_sum": 4.133333333333334
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 2.4777777777777774,
-        "known_attempt_mean_reward_removed_zero": 1.8583333333333332,
+        "complete_mean_reward": 2.477777777777778,
+        "known_attempt_mean_reward_removed_zero": 1.8583333333333334,
         "known_removed": 1,
         "retained": 3,
-        "retained_reward_sum": 7.433333333333333
+        "retained_reward_sum": 7.433333333333334
       },
       "Qwen3-235B": {
         "complete_mean_reward": 1.9833333333333332,
@@ -765,11 +765,11 @@
     },
     "mcpbench/Hugging Face+Paper Search+Wikipedia": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 2.0250000000000004,
-        "known_attempt_mean_reward_removed_zero": 2.0250000000000004,
+        "complete_mean_reward": 2.025,
+        "known_attempt_mean_reward_removed_zero": 2.025,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 8.100000000000001
+        "retained_reward_sum": 8.1
       },
       "DeepSeek-V3.2": {
         "complete_mean_reward": 1.7000000000000002,
@@ -853,11 +853,11 @@
         "retained_reward_sum": 19.333333333333332
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.675,
-        "known_attempt_mean_reward_removed_zero": 4.675,
+        "complete_mean_reward": 4.675000000000001,
+        "known_attempt_mean_reward_removed_zero": 4.675000000000001,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 18.7
+        "retained_reward_sum": 18.700000000000003
       },
       "Qwen3-235B": {
         "complete_mean_reward": 3.55,
@@ -890,11 +890,11 @@
         "retained_reward_sum": 5.366666666666667
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.058333333333333,
-        "known_attempt_mean_reward_removed_zero": 4.058333333333333,
+        "complete_mean_reward": 4.058333333333334,
+        "known_attempt_mean_reward_removed_zero": 4.058333333333334,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 16.23333333333333
+        "retained_reward_sum": 16.233333333333334
       },
       "Qwen3-235B": {
         "complete_mean_reward": 4.441666666666667,
@@ -957,11 +957,11 @@
         "retained_reward_sum": 5.3
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 5.05,
-        "known_attempt_mean_reward_removed_zero": 5.05,
+        "complete_mean_reward": 5.050000000000001,
+        "known_attempt_mean_reward_removed_zero": 5.050000000000001,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 20.2
+        "retained_reward_sum": 20.200000000000003
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 5.55,
@@ -978,11 +978,11 @@
         "retained_reward_sum": 22.03333333333333
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 5.3999999999999995,
-        "known_attempt_mean_reward_removed_zero": 5.3999999999999995,
+        "complete_mean_reward": 5.4,
+        "known_attempt_mean_reward_removed_zero": 5.4,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 21.599999999999998
+        "retained_reward_sum": 21.6
       }
     },
     "mcpbench/Metropolitan Museum+Huge Icons+Wikipedia": {
@@ -1008,11 +1008,11 @@
         "retained_reward_sum": 12.166666666666666
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 3.3499999999999996,
-        "known_attempt_mean_reward_removed_zero": 3.3499999999999996,
+        "complete_mean_reward": 3.35,
+        "known_attempt_mean_reward_removed_zero": 3.35,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 13.399999999999999
+        "retained_reward_sum": 13.4
       },
       "Qwen3-Next": {
         "complete_mean_reward": 2.8166666666666664,
@@ -1116,7 +1116,7 @@
         "known_attempt_mean_reward_removed_zero": 2.3555555555555556,
         "known_removed": 0,
         "retained": 3,
-        "retained_reward_sum": 7.066666666666667
+        "retained_reward_sum": 7.066666666666666
       },
       "Qwen3-Next": {
         "complete_mean_reward": 2.5083333333333333,
@@ -1128,11 +1128,11 @@
     },
     "mcpbench/NASA Data+Google Maps+Wikipedia": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 3.5500000000000003,
-        "known_attempt_mean_reward_removed_zero": 3.5500000000000003,
+        "complete_mean_reward": 3.55,
+        "known_attempt_mean_reward_removed_zero": 3.55,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 14.200000000000001
+        "retained_reward_sum": 14.2
       },
       "DeepSeek-V3.2": {
         "complete_mean_reward": 3.2583333333333333,
@@ -1232,11 +1232,11 @@
     },
     "mcpbench/NixOS": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 1.7500000000000002,
-        "known_attempt_mean_reward_removed_zero": 1.7500000000000002,
+        "complete_mean_reward": 1.75,
+        "known_attempt_mean_reward_removed_zero": 1.75,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 7.000000000000001
+        "retained_reward_sum": 7.0
       },
       "DeepSeek-V3.2": {
         "complete_mean_reward": 3.5583333333333336,
@@ -1246,11 +1246,11 @@
         "retained_reward_sum": 14.233333333333334
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 3.0416666666666665,
-        "known_attempt_mean_reward_removed_zero": 3.0416666666666665,
+        "complete_mean_reward": 3.041666666666667,
+        "known_attempt_mean_reward_removed_zero": 3.041666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 12.166666666666666
+        "retained_reward_sum": 12.166666666666668
       },
       "Qwen3-235B": {
         "complete_mean_reward": 2.25,
@@ -1283,11 +1283,11 @@
         "retained_reward_sum": 13.399999999999999
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 3.0833333333333335,
-        "known_attempt_mean_reward_removed_zero": 3.0833333333333335,
+        "complete_mean_reward": 3.083333333333333,
+        "known_attempt_mean_reward_removed_zero": 3.083333333333333,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 12.333333333333334
+        "retained_reward_sum": 12.333333333333332
       },
       "Qwen3-235B": {
         "complete_mean_reward": 2.875,
@@ -1313,11 +1313,11 @@
         "retained_reward_sum": 6.233333333333333
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 2.5666666666666664,
-        "known_attempt_mean_reward_removed_zero": 2.5666666666666664,
+        "complete_mean_reward": 2.566666666666667,
+        "known_attempt_mean_reward_removed_zero": 2.566666666666667,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 10.266666666666666
+        "retained_reward_sum": 10.266666666666667
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 3.2499999999999996,
@@ -1380,11 +1380,11 @@
     },
     "mcpbench/OpenAPI Explorer": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 2.658333333333333,
-        "known_attempt_mean_reward_removed_zero": 2.658333333333333,
+        "complete_mean_reward": 2.6583333333333337,
+        "known_attempt_mean_reward_removed_zero": 2.6583333333333337,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 10.633333333333333
+        "retained_reward_sum": 10.633333333333335
       },
       "DeepSeek-V3.2": {
         "complete_mean_reward": 2.8333333333333335,
@@ -1394,11 +1394,11 @@
         "retained_reward_sum": 8.5
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 3.1111111111111107,
-        "known_attempt_mean_reward_removed_zero": 3.1111111111111107,
+        "complete_mean_reward": 3.111111111111111,
+        "known_attempt_mean_reward_removed_zero": 3.111111111111111,
         "known_removed": 0,
         "retained": 3,
-        "retained_reward_sum": 9.333333333333332
+        "retained_reward_sum": 9.333333333333334
       },
       "Qwen3-235B": {
         "complete_mean_reward": 3.0083333333333333,
@@ -1512,11 +1512,11 @@
         "retained_reward_sum": 5.933333333333333
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 2.0500000000000003,
-        "known_attempt_mean_reward_removed_zero": 2.0500000000000003,
+        "complete_mean_reward": 2.05,
+        "known_attempt_mean_reward_removed_zero": 2.05,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 8.200000000000001
+        "retained_reward_sum": 8.2
       }
     },
     "mcpbench/Paper Search+Call for Papers+Wikipedia": {
@@ -1542,11 +1542,11 @@
         "retained_reward_sum": 8.466666666666667
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 2.658333333333334,
-        "known_attempt_mean_reward_removed_zero": 2.658333333333334,
+        "complete_mean_reward": 2.6583333333333337,
+        "known_attempt_mean_reward_removed_zero": 2.6583333333333337,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 10.633333333333336
+        "retained_reward_sum": 10.633333333333335
       },
       "Qwen3-Next": {
         "complete_mean_reward": 2.158333333333333,
@@ -1565,11 +1565,11 @@
         "retained_reward_sum": 6.2666666666666675
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 4.225,
-        "known_attempt_mean_reward_removed_zero": 4.225,
+        "complete_mean_reward": 4.2250000000000005,
+        "known_attempt_mean_reward_removed_zero": 4.2250000000000005,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 16.9
+        "retained_reward_sum": 16.900000000000002
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 2.933333333333333,
@@ -1616,11 +1616,11 @@
         "retained_reward_sum": 2.3000000000000003
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 2.641666666666667,
-        "known_attempt_mean_reward_removed_zero": 2.641666666666667,
+        "complete_mean_reward": 2.6416666666666666,
+        "known_attempt_mean_reward_removed_zero": 2.6416666666666666,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 10.566666666666668
+        "retained_reward_sum": 10.566666666666666
       },
       "Qwen3-Next": {
         "complete_mean_reward": 2.675,
@@ -1743,11 +1743,11 @@
     },
     "mcpbench/Scientific Computing+Unit Converter": {
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 5.049999999999999,
-        "known_attempt_mean_reward_removed_zero": 5.049999999999999,
+        "complete_mean_reward": 5.05,
+        "known_attempt_mean_reward_removed_zero": 5.05,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 20.199999999999996
+        "retained_reward_sum": 20.2
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 4.2,
@@ -1773,11 +1773,11 @@
     },
     "mcpbench/Time MCP": {
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 5.208333333333332,
-        "known_attempt_mean_reward_removed_zero": 5.208333333333332,
+        "complete_mean_reward": 5.208333333333333,
+        "known_attempt_mean_reward_removed_zero": 5.208333333333333,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 20.83333333333333
+        "retained_reward_sum": 20.833333333333332
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 4.133333333333333,
@@ -1787,18 +1787,18 @@
         "retained_reward_sum": 16.53333333333333
       },
       "Qwen3-235B": {
-        "complete_mean_reward": 5.358333333333333,
-        "known_attempt_mean_reward_removed_zero": 5.358333333333333,
+        "complete_mean_reward": 5.358333333333334,
+        "known_attempt_mean_reward_removed_zero": 5.358333333333334,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 21.433333333333334
+        "retained_reward_sum": 21.433333333333337
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 2.2750000000000004,
-        "known_attempt_mean_reward_removed_zero": 2.2750000000000004,
+        "complete_mean_reward": 2.275,
+        "known_attempt_mean_reward_removed_zero": 2.275,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 9.100000000000001
+        "retained_reward_sum": 9.1
       }
     },
     "mcpbench/Unit Converter": {
@@ -1854,11 +1854,11 @@
         "retained_reward_sum": 16.833333333333336
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 4.077777777777778,
-        "known_attempt_mean_reward_removed_zero": 3.0583333333333336,
+        "complete_mean_reward": 4.0777777777777775,
+        "known_attempt_mean_reward_removed_zero": 3.058333333333333,
         "known_removed": 1,
         "retained": 3,
-        "retained_reward_sum": 12.233333333333334
+        "retained_reward_sum": 12.233333333333333
       },
       "Qwen3-235B": {
         "complete_mean_reward": 3.725,
@@ -1868,11 +1868,11 @@
         "retained_reward_sum": 14.9
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 1.5999999999999999,
-        "known_attempt_mean_reward_removed_zero": 1.5999999999999999,
+        "complete_mean_reward": 1.6,
+        "known_attempt_mean_reward_removed_zero": 1.6,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 6.3999999999999995
+        "retained_reward_sum": 6.4
       }
     },
     "mcpbench/Weather Data": {
@@ -1884,11 +1884,11 @@
         "retained_reward_sum": 14.433333333333334
       },
       "DeepSeek-V3.2": {
-        "complete_mean_reward": 2.475,
-        "known_attempt_mean_reward_removed_zero": 2.475,
+        "complete_mean_reward": 2.4749999999999996,
+        "known_attempt_mean_reward_removed_zero": 2.4749999999999996,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 9.9
+        "retained_reward_sum": 9.899999999999999
       },
       "Gemini-2.5-Flash": {
         "complete_mean_reward": 4.191666666666666,
@@ -1914,11 +1914,11 @@
     },
     "mcpbench/Wikipedia": {
       "DeepSeek-R1": {
-        "complete_mean_reward": 1.466666666666667,
-        "known_attempt_mean_reward_removed_zero": 1.466666666666667,
+        "complete_mean_reward": 1.4666666666666668,
+        "known_attempt_mean_reward_removed_zero": 1.4666666666666668,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 5.866666666666668
+        "retained_reward_sum": 5.866666666666667
       },
       "DeepSeek-V3.2": {
         "complete_mean_reward": 1.9500000000000002,
@@ -1979,11 +1979,11 @@
         "retained_reward_sum": 10.5
       },
       "Qwen3-Next": {
-        "complete_mean_reward": 1.65,
-        "known_attempt_mean_reward_removed_zero": 1.65,
+        "complete_mean_reward": 1.6500000000000001,
+        "known_attempt_mean_reward_removed_zero": 1.6500000000000001,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 6.6
+        "retained_reward_sum": 6.6000000000000005
       }
     },
     "mcpbench/Wikipedia+Paper Search": {
@@ -2002,11 +2002,11 @@
         "retained_reward_sum": 7.333333333333334
       },
       "Gemini-2.5-Flash": {
-        "complete_mean_reward": 1.4833333333333334,
-        "known_attempt_mean_reward_removed_zero": 1.4833333333333334,
+        "complete_mean_reward": 1.4833333333333332,
+        "known_attempt_mean_reward_removed_zero": 1.4833333333333332,
         "known_removed": 0,
         "retained": 4,
-        "retained_reward_sum": 5.933333333333334
+        "retained_reward_sum": 5.933333333333333
       },
       "Qwen3-235B": {
         "complete_mean_reward": 1.9333333333333331,
@@ -3079,7 +3079,7 @@
       }
     },
     "mcpbench": {
-      "complete_case_best_of_four_mean": 4.063350785340313,
+      "complete_case_best_of_four_mean": 4.063350785340314,
       "four_known_pass_groups": 219,
       "four_retained_pass_groups": 191,
       "known_model_task_groups": 253,
@@ -3089,7 +3089,7 @@
         "3": 19,
         "4": 219
       },
-      "observed_groups_best_available_mean": 3.808563899868246,
+      "observed_groups_best_available_mean": 3.808563899868248,
       "retained_pass_histogram": {
         "0": 2,
         "1": 14,
@@ -3234,47 +3234,47 @@
         "known_removed": 13,
         "positive_removed_count": 12,
         "retained": 146,
-        "retained_reward_mean": 2.5392694063926946,
+        "retained_reward_mean": 2.539269406392694,
         "round2_truncated": 13,
         "round3_incomplete": 0
       },
       "DeepSeek-V3.2": {
         "known_attempt_completion": 0.8669950738916257,
-        "known_attempt_reward_mean_removed_zero": 3.0054187192118196,
+        "known_attempt_reward_mean_removed_zero": 3.0054187192118227,
         "known_removed": 27,
         "positive_removed_count": 26,
         "retained": 176,
-        "retained_reward_mean": 3.466477272727269,
+        "retained_reward_mean": 3.466477272727273,
         "round2_truncated": 27,
         "round3_incomplete": 0
       },
       "Gemini-2.5-Flash": {
         "known_attempt_completion": 0.9578947368421052,
-        "known_attempt_reward_mean_removed_zero": 3.425789473684208,
+        "known_attempt_reward_mean_removed_zero": 3.4257894736842105,
         "known_removed": 8,
         "positive_removed_count": 8,
         "retained": 182,
-        "retained_reward_mean": 3.576373626373624,
+        "retained_reward_mean": 3.576373626373626,
         "round2_truncated": 8,
         "round3_incomplete": 0
       },
       "Qwen3-235B": {
         "known_attempt_completion": 0.9540816326530612,
-        "known_attempt_reward_mean_removed_zero": 3.1705782312925157,
+        "known_attempt_reward_mean_removed_zero": 3.1705782312925175,
         "known_removed": 9,
         "positive_removed_count": 9,
         "retained": 187,
-        "retained_reward_mean": 3.323172905525845,
+        "retained_reward_mean": 3.323172905525847,
         "round2_truncated": 9,
         "round3_incomplete": 0
       },
       "Qwen3-Next": {
         "known_attempt_completion": 1.0,
-        "known_attempt_reward_mean_removed_zero": 2.8559294871794867,
+        "known_attempt_reward_mean_removed_zero": 2.855929487179487,
         "known_removed": 0,
         "positive_removed_count": 0,
         "retained": 208,
-        "retained_reward_mean": 2.8559294871794867,
+        "retained_reward_mean": 2.855929487179487,
         "round2_truncated": 0,
         "round3_incomplete": 0
       }

@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "revision": "d2816016a7a7b41fa6b7ba368b28ddafcb54fd93",
+  "stage": "after five-model results; before inspecting remaining seven-model grades and status headers",
+  "population": "All 12 models and all 60 shared tasks in pinned released table; no model sampled by outcomes",
+  "procedure": "Acquire all 12 raw-score archives, join all 720 grades, reproduce each available published mean, audit all 10 released session directories; preserve unknown exporter status for two ZIP models. Report all models, not only large effects.",
+  "limits": "Full released roster is not a population of all agents; inherited grades and unknown retries remain limitations."
+}
