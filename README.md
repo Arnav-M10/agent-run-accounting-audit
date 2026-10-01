@@ -42,3 +42,7 @@ EXTENSION_PLAN.json preserves the original inaccurate all-format smallest-archiv
 Exclusion-zero scoring and conditional means answer different questions. Native grades are preserved. Exporter completed is a recorded label, not independently verified clean termination. The generic checker verifies metadata consistency; corpus adapters and source checks establish joins. Neither independently regrades task achievement or recovers unknown retries or failure causes. RUN_ACCOUNTING.md gives the reporting proposal and a worked example.
 
 The historical illustrative figure is optional: install requirements-plot.txt and run python plot_results.py. It is not used in the current manuscript or required for audit reproduction.
+
+## Reuse the reporting tools
+
+check_ledger.py validates explicit metadata identities, coverage, grade ranges, and references. summarize_ledger.py requires a missing-grade policy, declares inclusion rules, and emits populations, counts, coverage, scales, and means together. SUMMARIZE_LEDGER.md gives worked commands. demo_summarize_ledger.py independently matches all 46 available model-policy means. policy_order_results.json enumerates every model pair under each filter; it does not infer general rankings or correct original scores.

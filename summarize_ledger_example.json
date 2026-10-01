@@ -1,0 +1,1522 @@
+{
+  "all": {
+    "ledger": "run_accounting/wildclaw_released_pairs.jsonl",
+    "source_record_count": 720,
+    "group_fields": [
+      "model"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Fable 5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.620045,
+        "policy_score_mean": 0.620045,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Opus 4.8 Thinking"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.647255,
+        "policy_score_mean": 0.647255,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GLM 5.2"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.54191,
+        "policy_score_mean": 0.54191,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GPT-5.6 Sol"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.671825,
+        "policy_score_mean": 0.671825,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Grok 4.5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.575075,
+        "policy_score_mean": 0.575075,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Hy3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.4969966666666667,
+        "policy_score_mean": 0.4969966666666667,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Intern-S2-Preview-397B"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.4467866666666667,
+        "policy_score_mean": 0.4467866666666667,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K2.7 Code"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.46895000000000003,
+        "policy_score_mean": 0.46895000000000003,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.5447466666666667,
+        "policy_score_mean": 0.5447466666666667,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Muse Spark 1.1"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.5535033333333333,
+        "policy_score_mean": 0.5535033333333333,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8 Max"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.5615516666666667,
+        "policy_score_mean": 0.5615516666666667,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8-27B (vLLM)"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.4801516666666667,
+        "policy_score_mean": 0.4801516666666667,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "assistant": {
+    "ledger": "run_accounting/wildclaw_released_pairs.jsonl",
+    "source_record_count": 720,
+    "group_fields": [
+      "model"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "last_original_role",
+        "operator": "eq",
+        "value": "assistant",
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Fable 5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 55,
+        "excluded_count": 5,
+        "scored_count": 55,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 55,
+        "recorded_score_mean": 0.6764127272727273,
+        "policy_score_mean": 0.6764127272727273,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Opus 4.8 Thinking"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 59,
+        "excluded_count": 1,
+        "scored_count": 59,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 59,
+        "recorded_score_mean": 0.6539033898305084,
+        "policy_score_mean": 0.6539033898305084,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GLM 5.2"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 52,
+        "excluded_count": 8,
+        "scored_count": 52,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 52,
+        "recorded_score_mean": 0.5875076923076923,
+        "policy_score_mean": 0.5875076923076923,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GPT-5.6 Sol"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.671825,
+        "policy_score_mean": 0.671825,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Grok 4.5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 55,
+        "excluded_count": 5,
+        "scored_count": 55,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 55,
+        "recorded_score_mean": 0.6273545454545455,
+        "policy_score_mean": 0.6273545454545455,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Hy3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 57,
+        "excluded_count": 3,
+        "scored_count": 57,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 57,
+        "recorded_score_mean": 0.5231543859649123,
+        "policy_score_mean": 0.5231543859649123,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Intern-S2-Preview-397B"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 51,
+        "excluded_count": 9,
+        "scored_count": 51,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 51,
+        "recorded_score_mean": 0.4853882352941176,
+        "policy_score_mean": 0.4853882352941176,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K2.7 Code"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 60,
+        "excluded_count": 0,
+        "scored_count": 60,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 60,
+        "recorded_score_mean": 0.46895000000000003,
+        "policy_score_mean": 0.46895000000000003,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 49,
+        "excluded_count": 11,
+        "scored_count": 49,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 49,
+        "recorded_score_mean": 0.6443755102040817,
+        "policy_score_mean": 0.6443755102040817,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Muse Spark 1.1"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 56,
+        "excluded_count": 4,
+        "scored_count": 56,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 56,
+        "recorded_score_mean": 0.5774571428571429,
+        "policy_score_mean": 0.5774571428571429,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8 Max"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 53,
+        "excluded_count": 7,
+        "scored_count": 53,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 53,
+        "recorded_score_mean": 0.599554716981132,
+        "policy_score_mean": 0.599554716981132,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8-27B (vLLM)"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 59,
+        "excluded_count": 1,
+        "scored_count": 59,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 59,
+        "recorded_score_mean": 0.4796457627118644,
+        "policy_score_mean": 0.4796457627118644,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "native_stop": {
+    "ledger": "run_accounting/wildclaw_released_pairs.jsonl",
+    "source_record_count": 720,
+    "group_fields": [
+      "model"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "native_stop_reason",
+        "operator": "eq",
+        "value": "stop",
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Fable 5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 48,
+        "excluded_count": 12,
+        "scored_count": 48,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 48,
+        "recorded_score_mean": 0.72895625,
+        "policy_score_mean": 0.72895625,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Opus 4.8 Thinking"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 53,
+        "excluded_count": 7,
+        "scored_count": 53,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 53,
+        "recorded_score_mean": 0.6880566037735849,
+        "policy_score_mean": 0.6880566037735849,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GLM 5.2"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 45,
+        "excluded_count": 15,
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.6594155555555555,
+        "policy_score_mean": 0.6594155555555555,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GPT-5.6 Sol"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 59,
+        "excluded_count": 1,
+        "scored_count": 59,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 59,
+        "recorded_score_mean": 0.6832118644067796,
+        "policy_score_mean": 0.6832118644067796,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Grok 4.5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 51,
+        "excluded_count": 9,
+        "scored_count": 51,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 51,
+        "recorded_score_mean": 0.6634862745098039,
+        "policy_score_mean": 0.6634862745098039,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Hy3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 51,
+        "excluded_count": 9,
+        "scored_count": 51,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 51,
+        "recorded_score_mean": 0.5536568627450981,
+        "policy_score_mean": 0.5536568627450981,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Intern-S2-Preview-397B"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 42,
+        "excluded_count": 18,
+        "scored_count": 42,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 42,
+        "recorded_score_mean": 0.5719238095238095,
+        "policy_score_mean": 0.5719238095238095,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K2.7 Code"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 25,
+        "excluded_count": 35,
+        "scored_count": 25,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 25,
+        "recorded_score_mean": 0.672812,
+        "policy_score_mean": 0.672812,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 44,
+        "excluded_count": 16,
+        "scored_count": 44,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 44,
+        "recorded_score_mean": 0.6996454545454546,
+        "policy_score_mean": 0.6996454545454546,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Muse Spark 1.1"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 46,
+        "excluded_count": 14,
+        "scored_count": 46,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 46,
+        "recorded_score_mean": 0.6759847826086957,
+        "policy_score_mean": 0.6759847826086957,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8 Max"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 42,
+        "excluded_count": 18,
+        "scored_count": 42,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 42,
+        "recorded_score_mean": 0.7228690476190477,
+        "policy_score_mean": 0.7228690476190477,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8-27B (vLLM)"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 39,
+        "excluded_count": 21,
+        "scored_count": 39,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 39,
+        "recorded_score_mean": 0.6285794871794872,
+        "policy_score_mean": 0.6285794871794872,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "exporter_completed": {
+    "ledger": "run_accounting/wildclaw_released_pairs.jsonl",
+    "source_record_count": 720,
+    "group_fields": [
+      "model"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "execution_status",
+        "operator": "eq",
+        "value": "completed",
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Fable 5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 56,
+        "excluded_count": 4,
+        "scored_count": 56,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 56,
+        "recorded_score_mean": 0.6516357142857142,
+        "policy_score_mean": 0.6516357142857142,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Claude Opus 4.8 Thinking"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 58,
+        "excluded_count": 2,
+        "scored_count": 58,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 58,
+        "recorded_score_mean": 0.6611948275862068,
+        "policy_score_mean": 0.6611948275862068,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GLM 5.2"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 57,
+        "excluded_count": 3,
+        "scored_count": 57,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 57,
+        "recorded_score_mean": 0.5603140350877193,
+        "policy_score_mean": 0.5603140350877193,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "GPT-5.6 Sol"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 59,
+        "excluded_count": 1,
+        "scored_count": 59,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 59,
+        "recorded_score_mean": 0.6832118644067796,
+        "policy_score_mean": 0.6832118644067796,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Grok 4.5"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 56,
+        "excluded_count": 4,
+        "scored_count": 56,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 56,
+        "recorded_score_mean": 0.6161517857142857,
+        "policy_score_mean": 0.6161517857142857,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Hy3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 56,
+        "excluded_count": 4,
+        "scored_count": 56,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 56,
+        "recorded_score_mean": 0.5171392857142857,
+        "policy_score_mean": 0.5171392857142857,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Intern-S2-Preview-397B"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 53,
+        "excluded_count": 7,
+        "scored_count": 53,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 53,
+        "recorded_score_mean": 0.49194716981132075,
+        "policy_score_mean": 0.49194716981132075,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K2.7 Code"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 57,
+        "excluded_count": 3,
+        "scored_count": 57,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 57,
+        "recorded_score_mean": 0.4634736842105263,
+        "policy_score_mean": 0.4634736842105263,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Kimi K3"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 58,
+        "excluded_count": 2,
+        "scored_count": 58,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 58,
+        "recorded_score_mean": 0.5549103448275863,
+        "policy_score_mean": 0.5549103448275863,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Muse Spark 1.1"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 57,
+        "excluded_count": 3,
+        "scored_count": 57,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 57,
+        "recorded_score_mean": 0.5743315789473684,
+        "policy_score_mean": 0.5743315789473684,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8 Max"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 0,
+        "excluded_count": 60,
+        "scored_count": 0,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 0,
+        "recorded_score_mean": null,
+        "policy_score_mean": null,
+        "score_coverage": null,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "model",
+            "present": true,
+            "value": "Qwen3.8-27B (vLLM)"
+          }
+        ],
+        "source_population_count": 60,
+        "population_count": 0,
+        "excluded_count": 60,
+        "scored_count": 0,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 0,
+        "recorded_score_mean": null,
+        "policy_score_mean": null,
+        "score_coverage": null,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "verification": {
+    "matched_model_policy_means": 46,
+    "exporter_status_unexamined_models": [
+      "Qwen3.8 Max",
+      "Qwen3.8-27B (vLLM)"
+    ]
+  }
+}

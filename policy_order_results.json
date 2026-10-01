@@ -1,0 +1,137 @@
+{
+  "interpretation": "Fixed released-score comparisons under different hypothetical inclusion rules; no inference of general model superiority or correction to published scoring.",
+  "policies": {
+    "assistant_mean": {
+      "models": 12,
+      "pairs": 66,
+      "reversed_pairs": 8,
+      "reversal_pairs": [
+        [
+          "Claude Fable 5",
+          "Claude Opus 4.8 Thinking"
+        ],
+        [
+          "Claude Fable 5",
+          "GPT-5.6 Sol"
+        ],
+        [
+          "GLM 5.2",
+          "Muse Spark 1.1"
+        ],
+        [
+          "Grok 4.5",
+          "Kimi K3"
+        ],
+        [
+          "Intern-S2-Preview-397B",
+          "Kimi K2.7 Code"
+        ],
+        [
+          "Intern-S2-Preview-397B",
+          "Qwen3.8-27B (vLLM)"
+        ],
+        [
+          "Kimi K3",
+          "Muse Spark 1.1"
+        ],
+        [
+          "Kimi K3",
+          "Qwen3.8 Max"
+        ]
+      ],
+      "ties": []
+    },
+    "native_stop_mean": {
+      "models": 12,
+      "pairs": 66,
+      "reversed_pairs": 17,
+      "reversal_pairs": [
+        [
+          "Claude Fable 5",
+          "Claude Opus 4.8 Thinking"
+        ],
+        [
+          "Claude Fable 5",
+          "GPT-5.6 Sol"
+        ],
+        [
+          "Claude Opus 4.8 Thinking",
+          "GPT-5.6 Sol"
+        ],
+        [
+          "Claude Opus 4.8 Thinking",
+          "Kimi K3"
+        ],
+        [
+          "Claude Opus 4.8 Thinking",
+          "Qwen3.8 Max"
+        ],
+        [
+          "GLM 5.2",
+          "Kimi K2.7 Code"
+        ],
+        [
+          "GPT-5.6 Sol",
+          "Kimi K3"
+        ],
+        [
+          "GPT-5.6 Sol",
+          "Qwen3.8 Max"
+        ],
+        [
+          "Grok 4.5",
+          "Kimi K2.7 Code"
+        ],
+        [
+          "Grok 4.5",
+          "Kimi K3"
+        ],
+        [
+          "Grok 4.5",
+          "Muse Spark 1.1"
+        ],
+        [
+          "Grok 4.5",
+          "Qwen3.8 Max"
+        ],
+        [
+          "Hy3",
+          "Intern-S2-Preview-397B"
+        ],
+        [
+          "Hy3",
+          "Kimi K2.7 Code"
+        ],
+        [
+          "Hy3",
+          "Qwen3.8-27B (vLLM)"
+        ],
+        [
+          "Kimi K2.7 Code",
+          "Qwen3.8-27B (vLLM)"
+        ],
+        [
+          "Kimi K3",
+          "Muse Spark 1.1"
+        ]
+      ],
+      "ties": []
+    },
+    "export_completed_mean": {
+      "models": 10,
+      "pairs": 45,
+      "reversed_pairs": 2,
+      "reversal_pairs": [
+        [
+          "GLM 5.2",
+          "Kimi K3"
+        ],
+        [
+          "Intern-S2-Preview-397B",
+          "Kimi K2.7 Code"
+        ]
+      ],
+      "ties": []
+    }
+  }
+}
