@@ -441,8 +441,7 @@
         {
           "fields": {
             "native_stop_reason": {
-              "present": true,
-              "value": null
+              "present": false
             }
           },
           "count": 54

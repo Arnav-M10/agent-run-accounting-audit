@@ -138,16 +138,17 @@ if (ROOT/'extension_results.json').exists():
         terminal=json.loads(row['trajectory'])[-1]
         record=exported[(row['model_name'],row['task_id'])]
         assert record['last_original_role']==terminal['role']
-        assert record['native_stop_reason']==terminal.get('stopReason')
+        assert record.get('native_stop_reason')==terminal.get('stopReason')
+        assert ('native_stop_reason' in record) == ('stopReason' in terminal)
         nonassistant += terminal['role']!='assistant'
     assert nonassistant==54
     for source in extension['runs']:
         r=exported[(source['model'],source['task_id'])]
-        assert (r['last_original_role'],r['native_stop_reason'],r['execution_status'],r['native_score']) == (source['last_role'],source['stop_reason'],source['trace_status'],source['score'])
+        assert (r['last_original_role'],r.get('native_stop_reason'),r['execution_status'],r['native_score']) == (source['last_role'],source['stop_reason'],source['trace_status'],source['score'])
     assert sum((r['last_original_role']=='assistant')!=(r['execution_status']=='completed') for r in status_scored)==33
     assert sum(r['native_score']>0 and r['last_original_role']=='toolResult' for r in status_scored)==5
     assert sum(r['native_score']>0 and r['execution_status']!='completed' for r in status_scored)==5
-    assert sum(r['execution_status']=='completed' and r['native_stop_reason'] in ('aborted','length') for r in status_scored)==10
+    assert sum(r['execution_status']=='completed' and r.get('native_stop_reason') in ('aborted','length') for r in status_scored)==10
     slugs={'Claude Fable 5':'claude_fable5','Kimi K3':'kimi_k3','GLM 5.2':'glm52'}
     for r in status_scored:
         path=ROOT/'independent_data/wildclaw/sessions'/slugs[r['model']]/(r['task_id']+'.jsonl')
@@ -160,7 +161,7 @@ assert len(zip_results['runs'])==120
 for source in zip_results['runs']:
     record=exported[(source['model'],source['task_id'])]
     assert record['native_score']==source['score'] and record['execution_status'] is None
-    assert record['last_original_role']==source['last_role'] and record['native_stop_reason']==source['stop_reason']
+    assert record['last_original_role']==source['last_role'] and record.get('native_stop_reason')==source['stop_reason']
 assert sum(r['score_available'] is None for r in wild)==(0 if (ROOT/'full_roster_results.json').exists() else 420)
 print('Verified ZIP extension: 120 recorded grades, unknown exporter status; total score coverage 300/720.')
 
@@ -171,7 +172,7 @@ if (ROOT/'full_roster_results.json').exists():
     for source in full['runs']:
         record=exported[(source['model'],source['task_id'])]
         assert record['native_score']==source['score'] and record['execution_status']==source['trace_status']
-        assert record['last_original_role']==source['last_role'] and record['native_stop_reason']==source['stop_reason']
+        assert record['last_original_role']==source['last_role'] and record.get('native_stop_reason')==source['stop_reason']
     assert sum(r['execution_status'] is not None for r in wild)==600
     for directory in (ROOT/'independent_data/wildclaw/sessions').iterdir():
         for path in directory.glob('*.jsonl'):

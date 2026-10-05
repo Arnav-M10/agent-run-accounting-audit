@@ -49,6 +49,14 @@ class LedgerTests(unittest.TestCase):
             self.report([{'model': 'a', 'native_score': 0.5, 'score_scale': [0, 1]},
                          {'model': 'a', 'native_score': 5, 'score_scale': [0, 10]}])
 
+    def test_zero_assignment_outside_scale_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self.report([{'model': 'a', 'native_score': 2, 'score_scale': [1, 5]},
+                         {'model': 'a', 'native_score': None, 'score_scale': [1, 5]}], policy='zero')
+
+        with self.assertRaises(ValueError):
+            self.report([{'model': 'a', 'native_score': None}], policy='zero')
+
     def test_rule_errors(self):
         for rule in ['status!=null', 'status>0', 'status=[1]', 'status=NaN']:
             with self.subTest(rule=rule), self.assertRaises(argparse.ArgumentTypeError):

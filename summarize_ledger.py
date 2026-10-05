@@ -94,6 +94,9 @@ def summarize(path, group_fields, rules, missing_grade, score_field='native_scor
         scores = group.pop('_scores')
         scales = group.pop('_scales')
         group['declared_scale'] = list(next(iter(scales))) if scales else None
+        unknown_count = group['null_score_count'] + group['absent_score_count']
+        if missing_grade == 'zero' and unknown_count and (group['declared_scale'] is None or not group['declared_scale'][0] <= 0 <= group['declared_scale'][1]):
+            raise ValueError('Zero assignment requires a declared scale containing zero')
         denominator = group['population_count'] if missing_grade == 'zero' else group['scored_count']
         group['mean_denominator'] = denominator
         group['recorded_score_mean'] = math.fsum(scores) / len(scores) if scores else None

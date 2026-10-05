@@ -77,8 +77,10 @@ with (ledger/'wildclaw_released_pairs.jsonl').open('w') as handle:
         terminal=json.loads(row['trajectory'])[-1]
         entry={
           'model':row['model_name'],'task_id':row['task_id'],'retention':'released',
-          'last_original_role':terminal['role'],'native_stop_reason':terminal.get('stopReason'),
+          'last_original_role':terminal['role'],
           'execution_status':r['trace_status'] if r else None,'score_available':True if r else None,
           'native_score':r['score'] if r else None,'score_scale':[0,1],'retry_of':None,'failure_attribution':None,
           'source_revision':result['revision']}
+        if 'stopReason' in terminal:
+            entry['native_stop_reason'] = terminal['stopReason']
         handle.write(json.dumps(entry,sort_keys=True)+'\n')
