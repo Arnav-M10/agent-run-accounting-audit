@@ -46,3 +46,7 @@ The historical illustrative figure is optional: install requirements-plot.txt an
 ## Reuse the reporting tools
 
 check_ledger.py validates explicit metadata identities, coverage, grade ranges, and references. summarize_ledger.py requires a missing-grade policy, declares inclusion rules, and emits populations, counts, coverage, scales, and means together. SUMMARIZE_LEDGER.md gives worked commands. demo_summarize_ledger.py independently matches all 46 available model-policy means. policy_order_results.json enumerates every model pair under each filter; it does not infer general rankings or correct original scores.
+
+## Common task support
+
+COMMON_SUPPORT.md describes an exploratory comparison of full-roster, separately selected, and shared-task score gaps. common_support_audit.py requires identical fully scored task rosters and explicit predicate equality. demo_common_support.py reports every pair under all three rules; common_support_results.json includes task IDs, counts and exact decomposition components. Five focused tests cover reversal classification, empty intersections, invalid rosters/grades/scales and typed missing-field handling. This is a descriptive support diagnostic, not a novel estimator, causal effect or corrected global ranking.

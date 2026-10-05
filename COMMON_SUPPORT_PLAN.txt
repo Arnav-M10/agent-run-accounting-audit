@@ -1,0 +1,7 @@
+2026-10-05 exploratory extension, recorded before outcome calculation.
+Analyze every available model pair for the three existing completion predicates.
+For each pair report full-task grade gap, each model's separately selected-task gap,
+and both models' grade gap on the intersection of selected task IDs.
+Decompose selected-minus-full gap into common-support-minus-full plus selected-minus-common.
+Enumerate reversals that persist, disappear, or become ties; report empty intersections.
+All model pairs/policies reported. Fixed released grades; no new inferential or causal claim.
