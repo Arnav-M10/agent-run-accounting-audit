@@ -21,6 +21,8 @@ def parse_rule(text):
         value = json.loads(literal, parse_constant=lambda x: (_ for _ in ()).throw(ValueError(x)))
     except (ValueError, json.JSONDecodeError) as exc:
         raise argparse.ArgumentTypeError('Rule value must be valid finite JSON') from exc
+    if isinstance(value, (int, float)) and not isinstance(value, bool) and not numeric(value):
+        raise argparse.ArgumentTypeError('Rule value must be finite')
     if isinstance(value, (list, dict)):
         raise argparse.ArgumentTypeError('Equality rule values must be JSON scalars')
     return field, value
@@ -82,6 +84,9 @@ def summarize(path, group_fields, rules, missing_grade, score_field='native_scor
             else:
                 group['scored_count'] += 1
                 group['_scores'].append(score)
+    for field in (score_field, scale_field):
+        if field not in observed:
+            raise ValueError(f'Reporting field {field!r} is absent from every record; declare unknown values explicitly')
     for field, _ in rules:
         if field not in observed:
             raise ValueError(f'Inclusion field {field!r} is absent from every record')

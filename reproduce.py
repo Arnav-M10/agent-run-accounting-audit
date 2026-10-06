@@ -17,3 +17,7 @@ print('All audits, reusable ledger checks, completed.')
 from demo_summarize_ledger import demonstrate
 (ROOT/'summarize_ledger_example.json').write_text(json.dumps(demonstrate(ROOT),indent=2,allow_nan=False)+'\n')
 print('Reusable reporting command matched 46 model-policy means.')
+
+from demo_cmu_reporting import demonstrate as demonstrate_cmu
+(ROOT/'cmu_reporting_example.json').write_text(json.dumps(demonstrate_cmu(ROOT),indent=2,allow_nan=False)+'\n')
+print('Unchanged reporter matched 12 CMU benchmark-population means; mixed native scales rejected.')

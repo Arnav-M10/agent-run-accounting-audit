@@ -1,0 +1,406 @@
+{
+  "retained": {
+    "ledger": "run_accounting/cmu_attempts.jsonl",
+    "source_record_count": 9769,
+    "group_fields": [
+      "benchmark"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "retention",
+        "operator": "eq",
+        "value": "retained",
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "mathhay"
+          }
+        ],
+        "source_population_count": 1500,
+        "population_count": 1324,
+        "excluded_count": 176,
+        "scored_count": 1324,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 1324,
+        "recorded_score_mean": 0.4645015105740181,
+        "policy_score_mean": 0.4645015105740181,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "mcpbench"
+          }
+        ],
+        "source_population_count": 956,
+        "population_count": 899,
+        "excluded_count": 57,
+        "scored_count": 899,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          10
+        ],
+        "mean_denominator": 899,
+        "recorded_score_mean": 3.1670745272525025,
+        "policy_score_mean": 3.1670745272525025,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "search"
+          }
+        ],
+        "source_population_count": 3979,
+        "population_count": 3270,
+        "excluded_count": 709,
+        "scored_count": 3270,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 3270,
+        "recorded_score_mean": 0.22079510703363914,
+        "policy_score_mean": 0.22079510703363914,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "swebench"
+          }
+        ],
+        "source_population_count": 897,
+        "population_count": 747,
+        "excluded_count": 150,
+        "scored_count": 747,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 747,
+        "recorded_score_mean": 0.214190093708166,
+        "policy_score_mean": 0.214190093708166,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "tau2bench"
+          }
+        ],
+        "source_population_count": 985,
+        "population_count": 984,
+        "excluded_count": 1,
+        "scored_count": 984,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 984,
+        "recorded_score_mean": 0.391260162601626,
+        "policy_score_mean": 0.391260162601626,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "terminalbench"
+          }
+        ],
+        "source_population_count": 1452,
+        "population_count": 1429,
+        "excluded_count": 23,
+        "scored_count": 1429,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 1429,
+        "recorded_score_mean": 0.19174247725682295,
+        "policy_score_mean": 0.19174247725682295,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "all_released": {
+    "ledger": "run_accounting/cmu_attempts.jsonl",
+    "source_record_count": 9769,
+    "group_fields": [
+      "benchmark"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "mathhay"
+          }
+        ],
+        "source_population_count": 1500,
+        "population_count": 1500,
+        "excluded_count": 0,
+        "scored_count": 1500,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 1500,
+        "recorded_score_mean": 0.41,
+        "policy_score_mean": 0.41,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "mcpbench"
+          }
+        ],
+        "source_population_count": 956,
+        "population_count": 956,
+        "excluded_count": 0,
+        "scored_count": 956,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          10
+        ],
+        "mean_denominator": 956,
+        "recorded_score_mean": 3.10557880055788,
+        "policy_score_mean": 3.10557880055788,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "search"
+          }
+        ],
+        "source_population_count": 3979,
+        "population_count": 3979,
+        "excluded_count": 0,
+        "scored_count": 3979,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 3979,
+        "recorded_score_mean": 0.18145262628801206,
+        "policy_score_mean": 0.18145262628801206,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "swebench"
+          }
+        ],
+        "source_population_count": 897,
+        "population_count": 897,
+        "excluded_count": 0,
+        "scored_count": 897,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 897,
+        "recorded_score_mean": 0.1850613154960981,
+        "policy_score_mean": 0.1850613154960981,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "tau2bench"
+          }
+        ],
+        "source_population_count": 985,
+        "population_count": 985,
+        "excluded_count": 0,
+        "scored_count": 985,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 985,
+        "recorded_score_mean": 0.39086294416243655,
+        "policy_score_mean": 0.39086294416243655,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "benchmark",
+            "present": true,
+            "value": "terminalbench"
+          }
+        ],
+        "source_population_count": 1452,
+        "population_count": 1452,
+        "excluded_count": 0,
+        "scored_count": 1452,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 1452,
+        "recorded_score_mean": 0.1887052341597796,
+        "policy_score_mean": 0.1887052341597796,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "pooled_native_scales": {
+    "rejected": true,
+    "reason": "Mixed [0,1] and [0,10] scales; no automatic normalization."
+  },
+  "verification": {
+    "matched_benchmark_population_means": 12,
+    "recorded_retained_population": 8653,
+    "recorded_released_population": 9769,
+    "documented_but_unreleased_exclusions": 329,
+    "interpretation": "Recorded-grade summaries on released records; documentation-only exclusions remain outside the row ledger. Not all-initiated exclusion-zero scoring."
+  }
+}

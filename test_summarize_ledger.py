@@ -30,11 +30,12 @@ class LedgerTests(unittest.TestCase):
     def test_typed_equality_and_explicit_null(self):
         rows = [{'model': 'a', 'status': None}, {'model': 'a'},
                 {'model': 'a', 'status': False}, {'model': 'a', 'status': 0}]
+        for row in rows: row.update(native_score=None, score_scale=None)
         self.assertEqual(self.report(rows, [('status', None)])[0]['population_count'], 1)
         self.assertEqual(self.report(rows, [('status', 0)])[0]['population_count'], 1)
 
     def test_group_null_and_absence_are_distinct(self):
-        groups = self.report([{'model': None}, {}])
+        groups = self.report([{'model': None, 'native_score': None, 'score_scale': None}, {'native_score': None, 'score_scale': None}])
         self.assertEqual(len(groups), 2)
         self.assertEqual({g['group'][0]['present'] for g in groups}, {True, False})
 
@@ -57,8 +58,17 @@ class LedgerTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.report([{'model': 'a', 'native_score': None}], policy='zero')
 
+    def test_unknown_score_override_cannot_silently_assign_zero(self):
+        with tempfile.TemporaryDirectory() as directory:
+            p = Path(directory) / 'ledger.jsonl'
+            p.write_text(json.dumps({'model': 'a', 'native_score': .5, 'score_scale': [0, 1]})+'\n')
+            with self.assertRaises(ValueError):
+                summarize(p, ['model'], [], 'zero', score_field='native_socre')
+            with self.assertRaises(ValueError):
+                summarize(p, ['model'], [], 'exclude', scale_field='typo_scale')
+
     def test_rule_errors(self):
-        for rule in ['status!=null', 'status>0', 'status=[1]', 'status=NaN']:
+        for rule in ['status!=null', 'status>0', 'status=[1]', 'status=NaN', 'status=1e999']:
             with self.subTest(rule=rule), self.assertRaises(argparse.ArgumentTypeError):
                 parse_rule(rule)
         with self.assertRaises(ValueError):

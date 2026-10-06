@@ -50,3 +50,7 @@ check_ledger.py validates explicit metadata identities, coverage, grade ranges, 
 ## Common task support
 
 COMMON_SUPPORT.md describes an exploratory comparison of full-roster, separately selected, and shared-task score gaps. common_support_audit.py requires identical fully scored task rosters and explicit predicate equality. demo_common_support.py reports every pair under all three rules; common_support_results.json includes task IDs, counts and exact decomposition components. Five focused tests cover reversal classification, empty intersections, invalid rosters/grades/scales and typed missing-field handling. This is a descriptive support diagnostic, not a novel estimator, causal effect or corrected global ranking.
+
+## Transfer to both corpora
+
+REPORTER_TRANSFER.md gives executable retained and all-released CMU commands. The unchanged generic reporter matches twelve CMU benchmark/population means in addition to 46 WildClawBench model/policy means. Mixed native [0,1]/[0,10] pooling is rejected. Documentation-only exclusions remain outside the released-record ledger. demo_cmu_reporting.py and cmu_reporting_example.json contain checks and full outputs. This is internal arithmetic portability, not externally validated adoption.

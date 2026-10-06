@@ -30,3 +30,5 @@ Example for Claude Fable 5 (scores on [0,1]):
 | `execution_status="completed"` | 56 | 56 | 0 | 4 | 0.651636 |
 
 Full machine-readable output is in `summarize_ledger_example.json`.
+
+The declared score and scale fields must each occur in at least one source record; wholly absent field names are rejected to catch misspelled overrides. For wholly unknown grades or scales, record explicit null values. Per-row absence remains distinct from explicit null when the field exists elsewhere. Numeric equality values must be finite, including exponent notation. CMU transfer commands and denominator limits appear in REPORTER_TRANSFER.md.
