@@ -13,12 +13,14 @@
     "tasks_per_model": 60,
     "pair_count": 66,
     "classification_counts": {
+      "undefined_separate": 0,
       "not_reversed": 58,
       "persists_on_common": 4,
       "disappears_on_common": 4,
       "tie_on_common": 0,
       "undefined_common": 0
     },
+    "undefined_separate_pairs": 0,
     "empty_intersection_pairs": 0,
     "pairs": [
       {
@@ -4819,7 +4821,17 @@
       "analyzed_models": 12,
       "restriction": "all released models"
     },
-    "common_reversal_count": 7
+    "common_reversal_count": 7,
+    "separate_reversal_absolute_margins": {
+      "full_gap": {
+        "minimum": 0.008756666666666635,
+        "maximum": 0.05178000000000005
+      },
+      "separate_gap": {
+        "minimum": 0.004587727272727271,
+        "maximum": 0.06691836734693879
+      }
+    }
   },
   "native_stop_reason": {
     "interpretation": "Recorded-grade contrasts on a fixed fully scored task roster. Common support changes the estimand; no causal attribution, general ranking, or outcome validation.",
@@ -4835,12 +4847,14 @@
     "tasks_per_model": 60,
     "pair_count": 66,
     "classification_counts": {
+      "undefined_separate": 0,
       "not_reversed": 49,
       "persists_on_common": 17,
       "disappears_on_common": 0,
       "tie_on_common": 0,
       "undefined_common": 0
     },
+    "undefined_separate_pairs": 0,
     "empty_intersection_pairs": 0,
     "pairs": [
       {
@@ -8686,7 +8700,17 @@
       "analyzed_models": 12,
       "restriction": "all released models"
     },
-    "common_reversal_count": 24
+    "common_reversal_count": 24,
+    "separate_reversal_absolute_margins": {
+      "full_gap": {
+        "minimum": 0.008756666666666635,
+        "maximum": 0.1270783333333333
+      },
+      "separate_gap": {
+        "minimum": 0.004844739366805295,
+        "maximum": 0.1191551372549019
+      }
+    }
   },
   "execution_status": {
     "interpretation": "Recorded-grade contrasts on a fixed fully scored task roster. Common support changes the estimand; no causal attribution, general ranking, or outcome validation.",
@@ -8702,12 +8726,14 @@
     "tasks_per_model": 60,
     "pair_count": 45,
     "classification_counts": {
+      "undefined_separate": 0,
       "not_reversed": 43,
       "persists_on_common": 1,
       "disappears_on_common": 1,
       "tie_on_common": 0,
       "undefined_common": 0
     },
+    "undefined_separate_pairs": 0,
     "empty_intersection_pairs": 0,
     "pairs": [
       {
@@ -12078,6 +12104,16 @@
       "analyzed_models": 10,
       "restriction": "fully exporter-status-covered models"
     },
-    "common_reversal_count": 2
+    "common_reversal_count": 2,
+    "separate_reversal_absolute_margins": {
+      "full_gap": {
+        "minimum": 0.0028366666666667095,
+        "maximum": 0.022163333333333313
+      },
+      "separate_gap": {
+        "minimum": 0.005403690260132987,
+        "maximum": 0.028473485600794435
+      }
+    }
   }
 }

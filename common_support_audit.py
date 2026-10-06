@@ -4,6 +4,7 @@ import json
 import math
 from itertools import combinations
 from pathlib import Path
+from summarize_ledger import equal, numeric
 
 EPS = 1e-12
 
@@ -20,13 +21,12 @@ def compare(rows, field, value):
         score = row.get('native_score')
         declared = row.get('score_scale')
         if (not isinstance(declared, list) or len(declared) != 2
-            or any(isinstance(x, bool) or not isinstance(x, (int, float)) or not math.isfinite(x) for x in declared)
+            or any(not numeric(x) for x in declared)
             or declared[0] >= declared[1]):
             raise ValueError('Finite increasing score scale required')
         if scale is None: scale = declared
         if declared != scale: raise ValueError('Mixed score scales')
-        if (row.get('score_available') is not True or isinstance(score, bool)
-            or not isinstance(score, (int, float)) or not math.isfinite(score)
+        if (row.get('score_available') is not True or not numeric(score)
             or not declared[0] <= score <= declared[1]):
             raise ValueError('Every supplied row requires an available in-range grade')
         group = groups.setdefault(model, {})
@@ -38,7 +38,7 @@ def compare(rows, field, value):
     if any(set(g) != tasks for g in groups.values()):
         raise ValueError('This reporter requires an identical fully scored task roster')
     # Absent fields never match; null matches only explicitly recorded null.
-    selected = {m:{t for t,r in g.items() if field in r and type(r[field]) is type(value) and r[field] == value}
+    selected = {m:{t for t,r in g.items() if field in r and equal(r[field], value)}
                 for m,g in groups.items()}
     def mean(m, ts):
         return math.fsum(groups[m][t]['native_score'] for t in sorted(ts)) / len(ts)
@@ -56,9 +56,10 @@ def compare(rows, field, value):
                'full_gap':full,'separate_gap':separate,'common_gap':matched,
                'common_task_ids':sorted(common)}
         reversed_separate = separate is not None and sign(full)*sign(separate) < 0
-        row['separate_reversal'] = reversed_separate
-        row['common_reversal'] = matched is not None and sign(full)*sign(matched) < 0
-        row['reversal_class'] = ('not_reversed' if not reversed_separate else
+        row['separate_reversal'] = reversed_separate if separate is not None else None
+        row['common_reversal'] = sign(full)*sign(matched) < 0 if matched is not None else None
+        row['reversal_class'] = ('undefined_separate' if separate is None else
+            'not_reversed' if not reversed_separate else
             'undefined_common' if matched is None else
             'tie_on_common' if sign(matched) == 0 else
             'persists_on_common' if row['common_reversal'] else 'disappears_on_common')
@@ -69,10 +70,11 @@ def compare(rows, field, value):
             assert math.isclose(row['separate_shift'], row['common_support_shift']+row['different_support_component'], abs_tol=EPS)
         pairs.append(row)
     counts={k:sum(p['reversal_class']==k for p in pairs) for k in
-            ['not_reversed','persists_on_common','disappears_on_common','tie_on_common','undefined_common']}
+            ['undefined_separate','not_reversed','persists_on_common','disappears_on_common','tie_on_common','undefined_common']}
     return {'interpretation':'Recorded-grade contrasts on a fixed fully scored task roster. Common support changes the estimand; no causal attribution, general ranking, or outcome validation.',
             'predicate':{'field':field,'value':value},'score_scale':scale,'models':len(groups),
             'tasks_per_model':len(tasks),'pair_count':len(pairs),'classification_counts':counts,
+            'undefined_separate_pairs':sum(p['separate_gap'] is None for p in pairs),
             'empty_intersection_pairs':sum(p['common_count']==0 for p in pairs),
             'pairs':pairs}
 

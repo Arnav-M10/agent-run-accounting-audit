@@ -11,6 +11,11 @@ for field,value in [('last_original_role','assistant'),('native_stop_reason','st
     result[field]=compare(subset,field,value)
     result[field]['source_coverage']={'released_models':12,'analyzed_models':result[field]['models'],
         'restriction':'fully exporter-status-covered models' if field=='execution_status' else 'all released models'}
-    result[field]['common_reversal_count']=sum(p['common_reversal'] for p in result[field]['pairs'])
+    result[field]['common_reversal_count']=sum(p['common_reversal'] is True for p in result[field]['pairs'])
+    reversed_pairs=[p for p in result[field]['pairs'] if p['separate_reversal'] is True]
+    result[field]['separate_reversal_absolute_margins']={f:{
+        'minimum':min((abs(p[f]) for p in reversed_pairs),default=None),
+        'maximum':max((abs(p[f]) for p in reversed_pairs),default=None)}
+        for f in ['full_gap','separate_gap']}
 (root/'common_support_results.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
 for k,v in result.items():print(k,v['classification_counts'],'all common reversals',v['common_reversal_count'])

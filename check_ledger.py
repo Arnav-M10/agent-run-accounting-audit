@@ -12,6 +12,13 @@ from pathlib import Path
 MISSING = object()
 
 
+def finite_numeric(value):
+    try:
+        return type(value) in (int, float) and math.isfinite(value)
+    except OverflowError:
+        return False
+
+
 def categories(rows, fields):
     counts = collections.Counter()
     for row in rows:
@@ -61,7 +68,7 @@ def check(path, identity, reference_path=None, reference_field="observed_attempt
         if available is False and has_score:
             issues.append({"line": line, "issue": "unavailable_with_score"})
         if has_score:
-            if type(score) not in (int, float) or not math.isfinite(score):
+            if not finite_numeric(score):
                 issues.append({"line": line, "issue": "invalid_score"})
                 continue
             numeric_scores += 1
@@ -69,7 +76,7 @@ def check(path, identity, reference_path=None, reference_field="observed_attempt
             if scale is None:
                 unchecked_ranges += 1
             elif (not isinstance(scale, list) or len(scale) != 2 or
-                  any(type(bound) not in (int, float) or not math.isfinite(bound) for bound in scale) or scale[0] > scale[1]):
+                  any(not finite_numeric(bound) for bound in scale) or scale[0] > scale[1]):
                 issues.append({"line": line, "issue": "invalid_score_scale"})
             elif not scale[0] <= score <= scale[1]:
                 issues.append({"line": line, "issue": "score_out_of_range"})

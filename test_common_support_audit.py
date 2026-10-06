@@ -19,6 +19,19 @@ class SupportTests(unittest.TestCase):
         rows=[row('A','1',1),row('A','2',0,False),row('B','1',1,False),row('B','2',.6)]
         p=compare(rows,'keep',True)['pairs'][0]
         self.assertIsNone(p['common_gap']); self.assertEqual(p['reversal_class'],'undefined_common')
+    def test_numeric_equality_matches_json_numbers_but_not_bools(self):
+        p=compare([row('A','1',.2,1),row('B','1',.5,1.0)],'keep',1)['pairs'][0]
+        self.assertEqual((p['selected_a_count'],p['selected_b_count']),(1,1))
+        self.assertIsNone(compare([row('A','1',.2,True),row('B','1',.5,1)],'keep',1)['pairs'][0]['separate_gap'])
+
+    def test_empty_selected_population_is_not_a_nonreversal(self):
+        result=compare([row('A','1',.2,False),row('B','1',.5,False)],'keep',True)
+        p=result['pairs'][0]
+        self.assertIsNone(p['separate_reversal']); self.assertIsNone(p['common_reversal'])
+        self.assertEqual(p['reversal_class'],'undefined_separate')
+        self.assertEqual(result['undefined_separate_pairs'],1)
+        self.assertEqual(result['classification_counts']['not_reversed'],0)
+
     def test_refuses_missing_grade_roster_scale_and_duplicates(self):
         base=[row('A','1',.5),row('B','1',.5)]
         for rows in [base+[base[0]], [base[0],row('B','2',.5)],

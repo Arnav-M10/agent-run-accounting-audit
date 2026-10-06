@@ -50,3 +50,5 @@ All recorded numeric grades had declared ranges. CMU execution status is null
 on all 9,769 rows. WildClawBench score availability is true for all 720 pairs; exporter status remains
 null for 120 pairs. The slot ledger has no grade fields, distinguished from
 explicit null fields. The checker requires no inference calls or source traces.
+
+Extreme numeric JSON values outside finite floating-point representation are reported as invalid grades or scales rather than crashing. test_check_ledger.py covers both cases.

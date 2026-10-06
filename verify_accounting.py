@@ -163,7 +163,7 @@ for source in zip_results['runs']:
     assert record['native_score']==source['score'] and record['execution_status'] is None
     assert record['last_original_role']==source['last_role'] and record.get('native_stop_reason')==source['stop_reason']
 assert sum(r['score_available'] is None for r in wild)==(0 if (ROOT/'full_roster_results.json').exists() else 420)
-print('Verified ZIP extension: 120 recorded grades, unknown exporter status; total score coverage 300/720.')
+print('Verified ZIP extension: 120 recorded grades, unknown exporter status; historical staged score coverage 300/720; final coverage is checked below.')
 
 if (ROOT/'full_roster_results.json').exists():
     full=json.loads((ROOT/'full_roster_results.json').read_text())

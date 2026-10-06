@@ -40,3 +40,15 @@ The demonstration restricts exporter-status analysis to the ten fully status-cov
 This is a descriptive diagnostic, not a new estimator or corrected leaderboard. Intersections are selected by both models' execution properties, so task matching does not recover excluded performance or remove selection bias. Some intersections contain only 20 of 60 tasks. Pair-specific intersections differ and need not yield a coherent or transitive global ranking. An intersection can introduce new reversals as well as remove existing ones; therefore all pairs are reported. No inferential intervals or causal interpretation are claimed.
 
 Related primary work: Wei-Jung Huang, *How Many Tasks Are Enough for Agent Benchmark Decisions?* (arXiv:2607.12338v1), examines preservation of pairwise conclusions under partial task sets. This audit examines recorded completion-rule selection in two released trajectory collections, with an executable support comparison; it makes no first-method claim.
+
+## Magnitudes and undefined comparisons
+
+Absolute margins for separate-support reversals, on the native [0,1] scale (shown in percentage points):
+
+| Rule | Full-roster margin range | Separately filtered margin range |
+|---|---:|---:|
+| Assistant ending | 0.88–5.18 | 0.46–6.69 |
+| Native stop | 0.88–12.71 | 0.48–11.92 |
+| Exporter completed | 0.28–2.22 | 0.54–2.85 |
+
+These enumerate fixed-release sign changes, not statistically established differences. Full precision is in common_support_results.json. Predicate equality treats JSON numbers 1 and 1.0 as equal and distinguishes booleans, matching summarize_ledger.py. If either separately selected population is empty, its gap and reversal indicator are null and its classification is undefined_separate. Empty intersections have a null common-gap/reversal indicator. Neither is counted as an observed non-reversal. None occurs in the reported three-policy released-data analysis.
