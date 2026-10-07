@@ -9,16 +9,31 @@ ROOT = Path(__file__).resolve().parent
 TOL = 1e-12
 
 
-def structure(rows, field, value):
+def structure(rows, field, value, allow_unknown_models=False):
     by_model = {}
     for row in rows:
-        by_model.setdefault(row['model'], {})[row['task_id']] = row
+        records = by_model.setdefault(row['model'], {})
+        if row['task_id'] in records:
+            raise ValueError('Duplicate model/task identity')
+        records[row['task_id']] = row
+    if not by_model:
+        raise ValueError('Empty ledger')
+    for rs in by_model.values():
+        present = [r.get(field) is not None for r in rs.values()]
+        if not any(present) and not allow_unknown_models:
+            raise ValueError('Unknown rule fields for a model')
+        if any(present) and not all(present):
+            raise ValueError('Partially unknown rule fields within a model')
     models = sorted(m for m, rs in by_model.items()
                     if all(r.get(field) is not None for r in rs.values()))
+    if len(models) < 2:
+        raise ValueError('Requires at least two rule-covered models')
     tasks = sorted(by_model[models[0]])
     if any(set(by_model[m]) != set(tasks) for m in models):
         raise ValueError('Requires identical complete task rosters')
     if any(r['score_scale'] != [0, 1] or not r['score_available']
+           or type(r['score_available']) is not bool
+           or isinstance(r['native_score'], bool)
            or not isinstance(r['native_score'], (int, float))
            or not math.isfinite(r['native_score']) or not 0 <= r['native_score'] <= 1
            for m in models for r in by_model[m].values()):
@@ -96,7 +111,7 @@ def audit(rows, draws=1999, seed=20261007):
                     if row.get('last_original_role') == 'assistant':
                         raise ValueError('Unknown stop reason on assistant ending')
                     row[field] = '__no_assistant_stop_event__'
-        models,tasks,grades,masks,categories = structure(working,field,value)
+        models,tasks,grades,masks,categories = structure(working,field,value,allow_unknown_models=(name == 'exporter'))
         original_geometry = geometry(masks,categories)
         observed = metrics(grades,masks)
         values = {key: [] for key in observed}

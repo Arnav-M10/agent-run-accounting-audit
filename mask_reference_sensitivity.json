@@ -1,0 +1,197 @@
+{
+  "interpretation": "Outcome-informed exploratory sensitivity; each omitted category changes the target task population. No confirmatory inference.",
+  "omissions": {
+    "01": {
+      "assistant": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 3.529635806401861,
+          "q05": 1.6853849710319182,
+          "median": 2.2490814498427225,
+          "q95": 2.955118167748391,
+          "draws_at_least_observed": 2
+        }
+      },
+      "native_stop": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 7.104004048707486,
+          "q05": 2.9695951830123324,
+          "median": 3.9510210494063633,
+          "q95": 5.050091873299871,
+          "draws_at_least_observed": 0
+        }
+      },
+      "exporter": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 2.1314734523655305,
+          "q05": 1.179708208036408,
+          "median": 1.5803417767767258,
+          "q95": 2.093070913758612,
+          "draws_at_least_observed": 82
+        }
+      }
+    },
+    "02": {
+      "assistant": {
+        "task_count": 48,
+        "gap_displacement": {
+          "observed": 3.293405177315932,
+          "q05": 1.3145493104191315,
+          "median": 1.8409912411397644,
+          "q95": 2.5239669128582314,
+          "draws_at_least_observed": 1
+        }
+      },
+      "native_stop": {
+        "task_count": 48,
+        "gap_displacement": {
+          "observed": 6.405855074357478,
+          "q05": 2.8353351200224997,
+          "median": 3.8353980572127755,
+          "q95": 5.034855096530832,
+          "draws_at_least_observed": 1
+        }
+      },
+      "exporter": {
+        "task_count": 48,
+        "gap_displacement": {
+          "observed": 1.998989063021231,
+          "q05": 1.1543476402429624,
+          "median": 1.5501577039798657,
+          "q95": 2.042965332402995,
+          "draws_at_least_observed": 133
+        }
+      }
+    },
+    "03": {
+      "assistant": {
+        "task_count": 54,
+        "gap_displacement": {
+          "observed": 3.135528453860607,
+          "q05": 1.5401834213214602,
+          "median": 2.048882205408732,
+          "q95": 2.688434836500027,
+          "draws_at_least_observed": 10
+        }
+      },
+      "native_stop": {
+        "task_count": 54,
+        "gap_displacement": {
+          "observed": 7.22115576178959,
+          "q05": 3.072596357650403,
+          "median": 4.049403761426469,
+          "q95": 5.178654086972682,
+          "draws_at_least_observed": 0
+        }
+      },
+      "exporter": {
+        "task_count": 54,
+        "gap_displacement": {
+          "observed": 1.9513851034103744,
+          "q05": 1.233991118196742,
+          "median": 1.6308842379195994,
+          "q95": 2.1452350287625634,
+          "draws_at_least_observed": 261
+        }
+      }
+    },
+    "04": {
+      "assistant": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 3.704420841230998,
+          "q05": 1.7345659266658373,
+          "median": 2.28214256153476,
+          "q95": 2.9706092897564087,
+          "draws_at_least_observed": 1
+        }
+      },
+      "native_stop": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 7.6125005084577015,
+          "q05": 3.3199344924075995,
+          "median": 4.337594173267,
+          "q95": 5.482199835970498,
+          "draws_at_least_observed": 0
+        }
+      },
+      "exporter": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 1.7517970249687387,
+          "q05": 1.2278677327701046,
+          "median": 1.6267586114570232,
+          "q95": 2.1123629608395524,
+          "draws_at_least_observed": 647
+        }
+      }
+    },
+    "05": {
+      "assistant": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 3.2159973212791697,
+          "q05": 1.6309425258788204,
+          "median": 2.19267581158109,
+          "q95": 2.8599106903268567,
+          "draws_at_least_observed": 11
+        }
+      },
+      "native_stop": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 7.512746903616631,
+          "q05": 3.0396804917206537,
+          "median": 4.001839331149873,
+          "q95": 5.11943703083681,
+          "draws_at_least_observed": 0
+        }
+      },
+      "exporter": {
+        "task_count": 49,
+        "gap_displacement": {
+          "observed": 1.7698376459647773,
+          "q05": 1.079909990369072,
+          "median": 1.4301517992418051,
+          "q95": 1.8604099696108785,
+          "draws_at_least_observed": 190
+        }
+      }
+    },
+    "06": {
+      "assistant": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 4.02531336490823,
+          "q05": 1.8111154925667983,
+          "median": 2.395580942945749,
+          "q95": 3.1212965786609277,
+          "draws_at_least_observed": 0
+        }
+      },
+      "native_stop": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 8.983050387313737,
+          "q05": 3.540656577318299,
+          "median": 4.745673768195144,
+          "q95": 6.2508333323879235,
+          "draws_at_least_observed": 0
+        }
+      },
+      "exporter": {
+        "task_count": 50,
+        "gap_displacement": {
+          "observed": 1.8400930945897926,
+          "q05": 1.2856008323651507,
+          "median": 1.684703695195642,
+          "q95": 2.2167643415537737,
+          "draws_at_least_observed": 616
+        }
+      }
+    }
+  }
+}

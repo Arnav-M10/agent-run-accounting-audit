@@ -1,8 +1,8 @@
 import itertools
 import random
 import unittest
-from bounded_comparison import bounds, compare
-from mask_reference_audit import geometry, permute_masks, metrics
+from bounded_comparison import bounds, compare, report_selected
+from mask_reference_audit import geometry, permute_masks, metrics, structure
 
 class ExtensionTests(unittest.TestCase):
     def test_bounds_sharp_by_exhaustive_binary_completions(self):
@@ -33,5 +33,38 @@ class ExtensionTests(unittest.TestCase):
         out=metrics([[.9,.7,.5],[.8,.6,.4],[.7,.5,.3]],[[True]*3]*3)
         self.assertEqual(out['common_reversals'],0);self.assertEqual(out['cyclic_triples'],0)
         self.assertAlmostEqual(out['mean_absolute_common_gap_displacement_points'],0)
+
+class SelectedInputTests(unittest.TestCase):
+    def test_missing_rows_and_null_grades_bound_declared_roster(self):
+        rows=[{'model':'A','task_id':'t1','score_available':True,'native_score':.9,'score_scale':[0,1]},
+              {'model':'B','task_id':'t1','score_available':False,'native_score':None,'score_scale':[0,1]}]
+        out=report_selected(rows,['t1','t2'],['A','B'])
+        self.assertEqual(out['models']['A']['known'],1)
+        self.assertEqual(out['models']['A']['upper'],.95)
+        self.assertEqual(out['models']['B']['upper'],1)
+        self.assertIsNone(out['pairs'][0]['certified_order'])
+    def test_duplicate_outside_roster_and_mixed_scale_rejected(self):
+        row={'model':'A','task_id':'t1','score_available':True,'native_score':.9,'score_scale':[0,1]}
+        for rows in [[row,row],[dict(row,task_id='t3')],[dict(row,score_scale=[0,10])]]:
+            with self.assertRaises(ValueError):report_selected(rows,['t1','t2'],['A','B'])
+    def test_reference_duplicate_and_partial_availability_rejected(self):
+        row={'model':'A','task_id':'t1','flag':True}
+        for rows in [[row,row],[row,dict(row,task_id='t2',flag=None)]]:
+            with self.assertRaises(ValueError):structure(rows,'flag',True)
+
+class StrictInputTests(unittest.TestCase):
+    def test_fractional_roster_boolean_and_nonfinite_range_rejected(self):
+        for known,total,scale in [([.5],2.5,(0,1)),([True],2,(0,1)),([.5],2,(0,float('inf')))]:
+            with self.assertRaises(ValueError):bounds(known,total,scale)
+        with self.assertRaises(ValueError):compare((.9,.1),(0,1))
+        with self.assertRaises(ValueError):compare((0,float('inf')),(0,1))
+    def test_unknown_rule_model_and_empty_ledger_rejected(self):
+        with self.assertRaises(ValueError):structure([],'flag',True)
+        with self.assertRaises(ValueError):structure([{'model':'A','task_id':'t1','flag':None}],'flag',True)
+    def test_boolean_grade_and_nonboolean_availability_rejected(self):
+        rows=[{'model':m,'task_id':'t1','flag':True,'score_scale':[0,1],'score_available':True,'native_score':.5} for m in ['A','B']]
+        for key,value in [('native_score',True),('score_available',1)]:
+            bad=[dict(r) for r in rows];bad[0][key]=value
+            with self.assertRaises(ValueError):structure(bad,'flag',True)
 
 if __name__=='__main__':unittest.main()
