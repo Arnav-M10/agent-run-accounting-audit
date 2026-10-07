@@ -3,7 +3,7 @@ import subprocess
 import sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
-for script in ('audit.py','independent_audit.py','extension_audit.py','zip_score_audit.py','terminal_measurement_audit.py','full_roster_audit.py','policy_order_audit.py','demo_common_support.py','verify_accounting.py'):
+for script in ('audit.py','independent_audit.py','extension_audit.py','zip_score_audit.py','terminal_measurement_audit.py','full_roster_audit.py','policy_order_audit.py','demo_common_support.py','coherence_audit.py','verify_accounting.py'):
     subprocess.run([sys.executable,str(ROOT/script)],cwd=ROOT,check=True)
 import json
 reports={}

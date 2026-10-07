@@ -1,0 +1,9 @@
+2026-10-06 exploratory follow-up, after prior support/reversal analyses.
+Before computing this follow-up: enumerate every triple under all three existing completion predicates.
+Check directed three-cycles using pair-specific eligible-task intersections and fixed native grades.
+Report all cycle counts, all cycles with edge task IDs and gaps, and tied/undefined edges.
+Use full-roster and separate-filter scalar orders as coherence controls.
+Also report the task intersection shared by all analyzed models and its size (no score on empty support).
+Do not optimize predicates or thresholds, claim a novel theorem, or infer judge inconsistency or statistical significance.
+A cycle, if observed, is a certificate that the observed pair-specific relations cannot be represented by one strict scalar order.
+This is descriptive fixed-release support selection, not recovered model ability or a corrected leaderboard.
