@@ -17,3 +17,18 @@ All seven cycles appear in coherence_results.json with every edge's exact gap an
 Related work: Yi Xu, Laura Ruis, Tim Rocktaschel and Robert Kirk, Investigating Non-Transitivity in LLM-as-a-Judge, arXiv:2502.14074v3 (2025), documents non-transitive judge preferences. Here pair-specific completion-conditioned populations differ while the inherited task grades remain fixed. No first-method claim is made.
 
 Run python3 coherence_audit.py to regenerate all three rules, or python3 coherence_audit.py run_accounting/wildclaw_released_pairs.jsonl --field last_original_role --value '"assistant"' for a declared predicate. The generic command does not silently restrict unknown statuses; the built-in exporter demonstration explicitly uses the ten status-covered models. Unit tests include an exact three-task cycle with empty global support, coherent identical supports and undefined edges distinct from ties.
+
+## Descriptive minimum-margin sensitivity
+
+After inspecting the cycle edges, we added fixed reporting thresholds at 0, 0.5, 1 and 2 percent of the declared score range. For these [0,1] grades they are percentage-point margins. Every edge must strictly exceed the threshold (plus the fixed numerical tolerance); a small edge removes that cycle from this profile.
+
+| Minimum edge threshold (points) | Assistant cycles | Native-stop cycles | Exporter cycles |
+|---|---:|---:|---:|
+| 0 | 4 | 3 | 0 |
+| 0.5 | 2 | 3 | 0 |
+| 1 | 2 | 0 | 0 |
+| 2 | 0 | 0 | 0 |
+
+These are illustrative descriptive thresholds added after viewing margins, not preselected equivalence margins or significance tests. Two assistant cycles contain edges above one point; none of the observed cycles contains only edges above two points. Thresholding the graph does not recover a global ability ranking, and zero three-cycles in a thresholded incomplete graph does not rule out longer cycles. The artifact releases all cycle bottlenecks and every profile count. An independent direct calculation from ledger scores confirms this table.
+
+Practical use: when publishing pairwise matched comparisons, expose task IDs/counts, margins and cycle diagnostics. If one scalar ranking is required, use one declared population shared by every scored model and report its coverage loss. A global eligible intersection is one such option; it changes the target population rather than recovering missing performance.

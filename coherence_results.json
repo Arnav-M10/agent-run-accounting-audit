@@ -12,12 +12,56 @@
       "full_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
       "separate_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
@@ -200,7 +244,8 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.003627083333333392
           },
           {
             "models": [
@@ -381,7 +426,8 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.01466938775510196
           },
           {
             "models": [
@@ -574,7 +620,8 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.002747457627118588
           },
           {
             "models": [
@@ -746,7 +793,30 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.01466938775510196
+          }
+        ],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 4
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 2
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 2
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
           }
         ],
         "undefined_edges": 0,
@@ -817,12 +887,56 @@
       "full_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
       "separate_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
@@ -953,7 +1067,8 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.006295833333333278
           },
           {
             "models": [
@@ -1073,7 +1188,8 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.006295833333333278
           },
           {
             "models": [
@@ -1195,7 +1311,30 @@
                   "06_Safety_Alignment_task_9_misinformation"
                 ]
               }
-            ]
+            ],
+            "minimum_edge_gap": 0.008495652173913015
+          }
+        ],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 3
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 3
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
           }
         ],
         "undefined_edges": 0,
@@ -1252,18 +1391,84 @@
       "full_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
       "separate_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       },
       "common_gap": {
         "cycle_count": 0,
         "cycles": [],
+        "descriptive_margin_profile": [
+          {
+            "fraction_of_score_range": 0,
+            "native_gap_threshold": 0,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.005,
+            "native_gap_threshold": 0.005,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.01,
+            "native_gap_threshold": 0.01,
+            "cycle_count": 0
+          },
+          {
+            "fraction_of_score_range": 0.02,
+            "native_gap_threshold": 0.02,
+            "cycle_count": 0
+          }
+        ],
         "undefined_edges": 0,
         "tied_edges": 0
       }

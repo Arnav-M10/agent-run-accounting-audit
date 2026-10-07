@@ -20,6 +20,15 @@ class CoherenceTests(unittest.TestCase):
         self.assertEqual([(e['winner'], e['loser']) for e in edges], [('A', 'B'), ('B', 'C'), ('C', 'A')])
         self.assertTrue(all(e['gap'] == 1 and e['common_count'] == 1 for e in edges))
 
+    def test_small_cycle_disappears_above_declared_margin(self):
+        rows = self.rows()
+        for r in rows:
+            if r['model'] == 'A' and r['task_id'] == 'ab': r['native_score'] = .003
+        result = audit(rows, 'eligible', True)['orders']['common_gap']
+        self.assertEqual(result['cycle_count'], 1)
+        self.assertEqual([p['cycle_count'] for p in result['descriptive_margin_profile']], [1, 0, 0, 0])
+        self.assertAlmostEqual(result['cycles'][0]['minimum_edge_gap'], .003)
+
     def test_identical_support_is_coherent(self):
         rows = self.rows()
         for r in rows: r['eligible'] = True; r['native_score'] = {'A': 1, 'B': .5, 'C': 0}[r['model']]

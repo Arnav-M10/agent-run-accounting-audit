@@ -43,9 +43,15 @@ def audit(rows, field, value):
                               'gap': edge(winner, loser, kind),
                               'common_count': p['common_count'],
                               'common_task_ids': p['common_task_ids']})
-            cycles.append({'models': order, 'edges': edges})
+            cycles.append({'models': order, 'edges': edges,
+                           'minimum_edge_gap': min(e['gap'] for e in edges)})
         values = [p[kind] for p in pairs.values()]
+        width = support['score_scale'][1] - support['score_scale'][0]
+        profile = [{'fraction_of_score_range': f, 'native_gap_threshold': f * width,
+                    'cycle_count': sum(c['minimum_edge_gap'] > f * width + EPS for c in cycles)}
+                   for f in (0, .005, .01, .02)]
         results[kind] = {'cycle_count': len(cycles), 'cycles': cycles,
+                         'descriptive_margin_profile': profile,
                          'undefined_edges': sum(g is None for g in values),
                          'tied_edges': sum(g is not None and abs(g) <= EPS for g in values)}
     # These contrasts subtract one scalar per model and must be acyclic.

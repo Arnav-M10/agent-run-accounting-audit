@@ -7,3 +7,5 @@ Also report the task intersection shared by all analyzed models and its size (no
 Do not optimize predicates or thresholds, claim a novel theorem, or infer judge inconsistency or statistical significance.
 A cycle, if observed, is a certificate that the observed pair-specific relations cannot be represented by one strict scalar order.
 This is descriptive fixed-release support selection, not recovered model ability or a corrected leaderboard.
+
+Follow-up on 2026-10-06, after inspecting cycle edges: report all existing cycles' minimum edge margins and a descriptive threshold profile at 0, 0.5, 1 and 2 percent of declared score range. Use strict edges above each threshold (plus the existing numerical tolerance). These thresholds are reporting examples, not prospectively selected equivalence margins, inferential tests, or operational recommendations. Keep every zero result visible. No predicate or model search is added.
