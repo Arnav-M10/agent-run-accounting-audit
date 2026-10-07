@@ -18,7 +18,7 @@ Claude Fable 5 has all-run recorded mean 62.0045% on 60 released tasks, versus 6
 
 ## Worked recovery example (synthetic)
 
-Four equally weighted tasks: A has grades 1,1 plus two unavailable grades; B has four grades 0.6. A-B lies in [-0.1,0.4]. One favorable recovered A grade above 0.4 could certify A>B; recovering zero would not. A returned count of one is possible, not guaranteed. Revealing both models' grades for one task costs two grade recoveries. Pairwise counts cannot be combined into a global recovery budget.
+Four equally weighted tasks: A has grades 1,1 plus two unavailable grades; B has four grades 0.6. A-B lies in [-0.1,0.4]. One favorable recovered A grade sufficiently above 0.4 could certify A>B; the implementation requires its gap lower bound to exceed the 1e-12 native-scale tolerance. Recovering zero would not. A returned count of one is possible, not guaranteed. Revealing both models' grades for one task costs two grade recoveries. Pairwise counts cannot be combined into a global recovery budget.
 
 ## Use
 
