@@ -30,6 +30,8 @@ python3 coherence_audit.py
 
 These validate supplied metadata and reproduce 58 adapter means, task-support comparisons and graph diagnostics. They do not check extraction fidelity or independently validate task achievement. To reproduce extraction and source hashes as well, acquire the pinned raw inputs below and run the complete pipeline.
 
+SOURCE_SAMPLE_CHECK.md documents a separate agent-assisted 35-record raw-to-ledger spot check, with zero field mismatches. Its script reconstructs sampled fields without the corpus adapters; selected identities and source hashes are preserved. This is a retained-record sample, not a full extraction or achievement validation.
+
 ## Acquire and reproduce
 
 Use Python 3.10–3.12 and install requirements.txt in a virtual environment. Install Hugging Face's hf CLI separately and use your own authenticated account after accepting CMU dataset conditions. Raw inputs require about 8.64 GB for score archives, 201 MB for sessions, plus CMU and Parquet inputs. Raw traces, archives, task outputs, and credentials are not redistributed.

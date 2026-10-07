@@ -1,0 +1,806 @@
+{
+  "cmu": [
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mathhay__DeepSeek-R1__3s3d__mathhay_3s3d_039__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "c58f2938a0754aac746708f6f6f5254061d74e1de4e75bc50e7ee97373de279c",
+      "sample_field_match": true,
+      "source_file": "mathhay.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mathhay__DeepSeek-V3.2__3s3d__mathhay_3s3d_052__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "41d29acd2f0d5087529997da800e8679ac8bbbb2e7106e1c705398f5aa7e2685",
+      "sample_field_match": true,
+      "source_file": "mathhay.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_060__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "d8f2499f6dde66d58385ab1bee8d5fcd2260919f4b5a68fc3dfc3b5e1139acda",
+      "sample_field_match": true,
+      "source_file": "mathhay.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_018__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "43e206b5e1aa6b0dab157eaa2d805185041bca891a768bf3962e824107c38ed2",
+      "sample_field_match": true,
+      "source_file": "mathhay.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mathhay__Qwen3-Next__3s3d__mathhay_3s3d_055__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "fd3e9aaf54777d9a9a4e779bd32b887f0cb83d77c1a031f4bf86d2d2c1f406b1",
+      "sample_field_match": true,
+      "source_file": "mathhay.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mcpbench__Qwen3-235B__Medical Calculator+Wikipedia+FruityVice__mcpbench_49__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "cdc73f2641917a9ca58c5b32301ef7ae57b4c5e65cff6a1760d9ccb9c65097fc",
+      "sample_field_match": true,
+      "source_file": "mcpbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mcpbench__Qwen3-235B__Paper Search+Call for Papers+Wikipedia__mcpbench_45__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "cbd9b19f0d9298dc21107ea35b51b56dc1ec73b63b4db2088eeaa16e0960db57",
+      "sample_field_match": true,
+      "source_file": "mcpbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mcpbench__Qwen3-Next__Math MCP__mcpbench_14__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "5a102abcb917642173d275c22bbcb9e0554cb9a7466d38121244a3cd8d59ffb1",
+      "sample_field_match": true,
+      "source_file": "mcpbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mcpbench__Qwen3-Next__OpenAPI Explorer__mcpbench_0__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "f17e2afe99880a4c06629340fbd2a1ed31aadb1404a53dc4fa3080a07c5ca187",
+      "sample_field_match": true,
+      "source_file": "mcpbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "mcpbench__Qwen3-Next__FruityVice__mcpbench_10__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "af395421534f80577c579cbb334c2f28ea8d34d48de43b509e0380650c1ccdd2",
+      "sample_field_match": true,
+      "source_file": "mcpbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "search__DeepSeek-R1__webvoyager__183__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "042e9e7000ef35a312bda81dc85fe75d91017ee602b819a6ba095c57df9b7571",
+      "sample_field_match": true,
+      "source_file": "search.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "search__DeepSeek-V3.2__browsecomp__122__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "a6d61904e33cb2143d7370846773c14ccd1a62eea05fa444a6de553f21da7df4",
+      "sample_field_match": true,
+      "source_file": "search.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "search__Gemini-2.5-Flash__browsecomp__39__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "ce6718352f69e188312a01877c7803b970cf0ed888a8127699b2bf20d86f59e8",
+      "sample_field_match": true,
+      "source_file": "search.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "search__Qwen3-235B__webvoyager__150__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "9402d23ea206a7a7394875ee67a02ab81dabe6167b56dc13e6b721ecf8a29cfc",
+      "sample_field_match": true,
+      "source_file": "search.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "search__Qwen3-235B__browsecomp__69__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "396cb0745a876c12c74396abe3c870193b59384ca2781545facb0e94deafec82",
+      "sample_field_match": true,
+      "source_file": "search.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "swebench__DeepSeek-R1__django__django__django-11066__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "614a7cb6fa5da5fa95c64d697e649e8785a205dbe83a4babc955bb303f802ba8",
+      "sample_field_match": true,
+      "source_file": "swebench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "swebench__DeepSeek-R1__sympy__sympy__sympy-21847__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "64ae833d81ffa363fb780cd4ae37ec0d80454e07728184fdca9c29c2af502756",
+      "sample_field_match": true,
+      "source_file": "swebench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "swebench__DeepSeek-R1__sympy__sympy__sympy-21847__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "2e9afa2c46a451493f8536e67196f1dc6a698e92a7506faf95255620607d17a4",
+      "sample_field_match": true,
+      "source_file": "swebench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "swebench__Qwen3-235B__matplotlib__matplotlib__matplotlib-25479__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "fd7b952ccf8766351dddea96b06cc8234c2c340efc665d7249da7f616ac4a1f8",
+      "sample_field_match": true,
+      "source_file": "swebench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "swebench__Qwen3-Next__matplotlib__matplotlib__matplotlib-23412__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "bcb1cf7b97e192bd0a4e63965654d9484be914d70083f786a08d2292537b144d",
+      "sample_field_match": true,
+      "source_file": "swebench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "tau2bench__DeepSeek-R1__telecom__[mobile_data_issue]airplane_mode_on|bad_network_preference|user_abroad_roaming_enabled_off[PERSONA:Easy]__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "ea7f1227d62f0eba1ca64c81d6a5855123774912b1436d8a43c1c8126d84f028",
+      "sample_field_match": true,
+      "source_file": "tau2bench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "tau2bench__DeepSeek-V3.2__airline__13__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "f57d14ea2c9f5070cc36d84e4c005630524fa371bdb5b99783c99369f87336d9",
+      "sample_field_match": true,
+      "source_file": "tau2bench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "tau2bench__Gemini-2.5-Flash__telecom__[service_issue]airplane_mode_on|break_apn_settings|unseat_sim_card[PERSONA:None]__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "fc3eace0068bdb7e6de66739ec4fda6f74380e3a83721813c6625364163acb52",
+      "sample_field_match": true,
+      "source_file": "tau2bench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "tau2bench__Qwen3-235B__telecom__[mobile_data_issue]bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "7e7fcca040f40c3d5e5fee62ca40ebb2c0936aae46e9fc977f48bb57bde30ae8",
+      "sample_field_match": true,
+      "source_file": "tau2bench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "tau2bench__Qwen3-Next__telecom__[mobile_data_issue]bad_vpn|data_saver_mode_on|user_abroad_roaming_disabled_on[PERSONA:None]__pass1",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "7d3071894bd3a9ab805814427abb4394946ffd04aeeae44661744d1a6e7285f1",
+      "sample_field_match": true,
+      "source_file": "tau2bench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "terminalbench__DeepSeek-V3.2__debugging__conda-env-conflict-resolution__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "3f27c2a3c25de856b5c32ee444f867564c396a1f8457bd6960eacca6329cd824",
+      "sample_field_match": true,
+      "source_file": "terminalbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "terminalbench__DeepSeek-V3.2__security__extract-safely__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "c17951f674ee58f0bb113fd389ce1858316c4ab847262d984c4a5d8515e74f61",
+      "sample_field_match": true,
+      "source_file": "terminalbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "terminalbench__DeepSeek-V3.2__security__run-pdp11-code__pass2",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "62b79a202319ef23f9e62b066ca4da3a8423a68172f42572a02c2df164d33282",
+      "sample_field_match": true,
+      "source_file": "terminalbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "terminalbench__Gemini-2.5-Flash__security__crack-7z-hash__pass4",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "2b2afeb05f4597e9260a93a77913c8f6bf7615ac8f4bed3fd836ae485f4e3b7f",
+      "sample_field_match": true,
+      "source_file": "terminalbench.jsonl"
+    },
+    {
+      "fields_compared": [
+        "attempt_id",
+        "benchmark",
+        "domain",
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "pass",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "final_event_has_native_stop": false,
+      "id": "terminalbench__Qwen3-Next__system-administration__qemu-startup__pass3",
+      "native_stop_ledger_availability": "not exported",
+      "raw_line_sha256": "9d3884ba69d8527df53a41075c1fe52da2ae927f3be5eb02234216e8834353aa",
+      "sample_field_match": true,
+      "source_file": "terminalbench.jsonl"
+    }
+  ],
+  "input_hashes": {
+    "cmu_attempts.jsonl": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+    "mathhay.jsonl": "e677e4fd64d4a69f1264db377003472f2b1fcc5b2bd6c2ea965474989057229a",
+    "mcpbench.jsonl": "056d02cff3e888003c4de2a2fa05a6017adb3b7d8772ff210889cda6a33bf153",
+    "output_gpt56_sol.tar.gz": "17cbcbfd5e5f2df3f026635ba107d08104eb368a471af83881636327fb00b03c",
+    "output_intern-s2-preview-397b.tar.gz": "3b4b71090342a9bece78f8efa49f8be6024d6b94007868915b489768f38e9992",
+    "output_kimi_k3.tar.gz": "64d35ecfa0dd232aa618f1199862060a0312ad84b149b5d5a6259c965c7c6382",
+    "output_qwen3.8-27b-vllm.zip": "d5736849902f7078c426b4d7e4d281aa5d98081dd05382d58776ae2952753f5a",
+    "output_qwen3.8-max.zip": "2a27e0c725ef2751a21fc8960fceb026c0796c50c96cd7a17793458dbb8863ec",
+    "search.jsonl": "701b282d9e2e6f6ebbe9cd0996c5c36cc8c12dcb725d775aa4b48921d1de7116",
+    "swebench.jsonl": "361d3e13f0c72f743f2ffbe53960ab462b9e1027eaea0d15ec052b75fa10a24c",
+    "tau2bench.jsonl": "8a691492668a3105219113f849d0bb9e23534789b37ce45b6b780ce2d3fd083c",
+    "terminalbench.jsonl": "cd4a41777814ab53dfe2491c8567b33fdc4902fb2681e1450ef8b23ec6255860",
+    "train.parquet": "9be080beb826b4c620d0a5d2987d1a0d3be758248076dfff48807fb11fcb4c17",
+    "wildclaw_released_pairs.jsonl": "0ab9fd367448ad63f584ae71257f9387a0c22d5314cf257f30edc09d0ce37997"
+  },
+  "limitations": [
+    "Retained-record sample only; excluded/unreleased CMU records not tested.",
+    "CMU execution_status is intentionally unknown in ledger; source benchmark status fields have heterogeneous meanings and were not equated with exporter status.",
+    "ZIP exporter status is unavailable at pinned source; null checked without inferring a status.",
+    "Checks extraction on 35 selected records only; no independent grading, blind review, full pipeline validation, or whole release correctness claim."
+  ],
+  "method": "Sort source identities lexically; use one Python random.Random(20261007), sampling 5 IDs in alphabetical benchmark order, followed by 3 TAR and 2 ZIP pairs from sorted source model/task identities. Choices fixed before inspecting sampled grades or terminal events. Reconstruct fields directly from raw JSONL, parquet trajectory, score archive members, and export headers, without calling corpus adapters.",
+  "mismatches": [],
+  "seed": 20261007,
+  "selection_order": [
+    {
+      "format": "tar.gz",
+      "model": "GPT-5.6 Sol",
+      "task_id": "02_Code_Intelligence_task_9_link_a_pix_color_easy_zh"
+    },
+    {
+      "format": "tar.gz",
+      "model": "Intern-S2-Preview-397B",
+      "task_id": "02_Code_Intelligence_task_11_resume_homepage_zh"
+    },
+    {
+      "format": "tar.gz",
+      "model": "Kimi K3",
+      "task_id": "02_Code_Intelligence_task_3_jigsaw_puzzle_zh"
+    },
+    {
+      "format": "zip",
+      "model": "Qwen3.8-27B (vLLM)",
+      "task_id": "06_Safety_Alignment_task_4_authority"
+    },
+    {
+      "format": "zip",
+      "model": "Qwen3.8 Max",
+      "task_id": "04_Search_Retrieval_task_1_google_scholar_search"
+    }
+  ],
+  "summary": {
+    "cmu_benchmarks": 6,
+    "cmu_native_stop_present": 0,
+    "cmu_retained": 30,
+    "field_mismatches": 0,
+    "total_records": 35,
+    "wildclaw_pairs": 5,
+    "wildclaw_tar_pairs": 3,
+    "wildclaw_zip_pairs": 2
+  },
+  "wildclaw": [
+    {
+      "archive": "output_gpt56_sol.tar.gz",
+      "fields_compared": [
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "native_stop_reason",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "format": "tar.gz",
+      "model": "GPT-5.6 Sol",
+      "native_stop_presence_match": true,
+      "sample_field_match": true,
+      "score_json_sha256": "62e702193e6b23000f179da79ed0d210399afcb656220cf5324165b9539ecb30",
+      "score_member": "output_gpt56_sol/02_Code_Intelligence/02_Code_Intelligence_task_9_link_a_pix_color_easy_zh/gpt-5.6-sol_20260717_0840_d03153/score.json",
+      "session_header_sha256": "2032f423a96437bc975c11c2a33a703de0221ba41d79d054322b867151e86f6c",
+      "task_id": "02_Code_Intelligence_task_9_link_a_pix_color_easy_zh",
+      "trajectory_utf8_sha256": "5e4b008754354c574a63db7879dc3330340ac80c9ee6776c1b331aa4a35e12e1"
+    },
+    {
+      "archive": "output_intern-s2-preview-397b.tar.gz",
+      "fields_compared": [
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "native_stop_reason",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "format": "tar.gz",
+      "model": "Intern-S2-Preview-397B",
+      "native_stop_presence_match": true,
+      "sample_field_match": true,
+      "score_json_sha256": "f95275a5196f1551065edb85de2bd8989f26c318e6cd14703acf13bb8a763766",
+      "score_member": "intern-s2-preview-397b_openclaw_20260730_try3/openclaw/02_Code_Intelligence/02_Code_Intelligence_task_11_resume_homepage_zh/intern-s2-preview-397b_20260728_1621_54aa5a/score.json",
+      "session_header_sha256": "cc772486ba772d8b15ed843ae15071c852a4f9ec36ea2a9e8744bcf708e41b86",
+      "task_id": "02_Code_Intelligence_task_11_resume_homepage_zh",
+      "trajectory_utf8_sha256": "59c1fdef39a32e8f84eadf7d5308dcf8880031c1ac9d2ff5bf24320e19937449"
+    },
+    {
+      "archive": "output_kimi_k3.tar.gz",
+      "fields_compared": [
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "native_stop_reason",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "format": "tar.gz",
+      "model": "Kimi K3",
+      "native_stop_presence_match": true,
+      "sample_field_match": true,
+      "score_json_sha256": "d0fd04722e2590bf5b9b3ded00e144dfb811409e69658ffedaafca93ea7f67e9",
+      "score_member": "output_kimi_k3/02_Code_Intelligence/02_Code_Intelligence_task_3_jigsaw_puzzle_zh/kimi-k3_20260720_1356_219dc5/score.json",
+      "session_header_sha256": "922bd10bba98932f535d8d0c226e49ebfb7e1bead5df1d23681edab1f71f0a27",
+      "task_id": "02_Code_Intelligence_task_3_jigsaw_puzzle_zh",
+      "trajectory_utf8_sha256": "160f09f51c86d525a5a5d3b2da4d5a266e0b6db86bd5c1abf72addda390914b2"
+    },
+    {
+      "archive": "output_qwen3.8-27b-vllm.zip",
+      "fields_compared": [
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "native_stop_reason",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "format": "zip",
+      "model": "Qwen3.8-27B (vLLM)",
+      "native_stop_presence_match": true,
+      "sample_field_match": true,
+      "score_json_sha256": "122582bef3bd716d44f0ff18e3df4aad769f113aa301617deaae6039cb1d1c05",
+      "score_member": "vllm-qwen38-27b_openclaw_20260816_try3/openclaw/06_Safety_Alignment/06_Safety_Alignment_task_4_authority/vllm--Qwen3.8-27B_20260816_0900_ae2fe2/score.json",
+      "task_id": "06_Safety_Alignment_task_4_authority",
+      "trajectory_utf8_sha256": "a7f850011ec4382b73575c2523cb29a4f0925f996f631b2b913609655c104d9c"
+    },
+    {
+      "archive": "output_qwen3.8-max.zip",
+      "fields_compared": [
+        "execution_status",
+        "last_original_role",
+        "model",
+        "native_score",
+        "native_stop_reason",
+        "retention",
+        "score_available",
+        "task_id"
+      ],
+      "format": "zip",
+      "model": "Qwen3.8 Max",
+      "native_stop_presence_match": true,
+      "sample_field_match": true,
+      "score_json_sha256": "8ba3c2a24ca0ce0a1508a1a97e87ec092d9b725c74501c6dcdd93d6ab0bbfcc3",
+      "score_member": "qwen38-max-official-boyue_openclaw_20260812_final/openclaw/04_Search_Retrieval/04_Search_Retrieval_task_1_google_scholar_search/qwen3.8-max_20260812_1809_9937fe/score.json",
+      "task_id": "04_Search_Retrieval_task_1_google_scholar_search",
+      "trajectory_utf8_sha256": "753f3a21b41499ef70fd283ebd3c587b44b3f21b7bf13d24ab07105ed47a1def"
+    }
+  ]
+}
