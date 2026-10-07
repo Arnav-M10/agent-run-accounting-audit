@@ -9,3 +9,5 @@ A cycle, if observed, is a certificate that the observed pair-specific relations
 This is descriptive fixed-release support selection, not recovered model ability or a corrected leaderboard.
 
 Follow-up on 2026-10-06, after inspecting cycle edges: report all existing cycles' minimum edge margins and a descriptive threshold profile at 0, 0.5, 1 and 2 percent of declared score range. Use strict edges above each threshold (plus the existing numerical tolerance). These thresholds are reporting examples, not prospectively selected equivalence margins, inferential tests, or operational recommendations. Keep every zero result visible. No predicate or model search is added.
+
+7 October 2026: after the threshold profiles, add general directed-cycle detection and witnesses at the same thresholds. This checks whether absent triangles hide longer cycles; no new thresholds or model subsets. Report acyclicity as a graph property only.

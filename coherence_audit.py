@@ -8,6 +8,30 @@ from common_support_audit import compare, EPS
 from summarize_ledger import equal
 
 
+def directed_cycle(graph):
+    """Return one closed directed path, or None, including cycles longer than three."""
+    state, stack, position = {}, [], {}
+    def visit(node):
+        state[node] = 1
+        position[node] = len(stack)
+        stack.append(node)
+        for target in sorted(graph[node]):
+            if state.get(target, 0) == 1:
+                return stack[position[target]:] + [target]
+            if state.get(target, 0) == 0:
+                result = visit(target)
+                if result is not None: return result
+        stack.pop()
+        position.pop(node)
+        state[node] = 2
+        return None
+    for node in sorted(graph):
+        if state.get(node, 0) == 0:
+            result = visit(node)
+            if result is not None: return result
+    return None
+
+
 def audit(rows, field, value):
     support = compare(rows, field, value)  # validates identities, rosters and grades
     pairs = {(p['model_a'], p['model_b']): p for p in support['pairs']}
@@ -47,9 +71,19 @@ def audit(rows, field, value):
                            'minimum_edge_gap': min(e['gap'] for e in edges)})
         values = [p[kind] for p in pairs.values()]
         width = support['score_scale'][1] - support['score_scale'][0]
-        profile = [{'fraction_of_score_range': f, 'native_gap_threshold': f * width,
-                    'cycle_count': sum(c['minimum_edge_gap'] > f * width + EPS for c in cycles)}
-                   for f in (0, .005, .01, .02)]
+        profile = []
+        for f in (0, .005, .01, .02):
+            threshold = f * width + EPS
+            graph = {m: set() for m in models}
+            for (a, b), pair in pairs.items():
+                gap = pair[kind]
+                if gap is None: continue
+                if gap > threshold: graph[a].add(b)
+                elif gap < -threshold: graph[b].add(a)
+            witness = directed_cycle(graph)
+            profile.append({'fraction_of_score_range': f, 'native_gap_threshold': f * width,
+                            'cycle_count': sum(c['minimum_edge_gap'] > threshold for c in cycles),
+                            'is_acyclic': witness is None, 'any_cycle_witness': witness})
         results[kind] = {'cycle_count': len(cycles), 'cycles': cycles,
                          'descriptive_margin_profile': profile,
                          'undefined_edges': sum(g is None for g in values),

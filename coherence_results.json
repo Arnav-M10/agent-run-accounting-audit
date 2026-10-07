@@ -16,22 +16,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -44,22 +52,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -801,22 +817,45 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 4
+            "cycle_count": 4,
+            "is_acyclic": false,
+            "any_cycle_witness": [
+              "Intern-S2-Preview-397B",
+              "Qwen3.8-27B (vLLM)",
+              "Kimi K2.7 Code",
+              "Intern-S2-Preview-397B"
+            ]
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 2
+            "cycle_count": 2,
+            "is_acyclic": false,
+            "any_cycle_witness": [
+              "Grok 4.5",
+              "Muse Spark 1.1",
+              "Qwen3.8 Max",
+              "Grok 4.5"
+            ]
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 2
+            "cycle_count": 2,
+            "is_acyclic": false,
+            "any_cycle_witness": [
+              "Grok 4.5",
+              "Muse Spark 1.1",
+              "Qwen3.8 Max",
+              "Grok 4.5"
+            ]
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -891,22 +930,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -919,22 +966,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -1319,22 +1374,40 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 3
+            "cycle_count": 3,
+            "is_acyclic": false,
+            "any_cycle_witness": [
+              "Claude Fable 5",
+              "Claude Opus 4.8 Thinking",
+              "Kimi K2.7 Code",
+              "Claude Fable 5"
+            ]
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 3
+            "cycle_count": 3,
+            "is_acyclic": false,
+            "any_cycle_witness": [
+              "Claude Fable 5",
+              "Claude Opus 4.8 Thinking",
+              "Kimi K2.7 Code",
+              "Claude Fable 5"
+            ]
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -1395,22 +1468,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -1423,22 +1504,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,
@@ -1451,22 +1540,30 @@
           {
             "fraction_of_score_range": 0,
             "native_gap_threshold": 0,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.005,
             "native_gap_threshold": 0.005,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.01,
             "native_gap_threshold": 0.01,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           },
           {
             "fraction_of_score_range": 0.02,
             "native_gap_threshold": 0.02,
-            "cycle_count": 0
+            "cycle_count": 0,
+            "is_acyclic": true,
+            "any_cycle_witness": null
           }
         ],
         "undefined_edges": 0,

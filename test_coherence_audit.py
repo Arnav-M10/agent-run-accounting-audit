@@ -1,5 +1,5 @@
 import unittest
-from coherence_audit import audit
+from coherence_audit import audit, directed_cycle
 
 class CoherenceTests(unittest.TestCase):
     def rows(self):
@@ -28,6 +28,12 @@ class CoherenceTests(unittest.TestCase):
         self.assertEqual(result['cycle_count'], 1)
         self.assertEqual([p['cycle_count'] for p in result['descriptive_margin_profile']], [1, 0, 0, 0])
         self.assertAlmostEqual(result['cycles'][0]['minimum_edge_gap'], .003)
+
+    def test_four_cycle_without_triangles(self):
+        graph = {'A': {'B'}, 'B': {'C'}, 'C': {'D'}, 'D': {'A'}}
+        self.assertEqual(directed_cycle(graph), ['A', 'B', 'C', 'D', 'A'])
+        graph['D'] = set()
+        self.assertIsNone(directed_cycle(graph))
 
     def test_identical_support_is_coherent(self):
         rows = self.rows()
