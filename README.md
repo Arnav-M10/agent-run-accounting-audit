@@ -9,6 +9,23 @@ A local, no-inference audit of CMU agent trajectories and the complete pinned Wi
 - source_hashes.json: 624 pinned local inputs, including source documentation used to parse original-attempt counts.
 - Grade means reproduce every model's released summary. This does not independently verify task achievement or unpublished retries.
 
+## Verify the packaged ledgers first
+
+From this directory, Python's standard library is sufficient for these checks; no model inference or raw-input acquisition is needed:
+
+```sh
+python3 -m unittest discover -s . -p 'test_*.py'
+python3 check_ledger.py run_accounting/cmu_attempts.jsonl --identity attempt_id
+python3 check_ledger.py run_accounting/cmu_search_slots.jsonl --identity benchmark,domain,model,task_id,pass --reference-ledger run_accounting/cmu_attempts.jsonl
+python3 check_ledger.py run_accounting/wildclaw_released_pairs.jsonl --identity model,task_id
+python3 demo_cmu_reporting.py
+python3 demo_summarize_ledger.py
+python3 demo_common_support.py
+python3 coherence_audit.py
+```
+
+These validate supplied metadata and reproduce 58 adapter means, task-support comparisons and graph diagnostics. They do not check extraction fidelity or independently validate task achievement. To reproduce extraction and source hashes as well, acquire the pinned raw inputs below and run the complete pipeline.
+
 ## Acquire and reproduce
 
 Use Python 3.10–3.12 and install requirements.txt in a virtual environment. Install Hugging Face's hf CLI separately and use your own authenticated account after accepting CMU dataset conditions. Raw inputs require about 8.64 GB for score archives, 201 MB for sessions, plus CMU and Parquet inputs. Raw traces, archives, task outputs, and credentials are not redistributed.

@@ -7,8 +7,8 @@
     },
     "mcpbench": {
       "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
-      "preserve_released_scores_mean": 2.8547435897435913,
-      "zero_exclusions_mean": 2.737692307692309
+      "preserve_released_scores_mean": 2.8547435897435895,
+      "zero_exclusions_mean": 2.7376923076923076
     },
     "search": {
       "note": "Both assign zero to aggregate-only unreleased exclusions; saved scores do not establish verified final task achievement.",
