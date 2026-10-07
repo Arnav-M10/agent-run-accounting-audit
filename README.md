@@ -78,7 +78,7 @@ COHERENCE.md and coherence_audit.py enumerate all triples for the existing predi
 
 ## Decision reporting extensions
 
-`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 34 focused unit tests include exact bound endpoints and coverage geometry.
+`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 35 focused unit tests include exact bound endpoints and coverage geometry.
 
 The bounds command also accepts an actually incomplete selected ledger and an explicit common task/model roster: `python3 bounded_comparison.py selected.jsonl --roster roster.json --score-range 0 1`. Source grades are not needed for omitted tasks. Leave-one-category-out reference sensitivity is available via `python3 mask_reference_sensitivity.py`.
 

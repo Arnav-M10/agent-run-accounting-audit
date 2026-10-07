@@ -9,14 +9,21 @@ TOL = 1e-12
 
 
 def bounds(known, total, scale=(0, 1)):
+    if len(scale)!=2 or any(isinstance(x,bool) or not isinstance(x,(int,float)) or not math.isfinite(x) for x in scale):
+        raise ValueError('Declare two finite nonboolean score endpoints')
     low, high = scale
     if type(total) is not int or total <= 0 or total < len(known) or not all(math.isfinite(x) for x in scale) or not low < high:
         raise ValueError('Invalid roster or score range')
     if any(isinstance(x,bool) or not isinstance(x,(int,float)) or not math.isfinite(x) or not low <= x <= high for x in known):
         raise ValueError('Grade outside declared finite range')
     missing = total - len(known)
-    return ((math.fsum(known) + missing * low)/total,
-            (math.fsum(known) + missing * high)/total)
+    # Divide before summing: the mean can be finite even when a raw total overflows.
+    normalized_sum=math.fsum(x/total for x in known)
+    endpoints=(math.fsum([normalized_sum,(missing/total)*low]),
+               math.fsum([normalized_sum,(missing/total)*high]))
+    if not all(math.isfinite(x) for x in endpoints):
+        raise ValueError('Nonfinite computed bounds')
+    return endpoints
 
 
 def compare(a, b):

@@ -53,6 +53,11 @@ class SelectedInputTests(unittest.TestCase):
             with self.assertRaises(ValueError):structure(rows,'flag',True)
 
 class StrictInputTests(unittest.TestCase):
+    def test_finite_mean_despite_large_raw_totals_and_boolean_range_rejected(self):
+        self.assertEqual(bounds([],3,(0,1e308)),(0,1e308))
+        self.assertEqual(bounds([1e308,1e308,1e308],3,(0,1e308)),(1e308,1e308))
+        with self.assertRaises(ValueError):bounds([],3,(False,True))
+
     def test_alternative_blocks_preserve_observed_metrics(self):
         rows=[]
         for m in ['A','B']:
