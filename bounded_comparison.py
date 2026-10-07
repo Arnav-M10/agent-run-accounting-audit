@@ -101,8 +101,9 @@ def report_selected(rows, tasks, models, scale=(0,1)):
     pairs=[]
     for a,b in itertools.combinations(models,2):
         gap,order=compare((intervals[a]['lower'],intervals[a]['upper']),(intervals[b]['lower'],intervals[b]['upper']))
-        pairs.append({'models':[a,b],'gap_bounds':gap,'certified_order':([a,b] if order>0 else [b,a]) if order else None})
-    return {'models':intervals,'pairs':pairs,'interpretation':'Bounds on the explicitly declared roster/range; unresolved is not a tie or inferred failure.'}
+        status='certified_order' if order else 'exact_tie' if gap[0]==gap[1]==0 else 'unresolved'
+        pairs.append({'models':[a,b],'gap_bounds':gap,'status':status,'certified_order':([a,b] if order>0 else [b,a]) if order else None})
+    return {'models':intervals,'pairs':pairs,'interpretation':'Bounds on the explicitly declared roster/range; Uncertified pairs can reflect overlapping bounds or an exact zero gap; no missing grade is inferred to be a failure.'}
 
 
 if __name__=='__main__':

@@ -1,0 +1,204 @@
+{
+  "interpretation": "Actual unavailable recorded grade, not artificial masking. Preserves all released search grades including excluded-run grades. Bounds concern recorded-grade summaries, not achievement or a new all-attempt failure policy. The absent scheduled slot has no fabricated attempt ID.",
+  "scheduled_passes_per_model": 796,
+  "known_records": 3979,
+  "unavailable_slots": [
+    {
+      "benchmark": "search",
+      "coverage": "aggregate_only_removal",
+      "domain": "browsecomp",
+      "model": "DeepSeek-R1",
+      "observed_attempt_id": null,
+      "pass": 3,
+      "task_id": "44"
+    }
+  ],
+  "report": {
+    "models": {
+      "DeepSeek-R1": {
+        "lower": 0.1922110552763819,
+        "upper": 0.1934673366834171,
+        "known": 795,
+        "roster": 796
+      },
+      "DeepSeek-V3.2": {
+        "lower": 0.24246231155778894,
+        "upper": 0.24246231155778894,
+        "known": 796,
+        "roster": 796
+      },
+      "Gemini-2.5-Flash": {
+        "lower": 0.12939698492462312,
+        "upper": 0.12939698492462312,
+        "known": 796,
+        "roster": 796
+      },
+      "Qwen3-235B": {
+        "lower": 0.14321608040201006,
+        "upper": 0.14321608040201006,
+        "known": 796,
+        "roster": 796
+      },
+      "Qwen3-Next": {
+        "lower": 0.19974874371859297,
+        "upper": 0.19974874371859297,
+        "known": 796,
+        "roster": 796
+      }
+    },
+    "pairs": [
+      {
+        "models": [
+          "DeepSeek-R1",
+          "DeepSeek-V3.2"
+        ],
+        "gap_bounds": [
+          -0.05025125628140703,
+          -0.04899497487437185
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-V3.2",
+          "DeepSeek-R1"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-R1",
+          "Gemini-2.5-Flash"
+        ],
+        "gap_bounds": [
+          0.06281407035175879,
+          0.06407035175879397
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-R1",
+          "Gemini-2.5-Flash"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-R1",
+          "Qwen3-235B"
+        ],
+        "gap_bounds": [
+          0.04899497487437185,
+          0.05025125628140703
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-R1",
+          "Qwen3-235B"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-R1",
+          "Qwen3-Next"
+        ],
+        "gap_bounds": [
+          -0.00753768844221106,
+          -0.006281407035175879
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "Qwen3-Next",
+          "DeepSeek-R1"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-V3.2",
+          "Gemini-2.5-Flash"
+        ],
+        "gap_bounds": [
+          0.11306532663316582,
+          0.11306532663316582
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-V3.2",
+          "Gemini-2.5-Flash"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-V3.2",
+          "Qwen3-235B"
+        ],
+        "gap_bounds": [
+          0.09924623115577888,
+          0.09924623115577888
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-V3.2",
+          "Qwen3-235B"
+        ]
+      },
+      {
+        "models": [
+          "DeepSeek-V3.2",
+          "Qwen3-Next"
+        ],
+        "gap_bounds": [
+          0.04271356783919597,
+          0.04271356783919597
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "DeepSeek-V3.2",
+          "Qwen3-Next"
+        ]
+      },
+      {
+        "models": [
+          "Gemini-2.5-Flash",
+          "Qwen3-235B"
+        ],
+        "gap_bounds": [
+          -0.013819095477386939,
+          -0.013819095477386939
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "Qwen3-235B",
+          "Gemini-2.5-Flash"
+        ]
+      },
+      {
+        "models": [
+          "Gemini-2.5-Flash",
+          "Qwen3-Next"
+        ],
+        "gap_bounds": [
+          -0.07035175879396985,
+          -0.07035175879396985
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "Qwen3-Next",
+          "Gemini-2.5-Flash"
+        ]
+      },
+      {
+        "models": [
+          "Qwen3-235B",
+          "Qwen3-Next"
+        ],
+        "gap_bounds": [
+          -0.05653266331658291,
+          -0.05653266331658291
+        ],
+        "status": "certified_order",
+        "certified_order": [
+          "Qwen3-Next",
+          "Qwen3-235B"
+        ]
+      }
+    ],
+    "interpretation": "Bounds on the explicitly declared roster/range; Uncertified pairs can reflect overlapping bounds or an exact zero gap; no missing grade is inferred to be a failure."
+  },
+  "certified_pairs": 10
+}

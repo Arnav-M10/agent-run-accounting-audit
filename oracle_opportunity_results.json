@@ -1,0 +1,307 @@
+{
+  "interpretation": "Outcome-informed donor/thinning reference with changed population weights, not a causal decomposition or recovery of omitted outcomes.",
+  "cells": [
+    {
+      "model": "DeepSeek-R1",
+      "domain": "browsecomp",
+      "retained_pass_count": 0,
+      "incomplete_groups": 45,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 22,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.18181818181818182,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "browsecomp",
+      "retained_pass_count": 1,
+      "incomplete_groups": 23,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 22,
+      "thinned_reference_probability": 0.045454545454545456,
+      "full_donor_probability": 0.18181818181818182,
+      "actual_pass_mask_reference_probability": 0.029644268774703556
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "browsecomp",
+      "retained_pass_count": 2,
+      "incomplete_groups": 12,
+      "observed_oracle_successes": 1,
+      "complete_donor_groups": 22,
+      "thinned_reference_probability": 0.09090909090909091,
+      "full_donor_probability": 0.18181818181818182,
+      "actual_pass_mask_reference_probability": 0.12878787878787878
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "browsecomp",
+      "retained_pass_count": 3,
+      "incomplete_groups": 22,
+      "observed_oracle_successes": 1,
+      "complete_donor_groups": 22,
+      "thinned_reference_probability": 0.13636363636363635,
+      "full_donor_probability": 0.18181818181818182,
+      "actual_pass_mask_reference_probability": 0.15289256198347106
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "mind2web",
+      "retained_pass_count": 2,
+      "incomplete_groups": 2,
+      "observed_oracle_successes": 1,
+      "complete_donor_groups": 0,
+      "thinned_reference_probability": null,
+      "full_donor_probability": null,
+      "actual_pass_mask_reference_probability": null
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "mind2web",
+      "retained_pass_count": 3,
+      "incomplete_groups": 8,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 0,
+      "thinned_reference_probability": null,
+      "full_donor_probability": null,
+      "actual_pass_mask_reference_probability": null
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "webvoyager",
+      "retained_pass_count": 1,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 57,
+      "thinned_reference_probability": 0.5833333333333334,
+      "full_donor_probability": 0.8070175438596491,
+      "actual_pass_mask_reference_probability": 0.5263157894736842
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "webvoyager",
+      "retained_pass_count": 3,
+      "incomplete_groups": 7,
+      "observed_oracle_successes": 6,
+      "complete_donor_groups": 57,
+      "thinned_reference_probability": 0.7850877192982456,
+      "full_donor_probability": 0.8070175438596491,
+      "actual_pass_mask_reference_probability": 0.7719298245614035
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "browsecomp",
+      "retained_pass_count": 0,
+      "incomplete_groups": 55,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 14,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.6428571428571429,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "browsecomp",
+      "retained_pass_count": 1,
+      "incomplete_groups": 26,
+      "observed_oracle_successes": 2,
+      "complete_donor_groups": 14,
+      "thinned_reference_probability": 0.5535714285714286,
+      "full_donor_probability": 0.6428571428571429,
+      "actual_pass_mask_reference_probability": 0.554945054945055
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "browsecomp",
+      "retained_pass_count": 2,
+      "incomplete_groups": 9,
+      "observed_oracle_successes": 4,
+      "complete_donor_groups": 14,
+      "thinned_reference_probability": 0.5952380952380952,
+      "full_donor_probability": 0.6428571428571429,
+      "actual_pass_mask_reference_probability": 0.5873015873015873
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "browsecomp",
+      "retained_pass_count": 3,
+      "incomplete_groups": 20,
+      "observed_oracle_successes": 13,
+      "complete_donor_groups": 14,
+      "thinned_reference_probability": 0.625,
+      "full_donor_probability": 0.6428571428571429,
+      "actual_pass_mask_reference_probability": 0.6285714285714286
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "mind2web",
+      "retained_pass_count": 1,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 6,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.0,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "mind2web",
+      "retained_pass_count": 2,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 6,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.0,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "mind2web",
+      "retained_pass_count": 3,
+      "incomplete_groups": 2,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 6,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.0,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "webvoyager",
+      "retained_pass_count": 2,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 54,
+      "thinned_reference_probability": 0.6882716049382716,
+      "full_donor_probability": 0.8148148148148148,
+      "actual_pass_mask_reference_probability": 0.6666666666666666
+    },
+    {
+      "model": "DeepSeek-V3.2",
+      "domain": "webvoyager",
+      "retained_pass_count": 3,
+      "incomplete_groups": 10,
+      "observed_oracle_successes": 4,
+      "complete_donor_groups": 54,
+      "thinned_reference_probability": 0.7685185185185185,
+      "full_donor_probability": 0.8148148148148148,
+      "actual_pass_mask_reference_probability": 0.7481481481481481
+    },
+    {
+      "model": "Gemini-2.5-Flash",
+      "domain": "webvoyager",
+      "retained_pass_count": 0,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 64,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.546875,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "browsecomp",
+      "retained_pass_count": 2,
+      "incomplete_groups": 3,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 101,
+      "thinned_reference_probability": 0.08085808580858085,
+      "full_donor_probability": 0.1188118811881188,
+      "actual_pass_mask_reference_probability": 0.07590759075907591
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "browsecomp",
+      "retained_pass_count": 3,
+      "incomplete_groups": 20,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 101,
+      "thinned_reference_probability": 0.10148514851485149,
+      "full_donor_probability": 0.1188118811881188,
+      "actual_pass_mask_reference_probability": 0.10396039603960396
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "mind2web",
+      "retained_pass_count": 2,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 8,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.0,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "mind2web",
+      "retained_pass_count": 3,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 8,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.0,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "webvoyager",
+      "retained_pass_count": 0,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 63,
+      "thinned_reference_probability": 0.0,
+      "full_donor_probability": 0.6507936507936508,
+      "actual_pass_mask_reference_probability": 0.0
+    },
+    {
+      "model": "Qwen3-235B",
+      "domain": "webvoyager",
+      "retained_pass_count": 3,
+      "incomplete_groups": 1,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 63,
+      "thinned_reference_probability": 0.5952380952380952,
+      "full_donor_probability": 0.6507936507936508,
+      "actual_pass_mask_reference_probability": 0.5873015873015873
+    }
+  ],
+  "supported_summary": {
+    "groups": 263,
+    "observed_successes": 31,
+    "observed_probability": 0.11787072243346007,
+    "thinned_expected_successes": 54.70628311786901,
+    "thinned_probability": 0.20800868105653617,
+    "actual_pass_mask_expected_successes": 54.84882836654593,
+    "actual_pass_mask_probability": 0.2085506781997944,
+    "full_donor_expected_successes": 109.25997914249444,
+    "full_donor_probability": 0.4154371830513097,
+    "reference_opportunity_reduction_points": 20.742850199477353,
+    "remaining_observed_reference_gap_points": 9.01379586230761
+  },
+  "unsupported_cells": [
+    {
+      "model": "DeepSeek-R1",
+      "domain": "mind2web",
+      "retained_pass_count": 2,
+      "incomplete_groups": 2,
+      "observed_oracle_successes": 1,
+      "complete_donor_groups": 0,
+      "thinned_reference_probability": null,
+      "full_donor_probability": null,
+      "actual_pass_mask_reference_probability": null
+    },
+    {
+      "model": "DeepSeek-R1",
+      "domain": "mind2web",
+      "retained_pass_count": 3,
+      "incomplete_groups": 8,
+      "observed_oracle_successes": 0,
+      "complete_donor_groups": 0,
+      "thinned_reference_probability": null,
+      "full_donor_probability": null,
+      "actual_pass_mask_reference_probability": null
+    }
+  ],
+  "incomplete_groups_total": 273
+}
