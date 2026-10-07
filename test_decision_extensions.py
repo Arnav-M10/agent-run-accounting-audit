@@ -2,7 +2,7 @@ import itertools
 import random
 import unittest
 from bounded_comparison import bounds, compare, report_selected
-from mask_reference_audit import geometry, permute_masks, metrics, structure
+from mask_reference_audit import geometry, permute_masks, metrics, structure, audit
 
 class ExtensionTests(unittest.TestCase):
     def test_bounds_sharp_by_exhaustive_binary_completions(self):
@@ -53,6 +53,9 @@ class SelectedInputTests(unittest.TestCase):
             with self.assertRaises(ValueError):structure(rows,'flag',True)
 
 class StrictInputTests(unittest.TestCase):
+    def test_invalid_draw_count_rejected(self):
+        for count in [0,-1,1.5,True]:
+            with self.assertRaises(ValueError):audit([],draws=count)
     def test_fractional_roster_boolean_and_nonfinite_range_rejected(self):
         for known,total,scale in [([.5],2.5,(0,1)),([True],2,(0,1)),([.5],2,(0,float('inf')))]:
             with self.assertRaises(ValueError):bounds(known,total,scale)

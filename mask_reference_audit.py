@@ -97,6 +97,8 @@ def metrics(grades, masks):
 
 
 def audit(rows, draws=1999, seed=20261007):
+    if type(draws) is not int or draws <= 0:
+        raise ValueError('Draw count must be a positive integer')
     result = {'draws': draws, 'seed': seed, 'interpretation':
               'Exploratory within-category joint-mask reference, not a causal or confirmatory significance test.', 'rules': {}}
     for name, field, value in [('assistant','last_original_role','assistant'),
