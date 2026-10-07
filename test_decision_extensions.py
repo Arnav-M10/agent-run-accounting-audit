@@ -53,6 +53,19 @@ class SelectedInputTests(unittest.TestCase):
             with self.assertRaises(ValueError):structure(rows,'flag',True)
 
 class StrictInputTests(unittest.TestCase):
+    def test_alternative_blocks_preserve_observed_metrics(self):
+        rows=[]
+        for m in ['A','B']:
+            for i in range(4):
+                selected=(i != (0 if m=='A' else 3))
+                rows.append({'model':m,'task_id':'01_task_'+str(i),'score_available':True,'native_score':(.2*i + (.1 if m=='A' else 0)),'score_scale':[0,1],'last_original_role':'assistant' if selected else 'user','native_stop_reason':'stop' if selected else None,'execution_status':'completed' if selected else 'error'})
+        a=audit(rows,draws=2);b=audit(rows,draws=2,block_by='category_difficulty')
+        for rule in a['rules']:
+            self.assertEqual(b['rules'][rule]['category_sizes'],[4])
+            self.assertEqual(b['rules'][rule]['block_sizes'],[2,2])
+            for metric in a['rules'][rule]['metrics']:
+                self.assertEqual(a['rules'][rule]['metrics'][metric]['observed'],b['rules'][rule]['metrics'][metric]['observed'])
+
     def test_invalid_draw_count_rejected(self):
         for count in [0,-1,1.5,True]:
             with self.assertRaises(ValueError):audit([],draws=count)

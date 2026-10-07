@@ -1,7 +1,7 @@
 {
   "draws": 1999,
   "seed": 20261007,
-  "block_by": "category",
+  "block_by": "category_difficulty",
   "interpretation": "Exploratory within-category joint-mask reference, not a causal or confirmatory significance test.",
   "rules": {
     "assistant": {
@@ -29,49 +29,55 @@
         10
       ],
       "block_sizes": [
-        10,
-        12,
+        5,
+        5,
         6,
-        11,
-        11,
-        10
+        6,
+        3,
+        3,
+        5,
+        6,
+        5,
+        6,
+        5,
+        5
       ],
       "coverage_geometry_preserved_in_every_draw": true,
       "metrics": {
         "mean_absolute_common_gap_displacement_points": {
           "observed": 3.2975856118291134,
-          "q05": 1.5174689292551544,
-          "median": 2.0321987990370496,
-          "q95": 2.690219379890104,
-          "draws_at_least_observed": 1
+          "q05": 1.64751635386105,
+          "median": 2.201080956400553,
+          "q95": 2.8270943221577154,
+          "draws_at_least_observed": 10
         },
         "max_absolute_shift_points": {
           "observed": 9.962884353741497,
-          "q05": 1.8318144654088098,
-          "median": 3.2552023809523822,
-          "q95": 5.354925170068025,
-          "draws_at_least_observed": 0
+          "q05": 2.9596190476190443,
+          "median": 4.768802721088427,
+          "q95": 7.46145578231292,
+          "draws_at_least_observed": 1
         },
         "separate_reversals": {
           "observed": 8,
-          "q05": 1,
-          "median": 4,
-          "q95": 7,
-          "draws_at_least_observed": 95
+          "q05": 2,
+          "median": 5,
+          "q95": 9,
+          "draws_at_least_observed": 241
         },
         "common_reversals": {
           "observed": 7,
           "q05": 2,
           "median": 5,
           "q95": 8,
-          "draws_at_least_observed": 331
+          "draws_at_least_observed": 407
         },
         "cyclic_triples": {
           "observed": 4,
           "q05": 0,
           "median": 1,
           "q95": 4,
-          "draws_at_least_observed": 170
+          "draws_at_least_observed": 205
         }
       }
     },
@@ -100,49 +106,55 @@
         10
       ],
       "block_sizes": [
-        10,
-        12,
+        5,
+        5,
         6,
-        11,
-        11,
-        10
+        6,
+        3,
+        3,
+        5,
+        6,
+        5,
+        6,
+        5,
+        5
       ],
       "coverage_geometry_preserved_in_every_draw": true,
       "metrics": {
         "mean_absolute_common_gap_displacement_points": {
           "observed": 7.173379228508713,
-          "q05": 2.939378968566871,
-          "median": 3.8117360060190144,
-          "q95": 4.92262823590103,
+          "q05": 3.382865719807239,
+          "median": 4.285090195756978,
+          "q95": 5.345512574799837,
           "draws_at_least_observed": 0
         },
         "max_absolute_shift_points": {
           "observed": 20.38619999999999,
-          "q05": 3.8254047619047604,
-          "median": 6.612690476190474,
-          "q95": 11.196884615384612,
-          "draws_at_least_observed": 0
+          "q05": 8.233807692307687,
+          "median": 11.032199999999998,
+          "q95": 14.7974,
+          "draws_at_least_observed": 2
         },
         "separate_reversals": {
           "observed": 17,
-          "q05": 3,
-          "median": 7,
-          "q95": 13,
-          "draws_at_least_observed": 18
+          "q05": 6,
+          "median": 10,
+          "q95": 15,
+          "draws_at_least_observed": 39
         },
         "common_reversals": {
           "observed": 24,
           "q05": 5,
-          "median": 9,
-          "q95": 14,
+          "median": 10,
+          "q95": 15,
           "draws_at_least_observed": 0
         },
         "cyclic_triples": {
           "observed": 3,
           "q05": 0,
-          "median": 2,
-          "q95": 9,
-          "draws_at_least_observed": 898
+          "median": 3,
+          "q95": 12,
+          "draws_at_least_observed": 1191
         }
       }
     },
@@ -169,42 +181,48 @@
         10
       ],
       "block_sizes": [
-        10,
-        12,
+        5,
+        5,
         6,
-        11,
-        11,
-        10
+        6,
+        3,
+        3,
+        5,
+        6,
+        5,
+        6,
+        5,
+        5
       ],
       "coverage_geometry_preserved_in_every_draw": true,
       "metrics": {
         "mean_absolute_common_gap_displacement_points": {
           "observed": 1.7653326928962507,
-          "q05": 1.110013499113673,
-          "median": 1.4566469676946203,
-          "q95": 1.8953983092983897,
-          "draws_at_least_observed": 243
+          "q05": 1.188895910832552,
+          "median": 1.5252115006442826,
+          "q95": 1.9503100988486513,
+          "draws_at_least_observed": 348
         },
         "max_absolute_shift_points": {
           "observed": 4.516050314465403,
-          "q05": 1.3858505747126326,
-          "median": 2.4971052631579003,
-          "q95": 4.230500000000004,
-          "draws_at_least_observed": 16
+          "q05": 1.8404035087719262,
+          "median": 2.9090833333333235,
+          "q95": 4.107678571428575,
+          "draws_at_least_observed": 11
         },
         "separate_reversals": {
           "observed": 2,
           "q05": 0,
           "median": 2,
-          "q95": 4,
-          "draws_at_least_observed": 1034
+          "q95": 3,
+          "draws_at_least_observed": 1109
         },
         "common_reversals": {
           "observed": 2,
           "q05": 0,
-          "median": 2,
-          "q95": 4,
-          "draws_at_least_observed": 1045
+          "median": 1,
+          "q95": 3,
+          "draws_at_least_observed": 877
         },
         "cyclic_triples": {
           "observed": 0,

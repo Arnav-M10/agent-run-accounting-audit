@@ -96,10 +96,12 @@ def metrics(grades, masks):
             'separate_reversals': separate, 'common_reversals': common, 'cyclic_triples': cycles}
 
 
-def audit(rows, draws=1999, seed=20261007):
+def audit(rows, draws=1999, seed=20261007, block_by="category"):
     if type(draws) is not int or draws <= 0:
         raise ValueError('Draw count must be a positive integer')
-    result = {'draws': draws, 'seed': seed, 'interpretation':
+    if block_by not in ('category','category_difficulty'):
+        raise ValueError('Unknown blocking scheme')
+    result = {'draws': draws, 'seed': seed, 'block_by': block_by, 'interpretation':
               'Exploratory within-category joint-mask reference, not a causal or confirmatory significance test.', 'rules': {}}
     for name, field, value in [('assistant','last_original_role','assistant'),
                                ('native_stop','native_stop_reason','stop'),
@@ -114,6 +116,14 @@ def audit(rows, draws=1999, seed=20261007):
                         raise ValueError('Unknown stop reason on assistant ending')
                     row[field] = '__no_assistant_stop_event__'
         models,tasks,grades,masks,categories = structure(working,field,value,allow_unknown_models=(name == 'exporter'))
+        category_sizes=[len(c) for c in categories]
+        if block_by == 'category_difficulty':
+            blocks=[]
+            for category in categories:
+                ordered=sorted(category,key=lambda i:(math.fsum(g[i] for g in grades)/len(grades),tasks[i]))
+                midpoint=len(ordered)//2
+                blocks.extend([ordered[:midpoint],ordered[midpoint:]])
+            categories=[c for c in blocks if c]
         original_geometry = geometry(masks,categories)
         observed = metrics(grades,masks)
         values = {key: [] for key in observed}
@@ -133,7 +143,7 @@ def audit(rows, draws=1999, seed=20261007):
                              'q95': ordered[math.ceil(.95*draws)-1],
                              'draws_at_least_observed': sum(v >= observed[key]-TOL for v in sample)}
         result['rules'][name] = {'models': models, 'task_count': len(tasks),
-                                'category_sizes': [len(c) for c in categories],
+                                'category_sizes': category_sizes, 'block_sizes': [len(c) for c in categories],
                                 'coverage_geometry_preserved_in_every_draw': True,
                                 'metrics': summaries}
     return result
