@@ -1,0 +1,56 @@
+{
+  "models": {
+    "A": {
+      "lower": 0.5,
+      "upper": 1.0,
+      "known": 2,
+      "roster": 4
+    },
+    "B": {
+      "lower": 0.6,
+      "upper": 0.6,
+      "known": 4,
+      "roster": 4
+    }
+  },
+  "pairs": [
+    {
+      "models": [
+        "A",
+        "B"
+      ],
+      "gap_bounds": [
+        -0.09999999999999998,
+        0.4
+      ],
+      "status": "unresolved",
+      "certified_order": null,
+      "unavailable_slots": [
+        {
+          "model": "A",
+          "task_id": "t3",
+          "maximum_interval_width_reduction": 0.25
+        },
+        {
+          "model": "A",
+          "task_id": "t4",
+          "maximum_interval_width_reduction": 0.25
+        }
+      ],
+      "unavailable_slot_count": 2,
+      "recovery_status": "strict_certification_possible",
+      "optimistic_minimum_queries": 1,
+      "optimistic_queries_for_first_over_second": 1,
+      "optimistic_queries_for_second_over_first": 2
+    }
+  ],
+  "score_range": [
+    0,
+    1
+  ],
+  "roster_size": 4,
+  "strict_tolerance": 1e-12,
+  "per_slot_maximum_interval_width_reduction": 0.25,
+  "interpretation": "Optimistic lower bound for possible strict certification under maximally favorable valid recovered grades; not a guaranteed query budget or an optimal recovery policy. Equal weights and the same declared roster apply to every model. Every unavailable slot has the same a priori interval-width leverage, so these bounds imply no unique query priority. Query counts are pairwise, not a simultaneous all-pairs budget: favorable outcomes for different pairwise claims may conflict. Null query minima mean strict certification is impossible within the declared unavailable slots and score range. No outcomes are fabricated, and unavailable scores are not failures.",
+  "example_type": "Synthetic illustration, not observed empirical data or recovered outcomes."
+}

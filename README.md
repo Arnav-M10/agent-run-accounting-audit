@@ -2,6 +2,10 @@
 
 A local, no-inference audit of CMU agent trajectories and the complete pinned WildClawBench released roster. It separates retention, scheduled slots, observed attempts, final roles, native stop reasons, exported status, and recorded grades.
 
+## Start with a reporting decision
+
+Read [EVALUATOR_DECISION_GUIDE.md](EVALUATOR_DECISION_GUIDE.md) to choose the population and report only comparisons supported by available evidence. Try the tiny disclosed synthetic recovery example with `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json`. It needs only Python's standard library. Then verify the supplied ledgers below. Raw acquisition is a separate source-extraction check.
+
 ## Current coverage
 
 - CMU: 9,769 released attempts plus 329 aggregate-only removals; 3,980 reconstructed search slots.
@@ -78,10 +82,14 @@ COHERENCE.md and coherence_audit.py enumerate all triples for the existing predi
 
 ## Decision reporting extensions
 
-`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 39 focused unit tests include exact bound endpoints and coverage geometry.
+`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 44 focused unit tests include exact bound endpoints and coverage geometry.
 
 The bounds command also accepts an actually incomplete selected ledger and an explicit common task/model roster: `python3 bounded_comparison.py selected.jsonl --roster roster.json --score-range 0 1`. Source grades are not needed for omitted tasks. Leave-one-category-out reference sensitivity is available via `python3 mask_reference_sensitivity.py`.
 
 `python3 mask_reference_block_sensitivity.py` reports the exploratory alternative category/difficulty blocking scheme; it uses fixed recorded grades to define lower/higher halves and does not establish exchangeability.
 
 `python3 demo_cmu_bounds.py` applies the unchanged selected-ledger interface to the actual unavailable recorded grade in the reconstructed search roster; no attempt identity or score is invented. `python3 oracle_opportunity_audit.py` gives an exact, exploratory donor/thinning reference distinguishing observed pass opportunity from a remaining observed/reference discrepancy. See ORACLE_OPPORTUNITY_PLAN.txt for timing and unsupported cells.
+
+## Recovery preflight and decision guide
+
+EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choices. `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json` runs a disclosed synthetic example. The prototype reports pairwise optimistic grade-recovery counts and equal-weight interval leverage, not a guaranteed recovery policy, unique task priority, or simultaneous all-pairs budget. See RECOVERY_METHOD_PLAN.md for assumptions, proof and established prior-art overlap. Five added tests include exhaustive small binary recovery enumeration; all 44 tests pass. No real human adoption results are claimed.

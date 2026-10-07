@@ -1,0 +1,6 @@
+{"model": "A", "task_id": "t1", "score_available": true, "native_score": 1, "score_scale": [0, 1]}
+{"model": "A", "task_id": "t2", "score_available": true, "native_score": 1, "score_scale": [0, 1]}
+{"model": "B", "task_id": "t1", "score_available": true, "native_score": 0.6, "score_scale": [0, 1]}
+{"model": "B", "task_id": "t2", "score_available": true, "native_score": 0.6, "score_scale": [0, 1]}
+{"model": "B", "task_id": "t3", "score_available": true, "native_score": 0.6, "score_scale": [0, 1]}
+{"model": "B", "task_id": "t4", "score_available": true, "native_score": 0.6, "score_scale": [0, 1]}
