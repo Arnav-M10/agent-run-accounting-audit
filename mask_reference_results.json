@@ -1,0 +1,194 @@
+{
+  "draws": 1999,
+  "seed": 20261007,
+  "interpretation": "Exploratory within-category joint-mask reference, not a causal or confirmatory significance test.",
+  "rules": {
+    "assistant": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1",
+        "Qwen3.8 Max",
+        "Qwen3.8-27B (vLLM)"
+      ],
+      "task_count": 60,
+      "category_sizes": [
+        10,
+        12,
+        6,
+        11,
+        11,
+        10
+      ],
+      "coverage_geometry_preserved_in_every_draw": true,
+      "metrics": {
+        "mean_absolute_common_gap_displacement_points": {
+          "observed": 3.2975856118291134,
+          "q05": 1.5174689292551544,
+          "median": 2.0321987990370496,
+          "q95": 2.690219379890104,
+          "draws_at_least_observed": 1
+        },
+        "max_absolute_shift_points": {
+          "observed": 9.962884353741497,
+          "q05": 1.8318144654088098,
+          "median": 3.2552023809523822,
+          "q95": 5.354925170068025,
+          "draws_at_least_observed": 0
+        },
+        "separate_reversals": {
+          "observed": 8,
+          "q05": 1,
+          "median": 4,
+          "q95": 7,
+          "draws_at_least_observed": 95
+        },
+        "common_reversals": {
+          "observed": 7,
+          "q05": 2,
+          "median": 5,
+          "q95": 8,
+          "draws_at_least_observed": 331
+        },
+        "cyclic_triples": {
+          "observed": 4,
+          "q05": 0,
+          "median": 1,
+          "q95": 4,
+          "draws_at_least_observed": 170
+        }
+      }
+    },
+    "native_stop": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1",
+        "Qwen3.8 Max",
+        "Qwen3.8-27B (vLLM)"
+      ],
+      "task_count": 60,
+      "category_sizes": [
+        10,
+        12,
+        6,
+        11,
+        11,
+        10
+      ],
+      "coverage_geometry_preserved_in_every_draw": true,
+      "metrics": {
+        "mean_absolute_common_gap_displacement_points": {
+          "observed": 7.173379228508713,
+          "q05": 2.939378968566871,
+          "median": 3.8117360060190144,
+          "q95": 4.92262823590103,
+          "draws_at_least_observed": 0
+        },
+        "max_absolute_shift_points": {
+          "observed": 20.38619999999999,
+          "q05": 3.8254047619047604,
+          "median": 6.612690476190474,
+          "q95": 11.196884615384612,
+          "draws_at_least_observed": 0
+        },
+        "separate_reversals": {
+          "observed": 17,
+          "q05": 3,
+          "median": 7,
+          "q95": 13,
+          "draws_at_least_observed": 18
+        },
+        "common_reversals": {
+          "observed": 24,
+          "q05": 5,
+          "median": 9,
+          "q95": 14,
+          "draws_at_least_observed": 0
+        },
+        "cyclic_triples": {
+          "observed": 3,
+          "q05": 0,
+          "median": 2,
+          "q95": 9,
+          "draws_at_least_observed": 898
+        }
+      }
+    },
+    "exporter": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1"
+      ],
+      "task_count": 60,
+      "category_sizes": [
+        10,
+        12,
+        6,
+        11,
+        11,
+        10
+      ],
+      "coverage_geometry_preserved_in_every_draw": true,
+      "metrics": {
+        "mean_absolute_common_gap_displacement_points": {
+          "observed": 1.7653326928962507,
+          "q05": 1.110013499113673,
+          "median": 1.4566469676946203,
+          "q95": 1.8953983092983897,
+          "draws_at_least_observed": 243
+        },
+        "max_absolute_shift_points": {
+          "observed": 4.516050314465403,
+          "q05": 1.3858505747126326,
+          "median": 2.4971052631579003,
+          "q95": 4.230500000000004,
+          "draws_at_least_observed": 16
+        },
+        "separate_reversals": {
+          "observed": 2,
+          "q05": 0,
+          "median": 2,
+          "q95": 4,
+          "draws_at_least_observed": 1034
+        },
+        "common_reversals": {
+          "observed": 2,
+          "q05": 0,
+          "median": 2,
+          "q95": 4,
+          "draws_at_least_observed": 1045
+        },
+        "cyclic_triples": {
+          "observed": 0,
+          "q05": 0,
+          "median": 0,
+          "q95": 2,
+          "draws_at_least_observed": 1999
+        }
+      }
+    }
+  }
+}

@@ -75,3 +75,7 @@ REPORTER_TRANSFER.md gives executable retained and all-released CMU commands. Th
 ## Coherence of pairwise task matching
 
 COHERENCE.md and coherence_audit.py enumerate all triples for the existing predicates. Pair-specific task intersections produce four assistant and three native-stop directed cycles, with zero among exporter-status triples. coherence_results.json supplies every cycle edge, grade gap and task list plus global support sizes. The exploratory plan is preserved; cycles are observed population-dependent comparisons, not grader inconsistency or validated ability. Focused tests exercise cycle witnesses, margin profiles, identical support and undefined comparisons.
+
+## Decision reporting extensions
+
+`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 26 focused unit tests include exact bound endpoints and coverage geometry.

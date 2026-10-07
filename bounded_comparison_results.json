@@ -1,0 +1,2266 @@
+{
+  "interpretation": "Masked-grade demonstration: omitted grades are deliberately hidden despite being present in this release. Bounds describe recorded grades, not independently validated outcomes.",
+  "rules": {
+    "assistant": {
+      "models": {
+        "Claude Fable 5": {
+          "lower": 0.620045,
+          "upper": 0.7033783333333333,
+          "known": 55,
+          "roster": 60
+        },
+        "Claude Opus 4.8 Thinking": {
+          "lower": 0.643005,
+          "upper": 0.6596716666666667,
+          "known": 59,
+          "roster": 60
+        },
+        "GLM 5.2": {
+          "lower": 0.5091733333333334,
+          "upper": 0.6425066666666666,
+          "known": 52,
+          "roster": 60
+        },
+        "GPT-5.6 Sol": {
+          "lower": 0.671825,
+          "upper": 0.671825,
+          "known": 60,
+          "roster": 60
+        },
+        "Grok 4.5": {
+          "lower": 0.575075,
+          "upper": 0.6584083333333334,
+          "known": 55,
+          "roster": 60
+        },
+        "Hy3": {
+          "lower": 0.4969966666666667,
+          "upper": 0.5469966666666667,
+          "known": 57,
+          "roster": 60
+        },
+        "Intern-S2-Preview-397B": {
+          "lower": 0.41258,
+          "upper": 0.5625800000000001,
+          "known": 51,
+          "roster": 60
+        },
+        "Kimi K2.7 Code": {
+          "lower": 0.46895000000000003,
+          "upper": 0.46895000000000003,
+          "known": 60,
+          "roster": 60
+        },
+        "Kimi K3": {
+          "lower": 0.52624,
+          "upper": 0.7095733333333333,
+          "known": 49,
+          "roster": 60
+        },
+        "Muse Spark 1.1": {
+          "lower": 0.53896,
+          "upper": 0.6056266666666666,
+          "known": 56,
+          "roster": 60
+        },
+        "Qwen3.8 Max": {
+          "lower": 0.5296066666666667,
+          "upper": 0.6462733333333333,
+          "known": 53,
+          "roster": 60
+        },
+        "Qwen3.8-27B (vLLM)": {
+          "lower": 0.47165166666666664,
+          "upper": 0.4883183333333333,
+          "known": 59,
+          "roster": 60
+        }
+      },
+      "pairs": 66,
+      "certified_pairs": 35,
+      "unresolved_pairs": 31,
+      "incorrect_certificates_against_held_out_recorded_grades": 0,
+      "naive_filtered_reversals": 8,
+      "certificates": [
+        {
+          "models": [
+            "Claude Fable 5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.07304833333333327,
+            0.20638166666666663
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.05746499999999988,
+            0.2907983333333333
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.15109499999999992,
+            0.2344283333333333
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.01441833333333331,
+            0.16441833333333333
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.13172666666666666,
+            0.2317266666666667
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            0.0004983333333334894,
+            0.1504983333333333
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.028819999999999957,
+            -0.01215333333333335
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Claude Opus 4.8 Thinking"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.09600833333333336,
+            0.16267499999999996
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.08042499999999997,
+            0.24709166666666665
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.17405500000000002,
+            0.19072166666666662
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.0373783333333334,
+            0.12071166666666666
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.15468666666666675,
+            0.18802000000000002
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.16265166666666664,
+            -0.029318333333333446
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "GLM 5.2"
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.04022333333333333,
+            0.17355666666666653
+          ],
+          "certified_order": [
+            "GLM 5.2",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.020855000000000068,
+            0.17085499999999992
+          ],
+          "certified_order": [
+            "GLM 5.2",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            0.013416666666666632,
+            0.09675
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.12482833333333332,
+            0.1748283333333333
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.10924499999999993,
+            0.259245
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.20287499999999997,
+            0.20287499999999997
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.06619833333333336,
+            0.132865
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            0.02555166666666675,
+            0.14221833333333334
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Qwen3.8 Max"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.1835066666666667,
+            0.20017333333333337
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.028078333333333316,
+            0.16141166666666668
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.012494999999999923,
+            0.24582833333333337
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.10612499999999997,
+            0.18945833333333334
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.0867566666666667,
+            0.18675666666666674
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.028046666666666664,
+            0.07804666666666665
+          ],
+          "certified_order": [
+            "Hy3",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.008678333333333399,
+            0.07534500000000005
+          ],
+          "certified_order": [
+            "Hy3",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.24062333333333324,
+            -0.05729000000000001
+          ],
+          "certified_order": [
+            "Kimi K3",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.1366766666666666,
+            -0.07000999999999996
+          ],
+          "certified_order": [
+            "Muse Spark 1.1",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.17732333333333322,
+            -0.06065666666666664
+          ],
+          "certified_order": [
+            "Qwen3.8 Max",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.019368333333333265,
+            -0.0027016666666666023
+          ],
+          "certified_order": [
+            "Qwen3.8-27B (vLLM)",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.03792166666666674,
+            0.23792166666666664
+          ],
+          "certified_order": [
+            "Kimi K3",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Muse Spark 1.1",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.050641666666666696,
+            0.133975
+          ],
+          "certified_order": [
+            "Muse Spark 1.1",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        },
+        {
+          "models": [
+            "Qwen3.8 Max",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            0.04128833333333337,
+            0.17462166666666662
+          ],
+          "certified_order": [
+            "Qwen3.8 Max",
+            "Qwen3.8-27B (vLLM)"
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "models": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking"
+          ],
+          "gap_bounds": [
+            -0.0396266666666667,
+            0.06037333333333328
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            -0.022461666666666602,
+            0.19420499999999996
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.05178000000000005,
+            0.03155333333333332
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.038363333333333416,
+            0.12830333333333332
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.08952833333333332,
+            0.1771383333333333
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.026228333333333298,
+            0.17377166666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.015403333333333324,
+            0.08459666666666665
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.06656833333333323,
+            0.13343166666666662
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.0032683333333332065,
+            0.130065
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.149235,
+            0.06743166666666656
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.03782333333333332,
+            0.14550999999999986
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.05340666666666671,
+            0.22992666666666656
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.2003999999999999,
+            0.11626666666666652
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.09645333333333328,
+            0.10354666666666656
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.1370999999999999,
+            0.11289999999999989
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.03774833333333327,
+            0.14558499999999996
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.13449833333333328,
+            0.13216833333333333
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.030551666666666644,
+            0.11944833333333338
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.07119833333333325,
+            0.1288016666666667
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.06558333333333338,
+            0.13441666666666668
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.21257666666666658,
+            0.020756666666666646
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.10862999999999995,
+            0.008036666666666692
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.14927666666666656,
+            0.017390000000000017
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.05637000000000003,
+            0.09363000000000005
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.2969933333333333,
+            0.03634000000000004
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.19304666666666664,
+            0.023620000000000085
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.23369333333333325,
+            0.03297333333333341
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.0757383333333333,
+            0.09092833333333344
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.0793866666666666,
+            0.17061333333333328
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.12003333333333321,
+            0.1799666666666666
+          ]
+        },
+        {
+          "models": [
+            "Muse Spark 1.1",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.10731333333333326,
+            0.07601999999999998
+          ]
+        }
+      ]
+    },
+    "native_stop": {
+      "models": {
+        "Claude Fable 5": {
+          "lower": 0.5831649999999999,
+          "upper": 0.783165,
+          "known": 48,
+          "roster": 60
+        },
+        "Claude Opus 4.8 Thinking": {
+          "lower": 0.6077833333333333,
+          "upper": 0.7244499999999999,
+          "known": 53,
+          "roster": 60
+        },
+        "GLM 5.2": {
+          "lower": 0.4945616666666667,
+          "upper": 0.7445616666666666,
+          "known": 45,
+          "roster": 60
+        },
+        "GPT-5.6 Sol": {
+          "lower": 0.671825,
+          "upper": 0.6884916666666666,
+          "known": 59,
+          "roster": 60
+        },
+        "Grok 4.5": {
+          "lower": 0.5639633333333334,
+          "upper": 0.7139633333333334,
+          "known": 51,
+          "roster": 60
+        },
+        "Hy3": {
+          "lower": 0.47060833333333335,
+          "upper": 0.6206083333333333,
+          "known": 51,
+          "roster": 60
+        },
+        "Intern-S2-Preview-397B": {
+          "lower": 0.4003466666666667,
+          "upper": 0.7003466666666667,
+          "known": 42,
+          "roster": 60
+        },
+        "Kimi K2.7 Code": {
+          "lower": 0.2803383333333333,
+          "upper": 0.8636716666666667,
+          "known": 25,
+          "roster": 60
+        },
+        "Kimi K3": {
+          "lower": 0.5130733333333334,
+          "upper": 0.7797400000000001,
+          "known": 44,
+          "roster": 60
+        },
+        "Muse Spark 1.1": {
+          "lower": 0.518255,
+          "upper": 0.7515883333333334,
+          "known": 46,
+          "roster": 60
+        },
+        "Qwen3.8 Max": {
+          "lower": 0.5060083333333334,
+          "upper": 0.8060083333333333,
+          "known": 42,
+          "roster": 60
+        },
+        "Qwen3.8-27B (vLLM)": {
+          "lower": 0.4085766666666667,
+          "upper": 0.7585766666666667,
+          "known": 39,
+          "roster": 60
+        }
+      },
+      "pairs": 66,
+      "certified_pairs": 1,
+      "unresolved_pairs": 65,
+      "incorrect_certificates_against_held_out_recorded_grades": 0,
+      "naive_filtered_reversals": 17,
+      "certificates": [
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.05121666666666669,
+            0.21788333333333326
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "models": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking"
+          ],
+          "gap_bounds": [
+            -0.141285,
+            0.17538166666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            -0.16139666666666663,
+            0.2886033333333333
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.10532666666666668,
+            0.11134
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.13079833333333346,
+            0.21920166666666663
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.037443333333333384,
+            0.31255666666666665
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.11718166666666674,
+            0.3828183333333333
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.2805066666666668,
+            0.5028266666666668
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.19657500000000017,
+            0.2700916666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.16842333333333348,
+            0.26491
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.2228433333333334,
+            0.2771566666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.17541166666666674,
+            0.3745883333333333
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            -0.13677833333333322,
+            0.22988833333333325
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.08070833333333327,
+            0.05262499999999992
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.10618000000000005,
+            0.16048666666666656
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.012824999999999975,
+            0.2538416666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.09256333333333333,
+            0.32410333333333324
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.2558883333333334,
+            0.4441116666666666
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.17195666666666676,
+            0.21137666666666655
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.14380500000000007,
+            0.2061949999999999
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.19822499999999998,
+            0.21844166666666653
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.15079333333333333,
+            0.31587333333333323
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.19392999999999994,
+            0.07273666666666656
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.21940166666666672,
+            0.1805983333333332
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.12604666666666664,
+            0.2739533333333332
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.205785,
+            0.3442149999999999
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.36911000000000005,
+            0.46422333333333327
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.2851783333333334,
+            0.23148833333333318
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.25702666666666674,
+            0.22630666666666654
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.31144666666666665,
+            0.23855333333333317
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.264015,
+            0.33598499999999987
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.04213833333333339,
+            0.12452833333333324
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.028521666666666667,
+            0.28814499999999993
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.19184666666666672,
+            0.4081533333333333
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.1079150000000001,
+            0.17541833333333323
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.07976333333333341,
+            0.1702366666666666
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.13418333333333332,
+            0.18248333333333322
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.08675166666666667,
+            0.2799149999999999
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.056644999999999945,
+            0.24335500000000004
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.1363833333333333,
+            0.3136166666666667
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.29970833333333335,
+            0.4336250000000001
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.21577666666666673,
+            0.20089
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.18762500000000004,
+            0.19570833333333337
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.24204499999999995,
+            0.207955
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.1946133333333333,
+            0.3053866666666667
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.22973833333333332,
+            0.22026166666666663
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.3930633333333334,
+            0.34027
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.30913166666666675,
+            0.10753499999999994
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.28098000000000006,
+            0.1023533333333333
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.3354,
+            0.11459999999999992
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.2879683333333333,
+            0.21203166666666662
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.46332500000000004,
+            0.4200083333333334
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.3793933333333334,
+            0.1872733333333333
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.35124166666666673,
+            0.18209166666666665
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.40566166666666664,
+            0.19433833333333328
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.35823,
+            0.29177
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.4994016666666668,
+            0.35059833333333335
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.4712500000000001,
+            0.3454166666666667
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.5256700000000001,
+            0.35766333333333333
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.4782383333333334,
+            0.455095
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.23851500000000003,
+            0.2614850000000001
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.29293499999999995,
+            0.2737316666666667
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.2455033333333333,
+            0.3711633333333334
+          ]
+        },
+        {
+          "models": [
+            "Muse Spark 1.1",
+            "Qwen3.8 Max"
+          ],
+          "gap_bounds": [
+            -0.2877533333333333,
+            0.24558000000000002
+          ]
+        },
+        {
+          "models": [
+            "Muse Spark 1.1",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.24032166666666666,
+            0.3430116666666667
+          ]
+        },
+        {
+          "models": [
+            "Qwen3.8 Max",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "gap_bounds": [
+            -0.2525683333333333,
+            0.3974316666666666
+          ]
+        }
+      ]
+    },
+    "exporter": {
+      "models": {
+        "Claude Fable 5": {
+          "lower": 0.6081933333333333,
+          "upper": 0.67486,
+          "known": 56,
+          "roster": 60
+        },
+        "Claude Opus 4.8 Thinking": {
+          "lower": 0.639155,
+          "upper": 0.6724883333333334,
+          "known": 58,
+          "roster": 60
+        },
+        "GLM 5.2": {
+          "lower": 0.5322983333333333,
+          "upper": 0.5822983333333334,
+          "known": 57,
+          "roster": 60
+        },
+        "GPT-5.6 Sol": {
+          "lower": 0.671825,
+          "upper": 0.6884916666666666,
+          "known": 59,
+          "roster": 60
+        },
+        "Grok 4.5": {
+          "lower": 0.575075,
+          "upper": 0.6417416666666667,
+          "known": 56,
+          "roster": 60
+        },
+        "Hy3": {
+          "lower": 0.48266333333333333,
+          "upper": 0.54933,
+          "known": 56,
+          "roster": 60
+        },
+        "Intern-S2-Preview-397B": {
+          "lower": 0.43455333333333335,
+          "upper": 0.55122,
+          "known": 53,
+          "roster": 60
+        },
+        "Kimi K2.7 Code": {
+          "lower": 0.44029999999999997,
+          "upper": 0.4903,
+          "known": 57,
+          "roster": 60
+        },
+        "Kimi K3": {
+          "lower": 0.5364133333333334,
+          "upper": 0.5697466666666667,
+          "known": 58,
+          "roster": 60
+        },
+        "Muse Spark 1.1": {
+          "lower": 0.545615,
+          "upper": 0.595615,
+          "known": 57,
+          "roster": 60
+        }
+      },
+      "pairs": 45,
+      "certified_pairs": 26,
+      "unresolved_pairs": 19,
+      "incorrect_certificates_against_held_out_recorded_grades": 0,
+      "naive_filtered_reversals": 2,
+      "certificates": [
+        {
+          "models": [
+            "Claude Fable 5",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            0.02589499999999989,
+            0.1425616666666667
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "GLM 5.2"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.05886333333333327,
+            0.19219666666666668
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.05697333333333321,
+            0.24030666666666667
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.11789333333333324,
+            0.23456000000000005
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            0.03844666666666652,
+            0.1384466666666666
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Kimi K3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.012578333333333247,
+            0.12924500000000005
+          ],
+          "certified_order": [
+            "Claude Fable 5",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2"
+          ],
+          "gap_bounds": [
+            0.056856666666666666,
+            0.14019000000000004
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.08982500000000004,
+            0.18982500000000002
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.08793499999999999,
+            0.237935
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.14885500000000002,
+            0.23218833333333339
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            0.0694083333333333,
+            0.13607499999999995
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Kimi K3"
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.04354000000000002,
+            0.1268733333333334
+          ],
+          "certified_order": [
+            "Claude Opus 4.8 Thinking",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.1561933333333333,
+            -0.08952666666666664
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "GLM 5.2"
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.041998333333333304,
+            0.1419983333333334
+          ],
+          "certified_order": [
+            "GLM 5.2",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            0.03008333333333335,
+            0.11341666666666661
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.12249500000000002,
+            0.20582833333333328
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.12060499999999996,
+            0.25393833333333327
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.181525,
+            0.24819166666666664
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            0.10207833333333327,
+            0.1520783333333332
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Kimi K3"
+          ]
+        },
+        {
+          "models": [
+            "GPT-5.6 Sol",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            0.07621,
+            0.14287666666666665
+          ],
+          "certified_order": [
+            "GPT-5.6 Sol",
+            "Muse Spark 1.1"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            0.025745000000000018,
+            0.15907833333333332
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Hy3"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            0.02385499999999996,
+            0.2071883333333333
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Intern-S2-Preview-397B"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            0.08477499999999999,
+            0.20144166666666669
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            0.005328333333333268,
+            0.10532833333333325
+          ],
+          "certified_order": [
+            "Grok 4.5",
+            "Kimi K3"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.12944666666666677,
+            -0.046113333333333395
+          ],
+          "certified_order": [
+            "Kimi K3",
+            "Kimi K2.7 Code"
+          ]
+        },
+        {
+          "models": [
+            "Kimi K2.7 Code",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.15531500000000004,
+            -0.05531499999999995
+          ],
+          "certified_order": [
+            "Muse Spark 1.1",
+            "Kimi K2.7 Code"
+          ]
+        }
+      ],
+      "unresolved": [
+        {
+          "models": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking"
+          ],
+          "gap_bounds": [
+            -0.0642950000000001,
+            0.03570499999999999
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.08029833333333336,
+            0.00303500000000001
+          ]
+        },
+        {
+          "models": [
+            "Claude Fable 5",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.0335483333333334,
+            0.09978500000000001
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "gap_bounds": [
+            -0.049336666666666584,
+            0.0006633333333333491
+          ]
+        },
+        {
+          "models": [
+            "Claude Opus 4.8 Thinking",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.002586666666666626,
+            0.09741333333333335
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Grok 4.5"
+          ],
+          "gap_bounds": [
+            -0.10944333333333334,
+            0.007223333333333359
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Hy3"
+          ],
+          "gap_bounds": [
+            -0.017031666666666667,
+            0.09963500000000003
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.018921666666666725,
+            0.14774500000000002
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.03744833333333342,
+            0.045884999999999954
+          ]
+        },
+        {
+          "models": [
+            "GLM 5.2",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.06331666666666669,
+            0.0366833333333334
+          ]
+        },
+        {
+          "models": [
+            "Grok 4.5",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.020540000000000003,
+            0.0961266666666667
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Intern-S2-Preview-397B"
+          ],
+          "gap_bounds": [
+            -0.06855666666666671,
+            0.11477666666666664
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.0076366666666666805,
+            0.10903000000000002
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.0870833333333334,
+            0.012916666666666576
+          ]
+        },
+        {
+          "models": [
+            "Hy3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.11295166666666667,
+            0.003715000000000024
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K2.7 Code"
+          ],
+          "gap_bounds": [
+            -0.05574666666666667,
+            0.11092000000000007
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Kimi K3"
+          ],
+          "gap_bounds": [
+            -0.1351933333333334,
+            0.014806666666666635
+          ]
+        },
+        {
+          "models": [
+            "Intern-S2-Preview-397B",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.16106166666666666,
+            0.005605000000000082
+          ]
+        },
+        {
+          "models": [
+            "Kimi K3",
+            "Muse Spark 1.1"
+          ],
+          "gap_bounds": [
+            -0.0592016666666666,
+            0.024131666666666773
+          ]
+        }
+      ]
+    }
+  }
+}
