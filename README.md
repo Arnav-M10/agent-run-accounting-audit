@@ -135,3 +135,15 @@ session_score_check/ replays actual grade/status populations in three named publ
 ## Harder winner recovery masks
 
 `python3 recovery_stress.py` repeats ninety predefined independent artificial masks (thirty seeds at each of 10%,25%,50% omission) on all 12 models and60 tasks, saving aggregate costs only. Every mask hides positive winner grades. All cases remain included; selector, lexical and random retrieval use identical masks and grade-blind decisions. Offline optimum and restore-all are explicit comparators. The selector costs more than the oracle at every rate. This is an outcome-informed retrospective extension, not external preregistration, independent roster validation or measured deployment savings; see recovery_stress_plan.md for the unchanged sampling choices and timed explanatory amendment. No inference or grading calls. `python3 verify_new_evidence.py --replay-stress` reproduces the ninety cases without changing the saved output. Default verification checks provenance hashes and case coverage without replaying this simulation.
+
+## Verification routes and evidence boundaries
+
+| Route | Command | Requirements | What it verifies |
+| --- | --- | --- | --- |
+| Packaged evidence | `python3 verify_new_evidence.py` | Standard library; declared Python 3.10-3.12 | Saved recovery arithmetic, exhaustive fixtures, stress provenance hashes and case coverage; not raw extraction |
+| Stress replay | `python3 verify_new_evidence.py --replay-stress` | Standard library | One fresh ninety-case query replay compared with the published twice-repeated result; exact certificates and query costs |
+| Consumer cache | `python3 verify_new_evidence.py --consumer-metadata PRIVATE_METADATA` | Standard library; pinned private acquired metadata | Derived-cache checksum, grade multisets and reductions; not a fresh read of the entire consumer source |
+| Session sources | `python3 verify_new_evidence.py --session-shards PRIVATE_PARQUET_DIRECTORY` | PyArrow (see case README), private pinned shards | All nine raw shard checksums and three within-run score/status contrasts; not historical generating linkage |
+| Primary source acquisition | `python3 reproduce.py` after documented acquisition | See acquisition instructions and dependency files; CMU access conditions apply | Source acquisition/extraction and primary audit replay; packaged checks alone do not establish extraction fidelity |
+
+The stress result's repeat flag records two completed generator runs. The verification wrapper performs one fresh replay; it does not itself perform two new generator runs. An independent review also successfully replayed packaged recovery/stress with Python 3.8, without extending the declared acquisition support range. No route independently regrades achievement or measures deployment benefit.
