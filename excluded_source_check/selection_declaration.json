@@ -1,0 +1,75 @@
+{
+  "algorithm": "Python random.Random(seed); successive random.sample on original source IDs sorted lexicographically; selected IDs sorted within each stratum",
+  "purpose": "Targeted source consistency by recorded reward; not outcome blind or prevalence representative",
+  "scope": "30 excluded records; exact source counts; no full semantic validation; native recorded grade only, not grade achievement",
+  "seed": 20261007,
+  "source_sha256": {
+    "ledger": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+    "removed_incomplete": "f8755cf6fb2f7fdfa6713d842b6c3d289d3c55941683ca77c182f981201971e2",
+    "removed_truncated": "cf0c3d14761f6ce1aa8e4354b4e6a44784a0634c2e33f2c1483fd54a6711d17b"
+  },
+  "strata": [
+    {
+      "name": "no_final_answer",
+      "population": 888,
+      "requested": 10,
+      "selected": 10,
+      "source_ids": [
+        "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_012__pass4",
+        "search__DeepSeek-R1__browsecomp__114__pass1",
+        "search__DeepSeek-R1__browsecomp__33__pass4",
+        "search__DeepSeek-R1__browsecomp__73__pass1",
+        "search__DeepSeek-V3.2__browsecomp__34__pass1",
+        "search__DeepSeek-V3.2__browsecomp__39__pass2",
+        "search__DeepSeek-V3.2__browsecomp__65__pass3",
+        "search__DeepSeek-V3.2__mind2web__128__pass3",
+        "search__DeepSeek-V3.2__webvoyager__135__pass3",
+        "search__DeepSeek-V3.2__webvoyager__188__pass4"
+      ]
+    },
+    {
+      "name": "error_zero_reward",
+      "population": 167,
+      "requested": 10,
+      "selected": 10,
+      "source_ids": [
+        "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass2",
+        "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass2",
+        "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass3",
+        "swebench__DeepSeek-R1__pydata__pydata__xarray-6461__pass3",
+        "swebench__DeepSeek-V3.2__django__django__django-11095__pass2",
+        "swebench__DeepSeek-V3.2__sphinx-doc__sphinx-doc__sphinx-8548__pass1",
+        "swebench__Gemini-2.5-Flash__sympy__sympy__sympy-13877__pass2",
+        "swebench__Qwen3-235B__sympy__sympy__sympy-16886__pass2",
+        "terminalbench__DeepSeek-R1__debugging__conda-env-conflict-resolution__pass1",
+        "terminalbench__DeepSeek-V3.2__software-engineering__blind-maze-explorer-algorithm.easy__pass2"
+      ]
+    },
+    {
+      "name": "error_positive_mcp",
+      "population": 55,
+      "requested": 5,
+      "selected": 5,
+      "source_ids": [
+        "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass3",
+        "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass1",
+        "mcpbench__DeepSeek-V3.2__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+        "mcpbench__DeepSeek-V3.2__Reddit+DEX Paprika__mcpbench_42__pass1",
+        "mcpbench__Qwen3-235B__DEX Paprika__mcpbench_9__pass3"
+      ]
+    },
+    {
+      "name": "error_positive_swe",
+      "population": 6,
+      "requested": 5,
+      "selected": 5,
+      "source_ids": [
+        "swebench__DeepSeek-V3.2__django__django__django-14999__pass3",
+        "swebench__DeepSeek-V3.2__django__django__django-14999__pass4",
+        "swebench__DeepSeek-V3.2__django__django__django-15525__pass1",
+        "swebench__DeepSeek-V3.2__django__django__django-15525__pass3",
+        "swebench__DeepSeek-V3.2__sympy__sympy__sympy-13031__pass4"
+      ]
+    }
+  ]
+}

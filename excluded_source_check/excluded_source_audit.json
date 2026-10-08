@@ -1,0 +1,1241 @@
+{
+  "checked_fields": [
+    "attempt_id",
+    "benchmark",
+    "model",
+    "domain",
+    "task_id",
+    "pass",
+    "native_score",
+    "retention",
+    "last_original_role",
+    "score_available"
+  ],
+  "declaration": {
+    "algorithm": "Python random.Random(seed); successive random.sample on original source IDs sorted lexicographically; selected IDs sorted within each stratum",
+    "purpose": "Targeted source consistency by recorded reward; not outcome blind or prevalence representative",
+    "scope": "30 excluded records; exact source counts; no full semantic validation; native recorded grade only, not grade achievement",
+    "seed": 20261007,
+    "source_sha256": {
+      "ledger": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+      "removed_incomplete": "f8755cf6fb2f7fdfa6713d842b6c3d289d3c55941683ca77c182f981201971e2",
+      "removed_truncated": "cf0c3d14761f6ce1aa8e4354b4e6a44784a0634c2e33f2c1483fd54a6711d17b"
+    },
+    "strata": [
+      {
+        "name": "no_final_answer",
+        "population": 888,
+        "requested": 10,
+        "selected": 10,
+        "source_ids": [
+          "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_012__pass4",
+          "search__DeepSeek-R1__browsecomp__114__pass1",
+          "search__DeepSeek-R1__browsecomp__33__pass4",
+          "search__DeepSeek-R1__browsecomp__73__pass1",
+          "search__DeepSeek-V3.2__browsecomp__34__pass1",
+          "search__DeepSeek-V3.2__browsecomp__39__pass2",
+          "search__DeepSeek-V3.2__browsecomp__65__pass3",
+          "search__DeepSeek-V3.2__mind2web__128__pass3",
+          "search__DeepSeek-V3.2__webvoyager__135__pass3",
+          "search__DeepSeek-V3.2__webvoyager__188__pass4"
+        ]
+      },
+      {
+        "name": "error_zero_reward",
+        "population": 167,
+        "requested": 10,
+        "selected": 10,
+        "source_ids": [
+          "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass2",
+          "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass2",
+          "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass3",
+          "swebench__DeepSeek-R1__pydata__pydata__xarray-6461__pass3",
+          "swebench__DeepSeek-V3.2__django__django__django-11095__pass2",
+          "swebench__DeepSeek-V3.2__sphinx-doc__sphinx-doc__sphinx-8548__pass1",
+          "swebench__Gemini-2.5-Flash__sympy__sympy__sympy-13877__pass2",
+          "swebench__Qwen3-235B__sympy__sympy__sympy-16886__pass2",
+          "terminalbench__DeepSeek-R1__debugging__conda-env-conflict-resolution__pass1",
+          "terminalbench__DeepSeek-V3.2__software-engineering__blind-maze-explorer-algorithm.easy__pass2"
+        ]
+      },
+      {
+        "name": "error_positive_mcp",
+        "population": 55,
+        "requested": 5,
+        "selected": 5,
+        "source_ids": [
+          "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass3",
+          "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass1",
+          "mcpbench__DeepSeek-V3.2__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+          "mcpbench__DeepSeek-V3.2__Reddit+DEX Paprika__mcpbench_42__pass1",
+          "mcpbench__Qwen3-235B__DEX Paprika__mcpbench_9__pass3"
+        ]
+      },
+      {
+        "name": "error_positive_swe",
+        "population": 6,
+        "requested": 5,
+        "selected": 5,
+        "source_ids": [
+          "swebench__DeepSeek-V3.2__django__django__django-14999__pass3",
+          "swebench__DeepSeek-V3.2__django__django__django-14999__pass4",
+          "swebench__DeepSeek-V3.2__django__django__django-15525__pass1",
+          "swebench__DeepSeek-V3.2__django__django__django-15525__pass3",
+          "swebench__DeepSeek-V3.2__sympy__sympy__sympy-13031__pass4"
+        ]
+      }
+    ]
+  },
+  "declaration_sha256": "3735f7179129a17d71542ce45f18577de3c458e1c469a65eff596f7768f6296f",
+  "ledger_schema_fields": [
+    "attempt_id",
+    "benchmark",
+    "domain",
+    "execution_status",
+    "failure_attribution",
+    "last_original_role",
+    "model",
+    "native_score",
+    "pass",
+    "retention",
+    "retry_of",
+    "score_available",
+    "score_scale",
+    "source_revision",
+    "task_id"
+  ],
+  "mismatch_count": 0,
+  "records": [
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_012__pass4",
+        "benchmark": "mathhay",
+        "domain": "3s3d",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "Gemini-2.5-Flash",
+        "native_score": 0.0,
+        "pass": 4,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mathhay_3s3d_012"
+      },
+      "source_metadata": {
+        "benchmark": "mathhay",
+        "domain": "3s3d",
+        "eval_status": null,
+        "id": "mathhay__Gemini-2.5-Flash__3s3d__mathhay_3s3d_012__pass4",
+        "last_original_role": "tool",
+        "pass": 4,
+        "removal_reason": "ends_on_tool",
+        "reward": 0.0,
+        "source_model": "Gemini-2.5-Flash",
+        "task_id": "mathhay_3s3d_012"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-R1__browsecomp__114__pass1",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "user",
+        "model": "DeepSeek-R1",
+        "native_score": 0,
+        "pass": 1,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "114"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-R1__browsecomp__114__pass1",
+        "last_original_role": "user",
+        "pass": 1,
+        "removal_reason": "ends_on_user",
+        "reward": 0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "114"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-R1__browsecomp__33__pass4",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "user",
+        "model": "DeepSeek-R1",
+        "native_score": 0,
+        "pass": 4,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "33"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-R1__browsecomp__33__pass4",
+        "last_original_role": "user",
+        "pass": 4,
+        "removal_reason": "ends_on_user",
+        "reward": 0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "33"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-R1__browsecomp__73__pass1",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "user",
+        "model": "DeepSeek-R1",
+        "native_score": 0,
+        "pass": 1,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "73"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-R1__browsecomp__73__pass1",
+        "last_original_role": "user",
+        "pass": 1,
+        "removal_reason": "ends_on_user",
+        "reward": 0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "73"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__browsecomp__34__pass1",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 1,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "34"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__browsecomp__34__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "34"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__browsecomp__39__pass2",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 2,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "39"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__browsecomp__39__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "39"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__browsecomp__65__pass3",
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 3,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "65"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "browsecomp",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__browsecomp__65__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "65"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__mind2web__128__pass3",
+        "benchmark": "search",
+        "domain": "mind2web",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 3,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "128"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "mind2web",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__mind2web__128__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "128"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__webvoyager__135__pass3",
+        "benchmark": "search",
+        "domain": "webvoyager",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 3,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "135"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "webvoyager",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__webvoyager__135__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "135"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "search__DeepSeek-V3.2__webvoyager__188__pass4",
+        "benchmark": "search",
+        "domain": "webvoyager",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 4,
+        "retention": "removed_incomplete",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "188"
+      },
+      "source_metadata": {
+        "benchmark": "search",
+        "domain": "webvoyager",
+        "eval_status": null,
+        "id": "search__DeepSeek-V3.2__webvoyager__188__pass4",
+        "last_original_role": "tool",
+        "pass": 4,
+        "removal_reason": "ends_on_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "188"
+      },
+      "stratum": "no_final_answer"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass2",
+        "benchmark": "mcpbench",
+        "domain": "Google Maps+National Parks",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_30"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "Google Maps+National Parks",
+        "eval_status": "error",
+        "id": "mcpbench__DeepSeek-V3.2__Google Maps+National Parks__mcpbench_30__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "mcpbench_30"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass2",
+        "benchmark": "swebench",
+        "domain": "mwaskom",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 0.0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mwaskom__seaborn-3187"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "mwaskom",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "mwaskom__seaborn-3187"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass3",
+        "benchmark": "swebench",
+        "domain": "mwaskom",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 0.0,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mwaskom__seaborn-3187"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "mwaskom",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-R1__mwaskom__mwaskom__seaborn-3187__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "mwaskom__seaborn-3187"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-R1__pydata__pydata__xarray-6461__pass3",
+        "benchmark": "swebench",
+        "domain": "pydata",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 0.0,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "pydata__xarray-6461"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "pydata",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-R1__pydata__pydata__xarray-6461__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "pydata__xarray-6461"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__django__django__django-11095__pass2",
+        "benchmark": "swebench",
+        "domain": "django",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0.0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "django__django-11095"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "django",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__django__django__django-11095__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "django__django-11095"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__sphinx-doc__sphinx-doc__sphinx-8548__pass1",
+        "benchmark": "swebench",
+        "domain": "sphinx-doc",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0.0,
+        "pass": 1,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "sphinx-doc__sphinx-8548"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "sphinx-doc",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__sphinx-doc__sphinx-doc__sphinx-8548__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "sphinx-doc__sphinx-8548"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__Gemini-2.5-Flash__sympy__sympy__sympy-13877__pass2",
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "Gemini-2.5-Flash",
+        "native_score": 0.0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "sympy__sympy-13877"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "eval_status": "error",
+        "id": "swebench__Gemini-2.5-Flash__sympy__sympy__sympy-13877__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "Gemini-2.5-Flash",
+        "task_id": "sympy__sympy-13877"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__Qwen3-235B__sympy__sympy__sympy-16886__pass2",
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "Qwen3-235B",
+        "native_score": 0.0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "sympy__sympy-16886"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "eval_status": "error",
+        "id": "swebench__Qwen3-235B__sympy__sympy__sympy-16886__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "Qwen3-235B",
+        "task_id": "sympy__sympy-16886"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "terminalbench__DeepSeek-R1__debugging__conda-env-conflict-resolution__pass1",
+        "benchmark": "terminalbench",
+        "domain": "debugging",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 0.0,
+        "pass": 1,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "conda-env-conflict-resolution"
+      },
+      "source_metadata": {
+        "benchmark": "terminalbench",
+        "domain": "debugging",
+        "eval_status": "error",
+        "id": "terminalbench__DeepSeek-R1__debugging__conda-env-conflict-resolution__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-R1",
+        "task_id": "conda-env-conflict-resolution"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "terminalbench__DeepSeek-V3.2__software-engineering__blind-maze-explorer-algorithm.easy__pass2",
+        "benchmark": "terminalbench",
+        "domain": "software-engineering",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 0.0,
+        "pass": 2,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "blind-maze-explorer-algorithm.easy"
+      },
+      "source_metadata": {
+        "benchmark": "terminalbench",
+        "domain": "software-engineering",
+        "eval_status": "error",
+        "id": "terminalbench__DeepSeek-V3.2__software-engineering__blind-maze-explorer-algorithm.easy__pass2",
+        "last_original_role": "tool",
+        "pass": 2,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 0.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "blind-maze-explorer-algorithm.easy"
+      },
+      "stratum": "error_zero_reward"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass3",
+        "benchmark": "mcpbench",
+        "domain": "Metropolitan Museum",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 3.1999999999999993,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_19"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "Metropolitan Museum",
+        "eval_status": "error",
+        "id": "mcpbench__DeepSeek-R1__Metropolitan Museum__mcpbench_19__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 3.1999999999999993,
+        "source_model": "DeepSeek-R1",
+        "task_id": "mcpbench_19"
+      },
+      "stratum": "error_positive_mcp"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass1",
+        "benchmark": "mcpbench",
+        "domain": "OKX Exchange",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-R1",
+        "native_score": 3.1,
+        "pass": 1,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_22"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "OKX Exchange",
+        "eval_status": "error",
+        "id": "mcpbench__DeepSeek-R1__OKX Exchange__mcpbench_22__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 3.1,
+        "source_model": "DeepSeek-R1",
+        "task_id": "mcpbench_22"
+      },
+      "stratum": "error_positive_mcp"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__DeepSeek-V3.2__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+        "benchmark": "mcpbench",
+        "domain": "DEX Paprika+OKX Exchange",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 2.066666666666667,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_33"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "DEX Paprika+OKX Exchange",
+        "eval_status": "error",
+        "id": "mcpbench__DeepSeek-V3.2__DEX Paprika+OKX Exchange__mcpbench_33__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 2.066666666666667,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "mcpbench_33"
+      },
+      "stratum": "error_positive_mcp"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__DeepSeek-V3.2__Reddit+DEX Paprika__mcpbench_42__pass1",
+        "benchmark": "mcpbench",
+        "domain": "Reddit+DEX Paprika",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.766666666666667,
+        "pass": 1,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_42"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "Reddit+DEX Paprika",
+        "eval_status": "error",
+        "id": "mcpbench__DeepSeek-V3.2__Reddit+DEX Paprika__mcpbench_42__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.766666666666667,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "mcpbench_42"
+      },
+      "stratum": "error_positive_mcp"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "mcpbench__Qwen3-235B__DEX Paprika__mcpbench_9__pass3",
+        "benchmark": "mcpbench",
+        "domain": "DEX Paprika",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "Qwen3-235B",
+        "native_score": 3.4666666666666663,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          10
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "mcpbench_9"
+      },
+      "source_metadata": {
+        "benchmark": "mcpbench",
+        "domain": "DEX Paprika",
+        "eval_status": "error",
+        "id": "mcpbench__Qwen3-235B__DEX Paprika__mcpbench_9__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 3.4666666666666663,
+        "source_model": "Qwen3-235B",
+        "task_id": "mcpbench_9"
+      },
+      "stratum": "error_positive_mcp"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass3",
+        "benchmark": "swebench",
+        "domain": "django",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.0,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "django__django-14999"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "django",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "django__django-14999"
+      },
+      "stratum": "error_positive_swe"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass4",
+        "benchmark": "swebench",
+        "domain": "django",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.0,
+        "pass": 4,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "django__django-14999"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "django",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__django__django__django-14999__pass4",
+        "last_original_role": "tool",
+        "pass": 4,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "django__django-14999"
+      },
+      "stratum": "error_positive_swe"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass1",
+        "benchmark": "swebench",
+        "domain": "django",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.0,
+        "pass": 1,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "django__django-15525"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "django",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass1",
+        "last_original_role": "tool",
+        "pass": 1,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "django__django-15525"
+      },
+      "stratum": "error_positive_swe"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass3",
+        "benchmark": "swebench",
+        "domain": "django",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.0,
+        "pass": 3,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "django__django-15525"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "django",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__django__django__django-15525__pass3",
+        "last_original_role": "tool",
+        "pass": 3,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "django__django-15525"
+      },
+      "stratum": "error_positive_swe"
+    },
+    {
+      "discrepancies": [],
+      "ledger_metadata": {
+        "attempt_id": "swebench__DeepSeek-V3.2__sympy__sympy__sympy-13031__pass4",
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "execution_status": null,
+        "failure_attribution": null,
+        "last_original_role": "tool",
+        "model": "DeepSeek-V3.2",
+        "native_score": 1.0,
+        "pass": 4,
+        "retention": "removed_truncated",
+        "retry_of": null,
+        "score_available": true,
+        "score_scale": [
+          0,
+          1
+        ],
+        "source_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+        "task_id": "sympy__sympy-13031"
+      },
+      "source_metadata": {
+        "benchmark": "swebench",
+        "domain": "sympy",
+        "eval_status": "error",
+        "id": "swebench__DeepSeek-V3.2__sympy__sympy__sympy-13031__pass4",
+        "last_original_role": "tool",
+        "pass": 4,
+        "removal_reason": "truncated_died_after_tool",
+        "reward": 1.0,
+        "source_model": "DeepSeek-V3.2",
+        "task_id": "sympy__sympy-13031"
+      },
+      "stratum": "error_positive_swe"
+    }
+  ],
+  "sample_size": 30,
+  "source_counts": {
+    "error_positive_benchmark": {
+      "mcpbench": 55,
+      "swebench": 6
+    },
+    "error_positive_total": 61,
+    "incomplete_reasons": {
+      "ends_on_tool": 597,
+      "ends_on_user": 291
+    },
+    "incomplete_total": 888,
+    "truncated_error_status": 228,
+    "truncated_total": 228
+  },
+  "source_schema_fields": {
+    "removed_incomplete": [
+      "benchmark",
+      "cleaning_info",
+      "domain",
+      "eval_details",
+      "id",
+      "messages",
+      "num_turns",
+      "pass",
+      "removal_reason",
+      "removal_round",
+      "reward",
+      "source_model",
+      "task_id"
+    ],
+    "removed_truncated": [
+      "benchmark",
+      "cleaning_info",
+      "domain",
+      "eval_details",
+      "id",
+      "messages",
+      "num_turns",
+      "pass",
+      "removal_reason",
+      "removal_round",
+      "reward",
+      "source_model",
+      "task_id"
+    ]
+  },
+  "unavailable_comparisons": {
+    "error_status": "Ledger execution_status and failure_attribution are null for these records; no original error flag field is retained. Source eval_details.status is metadata only.",
+    "exclusion_reason": "Ledger has retention category but no original removal_reason field; original reason preserved in metadata only."
+  }
+}

@@ -32,6 +32,8 @@ These validate supplied metadata and reproduce 58 adapter means, task-support co
 
 SOURCE_SAMPLE_CHECK.md documents a separate agent-assisted 35-record raw-to-ledger spot check, with zero field mismatches. Its script reconstructs sampled fields without the corpus adapters; selected identities and source hashes are preserved. This is a retained-record sample, not a full extraction or achievement validation.
 
+EXCLUDED_SOURCE_CHECK.md extends the direct source check to 30 excluded CMU records, including targeted positive and zero saved rewards; all checked fields match. Reward stratification is disclosed. Original removal reasons/error flags are unavailable in the ledger and are not silently filled. Exact source counts confirm the 61 positive saved rewards.
+
 ## Acquire and reproduce
 
 Use Python 3.10–3.12 and install requirements.txt in a virtual environment. Install Hugging Face's hf CLI separately and use your own authenticated account after accepting CMU dataset conditions. Raw inputs require about 8.64 GB for score archives, 201 MB for sessions, plus CMU and Parquet inputs. Raw traces, archives, task outputs, and credentials are not redistributed.
@@ -84,7 +86,7 @@ COHERENCE.md and coherence_audit.py enumerate all triples for the existing predi
 
 ## Decision reporting extensions
 
-`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 44 focused unit tests include exact bound endpoints and coverage geometry.
+`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 48 focused unit tests include exact bound endpoints and coverage geometry.
 
 The bounds command also accepts an actually incomplete selected ledger and an explicit common task/model roster: `python3 bounded_comparison.py selected.jsonl --roster roster.json --score-range 0 1`. Source grades are not needed for omitted tasks. Leave-one-category-out reference sensitivity is available via `python3 mask_reference_sensitivity.py`.
 
@@ -94,4 +96,8 @@ The bounds command also accepts an actually incomplete selected ledger and an ex
 
 ## Recovery preflight and decision guide
 
-EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choices. `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json` runs a disclosed synthetic example. The prototype reports pairwise optimistic grade-recovery counts and equal-weight interval leverage, not a guaranteed recovery policy, unique task priority, or simultaneous all-pairs budget. See RECOVERY_METHOD_PLAN.md for assumptions, proof and established prior-art overlap. Five added tests include exhaustive small binary recovery enumeration; all 44 tests pass. No real human adoption results are claimed.
+EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choices. `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json` runs a disclosed synthetic example. The prototype reports pairwise optimistic grade-recovery counts and equal-weight interval leverage, not a guaranteed recovery policy, unique task priority, or simultaneous all-pairs budget. See RECOVERY_METHOD_PLAN.md for assumptions, proof and established prior-art overlap. Five added tests include exhaustive small binary recovery enumeration; all 48 tests pass. No real human adoption results are claimed.
+
+## Concrete recorded-mean decision
+
+`python3 winner_decision.py` reports all three existing completion predicates and an explicit released-roster target. Assistant and native-stop conditional means choose Claude Fable 5 rather than the full-roster recorded-mean maximizer GPT-5.6 Sol, a retrospective 5.178 percentage-point difference on that recorded target. Deliberately masked-grade winner reports leave 3/11/3 candidates and no certified strict maximizer. These are hypothetical reuse decisions, not observed consumer choices or deployment benefits. WINNER_DECISION_PLAN.md states the timing and assumptions; four added tests exhaustively verify small completion cases.

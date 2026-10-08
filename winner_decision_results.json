@@ -1,0 +1,512 @@
+{
+  "target": "Choose a maximizer of the equally weighted recorded-grade mean on the released common task roster. This is a retrospective fixed-release decision illustration, not a demonstrated consumer decision or deployment selection policy.",
+  "missingness": "All grades exist in WildClawBench. Bounds below deliberately hide ineligible grades to illustrate eligible-only reuse; use all available grades instead when available.",
+  "rules": {
+    "assistant": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1",
+        "Qwen3.8 Max",
+        "Qwen3.8-27B (vLLM)"
+      ],
+      "tasks": 60,
+      "full_roster_means": {
+        "Claude Fable 5": 0.620045,
+        "Claude Opus 4.8 Thinking": 0.647255,
+        "GLM 5.2": 0.54191,
+        "GPT-5.6 Sol": 0.671825,
+        "Grok 4.5": 0.575075,
+        "Hy3": 0.4969966666666667,
+        "Intern-S2-Preview-397B": 0.4467866666666667,
+        "Kimi K2.7 Code": 0.46895000000000003,
+        "Kimi K3": 0.5447466666666667,
+        "Muse Spark 1.1": 0.5535033333333333,
+        "Qwen3.8 Max": 0.5615516666666667,
+        "Qwen3.8-27B (vLLM)": 0.4801516666666667
+      },
+      "conditional_means": {
+        "Claude Fable 5": 0.6764127272727273,
+        "Claude Opus 4.8 Thinking": 0.6539033898305084,
+        "GLM 5.2": 0.5875076923076923,
+        "GPT-5.6 Sol": 0.671825,
+        "Grok 4.5": 0.6273545454545455,
+        "Hy3": 0.5231543859649123,
+        "Intern-S2-Preview-397B": 0.4853882352941176,
+        "Kimi K2.7 Code": 0.46895000000000003,
+        "Kimi K3": 0.6443755102040817,
+        "Muse Spark 1.1": 0.5774571428571429,
+        "Qwen3.8 Max": 0.599554716981132,
+        "Qwen3.8-27B (vLLM)": 0.4796457627118644
+      },
+      "conditional_mean_maximizers": [
+        "Claude Fable 5"
+      ],
+      "full_roster_maximizers": [
+        "GPT-5.6 Sol"
+      ],
+      "retrospective_recorded_mean_loss_percentage_points": {
+        "Claude Fable 5": 5.178000000000004
+      },
+      "masked_grade_winner_report": {
+        "models": {
+          "Claude Fable 5": {
+            "lower": 0.620045,
+            "upper": 0.7033783333333333,
+            "known": 55,
+            "roster": 60
+          },
+          "Claude Opus 4.8 Thinking": {
+            "lower": 0.643005,
+            "upper": 0.6596716666666668,
+            "known": 59,
+            "roster": 60
+          },
+          "GLM 5.2": {
+            "lower": 0.5091733333333334,
+            "upper": 0.6425066666666667,
+            "known": 52,
+            "roster": 60
+          },
+          "GPT-5.6 Sol": {
+            "lower": 0.671825,
+            "upper": 0.671825,
+            "known": 60,
+            "roster": 60
+          },
+          "Grok 4.5": {
+            "lower": 0.575075,
+            "upper": 0.6584083333333334,
+            "known": 55,
+            "roster": 60
+          },
+          "Hy3": {
+            "lower": 0.49699666666666664,
+            "upper": 0.5469966666666667,
+            "known": 57,
+            "roster": 60
+          },
+          "Intern-S2-Preview-397B": {
+            "lower": 0.41258,
+            "upper": 0.56258,
+            "known": 51,
+            "roster": 60
+          },
+          "Kimi K2.7 Code": {
+            "lower": 0.46895,
+            "upper": 0.46895,
+            "known": 60,
+            "roster": 60
+          },
+          "Kimi K3": {
+            "lower": 0.52624,
+            "upper": 0.7095733333333334,
+            "known": 49,
+            "roster": 60
+          },
+          "Muse Spark 1.1": {
+            "lower": 0.53896,
+            "upper": 0.6056266666666666,
+            "known": 56,
+            "roster": 60
+          },
+          "Qwen3.8 Max": {
+            "lower": 0.5296066666666667,
+            "upper": 0.6462733333333334,
+            "known": 53,
+            "roster": 60
+          },
+          "Qwen3.8-27B (vLLM)": {
+            "lower": 0.4716516666666667,
+            "upper": 0.48831833333333335,
+            "known": 59,
+            "roster": 60
+          }
+        },
+        "not_ruled_out_as_roster_maximizer": [
+          "Claude Fable 5",
+          "GPT-5.6 Sol",
+          "Kimi K3"
+        ],
+        "certified_strict_roster_maximizer": [],
+        "ruled_out_by": {
+          "Claude Opus 4.8 Thinking": [
+            "GPT-5.6 Sol"
+          ],
+          "GLM 5.2": [
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "Grok 4.5": [
+            "GPT-5.6 Sol"
+          ],
+          "Hy3": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "Intern-S2-Preview-397B": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "Kimi K2.7 Code": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2",
+            "GPT-5.6 Sol",
+            "Grok 4.5",
+            "Hy3",
+            "Kimi K3",
+            "Muse Spark 1.1",
+            "Qwen3.8 Max",
+            "Qwen3.8-27B (vLLM)"
+          ],
+          "Muse Spark 1.1": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "Qwen3.8 Max": [
+            "GPT-5.6 Sol"
+          ],
+          "Qwen3.8-27B (vLLM)": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2",
+            "GPT-5.6 Sol",
+            "Grok 4.5",
+            "Hy3",
+            "Kimi K3",
+            "Muse Spark 1.1",
+            "Qwen3.8 Max"
+          ]
+        },
+        "tolerance": 1e-12,
+        "interpretation": "Maximizers of the declared equally weighted recorded-grade roster within numerical tolerance. Independently unrestricted unavailable grades permit each candidate to attain its upper endpoint while other models attain their lower endpoints. Candidates are separate possibilities, not simultaneously achievable strict winners. No statistical, deployment, outcome-validation or general agent-quality claim."
+      }
+    },
+    "native_stop": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1",
+        "Qwen3.8 Max",
+        "Qwen3.8-27B (vLLM)"
+      ],
+      "tasks": 60,
+      "full_roster_means": {
+        "Claude Fable 5": 0.620045,
+        "Claude Opus 4.8 Thinking": 0.647255,
+        "GLM 5.2": 0.54191,
+        "GPT-5.6 Sol": 0.671825,
+        "Grok 4.5": 0.575075,
+        "Hy3": 0.4969966666666667,
+        "Intern-S2-Preview-397B": 0.4467866666666667,
+        "Kimi K2.7 Code": 0.46895000000000003,
+        "Kimi K3": 0.5447466666666667,
+        "Muse Spark 1.1": 0.5535033333333333,
+        "Qwen3.8 Max": 0.5615516666666667,
+        "Qwen3.8-27B (vLLM)": 0.4801516666666667
+      },
+      "conditional_means": {
+        "Claude Fable 5": 0.72895625,
+        "Claude Opus 4.8 Thinking": 0.6880566037735849,
+        "GLM 5.2": 0.6594155555555555,
+        "GPT-5.6 Sol": 0.6832118644067796,
+        "Grok 4.5": 0.6634862745098039,
+        "Hy3": 0.5536568627450981,
+        "Intern-S2-Preview-397B": 0.5719238095238095,
+        "Kimi K2.7 Code": 0.672812,
+        "Kimi K3": 0.6996454545454546,
+        "Muse Spark 1.1": 0.6759847826086957,
+        "Qwen3.8 Max": 0.7228690476190477,
+        "Qwen3.8-27B (vLLM)": 0.6285794871794872
+      },
+      "conditional_mean_maximizers": [
+        "Claude Fable 5"
+      ],
+      "full_roster_maximizers": [
+        "GPT-5.6 Sol"
+      ],
+      "retrospective_recorded_mean_loss_percentage_points": {
+        "Claude Fable 5": 5.178000000000004
+      },
+      "masked_grade_winner_report": {
+        "models": {
+          "Claude Fable 5": {
+            "lower": 0.583165,
+            "upper": 0.7831650000000001,
+            "known": 48,
+            "roster": 60
+          },
+          "Claude Opus 4.8 Thinking": {
+            "lower": 0.6077833333333333,
+            "upper": 0.72445,
+            "known": 53,
+            "roster": 60
+          },
+          "GLM 5.2": {
+            "lower": 0.4945616666666667,
+            "upper": 0.7445616666666667,
+            "known": 45,
+            "roster": 60
+          },
+          "GPT-5.6 Sol": {
+            "lower": 0.671825,
+            "upper": 0.6884916666666667,
+            "known": 59,
+            "roster": 60
+          },
+          "Grok 4.5": {
+            "lower": 0.5639633333333334,
+            "upper": 0.7139633333333334,
+            "known": 51,
+            "roster": 60
+          },
+          "Hy3": {
+            "lower": 0.47060833333333335,
+            "upper": 0.6206083333333333,
+            "known": 51,
+            "roster": 60
+          },
+          "Intern-S2-Preview-397B": {
+            "lower": 0.4003466666666667,
+            "upper": 0.7003466666666667,
+            "known": 42,
+            "roster": 60
+          },
+          "Kimi K2.7 Code": {
+            "lower": 0.28033833333333336,
+            "upper": 0.8636716666666667,
+            "known": 25,
+            "roster": 60
+          },
+          "Kimi K3": {
+            "lower": 0.5130733333333334,
+            "upper": 0.7797400000000001,
+            "known": 44,
+            "roster": 60
+          },
+          "Muse Spark 1.1": {
+            "lower": 0.518255,
+            "upper": 0.7515883333333333,
+            "known": 46,
+            "roster": 60
+          },
+          "Qwen3.8 Max": {
+            "lower": 0.5060083333333333,
+            "upper": 0.8060083333333332,
+            "known": 42,
+            "roster": 60
+          },
+          "Qwen3.8-27B (vLLM)": {
+            "lower": 0.40857666666666664,
+            "upper": 0.7585766666666667,
+            "known": 39,
+            "roster": 60
+          }
+        },
+        "not_ruled_out_as_roster_maximizer": [
+          "Claude Fable 5",
+          "Claude Opus 4.8 Thinking",
+          "GLM 5.2",
+          "GPT-5.6 Sol",
+          "Grok 4.5",
+          "Intern-S2-Preview-397B",
+          "Kimi K2.7 Code",
+          "Kimi K3",
+          "Muse Spark 1.1",
+          "Qwen3.8 Max",
+          "Qwen3.8-27B (vLLM)"
+        ],
+        "certified_strict_roster_maximizer": [],
+        "ruled_out_by": {
+          "Hy3": [
+            "GPT-5.6 Sol"
+          ]
+        },
+        "tolerance": 1e-12,
+        "interpretation": "Maximizers of the declared equally weighted recorded-grade roster within numerical tolerance. Independently unrestricted unavailable grades permit each candidate to attain its upper endpoint while other models attain their lower endpoints. Candidates are separate possibilities, not simultaneously achievable strict winners. No statistical, deployment, outcome-validation or general agent-quality claim."
+      }
+    },
+    "exporter": {
+      "models": [
+        "Claude Fable 5",
+        "Claude Opus 4.8 Thinking",
+        "GLM 5.2",
+        "GPT-5.6 Sol",
+        "Grok 4.5",
+        "Hy3",
+        "Intern-S2-Preview-397B",
+        "Kimi K2.7 Code",
+        "Kimi K3",
+        "Muse Spark 1.1"
+      ],
+      "tasks": 60,
+      "full_roster_means": {
+        "Claude Fable 5": 0.620045,
+        "Claude Opus 4.8 Thinking": 0.647255,
+        "GLM 5.2": 0.54191,
+        "GPT-5.6 Sol": 0.671825,
+        "Grok 4.5": 0.575075,
+        "Hy3": 0.4969966666666667,
+        "Intern-S2-Preview-397B": 0.4467866666666667,
+        "Kimi K2.7 Code": 0.46895000000000003,
+        "Kimi K3": 0.5447466666666667,
+        "Muse Spark 1.1": 0.5535033333333333
+      },
+      "conditional_means": {
+        "Claude Fable 5": 0.6516357142857142,
+        "Claude Opus 4.8 Thinking": 0.6611948275862068,
+        "GLM 5.2": 0.5603140350877193,
+        "GPT-5.6 Sol": 0.6832118644067796,
+        "Grok 4.5": 0.6161517857142857,
+        "Hy3": 0.5171392857142857,
+        "Intern-S2-Preview-397B": 0.49194716981132075,
+        "Kimi K2.7 Code": 0.4634736842105263,
+        "Kimi K3": 0.5549103448275863,
+        "Muse Spark 1.1": 0.5743315789473684
+      },
+      "conditional_mean_maximizers": [
+        "GPT-5.6 Sol"
+      ],
+      "full_roster_maximizers": [
+        "GPT-5.6 Sol"
+      ],
+      "retrospective_recorded_mean_loss_percentage_points": {
+        "GPT-5.6 Sol": 0.0
+      },
+      "masked_grade_winner_report": {
+        "models": {
+          "Claude Fable 5": {
+            "lower": 0.6081933333333334,
+            "upper": 0.67486,
+            "known": 56,
+            "roster": 60
+          },
+          "Claude Opus 4.8 Thinking": {
+            "lower": 0.639155,
+            "upper": 0.6724883333333334,
+            "known": 58,
+            "roster": 60
+          },
+          "GLM 5.2": {
+            "lower": 0.5322983333333333,
+            "upper": 0.5822983333333334,
+            "known": 57,
+            "roster": 60
+          },
+          "GPT-5.6 Sol": {
+            "lower": 0.671825,
+            "upper": 0.6884916666666667,
+            "known": 59,
+            "roster": 60
+          },
+          "Grok 4.5": {
+            "lower": 0.575075,
+            "upper": 0.6417416666666667,
+            "known": 56,
+            "roster": 60
+          },
+          "Hy3": {
+            "lower": 0.48266333333333333,
+            "upper": 0.54933,
+            "known": 56,
+            "roster": 60
+          },
+          "Intern-S2-Preview-397B": {
+            "lower": 0.43455333333333335,
+            "upper": 0.55122,
+            "known": 53,
+            "roster": 60
+          },
+          "Kimi K2.7 Code": {
+            "lower": 0.44029999999999997,
+            "upper": 0.49029999999999996,
+            "known": 57,
+            "roster": 60
+          },
+          "Kimi K3": {
+            "lower": 0.5364133333333333,
+            "upper": 0.5697466666666666,
+            "known": 58,
+            "roster": 60
+          },
+          "Muse Spark 1.1": {
+            "lower": 0.545615,
+            "upper": 0.595615,
+            "known": 57,
+            "roster": 60
+          }
+        },
+        "not_ruled_out_as_roster_maximizer": [
+          "Claude Fable 5",
+          "Claude Opus 4.8 Thinking",
+          "GPT-5.6 Sol"
+        ],
+        "certified_strict_roster_maximizer": [],
+        "ruled_out_by": {
+          "GLM 5.2": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ],
+          "Grok 4.5": [
+            "GPT-5.6 Sol"
+          ],
+          "Hy3": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "Intern-S2-Preview-397B": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "Kimi K2.7 Code": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GLM 5.2",
+            "GPT-5.6 Sol",
+            "Grok 4.5",
+            "Kimi K3",
+            "Muse Spark 1.1"
+          ],
+          "Kimi K3": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol",
+            "Grok 4.5"
+          ],
+          "Muse Spark 1.1": [
+            "Claude Fable 5",
+            "Claude Opus 4.8 Thinking",
+            "GPT-5.6 Sol"
+          ]
+        },
+        "tolerance": 1e-12,
+        "interpretation": "Maximizers of the declared equally weighted recorded-grade roster within numerical tolerance. Independently unrestricted unavailable grades permit each candidate to attain its upper endpoint while other models attain their lower endpoints. Candidates are separate possibilities, not simultaneously achievable strict winners. No statistical, deployment, outcome-validation or general agent-quality claim."
+      }
+    }
+  }
+}
