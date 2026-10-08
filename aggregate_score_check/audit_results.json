@@ -1,0 +1,4825 @@
+{
+  "benchmark_counts": {
+    "appworld_test_normal": {
+      "conditional_denominator_difference_candidate_rows": 0,
+      "different_scores": 22,
+      "eligible_recorded_rows": 0,
+      "eligible_strict_rows": 0,
+      "planned_recorded_gap_rows": 0,
+      "positive_incomplete": 11,
+      "rows": 25,
+      "status_coverage_gap_rows": 0
+    },
+    "browsecompplus": {
+      "conditional_denominator_difference_candidate_rows": 0,
+      "different_scores": 0,
+      "eligible_recorded_rows": 0,
+      "eligible_strict_rows": 0,
+      "planned_recorded_gap_rows": 0,
+      "positive_incomplete": 6,
+      "rows": 25,
+      "status_coverage_gap_rows": 11
+    },
+    "swebench": {
+      "conditional_denominator_difference_candidate_rows": 6,
+      "different_scores": 8,
+      "eligible_recorded_rows": 23,
+      "eligible_strict_rows": 19,
+      "planned_recorded_gap_rows": 4,
+      "positive_incomplete": 8,
+      "rows": 25,
+      "status_coverage_gap_rows": 0
+    },
+    "tau2_airline": {
+      "conditional_denominator_difference_candidate_rows": 0,
+      "different_scores": 0,
+      "eligible_recorded_rows": 0,
+      "eligible_strict_rows": 0,
+      "planned_recorded_gap_rows": 0,
+      "positive_incomplete": 0,
+      "rows": 25,
+      "status_coverage_gap_rows": 0
+    },
+    "tau2_retail": {
+      "conditional_denominator_difference_candidate_rows": 0,
+      "different_scores": 1,
+      "eligible_recorded_rows": 0,
+      "eligible_strict_rows": 0,
+      "planned_recorded_gap_rows": 3,
+      "positive_incomplete": 4,
+      "rows": 25,
+      "status_coverage_gap_rows": 0
+    },
+    "tau2_telecom": {
+      "conditional_denominator_difference_candidate_rows": 0,
+      "different_scores": 0,
+      "eligible_recorded_rows": 0,
+      "eligible_strict_rows": 0,
+      "planned_recorded_gap_rows": 1,
+      "positive_incomplete": 2,
+      "rows": 25,
+      "status_coverage_gap_rows": 0
+    }
+  },
+  "distinct_keys": 150,
+  "eligibility_policy": "Conditional aggregate evidence only: assumes every recorded SWE result contributes a numeric score; public release does not expose that count. Equal implied products do not verify actual numerator or individual outcomes.",
+  "missing_sessions_nonzero_rows": 0,
+  "planned_equals_recorded_pair_audit": {
+    "comparisons": [
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": 0.36,
+        "benchmark_score_difference": -0.09684210526315784,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          32
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.07999999999999996,
+        "benchmark_score_difference": 0.07999999999999996,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          62
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.020000000000000018,
+        "benchmark_score_difference": -0.04749999999999999,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          92
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.020000000000000018,
+        "benchmark_score_difference": -0.04749999999999999,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": 0.034545454545454546,
+        "benchmark_score_difference": 0.034545454545454546,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          14,
+          44
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.054747474747474656,
+        "benchmark_score_difference": 0.054747474747474656,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          14,
+          74
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": -0.06496087442553722,
+        "benchmark_score_difference": -0.06496087442553722,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          50
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.09226804123711341,
+        "benchmark_score_difference": 0.09226804123711341,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          80
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.13620743517650735,
+        "benchmark_score_difference": 0.13620743517650735,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.13620743517650735,
+        "benchmark_score_difference": 0.13620743517650735,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": -0.05340425531914894,
+        "benchmark_score_difference": -0.05340425531914894,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          56
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.08757575757575753,
+        "benchmark_score_difference": -0.08757575757575753,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          86
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.039999999999999925,
+        "benchmark_score_difference": -0.039999999999999925,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.039999999999999925,
+        "benchmark_score_difference": -0.039999999999999925,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.28,
+        "benchmark_score_difference": 0.1768421052631578,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          62
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.38,
+        "benchmark_score_difference": 0.049342105263157854,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          92
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.38,
+        "benchmark_score_difference": 0.049342105263157854,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          122
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.02020202020202011,
+        "benchmark_score_difference": 0.02020202020202011,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          44,
+          74
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.15722891566265063,
+        "benchmark_score_difference": 0.15722891566265063,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          80
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.20116830960204457,
+        "benchmark_score_difference": 0.20116830960204457,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.20116830960204457,
+        "benchmark_score_difference": 0.20116830960204457,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.03417150225660859,
+        "benchmark_score_difference": -0.03417150225660859,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          86
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.013404255319149017,
+        "benchmark_score_difference": 0.013404255319149017,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.013404255319149017,
+        "benchmark_score_difference": 0.013404255319149017,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.09999999999999998,
+        "benchmark_score_difference": -0.12749999999999995,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          62,
+          92
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.09999999999999998,
+        "benchmark_score_difference": -0.12749999999999995,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          62,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.043939393939393945,
+        "benchmark_score_difference": 0.043939393939393945,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          80,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.043939393939393945,
+        "benchmark_score_difference": 0.043939393939393945,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          80,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.047575757575757605,
+        "benchmark_score_difference": 0.047575757575757605,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          86,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.047575757575757605,
+        "benchmark_score_difference": 0.047575757575757605,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          86,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          92,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          110,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          116,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      }
+    ],
+    "eligible_pairs": 33,
+    "strict_order_flips": 4,
+    "tie_changes": 0
+  },
+  "recorded_denominator_pair_audit": {
+    "comparisons": [
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": 0.36,
+        "benchmark_score_difference": -0.09684210526315784,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          32
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.07999999999999996,
+        "benchmark_score_difference": 0.07999999999999996,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          62
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.020000000000000018,
+        "benchmark_score_difference": -0.04749999999999999,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          92
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.020000000000000018,
+        "benchmark_score_difference": -0.04749999999999999,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          2,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": -0.034848484848484906,
+        "benchmark_score_difference": -0.046602146013044354,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          8,
+          38
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.05474095796676448,
+        "benchmark_score_difference": -0.05567879325643299,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          8,
+          68
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.05627705627705626,
+        "benchmark_score_difference": -0.05102040816326525,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          8,
+          98
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.05627705627705626,
+        "benchmark_score_difference": -0.05102040816326525,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          8,
+          128
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": 0.034545454545454546,
+        "benchmark_score_difference": 0.034545454545454546,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          14,
+          44
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.054747474747474656,
+        "benchmark_score_difference": 0.054747474747474656,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          14,
+          74
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": -0.06496087442553722,
+        "benchmark_score_difference": -0.06496087442553722,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          50
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.09226804123711341,
+        "benchmark_score_difference": 0.09226804123711341,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          80
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.13620743517650735,
+        "benchmark_score_difference": 0.13620743517650735,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.13620743517650735,
+        "benchmark_score_difference": 0.13620743517650735,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          20,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "openai_solo"
+        ],
+        "average_score_difference": -0.05340425531914894,
+        "benchmark_score_difference": -0.05340425531914894,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          56
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.08757575757575753,
+        "benchmark_score_difference": -0.08757575757575753,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          86
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.039999999999999925,
+        "benchmark_score_difference": -0.039999999999999925,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "claude_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.039999999999999925,
+        "benchmark_score_difference": -0.039999999999999925,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          26,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.28,
+        "benchmark_score_difference": 0.1768421052631578,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          62
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.38,
+        "benchmark_score_difference": 0.049342105263157854,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          92
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.38,
+        "benchmark_score_difference": 0.049342105263157854,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          32,
+          122
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.019892473118279574,
+        "benchmark_score_difference": -0.009076647243388636,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          38,
+          68
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.021428571428571352,
+        "benchmark_score_difference": -0.004418262150220897,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          38,
+          98
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.021428571428571352,
+        "benchmark_score_difference": -0.004418262150220897,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          38,
+          128
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.02020202020202011,
+        "benchmark_score_difference": 0.02020202020202011,
+        "model": "openai_Azure_gpt-5.2-2025-12-11",
+        "row_indices": [
+          44,
+          74
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": 0.15722891566265063,
+        "benchmark_score_difference": 0.15722891566265063,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          80
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.20116830960204457,
+        "benchmark_score_difference": 0.20116830960204457,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.20116830960204457,
+        "benchmark_score_difference": 0.20116830960204457,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          50,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "smolagents_code"
+        ],
+        "average_score_difference": -0.03417150225660859,
+        "benchmark_score_difference": -0.03417150225660859,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          86
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.013404255319149017,
+        "benchmark_score_difference": 0.013404255319149017,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "openai_solo",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.013404255319149017,
+        "benchmark_score_difference": 0.013404255319149017,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          56,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.09999999999999998,
+        "benchmark_score_difference": -0.12749999999999995,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          62,
+          92
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.09999999999999998,
+        "benchmark_score_difference": -0.12749999999999995,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          62,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": -0.001536098310291778,
+        "benchmark_score_difference": 0.004658385093167738,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          68,
+          98
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": -0.001536098310291778,
+        "benchmark_score_difference": 0.004658385093167738,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          68,
+          128
+        ],
+        "strict_order_flip": true,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.043939393939393945,
+        "benchmark_score_difference": 0.043939393939393945,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          80,
+          110
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.043939393939393945,
+        "benchmark_score_difference": 0.043939393939393945,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          80,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling"
+        ],
+        "average_score_difference": 0.047575757575757605,
+        "benchmark_score_difference": 0.047575757575757605,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          86,
+          116
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "smolagents_code",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.047575757575757605,
+        "benchmark_score_difference": 0.047575757575757605,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          86,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_Azure_DeepSeek-V3.2",
+        "row_indices": [
+          92,
+          122
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_Azure_Kimi-K2.5",
+        "row_indices": [
+          98,
+          128
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_aws_claude-opus-4-5",
+        "row_indices": [
+          110,
+          140
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      },
+      {
+        "agents": [
+          "tool_calling",
+          "tool_calling_with_shortlisting"
+        ],
+        "average_score_difference": 0.0,
+        "benchmark_score_difference": 0.0,
+        "model": "openai_gcp_gemini-3-pro-preview",
+        "row_indices": [
+          116,
+          146
+        ],
+        "strict_order_flip": false,
+        "tie_change": false
+      }
+    ],
+    "eligible_pairs": 43,
+    "strict_order_flips": 6,
+    "tie_changes": 0
+  },
+  "row_audit": [
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 0,
+      "running_sessions_released": null,
+      "score_difference": -0.4167599999999998,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 1,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 64.0,
+      "implied_benchmark_resolved_total": 64.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 64,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 2,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 3,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 4,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 5,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 6,
+      "running_sessions_released": null,
+      "score_difference": -0.47620999999999997,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 7,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 51.0,
+      "implied_benchmark_resolved_total": 51.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 51,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 1,
+      "positive_incomplete": true,
+      "row_index": 8,
+      "running_sessions_released": null,
+      "score_difference": 0.005256648113791007,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 9,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 10,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 11,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 12,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 13,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 57.99999999999999,
+      "implied_benchmark_resolved_total": 57.99999999999999,
+      "implied_resolved_count_if_numeric_coverage_complete": 58,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 14,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 15,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 16,
+      "running_sessions_released": null,
+      "score_difference": 0.13,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 17,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 18,
+      "running_sessions_released": null,
+      "score_difference": -0.1141700000000001,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 19,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 51.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 72.0,
+      "implied_benchmark_resolved_total": 72.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 72,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 20,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 21,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 22,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 23,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 24,
+      "running_sessions_released": null,
+      "score_difference": -0.3664099999999998,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 25,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 67.0,
+      "implied_benchmark_resolved_total": 67.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 67,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 26,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 27,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 28,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "claude_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 29,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 30,
+      "running_sessions_released": null,
+      "score_difference": -0.23723999999999995,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 31,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 28.000000000000004,
+      "implied_benchmark_resolved_total": 28.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 28,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 32,
+      "running_sessions_released": null,
+      "score_difference": 0.4568421052631578,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 33,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 34,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 35,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 36,
+      "running_sessions_released": null,
+      "score_difference": -0.26422,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 37,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 55.00000000000001,
+      "implied_benchmark_resolved_total": 55.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 55,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 38,
+      "running_sessions_released": null,
+      "score_difference": 0.017010309278350455,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 39,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 40,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 41,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 42,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 43,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 53.99999999999999,
+      "implied_benchmark_resolved_total": 53.99999999999999,
+      "implied_resolved_count_if_numeric_coverage_complete": 54,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 44,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 45,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 46,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 47,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 48,
+      "running_sessions_released": null,
+      "score_difference": -0.11380999999999997,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 49,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 67.0,
+      "implied_benchmark_resolved_total": 67.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 67,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 50,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 51,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 52,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_aws_claude-opus-4-5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 53,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 54,
+      "running_sessions_released": null,
+      "score_difference": -0.24766,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 55,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 99.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 68.0,
+      "implied_benchmark_resolved_total": 68.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 68,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 56,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 57,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 58,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "openai_solo",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 59,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 60,
+      "running_sessions_released": null,
+      "score_difference": -0.48274000000000006,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 61,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 56.00000000000001,
+      "implied_benchmark_resolved_total": 56.00000000000001,
+      "implied_resolved_count_if_numeric_coverage_complete": 56,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 62,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 63,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 64,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 65,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 66,
+      "running_sessions_released": null,
+      "score_difference": -0.5083900000000001,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 67,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 53.00000000000001,
+      "implied_benchmark_resolved_total": 53.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 53,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 7,
+      "positive_incomplete": true,
+      "row_index": 68,
+      "running_sessions_released": null,
+      "score_difference": 0.006194483403459516,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 69,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 2,
+      "positive_incomplete": true,
+      "row_index": 70,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 1,
+      "positive_incomplete": true,
+      "row_index": 71,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 72,
+      "running_sessions_released": null,
+      "score_difference": -0.33232,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 73,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 52.00000000000001,
+      "implied_benchmark_resolved_total": 52.00000000000001,
+      "implied_resolved_count_if_numeric_coverage_complete": 52,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 74,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 75,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 76,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 77,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 78,
+      "running_sessions_released": null,
+      "score_difference": -0.12331000000000003,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 79,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 65.0,
+      "implied_benchmark_resolved_total": 65.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 65,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 80,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 81,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 82,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_aws_claude-opus-4-5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 83,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 84,
+      "running_sessions_released": null,
+      "score_difference": -0.3959999999999999,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 85,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 75.0,
+      "implied_benchmark_resolved_total": 75.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 75,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 86,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 87,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 88,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "smolagents_code",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 89,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 90,
+      "running_sessions_released": null,
+      "score_difference": -0.4593999999999999,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 91,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 66.0,
+      "implied_benchmark_resolved_total": 66.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 66,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 92,
+      "running_sessions_released": null,
+      "score_difference": 0.02749999999999997,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 93,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 94,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 95,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 96,
+      "running_sessions_released": null,
+      "score_difference": -0.5154499999999999,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 97,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 56.0,
+      "implied_benchmark_resolved_total": 56.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 56,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 2,
+      "positive_incomplete": true,
+      "row_index": 98,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 99,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 1,
+      "positive_incomplete": true,
+      "row_index": 100,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 101,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 102,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 103,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": false,
+      "implied_average_resolved_total": 57.99999999999999,
+      "implied_benchmark_resolved_total": 56.99999999999999,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 104,
+      "running_sessions_released": null,
+      "score_difference": -0.010000000000000009,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 105,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 106,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 107,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 108,
+      "running_sessions_released": null,
+      "score_difference": -0.1552800000000002,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 109,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 60.0,
+      "implied_benchmark_resolved_total": 60.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 60,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 110,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 111,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 112,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_aws_claude-opus-4-5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 113,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 114,
+      "running_sessions_released": null,
+      "score_difference": -0.2741499999999999,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 115,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 71.0,
+      "implied_benchmark_resolved_total": 71.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 71,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 116,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 117,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 118,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 119,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 120,
+      "running_sessions_released": null,
+      "score_difference": -0.41891,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 121,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": true,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 66.0,
+      "implied_benchmark_resolved_total": 66.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 66,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 122,
+      "running_sessions_released": null,
+      "score_difference": 0.02749999999999997,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 123,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 124,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_DeepSeek-V3.2",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 125,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 126,
+      "running_sessions_released": null,
+      "score_difference": -0.5083999999999999,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": true,
+      "row_index": 127,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 56.0,
+      "implied_benchmark_resolved_total": 56.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 56,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 2,
+      "positive_incomplete": true,
+      "row_index": 128,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 129,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 1,
+      "positive_incomplete": true,
+      "row_index": 130,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_Kimi-K2.5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 131,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 132,
+      "running_sessions_released": null,
+      "score_difference": -0.3647299999999998,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 133,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": false,
+      "implied_average_resolved_total": 57.99999999999999,
+      "implied_benchmark_resolved_total": 56.99999999999999,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 134,
+      "running_sessions_released": null,
+      "score_difference": -0.010000000000000009,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 135,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 136,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_Azure_gpt-5.2-2025-12-11",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 137,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 138,
+      "running_sessions_released": null,
+      "score_difference": -0.1420600000000002,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 139,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 60.0,
+      "implied_benchmark_resolved_total": 60.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 60,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 140,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 141,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 142,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_aws_claude-opus-4-5",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 143,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": true,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "appworld_test_normal"
+      ],
+      "metric_identity": "different_metrics_partial_test_completion_vs_task_goal_completion",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 144,
+      "running_sessions_released": null,
+      "score_difference": -0.2645799999999998,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "browsecompplus"
+      ],
+      "metric_identity": "binary_answer_correctness",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 145,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 100.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": true,
+      "eligible_recorded_denominator_comparison": true,
+      "equal_implied_resolved_totals": true,
+      "implied_average_resolved_total": 71.0,
+      "implied_benchmark_resolved_total": 71.0,
+      "implied_resolved_count_if_numeric_coverage_complete": 71,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "swebench"
+      ],
+      "metric_identity": "binary_issue_resolution",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 146,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_airline"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 147,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_retail"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 148,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    },
+    {
+      "conditional_denominator_difference_candidate": false,
+      "different_scores": false,
+      "eligibility_requires_all_recorded_scores_numeric": true,
+      "eligible_planned_equals_recorded_comparison": false,
+      "eligible_recorded_denominator_comparison": false,
+      "equal_implied_resolved_totals": null,
+      "implied_average_resolved_total": null,
+      "implied_benchmark_resolved_total": null,
+      "implied_resolved_count_if_numeric_coverage_complete": null,
+      "key": [
+        "tool_calling_with_shortlisting",
+        "openai_gcp_gemini-3-pro-preview",
+        "tau2_telecom"
+      ],
+      "metric_identity": "reward_metric_comparability_not_verified",
+      "numeric_grade_count_released": null,
+      "planned_recorded_gap": 0,
+      "positive_incomplete": false,
+      "row_index": 149,
+      "running_sessions_released": null,
+      "score_difference": 0.0,
+      "status_coverage_gap_excluding_unreleased_running": 0.0
+    }
+  ],
+  "rows": 150,
+  "tolerance_absolute": 1e-08
+}

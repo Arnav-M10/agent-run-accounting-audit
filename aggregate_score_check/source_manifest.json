@@ -1,0 +1,64 @@
+{
+  "data_generating_source_revision": null,
+  "dataset_last_modified": "2026-05-18T12:51:21.000Z",
+  "dataset_revision": "0e6034d9d4aad1dfa77480f6f62d007fe2f040e3",
+  "dataset_url": "https://huggingface.co/datasets/open-agent-leaderboard/results",
+  "limitations": [
+    "Aggregate-only release; no session/task IDs or individual outcome vectors.",
+    "Equal implied totals under complete numeric-score coverage; actual numeric-grade count and individual vector unavailable.",
+    "Successful SWE sessions mean harness execution without error, not resolved issues.",
+    "Incomplete sessions are execution states, not a count of missing grades.",
+    "Exact data-generating code revision unknown.",
+    "ReAct and ReAct+Shortlisting contain duplicate aggregates; pairs are configuration comparisons, not independent samples.",
+    "average_score denominator is non-null numeric score count, not total_sessions by definition. That count is absent; products with total_sessions are implied totals conditional on complete numeric-score coverage.",
+    "running_sessions is absent from released schema. Status coverage gaps omit that unavailable execution category and are descriptive coverage gaps, not proven accounting contradictions."
+  ],
+  "local_card_sha256": "32b0700f46cc5ebbfc4090442a237975db973f6debc6c8617ccb66e0e03ba0e9",
+  "official_pinned_download_sha256": "8bea4f9c00f789f2410d9b7824f138abea348c37a6bc51f6fd7d4b4b24ee271a",
+  "paper_url": "https://arxiv.org/html/2602.22953v1",
+  "parquet_sha256": "8bea4f9c00f789f2410d9b7824f138abea348c37a6bc51f6fd7d4b4b24ee271a",
+  "source_files": [
+    {
+      "path": "src/exgentic/observers/handlers/results.py",
+      "sha256": "1c7207620f9ba3eb7a788343b45bc83b1a0acad9113765de069462fc1197b6f2",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/observers/handlers/results.py"
+    },
+    {
+      "path": "src/exgentic/core/orchestrator/run.py",
+      "sha256": "8c36cb4fab318598683f2d48808aab0c1f0560b4af02a33694523c8c76d0deb3",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/core/orchestrator/run.py"
+    },
+    {
+      "path": "src/exgentic/core/types/session.py",
+      "sha256": "2cb331528cd8a741c7d032d598ddd8e3a3ebeec122b25abf58e1279222e059ff",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/core/types/session.py"
+    },
+    {
+      "path": "src/exgentic/benchmarks/swebench/swebench_eval.py",
+      "sha256": "27e3d5a42f3b6119f4ac2a3a0b1d0628fdf50c9e420dce89a1244ea95fbb095b",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/benchmarks/swebench/swebench_eval.py"
+    },
+    {
+      "path": "src/exgentic/benchmarks/swebench/swebench_logs.py",
+      "sha256": "6026744614d80ba32a75d0992a70c5a4f4ba6226fd9dd54b6ee7ac229139dc8a",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/benchmarks/swebench/swebench_logs.py"
+    },
+    {
+      "path": "src/exgentic/benchmarks/appworld/appworld_eval.py",
+      "sha256": "50fdb95ebe4106005940d7d398d0388f4877110925e8d1c8a8431ad3cc88725b",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/benchmarks/appworld/appworld_eval.py"
+    },
+    {
+      "path": "src/exgentic/benchmarks/browsecompplus/browsecomp_benchmark.py",
+      "sha256": "896a73c3ecbf32e98fd488fdefac44356d2b5d13ed4fd906c655a717bb145a31",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/benchmarks/browsecompplus/browsecomp_benchmark.py"
+    },
+    {
+      "path": "src/exgentic/benchmarks/tau2/tau2_eval.py",
+      "sha256": "84c153f0b1c3ffd06e57f8d42883d5b445f1b551b71c0536a09b89a4d3dbad85",
+      "url": "https://github.com/Exgentic/exgentic/blob/8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5/src/exgentic/benchmarks/tau2/tau2_eval.py"
+    }
+  ],
+  "source_review_revision": "8af99b17c7b5c6a32f7578ff3a7c9e3d0f389fa5",
+  "source_review_revision_selection": "Latest main commit before dataset lastModified; not known to be data-generating commit"
+}
