@@ -1,0 +1,49 @@
+{
+  "population_rows": 90,
+  "unique_tasks": 45,
+  "common_task_ids": 45,
+  "identical_task_universe": true,
+  "all_scores_available": true,
+  "published_generalist_accuracy": 0,
+  "published_control_accuracy": 0.4222222222222222,
+  "directly_observed_exception_tasks": 45,
+  "directly_observed_parse_error_tasks": 45,
+  "exception_types": {
+    "BadRequestError": 33,
+    "APIConnectionError": 12
+  },
+  "operational_failure_kinds": {
+    "provider_credit_unavailable": 33,
+    "client_message_type_error": 12
+  },
+  "control_unknown_status_tasks": 45,
+  "no_parse_error_known_support_generalist": 0,
+  "no_parse_error_known_support_control": 0,
+  "no_parse_error_control_support_reason": "status unknown; explicit false rule cannot certify error absence",
+  "missing_grades": 0,
+  "new_inference_calls": 0,
+  "new_human_participants": 0,
+  "source_grade_semantics": "Known end-to-end zero on parse error; not missing grades",
+  "runs": [
+    {
+      "run_id": "corebench_hard_hal_generalist_agent_1747200995",
+      "agent_name": "HAL Generalist Agent",
+      "date": "2025-05-18",
+      "rows": 45,
+      "successes": 0,
+      "failures": 45,
+      "source_accuracy": 0.0,
+      "status_coverage": "direct_task_join"
+    },
+    {
+      "run_id": "corebench_hard_claude_code_claudeopus41_1764560915",
+      "agent_name": "Claude Code (claude-opus-4-1)",
+      "date": "2025-12-01",
+      "rows": 45,
+      "successes": 19,
+      "failures": 26,
+      "source_accuracy": 0.4222222222222222,
+      "status_coverage": "not_exposed_in_processed_archive"
+    }
+  ]
+}

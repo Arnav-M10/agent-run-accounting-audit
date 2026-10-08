@@ -1,0 +1,788 @@
+{
+  "provenance": {
+    "target": "task-weighted recorded four-pass outcome consistency",
+    "analysis_timing": "post hoc, outcome-informed",
+    "metric_source": "https://arxiv.org/html/2602.16666v3",
+    "ledger_sha256": {
+      "cmu_attempts.jsonl": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+      "cmu_search_slots.jsonl": "480a2980ca39de06a9c292b0208d27185a1cb55a0b88dce28450ff1ae6485b85"
+    }
+  },
+  "overall": {
+    "N": 995,
+    "k_counts": {
+      "4": 722,
+      "3": 91,
+      "2": 29,
+      "1": 51,
+      "0": 102
+    },
+    "full_recorded_bounds": [
+      0.8178391959798995,
+      0.8185929648241206
+    ],
+    "available_retained": 0.8119323130521339,
+    "complete_only": 0.7873961218836565,
+    "full_on_retained_support": [
+      0.7978723404255319,
+      0.7978723404255319
+    ],
+    "incomplete_available": 0.9155295646523716,
+    "incomplete_full_bounds": [
+      0.8421052631578947,
+      0.8421052631578947
+    ],
+    "random_thin_known_supported": 0.804093567251462,
+    "actual_known_supported": 0.8119323130521339,
+    "retained_missing_bounds": [
+      0.5907035175879397,
+      0.8336683417085428
+    ],
+    "always_fail_full_known": 699,
+    "always_success_full": 78,
+    "full_counts": {
+      "(4, 0)": 699,
+      "(4, 1)": 85,
+      "(4, 2)": 71,
+      "(4, 4)": 78,
+      "(4, 3)": 61,
+      "(3, 0)": 1
+    }
+  },
+  "models": {
+    "DeepSeek-R1": {
+      "N": 199,
+      "k_counts": {
+        "4": 79,
+        "3": 37,
+        "2": 14,
+        "1": 24,
+        "0": 45
+      },
+      "full_recorded_bounds": [
+        0.821608040201005,
+        0.8253768844221105
+      ],
+      "available_retained": 0.7812049062049062,
+      "complete_only": 0.6550632911392406,
+      "full_on_retained_support": [
+        0.7743506493506493,
+        0.7743506493506493
+      ],
+      "incomplete_available": 0.9140740740740741,
+      "incomplete_full_bounds": [
+        0.9,
+        0.9
+      ],
+      "random_thin_known_supported": 0.7819264069264069,
+      "actual_known_supported": 0.7812049062049062,
+      "retained_missing_bounds": [
+        0.30025125628140703,
+        0.8366834170854272
+      ],
+      "always_fail_full_known": 139,
+      "always_success_full": 18,
+      "full_counts": {
+        "(4, 0)": 139,
+        "(4, 1)": 13,
+        "(4, 2)": 16,
+        "(4, 4)": 18,
+        "(4, 3)": 12,
+        "(3, 0)": 1
+      }
+    },
+    "DeepSeek-V3.2": {
+      "N": 199,
+      "k_counts": {
+        "4": 74,
+        "3": 32,
+        "2": 11,
+        "1": 27,
+        "0": 55
+      },
+      "full_recorded_bounds": [
+        0.7625628140703518,
+        0.7625628140703518
+      ],
+      "available_retained": 0.7517361111111112,
+      "complete_only": 0.625,
+      "full_on_retained_support": [
+        0.671875,
+        0.671875
+      ],
+      "incomplete_available": 0.8857142857142857,
+      "incomplete_full_bounds": [
+        0.7214285714285714,
+        0.7214285714285714
+      ],
+      "random_thin_known_supported": 0.7023533950617283,
+      "actual_known_supported": 0.7517361111111112,
+      "retained_missing_bounds": [
+        0.2613065326633166,
+        0.8266331658291457
+      ],
+      "always_fail_full_known": 123,
+      "always_success_full": 20,
+      "full_counts": {
+        "(4, 2)": 21,
+        "(4, 0)": 123,
+        "(4, 3)": 18,
+        "(4, 4)": 20,
+        "(4, 1)": 17
+      }
+    },
+    "Gemini-2.5-Flash": {
+      "N": 199,
+      "k_counts": {
+        "4": 198,
+        "0": 1
+      },
+      "full_recorded_bounds": [
+        0.8555276381909548,
+        0.8555276381909548
+      ],
+      "available_retained": 0.8547979797979798,
+      "complete_only": 0.8547979797979798,
+      "full_on_retained_support": [
+        0.8547979797979798,
+        0.8547979797979798
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.8547979797979798,
+      "actual_known_supported": 0.8547979797979798,
+      "retained_missing_bounds": [
+        0.8505025125628141,
+        0.8555276381909548
+      ],
+      "always_fail_full_known": 154,
+      "always_success_full": 10,
+      "full_counts": {
+        "(4, 0)": 154,
+        "(4, 1)": 16,
+        "(4, 4)": 10,
+        "(4, 2)": 10,
+        "(4, 3)": 9
+      }
+    },
+    "Qwen3-235B": {
+      "N": 199,
+      "k_counts": {
+        "4": 172,
+        "3": 22,
+        "2": 4,
+        "0": 1
+      },
+      "full_recorded_bounds": [
+        0.8190954773869347,
+        0.8190954773869347
+      ],
+      "available_retained": 0.8181818181818182,
+      "complete_only": 0.7906976744186046,
+      "full_on_retained_support": [
+        0.8181818181818182,
+        0.8181818181818182
+      ],
+      "incomplete_available": 1.0,
+      "incomplete_full_bounds": [
+        1.0,
+        1.0
+      ],
+      "random_thin_known_supported": 0.8181818181818182,
+      "actual_known_supported": 0.8181818181818182,
+      "retained_missing_bounds": [
+        0.7110552763819096,
+        0.8190954773869347
+      ],
+      "always_fail_full_known": 146,
+      "always_success_full": 9,
+      "full_counts": {
+        "(4, 0)": 146,
+        "(4, 1)": 21,
+        "(4, 2)": 12,
+        "(4, 3)": 11,
+        "(4, 4)": 9
+      }
+    },
+    "Qwen3-Next": {
+      "N": 199,
+      "k_counts": {
+        "4": 199
+      },
+      "full_recorded_bounds": [
+        0.8304020100502513,
+        0.8304020100502513
+      ],
+      "available_retained": 0.8304020100502513,
+      "complete_only": 0.8304020100502513,
+      "full_on_retained_support": [
+        0.8304020100502513,
+        0.8304020100502513
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.8304020100502513,
+      "actual_known_supported": 0.8304020100502513,
+      "retained_missing_bounds": [
+        0.8304020100502513,
+        0.8304020100502513
+      ],
+      "always_fail_full_known": 137,
+      "always_success_full": 21,
+      "full_counts": {
+        "(4, 0)": 137,
+        "(4, 3)": 11,
+        "(4, 1)": 18,
+        "(4, 2)": 12,
+        "(4, 4)": 21
+      }
+    }
+  },
+  "cells": {
+    "DeepSeek-R1 / browsecomp": {
+      "N": 124,
+      "k_counts": {
+        "4": 22,
+        "3": 22,
+        "2": 12,
+        "1": 23,
+        "0": 45
+      },
+      "full_recorded_bounds": [
+        0.9576612903225806,
+        0.9637096774193549
+      ],
+      "available_retained": 0.9381153305203939,
+      "complete_only": 0.8636363636363636,
+      "full_on_retained_support": [
+        0.9430379746835443,
+        0.9430379746835443
+      ],
+      "incomplete_available": 0.9668615984405459,
+      "incomplete_full_bounds": [
+        0.9736842105263158,
+        0.9736842105263158
+      ],
+      "random_thin_known_supported": 0.9472573839662447,
+      "actual_known_supported": 0.9381153305203939,
+      "retained_missing_bounds": [
+        0.19556451612903225,
+        0.9637096774193549
+      ],
+      "always_fail_full_known": 117,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 117,
+        "(4, 1)": 6,
+        "(3, 0)": 1
+      }
+    },
+    "DeepSeek-R1 / mind2web": {
+      "N": 10,
+      "k_counts": {
+        "2": 2,
+        "3": 8
+      },
+      "full_recorded_bounds": [
+        0.925,
+        0.925
+      ],
+      "available_retained": 0.9,
+      "complete_only": null,
+      "full_on_retained_support": [
+        0.925,
+        0.925
+      ],
+      "incomplete_available": 0.9,
+      "incomplete_full_bounds": [
+        0.925,
+        0.925
+      ],
+      "random_thin_known_supported": 0.95,
+      "actual_known_supported": 0.9,
+      "retained_missing_bounds": [
+        0.2,
+        0.925
+      ],
+      "always_fail_full_known": 9,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 1)": 1,
+        "(4, 0)": 9
+      }
+    },
+    "DeepSeek-R1 / webvoyager": {
+      "N": 65,
+      "k_counts": {
+        "3": 7,
+        "4": 57,
+        "1": 1
+      },
+      "full_recorded_bounds": [
+        0.5461538461538461,
+        0.5461538461538461
+      ],
+      "available_retained": 0.5722222222222222,
+      "complete_only": 0.5745614035087719,
+      "full_on_retained_support": [
+        0.5461538461538461,
+        0.5461538461538461
+      ],
+      "incomplete_available": 0.5555555555555556,
+      "incomplete_full_bounds": [
+        0.34375,
+        0.34375
+      ],
+      "random_thin_known_supported": 0.5551282051282052,
+      "actual_known_supported": 0.5722222222222222,
+      "retained_missing_bounds": [
+        0.5153846153846153,
+        0.5807692307692308
+      ],
+      "always_fail_full_known": 13,
+      "always_success_full": 18,
+      "full_counts": {
+        "(4, 2)": 16,
+        "(4, 0)": 13,
+        "(4, 4)": 18,
+        "(4, 3)": 12,
+        "(4, 1)": 6
+      }
+    },
+    "DeepSeek-V3.2 / browsecomp": {
+      "N": 124,
+      "k_counts": {
+        "4": 14,
+        "3": 20,
+        "2": 9,
+        "1": 26,
+        "0": 55
+      },
+      "full_recorded_bounds": [
+        0.8568548387096774,
+        0.8568548387096774
+      ],
+      "available_retained": 0.8844605475040258,
+      "complete_only": 0.875,
+      "full_on_retained_support": [
+        0.7427536231884058,
+        0.7427536231884058
+      ],
+      "incomplete_available": 0.8868686868686869,
+      "incomplete_full_bounds": [
+        0.7090909090909091,
+        0.7090909090909091
+      ],
+      "random_thin_known_supported": 0.8007246376811594,
+      "actual_known_supported": 0.8844605475040258,
+      "retained_missing_bounds": [
+        0.125,
+        0.9435483870967742
+      ],
+      "always_fail_full_known": 96,
+      "always_success_full": 7,
+      "full_counts": {
+        "(4, 4)": 7,
+        "(4, 0)": 96,
+        "(4, 3)": 6,
+        "(4, 1)": 7,
+        "(4, 2)": 8
+      }
+    },
+    "DeepSeek-V3.2 / mind2web": {
+      "N": 10,
+      "k_counts": {
+        "4": 6,
+        "3": 2,
+        "2": 1,
+        "1": 1
+      },
+      "full_recorded_bounds": [
+        1.0,
+        1.0
+      ],
+      "available_retained": 1.0,
+      "complete_only": 1.0,
+      "full_on_retained_support": [
+        1.0,
+        1.0
+      ],
+      "incomplete_available": 1.0,
+      "incomplete_full_bounds": [
+        1.0,
+        1.0
+      ],
+      "random_thin_known_supported": 1.0,
+      "actual_known_supported": 1.0,
+      "retained_missing_bounds": [
+        0.65,
+        1.0
+      ],
+      "always_fail_full_known": 10,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 10
+      }
+    },
+    "DeepSeek-V3.2 / webvoyager": {
+      "N": 65,
+      "k_counts": {
+        "4": 54,
+        "3": 10,
+        "2": 1
+      },
+      "full_recorded_bounds": [
+        0.5461538461538461,
+        0.5461538461538461
+      ],
+      "available_retained": 0.5726495726495726,
+      "complete_only": 0.5185185185185185,
+      "full_on_retained_support": [
+        0.5461538461538461,
+        0.5461538461538461
+      ],
+      "incomplete_available": 0.8383838383838383,
+      "incomplete_full_bounds": [
+        0.6818181818181818,
+        0.6818181818181818
+      ],
+      "random_thin_known_supported": 0.5521367521367521,
+      "actual_known_supported": 0.5726495726495726,
+      "retained_missing_bounds": [
+        0.46153846153846156,
+        0.5769230769230769
+      ],
+      "always_fail_full_known": 17,
+      "always_success_full": 13,
+      "full_counts": {
+        "(4, 2)": 13,
+        "(4, 0)": 17,
+        "(4, 3)": 12,
+        "(4, 1)": 10,
+        "(4, 4)": 13
+      }
+    },
+    "Gemini-2.5-Flash / browsecomp": {
+      "N": 124,
+      "k_counts": {
+        "4": 124
+      },
+      "full_recorded_bounds": [
+        0.9435483870967742,
+        0.9435483870967742
+      ],
+      "available_retained": 0.9435483870967742,
+      "complete_only": 0.9435483870967742,
+      "full_on_retained_support": [
+        0.9435483870967742,
+        0.9435483870967742
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.9435483870967742,
+      "actual_known_supported": 0.9435483870967742,
+      "retained_missing_bounds": [
+        0.9435483870967742,
+        0.9435483870967742
+      ],
+      "always_fail_full_known": 114,
+      "always_success_full": 1,
+      "full_counts": {
+        "(4, 0)": 114,
+        "(4, 1)": 8,
+        "(4, 4)": 1,
+        "(4, 2)": 1
+      }
+    },
+    "Gemini-2.5-Flash / mind2web": {
+      "N": 10,
+      "k_counts": {
+        "4": 10
+      },
+      "full_recorded_bounds": [
+        1.0,
+        1.0
+      ],
+      "available_retained": 1.0,
+      "complete_only": 1.0,
+      "full_on_retained_support": [
+        1.0,
+        1.0
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 1.0,
+      "actual_known_supported": 1.0,
+      "retained_missing_bounds": [
+        1.0,
+        1.0
+      ],
+      "always_fail_full_known": 10,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 10
+      }
+    },
+    "Gemini-2.5-Flash / webvoyager": {
+      "N": 65,
+      "k_counts": {
+        "4": 64,
+        "0": 1
+      },
+      "full_recorded_bounds": [
+        0.6653846153846154,
+        0.6653846153846154
+      ],
+      "available_retained": 0.66015625,
+      "complete_only": 0.66015625,
+      "full_on_retained_support": [
+        0.66015625,
+        0.66015625
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.66015625,
+      "actual_known_supported": 0.66015625,
+      "retained_missing_bounds": [
+        0.65,
+        0.6653846153846154
+      ],
+      "always_fail_full_known": 30,
+      "always_success_full": 9,
+      "full_counts": {
+        "(4, 1)": 8,
+        "(4, 0)": 30,
+        "(4, 4)": 9,
+        "(4, 3)": 9,
+        "(4, 2)": 9
+      }
+    },
+    "Qwen3-235B / browsecomp": {
+      "N": 124,
+      "k_counts": {
+        "4": 101,
+        "3": 20,
+        "2": 3
+      },
+      "full_recorded_bounds": [
+        0.9233870967741935,
+        0.9233870967741935
+      ],
+      "available_retained": 0.9233870967741935,
+      "complete_only": 0.905940594059406,
+      "full_on_retained_support": [
+        0.9233870967741935,
+        0.9233870967741935
+      ],
+      "incomplete_available": 1.0,
+      "incomplete_full_bounds": [
+        1.0,
+        1.0
+      ],
+      "random_thin_known_supported": 0.9233870967741935,
+      "actual_known_supported": 0.9233870967741935,
+      "retained_missing_bounds": [
+        0.7782258064516129,
+        0.9233870967741935
+      ],
+      "always_fail_full_known": 112,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 112,
+        "(4, 1)": 7,
+        "(4, 2)": 2,
+        "(4, 3)": 3
+      }
+    },
+    "Qwen3-235B / mind2web": {
+      "N": 10,
+      "k_counts": {
+        "4": 8,
+        "3": 1,
+        "2": 1
+      },
+      "full_recorded_bounds": [
+        1.0,
+        1.0
+      ],
+      "available_retained": 1.0,
+      "complete_only": 1.0,
+      "full_on_retained_support": [
+        1.0,
+        1.0
+      ],
+      "incomplete_available": 1.0,
+      "incomplete_full_bounds": [
+        1.0,
+        1.0
+      ],
+      "random_thin_known_supported": 1.0,
+      "actual_known_supported": 1.0,
+      "retained_missing_bounds": [
+        0.825,
+        1.0
+      ],
+      "always_fail_full_known": 10,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 10
+      }
+    },
+    "Qwen3-235B / webvoyager": {
+      "N": 65,
+      "k_counts": {
+        "4": 63,
+        "3": 1,
+        "0": 1
+      },
+      "full_recorded_bounds": [
+        0.5923076923076923,
+        0.5923076923076923
+      ],
+      "available_retained": 0.5859375,
+      "complete_only": 0.5793650793650794,
+      "full_on_retained_support": [
+        0.5859375,
+        0.5859375
+      ],
+      "incomplete_available": 1.0,
+      "incomplete_full_bounds": [
+        1.0,
+        1.0
+      ],
+      "random_thin_known_supported": 0.5859375,
+      "actual_known_supported": 0.5859375,
+      "retained_missing_bounds": [
+        0.5653846153846154,
+        0.5923076923076923
+      ],
+      "always_fail_full_known": 24,
+      "always_success_full": 9,
+      "full_counts": {
+        "(4, 1)": 14,
+        "(4, 2)": 10,
+        "(4, 0)": 24,
+        "(4, 4)": 9,
+        "(4, 3)": 8
+      }
+    },
+    "Qwen3-Next / browsecomp": {
+      "N": 124,
+      "k_counts": {
+        "4": 124
+      },
+      "full_recorded_bounds": [
+        0.9516129032258065,
+        0.9516129032258065
+      ],
+      "available_retained": 0.9516129032258065,
+      "complete_only": 0.9516129032258065,
+      "full_on_retained_support": [
+        0.9516129032258065,
+        0.9516129032258065
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.9516129032258065,
+      "actual_known_supported": 0.9516129032258065,
+      "retained_missing_bounds": [
+        0.9516129032258065,
+        0.9516129032258065
+      ],
+      "always_fail_full_known": 116,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 0)": 116,
+        "(4, 3)": 1,
+        "(4, 1)": 7
+      }
+    },
+    "Qwen3-Next / mind2web": {
+      "N": 10,
+      "k_counts": {
+        "4": 10
+      },
+      "full_recorded_bounds": [
+        0.9,
+        0.9
+      ],
+      "available_retained": 0.9,
+      "complete_only": 0.9,
+      "full_on_retained_support": [
+        0.9,
+        0.9
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.9,
+      "actual_known_supported": 0.9,
+      "retained_missing_bounds": [
+        0.9,
+        0.9
+      ],
+      "always_fail_full_known": 9,
+      "always_success_full": 0,
+      "full_counts": {
+        "(4, 2)": 1,
+        "(4, 0)": 9
+      }
+    },
+    "Qwen3-Next / webvoyager": {
+      "N": 65,
+      "k_counts": {
+        "4": 65
+      },
+      "full_recorded_bounds": [
+        0.5884615384615385,
+        0.5884615384615385
+      ],
+      "available_retained": 0.5884615384615385,
+      "complete_only": 0.5884615384615385,
+      "full_on_retained_support": [
+        0.5884615384615385,
+        0.5884615384615385
+      ],
+      "incomplete_available": null,
+      "incomplete_full_bounds": [
+        null,
+        null
+      ],
+      "random_thin_known_supported": 0.5884615384615385,
+      "actual_known_supported": 0.5884615384615385,
+      "retained_missing_bounds": [
+        0.5884615384615385,
+        0.5884615384615385
+      ],
+      "always_fail_full_known": 12,
+      "always_success_full": 21,
+      "full_counts": {
+        "(4, 2)": 11,
+        "(4, 1)": 11,
+        "(4, 0)": 12,
+        "(4, 3)": 10,
+        "(4, 4)": 21
+      }
+    }
+  }
+}

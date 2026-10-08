@@ -276,6 +276,14 @@
       "field": "observed_attempt_id",
       "target_field": "attempt_id",
       "linked_rows": 3979,
+      "match_fields": [
+        "benchmark",
+        "domain",
+        "model",
+        "task_id",
+        "pass"
+      ],
+      "unique_references_required": true,
       "unlinked_categories": [
         {
           "fields": {

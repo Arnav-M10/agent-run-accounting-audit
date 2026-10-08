@@ -1,0 +1,122 @@
+{
+  "ledger": "hal_task_ledger.jsonl",
+  "rows": 90,
+  "identity_fields": [
+    "run_id",
+    "task_id"
+  ],
+  "valid": true,
+  "issue_counts": {},
+  "issue_examples": [],
+  "duplicate_identity_examples": [],
+  "numeric_scores": 90,
+  "scores_without_range_evidence": 0,
+  "categories": {
+    "retention": [
+      {
+        "fields": {
+          "retention": {
+            "present": false
+          }
+        },
+        "count": 90
+      }
+    ],
+    "score_available": [
+      {
+        "fields": {
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 90
+      }
+    ],
+    "execution_status": [
+      {
+        "fields": {
+          "execution_status": {
+            "present": true,
+            "value": "recorded_call_exception"
+          }
+        },
+        "count": 45
+      },
+      {
+        "fields": {
+          "execution_status": {
+            "present": true,
+            "value": null
+          }
+        },
+        "count": 45
+      }
+    ],
+    "last_original_role": [
+      {
+        "fields": {
+          "last_original_role": {
+            "present": false
+          }
+        },
+        "count": 90
+      }
+    ],
+    "native_stop_reason": [
+      {
+        "fields": {
+          "native_stop_reason": {
+            "present": false
+          }
+        },
+        "count": 90
+      }
+    ],
+    "coverage": [
+      {
+        "fields": {
+          "coverage": {
+            "present": false
+          }
+        },
+        "count": 90
+      }
+    ]
+  },
+  "role_status_grade_availability": [
+    {
+      "fields": {
+        "last_original_role": {
+          "present": false
+        },
+        "execution_status": {
+          "present": true,
+          "value": "recorded_call_exception"
+        },
+        "score_available": {
+          "present": true,
+          "value": true
+        }
+      },
+      "count": 45
+    },
+    {
+      "fields": {
+        "last_original_role": {
+          "present": false
+        },
+        "execution_status": {
+          "present": true,
+          "value": null
+        },
+        "score_available": {
+          "present": true,
+          "value": true
+        }
+      },
+      "count": 45
+    }
+  ],
+  "reference_check": null
+}

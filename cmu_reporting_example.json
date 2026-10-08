@@ -28,6 +28,18 @@
         "source_population_count": 1500,
         "population_count": 1324,
         "excluded_count": 176,
+        "known_ineligible_count": 176,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 1324,
+            "known_mismatch_count": 176,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 1324,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -58,6 +70,18 @@
         "source_population_count": 956,
         "population_count": 899,
         "excluded_count": 57,
+        "known_ineligible_count": 57,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 899,
+            "known_mismatch_count": 57,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 899,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -88,6 +112,18 @@
         "source_population_count": 3979,
         "population_count": 3270,
         "excluded_count": 709,
+        "known_ineligible_count": 709,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 3270,
+            "known_mismatch_count": 709,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 3270,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -118,6 +154,18 @@
         "source_population_count": 897,
         "population_count": 747,
         "excluded_count": 150,
+        "known_ineligible_count": 150,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 747,
+            "known_mismatch_count": 150,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 747,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -148,6 +196,18 @@
         "source_population_count": 985,
         "population_count": 984,
         "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 984,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 984,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -178,6 +238,18 @@
         "source_population_count": 1452,
         "population_count": 1429,
         "excluded_count": 23,
+        "known_ineligible_count": 23,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "retention",
+            "value": "retained",
+            "matched_count": 1429,
+            "known_mismatch_count": 23,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 1429,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -221,6 +293,9 @@
         "source_population_count": 1500,
         "population_count": 1500,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 1500,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -251,6 +326,9 @@
         "source_population_count": 956,
         "population_count": 956,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 956,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -281,6 +359,9 @@
         "source_population_count": 3979,
         "population_count": 3979,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 3979,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -311,6 +392,9 @@
         "source_population_count": 897,
         "population_count": 897,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 897,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -341,6 +425,9 @@
         "source_population_count": 985,
         "population_count": 985,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 985,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -371,6 +458,9 @@
         "source_population_count": 1452,
         "population_count": 1452,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 1452,
         "unknown_score_count": 0,
         "null_score_count": 0,

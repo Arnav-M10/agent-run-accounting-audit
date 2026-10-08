@@ -32,3 +32,7 @@ Example for Claude Fable 5 (scores on [0,1]):
 Full machine-readable output is in `summarize_ledger_example.json`.
 
 The declared score and scale fields must each occur in at least one source record; wholly absent field names are rejected to catch misspelled overrides. For wholly unknown grades or scales, record explicit null values. Per-row absence remains distinct from explicit null when the field exists elsewhere. Numeric equality values must be finite, including exponent notation. CMU transfer commands and denominator limits appear in REPORTER_TRANSFER.md.
+
+## Eligibility evidence
+
+Reports now partition the source population into included, known-ineligible and unknown-eligibility counts. `excluded_count` remains the sum of the latter two. Per-rule counts distinguish matches, known mismatches, explicit-null unknown values and absent fields. A known false conjunct makes an AND rule known-ineligible even when another field is unknown. For an explicit `FIELD=null` selection, present null matches the declared rule; absence remains unknown. This refinement leaves selected populations and score means unchanged. HAL demonstrates why these counts matter: 45 observed parse errors are known-ineligible, while 45 control records without status are unknown, though both error-free means are undefined.

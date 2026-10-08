@@ -9,7 +9,7 @@ import json
 reports={}
 for name,identity,reference in [('cmu_attempts.jsonl','attempt_id',False),('cmu_search_slots.jsonl','benchmark,domain,model,task_id,pass',True),('wildclaw_released_pairs.jsonl','model,task_id',False)]:
     args=[sys.executable,str(ROOT/'check_ledger.py'),str(Path('run_accounting')/name),'--identity',identity]
-    if reference:args+=['--reference-ledger','run_accounting/cmu_attempts.jsonl']
+    if reference:args+=['--reference-ledger','run_accounting/cmu_attempts.jsonl','--match-reference-fields','benchmark,domain,model,task_id,pass','--unique-references']
     reports[name]=json.loads(subprocess.check_output(args,text=True,cwd=ROOT))
 (ROOT/'ledger_check_results.json').write_text(json.dumps(reports,indent=2)+'\n')
 print('All audits, reusable ledger checks, completed.')

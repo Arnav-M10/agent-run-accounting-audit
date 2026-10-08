@@ -21,6 +21,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -51,6 +54,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -81,6 +87,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -111,6 +120,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -141,6 +153,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -171,6 +186,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -201,6 +219,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -231,6 +252,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -261,6 +285,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -291,6 +318,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -321,6 +351,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -351,6 +384,9 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -401,6 +437,18 @@
         "source_population_count": 60,
         "population_count": 55,
         "excluded_count": 5,
+        "known_ineligible_count": 5,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 55,
+            "known_mismatch_count": 5,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 55,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -431,6 +479,18 @@
         "source_population_count": 60,
         "population_count": 59,
         "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 59,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 59,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -461,6 +521,18 @@
         "source_population_count": 60,
         "population_count": 52,
         "excluded_count": 8,
+        "known_ineligible_count": 8,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 52,
+            "known_mismatch_count": 8,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 52,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -491,6 +563,18 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 60,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -521,6 +605,18 @@
         "source_population_count": 60,
         "population_count": 55,
         "excluded_count": 5,
+        "known_ineligible_count": 5,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 55,
+            "known_mismatch_count": 5,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 55,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -551,6 +647,18 @@
         "source_population_count": 60,
         "population_count": 57,
         "excluded_count": 3,
+        "known_ineligible_count": 3,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 57,
+            "known_mismatch_count": 3,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 57,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -581,6 +689,18 @@
         "source_population_count": 60,
         "population_count": 51,
         "excluded_count": 9,
+        "known_ineligible_count": 9,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 51,
+            "known_mismatch_count": 9,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 51,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -611,6 +731,18 @@
         "source_population_count": 60,
         "population_count": 60,
         "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 60,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 60,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -641,6 +773,18 @@
         "source_population_count": 60,
         "population_count": 49,
         "excluded_count": 11,
+        "known_ineligible_count": 11,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 49,
+            "known_mismatch_count": 11,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 49,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -671,6 +815,18 @@
         "source_population_count": 60,
         "population_count": 56,
         "excluded_count": 4,
+        "known_ineligible_count": 4,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 56,
+            "known_mismatch_count": 4,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 56,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -701,6 +857,18 @@
         "source_population_count": 60,
         "population_count": 53,
         "excluded_count": 7,
+        "known_ineligible_count": 7,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 53,
+            "known_mismatch_count": 7,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 53,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -731,6 +899,18 @@
         "source_population_count": 60,
         "population_count": 59,
         "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "last_original_role",
+            "value": "assistant",
+            "matched_count": 59,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 59,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -781,6 +961,18 @@
         "source_population_count": 60,
         "population_count": 48,
         "excluded_count": 12,
+        "known_ineligible_count": 7,
+        "unknown_eligibility_count": 5,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 48,
+            "known_mismatch_count": 7,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 5
+          }
+        ],
         "scored_count": 48,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -811,6 +1003,18 @@
         "source_population_count": 60,
         "population_count": 53,
         "excluded_count": 7,
+        "known_ineligible_count": 6,
+        "unknown_eligibility_count": 1,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 53,
+            "known_mismatch_count": 6,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 1
+          }
+        ],
         "scored_count": 53,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -841,6 +1045,18 @@
         "source_population_count": 60,
         "population_count": 45,
         "excluded_count": 15,
+        "known_ineligible_count": 7,
+        "unknown_eligibility_count": 8,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 45,
+            "known_mismatch_count": 7,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 8
+          }
+        ],
         "scored_count": 45,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -871,6 +1087,18 @@
         "source_population_count": 60,
         "population_count": 59,
         "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 59,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 59,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -901,6 +1129,18 @@
         "source_population_count": 60,
         "population_count": 51,
         "excluded_count": 9,
+        "known_ineligible_count": 4,
+        "unknown_eligibility_count": 5,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 51,
+            "known_mismatch_count": 4,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 5
+          }
+        ],
         "scored_count": 51,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -931,6 +1171,18 @@
         "source_population_count": 60,
         "population_count": 51,
         "excluded_count": 9,
+        "known_ineligible_count": 6,
+        "unknown_eligibility_count": 3,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 51,
+            "known_mismatch_count": 6,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 3
+          }
+        ],
         "scored_count": 51,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -961,6 +1213,18 @@
         "source_population_count": 60,
         "population_count": 42,
         "excluded_count": 18,
+        "known_ineligible_count": 9,
+        "unknown_eligibility_count": 9,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 42,
+            "known_mismatch_count": 9,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 9
+          }
+        ],
         "scored_count": 42,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -991,6 +1255,18 @@
         "source_population_count": 60,
         "population_count": 25,
         "excluded_count": 35,
+        "known_ineligible_count": 35,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 25,
+            "known_mismatch_count": 35,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 25,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1021,6 +1297,18 @@
         "source_population_count": 60,
         "population_count": 44,
         "excluded_count": 16,
+        "known_ineligible_count": 5,
+        "unknown_eligibility_count": 11,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 44,
+            "known_mismatch_count": 5,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 11
+          }
+        ],
         "scored_count": 44,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1051,6 +1339,18 @@
         "source_population_count": 60,
         "population_count": 46,
         "excluded_count": 14,
+        "known_ineligible_count": 10,
+        "unknown_eligibility_count": 4,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 46,
+            "known_mismatch_count": 10,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 4
+          }
+        ],
         "scored_count": 46,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1081,6 +1381,18 @@
         "source_population_count": 60,
         "population_count": 42,
         "excluded_count": 18,
+        "known_ineligible_count": 11,
+        "unknown_eligibility_count": 7,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 42,
+            "known_mismatch_count": 11,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 7
+          }
+        ],
         "scored_count": 42,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1111,6 +1423,18 @@
         "source_population_count": 60,
         "population_count": 39,
         "excluded_count": 21,
+        "known_ineligible_count": 20,
+        "unknown_eligibility_count": 1,
+        "inclusion_rule_counts": [
+          {
+            "field": "native_stop_reason",
+            "value": "stop",
+            "matched_count": 39,
+            "known_mismatch_count": 20,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 1
+          }
+        ],
         "scored_count": 39,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1161,6 +1485,18 @@
         "source_population_count": 60,
         "population_count": 56,
         "excluded_count": 4,
+        "known_ineligible_count": 4,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 56,
+            "known_mismatch_count": 4,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 56,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1191,6 +1527,18 @@
         "source_population_count": 60,
         "population_count": 58,
         "excluded_count": 2,
+        "known_ineligible_count": 2,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 58,
+            "known_mismatch_count": 2,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 58,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1221,6 +1569,18 @@
         "source_population_count": 60,
         "population_count": 57,
         "excluded_count": 3,
+        "known_ineligible_count": 3,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 57,
+            "known_mismatch_count": 3,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 57,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1251,6 +1611,18 @@
         "source_population_count": 60,
         "population_count": 59,
         "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 59,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 59,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1281,6 +1653,18 @@
         "source_population_count": 60,
         "population_count": 56,
         "excluded_count": 4,
+        "known_ineligible_count": 4,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 56,
+            "known_mismatch_count": 4,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 56,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1311,6 +1695,18 @@
         "source_population_count": 60,
         "population_count": 56,
         "excluded_count": 4,
+        "known_ineligible_count": 4,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 56,
+            "known_mismatch_count": 4,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 56,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1341,6 +1737,18 @@
         "source_population_count": 60,
         "population_count": 53,
         "excluded_count": 7,
+        "known_ineligible_count": 7,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 53,
+            "known_mismatch_count": 7,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 53,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1371,6 +1779,18 @@
         "source_population_count": 60,
         "population_count": 57,
         "excluded_count": 3,
+        "known_ineligible_count": 3,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 57,
+            "known_mismatch_count": 3,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 57,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1401,6 +1821,18 @@
         "source_population_count": 60,
         "population_count": 58,
         "excluded_count": 2,
+        "known_ineligible_count": 2,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 58,
+            "known_mismatch_count": 2,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 58,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1431,6 +1863,18 @@
         "source_population_count": 60,
         "population_count": 57,
         "excluded_count": 3,
+        "known_ineligible_count": 3,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 57,
+            "known_mismatch_count": 3,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 57,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1461,6 +1905,18 @@
         "source_population_count": 60,
         "population_count": 0,
         "excluded_count": 60,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 60,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 0,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 60,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 0,
         "unknown_score_count": 0,
         "null_score_count": 0,
@@ -1491,6 +1947,18 @@
         "source_population_count": 60,
         "population_count": 0,
         "excluded_count": 60,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 60,
+        "inclusion_rule_counts": [
+          {
+            "field": "execution_status",
+            "value": "completed",
+            "matched_count": 0,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 60,
+            "absent_unknown_count": 0
+          }
+        ],
         "scored_count": 0,
         "unknown_score_count": 0,
         "null_score_count": 0,

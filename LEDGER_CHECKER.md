@@ -52,3 +52,7 @@ null for 120 pairs. The slot ledger has no grade fields, distinguished from
 explicit null fields. The checker requires no inference calls or source traces.
 
 Extreme numeric JSON values outside finite floating-point representation are reported as invalid grades or scales rather than crashing. test_check_ledger.py covers both cases.
+
+## Declared linked metadata agreement
+
+`--match-reference-fields benchmark,domain,model,task_id,pass --unique-references` adds semantic agreement and injectivity to an existing-reference check. Shared fields must be present and equal on a slot and its referenced attempt; two slots cannot point to the same attempt. Unobserved slots with a null reference remain unlinked, and no ID is invented. These fields are explicitly declared rather than inferred by the generic checker. The full CMU reproduction command now enables these checks. Negative fixtures reject a wrong existing target, duplicate references and absent match fields.

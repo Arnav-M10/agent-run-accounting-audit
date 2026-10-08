@@ -20,7 +20,7 @@ From this directory, Python's standard library is sufficient for these checks; n
 ```sh
 python3 -m unittest discover -s . -p 'test_*.py'
 python3 check_ledger.py run_accounting/cmu_attempts.jsonl --identity attempt_id
-python3 check_ledger.py run_accounting/cmu_search_slots.jsonl --identity benchmark,domain,model,task_id,pass --reference-ledger run_accounting/cmu_attempts.jsonl
+python3 check_ledger.py run_accounting/cmu_search_slots.jsonl --identity benchmark,domain,model,task_id,pass --reference-ledger run_accounting/cmu_attempts.jsonl --match-reference-fields benchmark,domain,model,task_id,pass --unique-references
 python3 check_ledger.py run_accounting/wildclaw_released_pairs.jsonl --identity model,task_id
 python3 demo_cmu_reporting.py
 python3 demo_summarize_ledger.py
@@ -86,7 +86,7 @@ COHERENCE.md and coherence_audit.py enumerate all triples for the existing predi
 
 ## Decision reporting extensions
 
-`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 48 focused unit tests include exact bound endpoints and coverage geometry.
+`python3 mask_reference_audit.py` generates an exploratory joint-mask reference preserving coverage and overlap within six task categories. `python3 bounded_comparison.py` reports fixed-roster bounds and certified or unresolved comparisons in a disclosed masked-grade demonstration. Both use packaged data and only the standard library. See DECISION_EXTENSIONS.md and MASK_REFERENCE_PLAN.txt for assumptions, timing and limits. The 54 focused unit tests include exact bound endpoints and coverage geometry.
 
 The bounds command also accepts an actually incomplete selected ledger and an explicit common task/model roster: `python3 bounded_comparison.py selected.jsonl --roster roster.json --score-range 0 1`. Source grades are not needed for omitted tasks. Leave-one-category-out reference sensitivity is available via `python3 mask_reference_sensitivity.py`.
 
@@ -96,7 +96,7 @@ The bounds command also accepts an actually incomplete selected ledger and an ex
 
 ## Recovery preflight and decision guide
 
-EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choices. `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json` runs a disclosed synthetic example. The prototype reports pairwise optimistic grade-recovery counts and equal-weight interval leverage, not a guaranteed recovery policy, unique task priority, or simultaneous all-pairs budget. See RECOVERY_METHOD_PLAN.md for assumptions, proof and established prior-art overlap. Five added tests include exhaustive small binary recovery enumeration; all 48 tests pass. No real human adoption results are claimed.
+EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choices. `python3 recovery_diagnostics.py recovery_example_selected.jsonl --roster recovery_example_roster.json` runs a disclosed synthetic example. The prototype reports pairwise optimistic grade-recovery counts and equal-weight interval leverage, not a guaranteed recovery policy, unique task priority, or simultaneous all-pairs budget. See RECOVERY_METHOD_PLAN.md for assumptions, proof and established prior-art overlap. Five added tests include exhaustive small binary recovery enumeration; all 54 tests pass. No real human adoption results are claimed.
 
 ## Concrete recorded-mean decision
 
@@ -105,3 +105,13 @@ EVALUATOR_DECISION_GUIDE.md maps available evidence to justified reporting choic
 ## Supplementary aggregate score-column check
 
 `python3 aggregate_score_check/replay.py --output /tmp/aggregate_score_audit.json` reproduces every check on all 150 Open Agent Leaderboard aggregate rows. Six SWE-bench rows have different score columns and equal implied totals under complete numeric-grade coverage; public numeric-grade counts and individual outcomes are unavailable. The planned-equals-recorded subset shows four within-model score-column ordering reversals, not a verified third fixed-outcome denominator audit. Metric differences, unequal implied totals and unreported execution status coverage remain explicit. See [the supplementary audit](aggregate_score_check/README.md) for pins, all-row results, attribution, source semantics and limitations. This case is separate from the 624-input trajectory manifest and `reproduce.py`; it does not claim another generic-ledger transfer.
+
+## Fixed-repeat recorded consistency
+
+`python3 consistency_check/screen.py` reports every search model/domain cell, preserving the four-pass roster and separate retained task support. `python3 consistency_check/verify.py` exhaustively verifies all 995 nonlinear missing-grade bounds and 893 exact subset-size references. On the same 69 V3.2/BrowseComp tasks, full recorded consistency is 0.742754, uniform subsets matching retained counts give 0.800725, and actual retained subsets give 0.884461. This localized posthoc contrast reuses an existing metric, counts consistent failure as consistency, and does not establish latent reliability or a causal effect. All 15 cells, zero-retained tasks, actual versus deliberately omitted grades and source ledger hashes are explicit. See consistency_check/README.md.
+
+## External HAL reporting transfer
+
+hal_transfer/ contains an adapter and metadata from two pinned public archived HAL CORE-Bench runs: 90 records over 45 common task IDs. The same generic checker/reporter reproduces 0/45 and 19/45; 45 recorded task-mapped exceptions split 33 provider-credit errors and 12 client message-type errors. The original evaluator deliberately gives parse-error outputs known end-to-end zero grades. Those are not missing scores. Error-free inclusion has empty support and a null mean; control status remains unknown. The archived configurations differ and are not a capability comparison or representative HAL sample. Raw archives/traces are excluded; the source dataset has no inspected license/card metadata. Packaged metadata reporting is standard-library only; source reproduction additionally needs cryptography and two public downloads totaling under 1 MB. See hal_transfer/README.md for exact immutable source URLs, hashes, public decryption procedure and limits. No new inference or human participants are required.
+
+`python3 hal_transfer/replay.py --verify-only` checks packaged HAL metadata offline with the standard library; raw acquisition/decryption is a separate route. Generic reports now separate known ineligibility from unknown eligibility and count each predicate's evidence. The linked-slot checker optionally verifies declared metadata agreement and one-slot-per-attempt references; the CMU pipeline enables both. These refinements preserve all existing reported means.

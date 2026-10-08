@@ -1,0 +1,40 @@
+{
+  "dataset_revision": "e7dcedc82b4f4bc819a170fd6616bdb44841c71e",
+  "dataset_license": "unknown; no card/license metadata in inspected official repository",
+  "redistribution": "raw archives/traces excluded; adapter and derived metadata only",
+  "sources": [
+    {
+      "kind": "operational_error",
+      "filename": "corebench_hard_hal_generalist_agent_1747200995_UPLOAD.zip",
+      "bytes": 945255,
+      "sha256": "89894a8e9347878ab2c039b61b9518a7599a10bf9d790f7727fa084a491c9816",
+      "url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/e7dcedc82b4f4bc819a170fd6616bdb44841c71e/corebench_hard_hal_generalist_agent_1747200995_UPLOAD.zip"
+    },
+    {
+      "kind": "control",
+      "filename": "corebench_hard_claude_code_claudeopus41_1764560915_UPLOAD.zip",
+      "bytes": 2672,
+      "sha256": "f0876164e46dc23df62c87008068bda2c3a57297f133ef382f26fae788f66b33",
+      "url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/e7dcedc82b4f4bc819a170fd6616bdb44841c71e/corebench_hard_claude_code_claudeopus41_1764560915_UPLOAD.zip"
+    }
+  ],
+  "evaluator": {
+    "url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/db2a824aa6a07ce8f1097258327fdfb7dd04c2ac/hal/benchmarks/corebench.py",
+    "sha256": "7d04be1e8fa92a6db0c535e490708dbb7a3605ff88ff05ea5d19e3ee4fa0090f",
+    "recorded_run_commit": "db2a824aa6a07ce8f1097258327fdfb7dd04c2ac"
+  },
+  "official_decryption_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/16bb03ebc11577fb5ea6dc8bb6c968387085e6aa/hal/utils/decrypt.py",
+      "sha256": "0406a8c44b466d390e69a72fd585c0e905babbae5e4150dcf71357287f2afcfc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/16bb03ebc11577fb5ea6dc8bb6c968387085e6aa/hal/utils/json_encryption.py",
+      "sha256": "8aa91ca6ddb67005d276159a280e566cd3e3a2327247bb96136c0de0ab4ac895"
+    }
+  ],
+  "canonical_reporters": {
+    "check_ledger.py": "b79d94e59156cf8bcdf8c8b56ba83117b9b1609f15c7d2a13ebda6615637f7d8",
+    "summarize_ledger.py": "56c27ec5b8acb6f3a47f5a86ee5c6b4aab89f3dcfa86ea5fb192dc76ff7da54c"
+  }
+}
