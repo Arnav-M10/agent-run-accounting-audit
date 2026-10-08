@@ -1,0 +1,16 @@
+model,domain,messier_imported_domain,supported_tasks,retained_runs,observed_trial_task_mean,four_recorded_grade_task_mean_same_tasks,difference
+DeepSeek-R1,browsecomp,True,79,201,0.02320675105485232,0.0189873417721519,0.004219409282700419
+DeepSeek-R1,mind2web,False,10,28,0.05,0.025,0.025
+DeepSeek-R1,webvoyager,True,65,250,0.5782051282051283,0.5615384615384615,0.01666666666666672
+DeepSeek-V3.2,browsecomp,True,69,160,0.33454106280193235,0.25,0.08454106280193235
+DeepSeek-V3.2,mind2web,False,10,33,0.0,0.0,0.0
+DeepSeek-V3.2,webvoyager,True,65,248,0.4897435897435897,0.47692307692307695,0.012820512820512775
+Gemini-2.5-Flash,browsecomp,True,124,496,0.028225806451612902,0.028225806451612902,0.0
+Gemini-2.5-Flash,mind2web,False,10,40,0.0,0.0,0.0
+Gemini-2.5-Flash,webvoyager,True,64,256,0.34765625,0.34765625,0.0
+Qwen3-235B,browsecomp,True,124,470,0.04032258064516129,0.04032258064516129,0.0
+Qwen3-235B,mind2web,False,10,37,0.0,0.0,0.0
+Qwen3-235B,webvoyager,True,64,255,0.3671875,0.3671875,0.0
+Qwen3-Next,browsecomp,True,124,496,0.020161290322580645,0.020161290322580645,0.0
+Qwen3-Next,mind2web,False,10,40,0.05,0.05,0.0
+Qwen3-Next,webvoyager,True,65,260,0.5653846153846154,0.5653846153846154,0.0

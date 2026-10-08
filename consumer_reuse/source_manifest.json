@@ -1,0 +1,40 @@
+{
+  "consumer_data_url": "https://huggingface.co/datasets/Andromede-AI/messier/resolve/42e03cf072039e1428ad1dc970711035cfd24a5e/records.jsonl",
+  "consumer_full_bytes": 593534860,
+  "consumer_full_sha256": "81ccff028973e45a22fae955b2918b02086028299400d8b55927e562dfe57646",
+  "consumer_revision": "42e03cf072039e1428ad1dc970711035cfd24a5e",
+  "consumer_source_revision": "2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53",
+  "cmu_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+  "source_files": [
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/src/messier/fetch.py",
+      "sha256": "0f1c4fe35bef65f9965e11e17e05290df9fc162018f635cf00549dafc497c7b3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/src/messier/builders/general_agentbench/build.py",
+      "sha256": "b8dba03e4d5775a533f9f8aa67a622f6eb9e6581c657d846097b39ef3344e8b8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/src/messier/builders/general_agentbench/constants.py",
+      "sha256": "26a200744f43c6cffdaf05a66ba27ec3dd79f27a14820c9eb6496486e632a5fa"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/src/messier/builders/general_agentbench/README.md",
+      "sha256": "231b7be3cbbf4a54974d3e72057e9c9c4a8ae504a225327d0efbf60f31ec09e2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/analysis/frontier_progress/run.py",
+      "sha256": "28703b49539d146fee7f0fe976d473f6155882477c158ee7bbd817a9d8703532"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/analysis/performance_dimensions/run.py",
+      "sha256": "ef8a14ce75675b6cd77db5537bcce5b6840f50e14d9a4276f4474acedaef2446"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Andromede-AI/messier/2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53/src/messier/build.py",
+      "sha256": "eec59e35bc99faadc55063a6b7ef437eaddd2cbb721b4f0984a44479a72d53b0"
+    }
+  ],
+  "historical_generating_revision": "unknown",
+  "identity_boundary": "Grade multiset per benchmark/task/model, not event identity or original pass number."
+}

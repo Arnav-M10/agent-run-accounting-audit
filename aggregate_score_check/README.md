@@ -97,3 +97,7 @@ The JSON audit was regenerated after schema changes. Its 150 rows include origin
 Aggregate fields originate from Open Agent Leaderboard Results at the pinned Hugging Face revision above, released under CDLA-Permissive-2.0: https://cdla.dev/permissive-2-0/. The full license text is included as CDLA-Permissive-2.0.txt. This derived JSON is an attributed aggregate-field conversion, not individual task trajectories.
 
 To re-extract after downloading the pinned Parquet, run `python3 extract.py --parquet /path/to/train-00000-of-00001.parquet --output released_aggregates.json` with PyArrow installed. The pinned hash is required; replay remains standard-library only.
+
+## Later session evidence
+
+The original aggregate artifact still lacks individual outcomes. Separately pinned session_score_check/ now checks actual100-session grade vectors for three configurations, reproducing their two released score columns. Historical aggregate-to-run linkage and common task support remain unavailable; conditional rank reversals are not promoted to verified cases. See the adjacent package for source hashes and raw replay.

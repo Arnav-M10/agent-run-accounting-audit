@@ -1,0 +1,99 @@
+[
+  {
+    "run_id": "8169c7b3047e",
+    "session_count": 100,
+    "numeric_grade_count": 100,
+    "grade_sum": 28.0,
+    "eligible_count": 38,
+    "eligible_grade_sum": 28.0,
+    "all_mean": 0.28,
+    "eligible_mean": 0.7368421052631579,
+    "score_values": {
+      "1.0": 28,
+      "0.0": 72
+    },
+    "status_counts": {
+      "success": 38,
+      "error": 62
+    },
+    "mean_steps": 41.37,
+    "total_agent_cost": 11.23770408,
+    "released_fields": {
+      "average_score": 0.28,
+      "benchmark_score": 0.7368421052631579,
+      "planned_sessions": 100,
+      "total_sessions": 100,
+      "completed_sessions": 38.0,
+      "incomplete_sessions": 62.0,
+      "average_steps": 41.37,
+      "total_agent_cost": 11.23770408,
+      "successful_sessions": 38
+    }
+  },
+  {
+    "run_id": "7c39d2802396",
+    "session_count": 100,
+    "numeric_grade_count": 100,
+    "grade_sum": 55.0,
+    "eligible_count": 97,
+    "eligible_grade_sum": 55.0,
+    "all_mean": 0.55,
+    "eligible_mean": 0.5670103092783505,
+    "score_values": {
+      "0.0": 45,
+      "1.0": 55
+    },
+    "status_counts": {
+      "success": 78,
+      "unfinished": 19,
+      "error": 3
+    },
+    "mean_steps": 38.74,
+    "total_agent_cost": 33.41831760000001,
+    "released_fields": {
+      "average_score": 0.55,
+      "benchmark_score": 0.5670103092783505,
+      "planned_sessions": 100,
+      "total_sessions": 100,
+      "completed_sessions": 97.0,
+      "incomplete_sessions": 3.0,
+      "average_steps": 38.74,
+      "total_agent_cost": 33.41831760000001,
+      "successful_sessions": 78
+    }
+  },
+  {
+    "run_id": "b208193b3ce4",
+    "session_count": 100,
+    "numeric_grade_count": 100,
+    "grade_sum": 66.0,
+    "eligible_count": 96,
+    "eligible_grade_sum": 66.0,
+    "all_mean": 0.66,
+    "eligible_mean": 0.6875,
+    "score_values": {
+      "1.0": 66,
+      "0.0": 34
+    },
+    "status_counts": {
+      "success": 93,
+      "limit_reached": 1,
+      "error": 4,
+      "unfinished": 1,
+      "unsuccessful": 1
+    },
+    "mean_steps": 77.44,
+    "total_agent_cost": 47.88909168000001,
+    "released_fields": {
+      "average_score": 0.66,
+      "benchmark_score": 0.6875,
+      "planned_sessions": 100,
+      "total_sessions": 100,
+      "completed_sessions": 96.0,
+      "incomplete_sessions": 4.0,
+      "average_steps": 77.44,
+      "total_agent_cost": 47.88909168000001,
+      "successful_sessions": 93
+    }
+  }
+]

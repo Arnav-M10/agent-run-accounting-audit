@@ -1,0 +1,25 @@
+{
+  "consumer_dataset_revision": "42e03cf072039e1428ad1dc970711035cfd24a5e",
+  "source_code_revision": "2cf0d31ba6ee8e04714dc6c782c971f1b1a49b53",
+  "cmu_revision": "88e2af82c116a9a57f29be6f21b9924da081c2bd",
+  "consumer_input_sha256": "50269448e1a9dcee08783ceb391235e56d643a4e17b4adc2be72533e9efc73ef",
+  "cmu_ledger_sha256": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+  "trial_counts": {
+    "mathhay": 1324,
+    "browsecomp": 1823,
+    "webvoyager": 1269,
+    "mcpbench": 899
+  },
+  "verifier_counts": {
+    "mcpbench": 5394
+  },
+  "source_groups": 1465,
+  "consumer_groups": 1465,
+  "groupwise_reward_multiset_mismatches": 0,
+  "dense_consumer_trial_ids": true,
+  "naive_original_pass_keys_absent": 247,
+  "naive_consumer_keys_unmapped": 247,
+  "naive_direct_reward_mismatches": 46,
+  "trial_result_mapping_mismatches": 0,
+  "boundary": "Groupwise retained-grade identity; dense consumer trial numbering prevents direct source pass identity. Historical paper-producing revisions unknown."
+}

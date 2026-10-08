@@ -1,0 +1,56 @@
+[
+  {
+    "file": "0000.parquet",
+    "sha256": "f7cd079798f47b7610963c08105055b935316c6223f74d3fc03c401348590011",
+    "size": 2281215,
+    "rows": 150
+  },
+  {
+    "file": "0001.parquet",
+    "sha256": "ef6fb9129aae06a155cc01f1868a707f1544fe9ae11df3c04fff3e71a964ac2c",
+    "size": 3590399,
+    "rows": 274
+  },
+  {
+    "file": "0002.parquet",
+    "sha256": "d380ea81f8ac2ee05c0ace3a7ac7896272fc437e1e3b3a47d90de544b525477e",
+    "size": 8836847,
+    "rows": 463
+  },
+  {
+    "file": "0003.parquet",
+    "sha256": "e7ab71e7eae7dd44197a448dbee512407a2a0ae0382b58f5f8a36633edba7d9e",
+    "size": 27260323,
+    "rows": 745
+  },
+  {
+    "file": "0004.parquet",
+    "sha256": "283f16603e52d9d1c82b1a4a826f3ee7c09916bae036e950ed1bae683037fc80",
+    "size": 17664589,
+    "rows": 265
+  },
+  {
+    "file": "0005.parquet",
+    "sha256": "f17f9f64139860b628cab938771f91dd141952f14eb21f88fa62df335c0f4d84",
+    "size": 77126974,
+    "rows": 1736
+  },
+  {
+    "file": "0006.parquet",
+    "sha256": "fd5e280a14b4b2116c1cdcb0b1cb945da66280d999f3c56f8848a74fdb6247e3",
+    "size": 29431312,
+    "rows": 935
+  },
+  {
+    "file": "0007.parquet",
+    "sha256": "d22806edf2baff6ce13a63b1f6347d7b30012624222344ebe8ed82f0d84ed3d6",
+    "size": 54624545,
+    "rows": 4309
+  },
+  {
+    "file": "0008.parquet",
+    "sha256": "2aa8507830af585ac977820210adc4fc80abb7a0bbcb89bc23b6a780ff55d064",
+    "size": 10889103,
+    "rows": 1179
+  }
+]
