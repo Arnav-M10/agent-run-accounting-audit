@@ -1,0 +1,434 @@
+{
+  "dataset_revision": "e7dcedc82b4f4bc819a170fd6616bdb44841c71e",
+  "selection_written_before_scores": true,
+  "criterion": "Smallest byte sizes, then lexical filename; CORE-Bench Generalist names; excludes slim and already inspected all-error run; names/size do not guarantee raw evaluation/log coverage",
+  "max_archives": 3,
+  "max_bytes": null,
+  "stop_rule": "Exactly first three sorted candidates (three-smallest-full-archive budget); no candidate fits optional 10MB total cap. Each actual size disclosed before score inspection.",
+  "candidates": [
+    {
+      "type": "file",
+      "oid": "ea27046c8d4a89737bdad0550467cfe005bc9399",
+      "size": 21851770,
+      "lfs": {
+        "oid": "2bf440258665dfac7304c81deacc4c46b9d1fd1703c44d468a3425b8b3335602",
+        "size": 21851770,
+        "pointerSize": 133
+      },
+      "xetHash": "ffd409ca72da36950c942942605e0fff84c5504760b989c6c7507b83e4ffb142",
+      "path": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "db9186e13030a9c32c0cf5631e5f5e4804ccdf1c",
+      "size": 23213674,
+      "lfs": {
+        "oid": "3183b7877c633ba07958f29339adbdc93b3af30c97d2c957b9ee8b8f51dbe60d",
+        "size": 23213674,
+        "pointerSize": 133
+      },
+      "xetHash": "c2c0112e298938fef3ee0833e64efade4f412cbdb729c5320df9a40dcf9157bc",
+      "path": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "3225e5730f179243c817b48bcd01ac457e131d3d",
+      "size": 51429463,
+      "lfs": {
+        "oid": "24a285e0e12b05de8cc741b72b08f22dc76140f6399f34216e873e8fafefbd1d",
+        "size": 51429463,
+        "pointerSize": 133
+      },
+      "xetHash": "5886a3c379d358bce10b8a9f6d6168dad2ef574f9c80462d97404c4c68c9f41a",
+      "path": "corebench_hard_hal_generalist_agent_1748734902_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "fa69e8d724014c5427fddaa8b3ab7210cbeb6fdd",
+      "size": 51918902,
+      "lfs": {
+        "oid": "a23c9b329d25652c00110b3a11a999cb6910fc4c75c778dfd9de4a8792405eb7",
+        "size": 51918902,
+        "pointerSize": 133
+      },
+      "xetHash": "8f010ecdd238afcd1cba6c755b1767235584e426d875e80683202a53a652a758",
+      "path": "corebench_hard_hal_generalist_agentdeepseekr10528_1755721934_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "372a9c98c37e496f635c900c71c771a65424a977",
+      "size": 53543514,
+      "lfs": {
+        "oid": "7dad18351ab19f8e3635e0ddd3759c6f51d600a2bbccb647f739262770e6efdd",
+        "size": 53543514,
+        "pointerSize": 133
+      },
+      "xetHash": "09e6d02c216262fc17dad90e0e51b96e2d4573fbe590c0ecbb7bf6cc9e8d4fad",
+      "path": "corebench_hard_hal_generalist_agentgpt5medium_1756137340_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "0c4e1c9309b501bda54fa00633d3e05520e3a8c8",
+      "size": 56947001,
+      "lfs": {
+        "oid": "2a489e3b868c19304b5108d66468d1bfe1d89a612e074e192acacce62da679e0",
+        "size": 56947001,
+        "pointerSize": 133
+      },
+      "xetHash": "2ca128363450d9c10ec9a959fc112d9b0304cfba3d51a2c8c20e912d4511eefa",
+      "path": "corebench_hard_hal_generalist_agent_1747360523_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "b3b7f96a411a4aeeebbce5c52681fc7cbe79f27a",
+      "size": 69219202,
+      "lfs": {
+        "oid": "b5d94019b2564903a3dfd74c80aadf75fca97de77eef33e91cf4c1dcffd51f18",
+        "size": 69219202,
+        "pointerSize": 133
+      },
+      "xetHash": "177b8e348a4533e41131ff4e53cf3d5fb00ef1ca257c8d11df07dc874e1b92b0",
+      "path": "corebench_hard_hal_generalist_agent_1754569684_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "4d6eab38251e65ca09569a703702bbbb8e4ebf5c",
+      "size": 71191164,
+      "lfs": {
+        "oid": "f212f9830b27d47fc4095ea1d399de70544af20175f8f86a735e9fd54deef8f6",
+        "size": 71191164,
+        "pointerSize": 133
+      },
+      "xetHash": "c38101d50db08203cecfc7b212883fc6620e71c315c0277ac74d812fe9dfb0cb",
+      "path": "corebench_hard_hal_generalist_agent_1748971685_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "e187c1f66fefb23fc77e88955bf748947757d2ba",
+      "size": 73269477,
+      "lfs": {
+        "oid": "7dc824df98f6e90a5800baac794b0c49a49c4110771a694145c15efef7b23178",
+        "size": 73269477,
+        "pointerSize": 133
+      },
+      "xetHash": "896d4162e99b0b9d9e89cf90fda3bf017c996b902a5b6beff68a29d07fc9176e",
+      "path": "corebench_hard_hal_generalist_agent_1749067899_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "c37eb1f2644f9579bf190501fe845288531b4084",
+      "size": 81682473,
+      "lfs": {
+        "oid": "dd9e8ecbbce5fdb921b61d440b4b38c5593a80f6188e9a42ef0391bde84d8c1a",
+        "size": 81682473,
+        "pointerSize": 133
+      },
+      "xetHash": "615e294f5c94e0d7c96c8a67cd9a8ac5386b51a32ca6308a0d69e5847b464811",
+      "path": "corebench_hard_hal_generalist_agent_1747200950_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "2f13eaf6188bd95791280cb09382fbe5bd0b4394",
+      "size": 81983296,
+      "lfs": {
+        "oid": "3dbffab363953dd6abd635255dce8218c3b3b566d9dc77f70b500e2333ce5b3f",
+        "size": 81983296,
+        "pointerSize": 133
+      },
+      "xetHash": "472cddbfe3568e7ba74cd64f17d15605eefd72dff8e96598e4e076479869c0aa",
+      "path": "corebench_hard_hal_generalist_agentsonnet_37_1755652380_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "3f78aa98914ee1f9351663dc839d511eeb8433aa",
+      "size": 86351563,
+      "lfs": {
+        "oid": "eec38621fa7670adca8934a295b5b59f80824e3b5fc66ca5896b3dd2b4e8bb5a",
+        "size": 86351563,
+        "pointerSize": 133
+      },
+      "xetHash": "50e13d11762278c00caeaa7f46ee9958be0888cc048ecd445ebcffe02a1833bf",
+      "path": "corebench_hard_hal_generalist_agent_1747247518_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "966bd75a9d17a72aec377326eb22e610abeefb5f",
+      "size": 87794344,
+      "lfs": {
+        "oid": "7061059c255820e07efd28e471741a2cc4a49deeaa827324200f5de7c96e0d96",
+        "size": 87794344,
+        "pointerSize": 133
+      },
+      "xetHash": "4b37108c5c54cbdaa1abc42e7f4c8d9c0f809a259b30945b868c59a5a690dbf9",
+      "path": "corebench_hard_hal_generalist_agentsonnet_37_high_1755663010_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "3323cdf9d9e2221bea3e59ec1cefd4f2b27b714f",
+      "size": 89940468,
+      "lfs": {
+        "oid": "16afc065b7ee6ffe23d4cc8fd9b977268759fe1d6f99c923e7b0461b6cd7e392",
+        "size": 89940468,
+        "pointerSize": 133
+      },
+      "xetHash": "783c684f65724c8e433f60e0d32467d243ddf7babda6c778c474cea8e344a5f5",
+      "path": "corebench_hard_hal_generalist_agent_1748793241_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "35d50dff8f78777317cb7d9611e98c9b151a9a53",
+      "size": 94112873,
+      "lfs": {
+        "oid": "98fd7adec15cc68b622b8dcecbe1852353ca31b88c146dc41c25e29b32823329",
+        "size": 94112873,
+        "pointerSize": 133
+      },
+      "xetHash": "c3aaa18c74cebad29cfb8a3e2975d8a659fb91a2d165a71a38eef1e1c007746f",
+      "path": "corebench_hard_hal_generalist_agent_1747247482_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "915b449e7d2a17c8979163118293f7a35c4ae508",
+      "size": 95245511,
+      "lfs": {
+        "oid": "271f77c06ada652cd07ec170a961f8e5da86ecb349d682db7158566538f6433d",
+        "size": 95245511,
+        "pointerSize": 133
+      },
+      "xetHash": "959f92db60b90f2fd816095e05a6920fe440089085576e76337a005802c08396",
+      "path": "corebench_hard_hal_generalist_agent_1754439280_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "3f6bd67567f64e34f4c07a649970c3289f979e79",
+      "size": 99731678,
+      "lfs": {
+        "oid": "ed5237e999b54cb28f525eda9b761326bef94914dc4a151c1c93349f438b11ca",
+        "size": 99731678,
+        "pointerSize": 133
+      },
+      "xetHash": "d3c698efcdc3f610cf13f65bedd44242057fa86411d160d1f780d5188182c85c",
+      "path": "corebench_hard_hal_generalist_agent_opus_45_high_1764046628_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "9ce929dbf6cfc599cb603e09f5ed65b85d44091f",
+      "size": 100044706,
+      "lfs": {
+        "oid": "bf68f64f47927ccd15edc3663ca1fde91fa53853b84ef12f20722aa17264369f",
+        "size": 100044706,
+        "pointerSize": 134
+      },
+      "xetHash": "fb2f59bc26b19101d3e8888eb72b9c37471e6a11d2af6b61edf5fd71baf308be",
+      "path": "corebench_hard_hal_generalist_agent_1754569694_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "98b4ed3aa816586240ea3662d45b104851ababd6",
+      "size": 102480263,
+      "lfs": {
+        "oid": "56e263ea9afce22add93d0325489caf757963dd080b0884da3efa521eb092989",
+        "size": 102480263,
+        "pointerSize": 134
+      },
+      "xetHash": "29f13364a09d7a944569f197c07ec17a5ff293f2839ba4701d9b096f0df4ff10",
+      "path": "corebench_hard_hal_generalist_agento4minilow_1755608756_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "c7999bb8a92fca36c5d821edec8a3bf9e8d2c163",
+      "size": 104311734,
+      "lfs": {
+        "oid": "58d5655c79e7fae4d89bb8331ccf9b178f8929c8dbb875dcdac6f14be3d6f87e",
+        "size": 104311734,
+        "pointerSize": 134
+      },
+      "xetHash": "d542e22423cb01b7dd2e7ca470e30e473135414e896a006eb0a05e69670ebabe",
+      "path": "corebench_hard_hal_generalist_agent_1747247500_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "a1d852bd26490f391f008e7c7d49ee1b0874c457",
+      "size": 107592725,
+      "lfs": {
+        "oid": "120579235b07a1679c2d30067fe3b15b46899c1adc9071d0ecf3299d79752cb7",
+        "size": 107592725,
+        "pointerSize": 134
+      },
+      "xetHash": "3b2627b1c0eafb35c43cc3f825c3a3b5e9326f0ba293c19a12ea88c765b67abf",
+      "path": "corebench_hard_hal_generalist_agent_1754443772_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "7f578d4bb4f1b2e17c9166811d2fd800be731b81",
+      "size": 108530333,
+      "lfs": {
+        "oid": "53dd680ba1b98ec77e2f78eb94332c4597108e71b4c634b2b1ef77027be6134b",
+        "size": 108530333,
+        "pointerSize": 134
+      },
+      "xetHash": "40b46b48b7c199702c3e023573409a6b0719f149a0405f5a255701da0e78d148",
+      "path": "corebench_hard_hal_generalist_agent_opus_45_1764046559_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "6b4205ba16d2f7703784cc92ede9d55eecf4da74",
+      "size": 115392260,
+      "lfs": {
+        "oid": "6f5e53de18bb9f1bd56bf97d8b12a49d407bb2c464e846dda6b8028eac8ad555",
+        "size": 115392260,
+        "pointerSize": 134
+      },
+      "xetHash": "64347db2d47d50353e973c5e7b5b1f1c185a62ab3cad4409a3f983fd3a7d24e4",
+      "path": "corebench_hard_hal_generalist_agento4minihigh_1755580383_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "2bbd306907a7147e989c87ef9d768b1f955a5fcf",
+      "size": 122975249,
+      "lfs": {
+        "oid": "79f3d43b20591d2b72a55f3cccda5d7da2a92ab30721ab3b0f48b1137877427f",
+        "size": 122975249,
+        "pointerSize": 134
+      },
+      "xetHash": "ee7f6c1e80411cc52293f81a54b29192be3a2c1bd8c61d6d5d0d1e3ea2fbe5c3",
+      "path": "corebench_hard_halgeneralistagentclaudesonnet45_1759433359_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "2d56620f82c8134b49eac40a0a16d7bc42e4e5f3",
+      "size": 123275769,
+      "lfs": {
+        "oid": "8b6a62ef2e369a9e3c3c83ff365fd39216dc8c1297495dffba710e7882b232b4",
+        "size": 123275769,
+        "pointerSize": 134
+      },
+      "xetHash": "9a6c5e06750e70f8402109fa95b22cd17cba58eb9c8bc9c3cfd1acc8da065443",
+      "path": "corebench_hard_halgeneralistagentclaudesonnet45high_1759423572_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "9593ced3b6e49584af2d76eedf8e5ead56e9c2de",
+      "size": 139509827,
+      "lfs": {
+        "oid": "c1f8fd155ba1b31b17ad51c9e5ad501486314312ef290f76778eb0ff8baaaddc",
+        "size": 139509827,
+        "pointerSize": 134
+      },
+      "xetHash": "5a40a9eef316aa127ad2cc2b5b4a36e96b62eb623528e4eefb16a25a787d5779",
+      "path": "corebench_hard_hal_generalist_agent_1747285818_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "13d93eb3bb83c9b584a6c2dbc18e0a9181c01cd5",
+      "size": 141691692,
+      "lfs": {
+        "oid": "ec5f3079ef49627c855a08f0ed6dac26a25cb0ad1bbb70c96e7e16bf80e9da15",
+        "size": 141691692,
+        "pointerSize": 134
+      },
+      "xetHash": "85400be3b52999acd69d5d559d47b502caf4ac3799e176d371e60414dedd35bb",
+      "path": "corebench_hard_hal_generalist_agent_1747200929_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "06fa2d908277c045f0526a3cf35a5e39ed7dc6f9",
+      "size": 151415644,
+      "lfs": {
+        "oid": "91376bc19924f4a2195b42b1f36e3b6bd75f2eaea10c2bf3d1c319c4e0a4af30",
+        "size": 151415644,
+        "pointerSize": 134
+      },
+      "xetHash": "47d93e70a7aeda963389343c16e39014700db2096f6a4118aa09b8af77ce7988",
+      "path": "corebench_hard_hal_generalist_agentgpt41_1755644685_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "e0291540215ab129f5fec99146296bfe9a75f930",
+      "size": 210953166,
+      "lfs": {
+        "oid": "8250abfc9e2a091a1addacf0357b1f248ee3c43288e415e70a943dbc3c475a48",
+        "size": 210953166,
+        "pointerSize": 134
+      },
+      "xetHash": "35657d39d6e9cfec6c34975198a69581ba3a925e64aa470253930d47886d0a9f",
+      "path": "corebench_hard_hal_generalist_agent_1763837773_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "13468b9775dc56d9134cc9672a136fb4c6753d42",
+      "size": 214320314,
+      "lfs": {
+        "oid": "4cd3675b5fa029e17be424daf1d9931f3b0f0c06e9b2e15fdd74b71913b87247",
+        "size": 214320314,
+        "pointerSize": 134
+      },
+      "xetHash": "6331919281fc7d6d9894ddc182d785bfc03b3190b76a7b4df28ccfb014528726",
+      "path": "corebench_hard_hal_generalist_agento3medium_1755626315_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "f236143a9245250285c2153e8b0e13638686bbac",
+      "size": 349173316,
+      "lfs": {
+        "oid": "848e5d19fbc67d038c08abb41e77a140c25bb7cd488c055e80db05765ddcf2a6",
+        "size": 349173316,
+        "pointerSize": 134
+      },
+      "xetHash": "1607303070b826a04394945d824ba848edf6e95dc8a77db8e8c6a297aebd0a45",
+      "path": "corebench_hard_hal_generalist_agentgemini20flash_1755839828_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "c0fe6c27040447525d0c91f0c06ce21ee01f2253",
+      "size": 772451207,
+      "lfs": {
+        "oid": "c9846f939f92d811b9fbbf070810103dfe9a271dff7a300bd3c12d4d7cfb1ef4",
+        "size": 772451207,
+        "pointerSize": 134
+      },
+      "xetHash": "ef779a226ca50df9485e6db25f4b1751e557a212bface06b8c88212d0d2913eb",
+      "path": "corebench_hard_hal_generalist_agent_1747201030_UPLOAD.zip"
+    }
+  ],
+  "selected": [
+    {
+      "type": "file",
+      "oid": "ea27046c8d4a89737bdad0550467cfe005bc9399",
+      "size": 21851770,
+      "lfs": {
+        "oid": "2bf440258665dfac7304c81deacc4c46b9d1fd1703c44d468a3425b8b3335602",
+        "size": 21851770,
+        "pointerSize": 133
+      },
+      "xetHash": "ffd409ca72da36950c942942605e0fff84c5504760b989c6c7507b83e4ffb142",
+      "path": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "db9186e13030a9c32c0cf5631e5f5e4804ccdf1c",
+      "size": 23213674,
+      "lfs": {
+        "oid": "3183b7877c633ba07958f29339adbdc93b3af30c97d2c957b9ee8b8f51dbe60d",
+        "size": 23213674,
+        "pointerSize": 133
+      },
+      "xetHash": "c2c0112e298938fef3ee0833e64efade4f412cbdb729c5320df9a40dcf9157bc",
+      "path": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687_UPLOAD.zip"
+    },
+    {
+      "type": "file",
+      "oid": "3225e5730f179243c817b48bcd01ac457e131d3d",
+      "size": 51429463,
+      "lfs": {
+        "oid": "24a285e0e12b05de8cc741b72b08f22dc76140f6399f34216e873e8fafefbd1d",
+        "size": 51429463,
+        "pointerSize": 133
+      },
+      "xetHash": "5886a3c379d358bce10b8a9f6d6168dad2ef574f9c80462d97404c4c68c9f41a",
+      "path": "corebench_hard_hal_generalist_agent_1748734902_UPLOAD.zip"
+    }
+  ],
+  "excluded_known_run": "corebench_hard_hal_generalist_agent_1747200995_UPLOAD.zip",
+  "raw_license": "unknown; private raw cache only"
+}

@@ -1,0 +1,406 @@
+{
+  "published": {
+    "ledger": "/Users/arnav/Documents/AES/submission/reproducibility/hal_mixed_transfer/hal_mixed_ledger.jsonl",
+    "source_record_count": 135,
+    "group_fields": [
+      "run_id"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agent_1748734902"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.08888888888888889,
+        "policy_score_mean": 0.08888888888888889,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.022222222222222223,
+        "policy_score_mean": 0.022222222222222223,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.08888888888888889,
+        "policy_score_mean": 0.08888888888888889,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": false,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "no_recorded_parse_error": {
+    "ledger": "/Users/arnav/Documents/AES/submission/reproducibility/hal_mixed_transfer/hal_mixed_ledger.jsonl",
+    "source_record_count": 135,
+    "group_fields": [
+      "run_id"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "parse_error_present",
+        "operator": "eq",
+        "value": false,
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agent_1748734902"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 5,
+        "excluded_count": 40,
+        "known_ineligible_count": 40,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "parse_error_present",
+            "value": false,
+            "matched_count": 5,
+            "known_mismatch_count": 40,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 5,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 5,
+        "recorded_score_mean": 0.8,
+        "policy_score_mean": 0.8,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "parse_error_present",
+            "value": false,
+            "matched_count": 45,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.022222222222222223,
+        "policy_score_mean": 0.022222222222222223,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 44,
+        "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "parse_error_present",
+            "value": false,
+            "matched_count": 44,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 44,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 44,
+        "recorded_score_mean": 0.09090909090909091,
+        "policy_score_mean": 0.09090909090909091,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  },
+  "no_recorded_call_exception": {
+    "ledger": "/Users/arnav/Documents/AES/submission/reproducibility/hal_mixed_transfer/hal_mixed_ledger.jsonl",
+    "source_record_count": 135,
+    "group_fields": [
+      "run_id"
+    ],
+    "score_field": "native_score",
+    "scale_field": "score_scale",
+    "inclusion_rules": [
+      {
+        "field": "logged_exception_present",
+        "operator": "eq",
+        "value": false,
+        "requires_field_presence": true
+      }
+    ],
+    "missing_grade_policy": "error",
+    "groups": [
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agent_1748734902"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "logged_exception_present",
+            "value": false,
+            "matched_count": 45,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.08888888888888889,
+        "policy_score_mean": 0.08888888888888889,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 45,
+        "excluded_count": 0,
+        "known_ineligible_count": 0,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "logged_exception_present",
+            "value": false,
+            "matched_count": 45,
+            "known_mismatch_count": 0,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 45,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 45,
+        "recorded_score_mean": 0.022222222222222223,
+        "policy_score_mean": 0.022222222222222223,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      },
+      {
+        "group": [
+          {
+            "field": "run_id",
+            "present": true,
+            "value": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007"
+          }
+        ],
+        "source_population_count": 45,
+        "population_count": 44,
+        "excluded_count": 1,
+        "known_ineligible_count": 1,
+        "unknown_eligibility_count": 0,
+        "inclusion_rule_counts": [
+          {
+            "field": "logged_exception_present",
+            "value": false,
+            "matched_count": 44,
+            "known_mismatch_count": 1,
+            "null_unknown_count": 0,
+            "absent_unknown_count": 0
+          }
+        ],
+        "scored_count": 44,
+        "unknown_score_count": 0,
+        "null_score_count": 0,
+        "absent_score_count": 0,
+        "undeclared_scale_count": 0,
+        "declared_scale": [
+          0,
+          1
+        ],
+        "mean_denominator": 44,
+        "recorded_score_mean": 0.09090909090909091,
+        "policy_score_mean": 0.09090909090909091,
+        "score_coverage": 1.0,
+        "labels": {
+          "conditional_population": true,
+          "uses_scored_denominator": false,
+          "unknown_grades_assigned_zero": false
+        }
+      }
+    ]
+  }
+}

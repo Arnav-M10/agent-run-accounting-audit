@@ -1,0 +1,122 @@
+{
+  "ledger": "/Users/arnav/Documents/AES/submission/reproducibility/hal_mixed_transfer/hal_mixed_ledger.jsonl",
+  "rows": 135,
+  "identity_fields": [
+    "run_id",
+    "task_id"
+  ],
+  "valid": true,
+  "issue_counts": {},
+  "issue_examples": [],
+  "duplicate_identity_examples": [],
+  "numeric_scores": 135,
+  "scores_without_range_evidence": 0,
+  "categories": {
+    "retention": [
+      {
+        "fields": {
+          "retention": {
+            "present": false
+          }
+        },
+        "count": 135
+      }
+    ],
+    "score_available": [
+      {
+        "fields": {
+          "score_available": {
+            "present": true,
+            "value": true
+          }
+        },
+        "count": 135
+      }
+    ],
+    "execution_status": [
+      {
+        "fields": {
+          "execution_status": {
+            "present": true,
+            "value": "no_exception_in_archived_calls"
+          }
+        },
+        "count": 134
+      },
+      {
+        "fields": {
+          "execution_status": {
+            "present": true,
+            "value": "recorded_call_exception"
+          }
+        },
+        "count": 1
+      }
+    ],
+    "last_original_role": [
+      {
+        "fields": {
+          "last_original_role": {
+            "present": false
+          }
+        },
+        "count": 135
+      }
+    ],
+    "native_stop_reason": [
+      {
+        "fields": {
+          "native_stop_reason": {
+            "present": false
+          }
+        },
+        "count": 135
+      }
+    ],
+    "coverage": [
+      {
+        "fields": {
+          "coverage": {
+            "present": false
+          }
+        },
+        "count": 135
+      }
+    ]
+  },
+  "role_status_grade_availability": [
+    {
+      "fields": {
+        "last_original_role": {
+          "present": false
+        },
+        "execution_status": {
+          "present": true,
+          "value": "no_exception_in_archived_calls"
+        },
+        "score_available": {
+          "present": true,
+          "value": true
+        }
+      },
+      "count": 134
+    },
+    {
+      "fields": {
+        "last_original_role": {
+          "present": false
+        },
+        "execution_status": {
+          "present": true,
+          "value": "recorded_call_exception"
+        },
+        "score_available": {
+          "present": true,
+          "value": true
+        }
+      },
+      "count": 1
+    }
+  ],
+  "reference_check": null
+}

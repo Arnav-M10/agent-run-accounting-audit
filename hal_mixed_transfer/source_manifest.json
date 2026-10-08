@@ -1,0 +1,45 @@
+{
+  "dataset_revision": "e7dcedc82b4f4bc819a170fd6616bdb44841c71e",
+  "dataset_license": "unknown; raw redistribution excluded",
+  "selection_plan_sha256": "9934c3fe733238258a8f068b4e47b83dc2d7aa47578dc41ebeab455356a5e063",
+  "sources": [
+    {
+      "filename": "corebench_hard_hal_generalist_agentdeepseekv30324_1755710007_UPLOAD.zip",
+      "url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/e7dcedc82b4f4bc819a170fd6616bdb44841c71e/corebench_hard_hal_generalist_agentdeepseekv30324_1755710007_UPLOAD.zip",
+      "bytes": 21851770,
+      "sha256": "2bf440258665dfac7304c81deacc4c46b9d1fd1703c44d468a3425b8b3335602",
+      "evaluator_url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/7e56e6688e288e8db86b3612b551370330ae218d/hal/benchmarks/corebench.py",
+      "evaluator_sha256": "7d04be1e8fa92a6db0c535e490708dbb7a3605ff88ff05ea5d19e3ee4fa0090f"
+    },
+    {
+      "filename": "corebench_hard_hal_generalist_agentdeepseekr1_1757615687_UPLOAD.zip",
+      "url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/e7dcedc82b4f4bc819a170fd6616bdb44841c71e/corebench_hard_hal_generalist_agentdeepseekr1_1757615687_UPLOAD.zip",
+      "bytes": 23213674,
+      "sha256": "3183b7877c633ba07958f29339adbdc93b3af30c97d2c957b9ee8b8f51dbe60d",
+      "evaluator_url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/c7354ebd3ce3d284e3c89150e1218836c42eccac/hal/benchmarks/corebench.py",
+      "evaluator_sha256": "7d04be1e8fa92a6db0c535e490708dbb7a3605ff88ff05ea5d19e3ee4fa0090f"
+    },
+    {
+      "filename": "corebench_hard_hal_generalist_agent_1748734902_UPLOAD.zip",
+      "url": "https://huggingface.co/datasets/agent-evals/hal_traces/resolve/e7dcedc82b4f4bc819a170fd6616bdb44841c71e/corebench_hard_hal_generalist_agent_1748734902_UPLOAD.zip",
+      "bytes": 51429463,
+      "sha256": "24a285e0e12b05de8cc741b72b08f22dc76140f6399f34216e873e8fafefbd1d",
+      "evaluator_url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/9858be970dd41d9ed2e535544a158731cbfbb09e/hal/benchmarks/corebench.py",
+      "evaluator_sha256": "7d04be1e8fa92a6db0c535e490708dbb7a3605ff88ff05ea5d19e3ee4fa0090f"
+    }
+  ],
+  "official_decryption_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/16bb03ebc11577fb5ea6dc8bb6c968387085e6aa/hal/utils/decrypt.py",
+      "sha256": "0406a8c44b466d390e69a72fd585c0e905babbae5e4150dcf71357287f2afcfc"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/princeton-pli/hal-harness/16bb03ebc11577fb5ea6dc8bb6c968387085e6aa/hal/utils/json_encryption.py",
+      "sha256": "8aa91ca6ddb67005d276159a280e566cd3e3a2327247bb96136c0de0ab4ac895"
+    }
+  ],
+  "canonical_reporter_sha256": {
+    "summarize_ledger.py": "56c27ec5b8acb6f3a47f5a86ee5c6b4aab89f3dcfa86ea5fb192dc76ff7da54c",
+    "check_ledger.py": "b79d94e59156cf8bcdf8c8b56ba83117b9b1609f15c7d2a13ebda6615637f7d8"
+  }
+}
