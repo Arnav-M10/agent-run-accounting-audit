@@ -1,0 +1,11 @@
+domain,model,declared_tasks,retained_supported_tasks,absent_retained_model_task_groups,released_grades,retained_grades,known_removed_grades,unknown_grades
+browsecomp,DeepSeek-R1,124,79,45,495,201,294,1
+browsecomp,DeepSeek-V3.2,124,69,55,496,160,336,0
+browsecomp,Gemini-2.5-Flash,124,124,0,496,496,0,0
+browsecomp,Qwen3-235B,124,124,0,496,470,26,0
+browsecomp,Qwen3-Next,124,124,0,496,496,0,0
+webvoyager,DeepSeek-R1,65,65,0,260,250,10,0
+webvoyager,DeepSeek-V3.2,65,65,0,260,248,12,0
+webvoyager,Gemini-2.5-Flash,65,64,1,260,256,4,0
+webvoyager,Qwen3-235B,65,64,1,260,255,5,0
+webvoyager,Qwen3-Next,65,65,0,260,260,0,0

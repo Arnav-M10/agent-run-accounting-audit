@@ -1,0 +1,13 @@
+{
+  "hal_mixed_transfer/hal_mixed_ledger.jsonl": "7df03a79516b887e1ab01ac5378395680fd7a85c94f577ea84f6c9dedd2a659e",
+  "hal_mixed_transfer/selection_plan.json": "9934c3fe733238258a8f068b4e47b83dc2d7aa47578dc41ebeab455356a5e063",
+  "hal_mixed_transfer/source_manifest.json": "758affacd153c62d9efbb9aa82ebee4ef34ca613d4a419a97d73568d22da10d8",
+  "hal_transfer/hal_task_ledger.jsonl": "c6bc0fff5f6b13948c29ab7be39b7ee9bafc58636c920af576b7a16457352353",
+  "hal_transfer/source_manifest.json": "bb76a3fe3a247ab2f74696399602e0aef66e2d9a5ffcb33b366499a0c16c963b",
+  "mask_reference_audit.py": "84a2945ac26eea8b49cb6a2b922a8d43a9bf33527d9d1c8e892d004504464757",
+  "recovery_stress.py": "8beaae1b62a4e440a4cdf3a04a8e6a5e7bcbed25224036f6df2db74c2a535bdf",
+  "recovery_transfer/PLAN.md": "4eed87622200b497b126a206dc7c05dd3e66a63bcff81ab78deb813c58228287",
+  "recovery_transfer/reproduce.py": "964665080995cea99d8699bd9138aef94660a0f77e78f9e30da82e119297ef0e",
+  "run_accounting/wildclaw_released_pairs.jsonl": "0ab9fd367448ad63f584ae71257f9387a0c22d5314cf257f30edc09d0ce37997",
+  "winner_recovery.py": "208bb766e9bfdbe6d3eacd73c912f5aa65b4123107e2246dac36315523ce1122"
+}

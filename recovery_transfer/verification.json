@@ -1,0 +1,12 @@
+{
+  "all_cases_retained": true,
+  "all_source_run_task_identities_unique": true,
+  "case_count": 270,
+  "deterministic_two_fresh_replays_byte_identical": true,
+  "distinct_hal_archives": 5,
+  "false_certificate_count": 0,
+  "hal_common_task_count": 45,
+  "independent_final_certificate_reconstruction": true,
+  "method_count": 7,
+  "no_raw_archive_rows_published": true
+}

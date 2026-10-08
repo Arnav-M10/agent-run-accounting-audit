@@ -1,0 +1,7 @@
+{
+  "consumer_frontier/PLAN.md": "9aeb228523398554678bd6a33e2322aaccbdd87a6f490db63ca5b5853a8eecea",
+  "consumer_frontier/check_frontier.py": "b869e08df0c4cc351ab4ad557f47f1122067cac81ef2d23ec3943e5f7658a6dd",
+  "consumer_reuse/source_manifest.json": "15001d26a69c45f755062280adcbbb4d0e4e3ae4e58fceef935726ceb9c3a1a0",
+  "run_accounting/cmu_attempts.jsonl": "c371db2a321edd4dee464a47840f498007c07ed0bb5e41f5af710676d352e2fb",
+  "run_accounting/cmu_search_slots.jsonl": "480a2980ca39de06a9c292b0208d27185a1cb55a0b88dce28450ff1ae6485b85"
+}

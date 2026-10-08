@@ -13,7 +13,10 @@ def main():
  p.add_argument('--consumer-metadata',type=Path,help='Private output of consumer_reuse/acquire_consumer.py')
  p.add_argument('--session-shards',type=Path,help='Private pinned v2 Parquet shard directory; PyArrow required')
  p.add_argument('--replay-stress',action='store_true',help='Recompute all 90 artificial recovery masks; standard library, about a minute')
+ p.add_argument('--replay-transfer',action='store_true',help='Replay all 270 interval-aware control/archived-roster cases')
+ p.add_argument('--consumer-source-root',type=Path,help='Pinned Messier source checkout for component frontier replay; also requires --consumer-metadata')
  a=p.parse_args();checks={}
+ if a.consumer_source_root and not a.consumer_metadata:p.error('--consumer-source-root requires --consumer-metadata')
  actual=json.loads(run(['winner_recovery.py','run_accounting/wildclaw_released_pairs.jsonl']))
  if actual!=json.loads((ROOT/'winner_recovery_results.json').read_text()):raise ValueError('Packaged recovery result differs')
  run(['verify_winner_recovery.py']);checks['recovery']='Packaged ledger replay, exhaustive fixtures and tolerance regression passed; not raw extraction validation.'
@@ -28,6 +31,15 @@ def main():
   if json.dumps(replay,sort_keys=True,allow_nan=False)!=json.dumps(saved,sort_keys=True,allow_nan=False):raise ValueError('Stress replay differs from packaged results')
   checks['stress']='All 90 query simulations and exact certificate checks replayed; artificial missingness on the same recorded roster.'
 
+
+ for folder,filename in [('recovery_transfer','source_hash_manifest.json'),('consumer_frontier','replay_manifest.json')]:
+  for name,digest in json.loads((ROOT/folder/filename).read_text()).items():
+   if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=digest:raise ValueError('Extension provenance mismatch: '+name)
+ checks['extensions']='Transfer and consumer-component input/code hashes verified; optional flags perform fresh replay.'
+ if a.replay_transfer:
+  run(['recovery_transfer/verify.py'])
+  checks['transfer']='One fresh 270-case paired replay, interval-aware controls, all tied cases, saved per-case masks/costs and unchanged original90 results verified.'
+
  with tempfile.TemporaryDirectory(prefix='aes_evidence_check_') as tmp:
   if a.consumer_metadata:
    cache=a.consumer_metadata.resolve()
@@ -37,6 +49,13 @@ def main():
    for name in ['consumer_check.json','reduction_replay.csv']:
     if (Path(tmp)/name).read_bytes()!=(ROOT/'consumer_reuse'/name).read_bytes():raise ValueError('Consumer replay differs: '+name)
    checks['consumer']='Pinned private derived cache matches all grade groups and reductions; full-source acquisition checksum recorded separately.'
+   if a.consumer_source_root:
+    plan=Path(tmp)/'PLAN.md';plan.write_bytes((ROOT/'consumer_frontier/PLAN.md').read_bytes())
+    run(['consumer_frontier/check_frontier.py','--consumer',cache,'--ledger','run_accounting/cmu_attempts.jsonl','--slots','run_accounting/cmu_search_slots.jsonl','--manifest','consumer_reuse/source_manifest.json','--source-root',a.consumer_source_root.resolve(),'--out',tmp])
+    for name in ['results.json','coverage.csv']:
+     if (Path(tmp)/name).read_bytes()!=(ROOT/'consumer_frontier'/name).read_bytes():raise ValueError('Consumer component replay differs: '+name)
+    checks['consumer_component']='Pinned source files, all3092 imported search grade multisets, 189 task population, sharp missing-grade endpoints and component reduction replayed; not full published frontier.'
+
   if a.session_shards:
    lines=run(['session_score_check/replay.py','--root',a.session_shards.resolve()]).splitlines()
    actual=[json.loads(x) for x in lines if x.strip()]
