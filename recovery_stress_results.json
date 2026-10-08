@@ -1,0 +1,614 @@
+{
+  "case_count": 90,
+  "cell_count": 720,
+  "frozen_plan_sha256": "dc5689d03de6a21d9c8e0ec67ebbc5a4ad2f7973de31d429ab39d89bf64e11a0",
+  "full_mean_maximizer_count": 1,
+  "input_sha256": "0ab9fd367448ad63f584ae71257f9387a0c22d5314cf257f30edc09d0ce37997",
+  "interpretation": "Retrospective simulation on existing grades, not deployment or independent achievement validation. Oracle uses omitted truth and gives no prospective budget guarantee.",
+  "mask_reference_audit_sha256": "84a2945ac26eea8b49cb6a2b922a8d43a9bf33527d9d1c8e892d004504464757",
+  "mask_seed_rule": "2026100800 + 1000 * zero_based_rate_index + seed_index",
+  "model_count": 12,
+  "program_sha256": "8beaae1b62a4e440a4cdf3a04a8e6a5e7bcbed25224036f6df2db74c2a535bdf",
+  "rates": {
+    "0.1": {
+      "cases": 30,
+      "cases_with_positive_omitted_full_winner_grade": 30,
+      "initial_certificate_cases": 0,
+      "methods": {
+        "lexicographic": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.42857142857142855,
+            "mean": 0.28896419482265434,
+            "median": 0.29494614747307374,
+            "min": 0.05333333333333334,
+            "q05_nearest_rank": 0.2,
+            "q95_nearest_rank": 0.38235294117647056
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 36,
+            "mean": 20.4,
+            "median": 21.0,
+            "min": 4,
+            "q05_nearest_rank": 12,
+            "q95_nearest_rank": 27
+          }
+        },
+        "oracle": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.16176470588235295,
+            "mean": 0.0868812198005889,
+            "median": 0.08392018779342722,
+            "min": 0.013333333333333334,
+            "q05_nearest_rank": 0.0410958904109589,
+            "q95_nearest_rank": 0.13580246913580246
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 11,
+            "mean": 6.133333333333334,
+            "median": 6.0,
+            "min": 1,
+            "q05_nearest_rank": 3,
+            "q95_nearest_rank": 11
+          }
+        },
+        "randomized": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.9873417721518988,
+            "mean": 0.7098145948649788,
+            "median": 0.7360284012826386,
+            "min": 0.13333333333333333,
+            "q05_nearest_rank": 0.3835616438356164,
+            "q95_nearest_rank": 0.9852941176470589
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 78,
+            "mean": 50.0,
+            "median": 50.0,
+            "min": 10,
+            "q05_nearest_rank": 28,
+            "q95_nearest_rank": 72
+          }
+        },
+        "restore_all": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "q05_nearest_rank": 1.0,
+            "q95_nearest_rank": 1.0
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 84,
+            "mean": 70.36666666666666,
+            "median": 71.0,
+            "min": 59,
+            "q05_nearest_rank": 60,
+            "q95_nearest_rank": 84
+          }
+        },
+        "selector_blind": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.25,
+            "mean": 0.138928400170538,
+            "median": 0.13435828877005346,
+            "min": 0.05333333333333334,
+            "q05_nearest_rank": 0.0684931506849315,
+            "q95_nearest_rank": 0.20987654320987653
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 21,
+            "mean": 9.866666666666667,
+            "median": 9.5,
+            "min": 4,
+            "q05_nearest_rank": 5,
+            "q95_nearest_rank": 17
+          }
+        }
+      },
+      "omitted_grade_count": {
+        "count": 30,
+        "max": 84,
+        "mean": 70.36666666666666,
+        "median": 71.0,
+        "min": 59,
+        "q05_nearest_rank": 60,
+        "q95_nearest_rank": 84
+      },
+      "oracle_null_cases": 0,
+      "paired_selector_minus_baseline_queries": {
+        "lexicographic": {
+          "count": 30,
+          "max": 0,
+          "mean": -10.533333333333333,
+          "median": -11.0,
+          "min": -16,
+          "q05_nearest_rank": -16,
+          "q95_nearest_rank": -5
+        },
+        "randomized": {
+          "count": 30,
+          "max": -6,
+          "mean": -40.13333333333333,
+          "median": -42.0,
+          "min": -68,
+          "q05_nearest_rank": -65,
+          "q95_nearest_rank": -18
+        },
+        "restore_all": {
+          "count": 30,
+          "max": -49,
+          "mean": -60.5,
+          "median": -60.0,
+          "min": -71,
+          "q05_nearest_rank": -69,
+          "q95_nearest_rank": -50
+        }
+      },
+      "paired_selector_minus_oracle_queries": {
+        "nonnull_case_count": 30,
+        "summary": {
+          "count": 30,
+          "max": 10,
+          "mean": 3.7333333333333334,
+          "median": 3.0,
+          "min": 0,
+          "q05_nearest_rank": 1,
+          "q95_nearest_rank": 8
+        }
+      },
+      "positive_omitted_full_winner_grade_count": {
+        "count": 30,
+        "max": 10,
+        "mean": 5.333333333333333,
+        "median": 5.0,
+        "min": 2,
+        "q05_nearest_rank": 2,
+        "q95_nearest_rank": 10
+      },
+      "selector_query_cost_cases_vs_baseline": {
+        "lexicographic": {
+          "equal": 1,
+          "higher": 0,
+          "lower": 29
+        },
+        "randomized": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        },
+        "restore_all": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        }
+      },
+      "tied_full_winner_cases": 0
+    },
+    "0.25": {
+      "cases": 30,
+      "cases_with_positive_omitted_full_winner_grade": 30,
+      "initial_certificate_cases": 0,
+      "methods": {
+        "lexicographic": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.9035532994923858,
+            "mean": 0.7401011902244247,
+            "median": 0.8181693989071038,
+            "min": 0.3392857142857143,
+            "q05_nearest_rank": 0.3468208092485549,
+            "q95_nearest_rank": 0.8804347826086957
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 180,
+            "mean": 133.76666666666668,
+            "median": 142.0,
+            "min": 57,
+            "q05_nearest_rank": 60,
+            "q95_nearest_rank": 178
+          }
+        },
+        "oracle": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.20754716981132076,
+            "mean": 0.15403407638955505,
+            "median": 0.15833333333333333,
+            "min": 0.09836065573770492,
+            "q05_nearest_rank": 0.10119047619047619,
+            "q95_nearest_rank": 0.19883040935672514
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 44,
+            "mean": 27.833333333333332,
+            "median": 27.5,
+            "min": 17,
+            "q05_nearest_rank": 18,
+            "q95_nearest_rank": 35
+          }
+        },
+        "randomized": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.9945054945054945,
+            "mean": 0.8861582011510821,
+            "median": 0.9132947976878613,
+            "min": 0.5595238095238095,
+            "q05_nearest_rank": 0.6914285714285714,
+            "q95_nearest_rank": 0.9829545454545454
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 206,
+            "mean": 159.9,
+            "median": 160.5,
+            "min": 94,
+            "q05_nearest_rank": 121,
+            "q95_nearest_rank": 194
+          }
+        },
+        "restore_all": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "q05_nearest_rank": 1.0,
+            "q95_nearest_rank": 1.0
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 212,
+            "mean": 180.13333333333333,
+            "median": 180.0,
+            "min": 163,
+            "q05_nearest_rank": 165,
+            "q95_nearest_rank": 201
+          }
+        },
+        "selector_blind": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.38596491228070173,
+            "mean": 0.29697332734693677,
+            "median": 0.29848484848484846,
+            "min": 0.16071428571428573,
+            "q05_nearest_rank": 0.2215909090909091,
+            "q95_nearest_rank": 0.37264150943396224
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 79,
+            "mean": 53.733333333333334,
+            "median": 51.5,
+            "min": 27,
+            "q05_nearest_rank": 39,
+            "q95_nearest_rank": 71
+          }
+        }
+      },
+      "omitted_grade_count": {
+        "count": 30,
+        "max": 212,
+        "mean": 180.13333333333333,
+        "median": 180.0,
+        "min": 163,
+        "q05_nearest_rank": 165,
+        "q95_nearest_rank": 201
+      },
+      "oracle_null_cases": 0,
+      "paired_selector_minus_baseline_queries": {
+        "lexicographic": {
+          "count": 30,
+          "max": -8,
+          "mean": -80.03333333333333,
+          "median": -92.0,
+          "min": -117,
+          "q05_nearest_rank": -107,
+          "q95_nearest_rank": -15
+        },
+        "randomized": {
+          "count": 30,
+          "max": -67,
+          "mean": -106.16666666666667,
+          "median": -109.5,
+          "min": -135,
+          "q05_nearest_rank": -134,
+          "q95_nearest_rank": -73
+        },
+        "restore_all": {
+          "count": 30,
+          "max": -105,
+          "mean": -126.4,
+          "median": -127.5,
+          "min": -141,
+          "q05_nearest_rank": -139,
+          "q95_nearest_rank": -110
+        }
+      },
+      "paired_selector_minus_oracle_queries": {
+        "nonnull_case_count": 30,
+        "summary": {
+          "count": 30,
+          "max": 39,
+          "mean": 25.9,
+          "median": 25.5,
+          "min": 10,
+          "q05_nearest_rank": 11,
+          "q95_nearest_rank": 38
+        }
+      },
+      "positive_omitted_full_winner_grade_count": {
+        "count": 30,
+        "max": 20,
+        "mean": 14.433333333333334,
+        "median": 14.0,
+        "min": 10,
+        "q05_nearest_rank": 10,
+        "q95_nearest_rank": 20
+      },
+      "selector_query_cost_cases_vs_baseline": {
+        "lexicographic": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        },
+        "randomized": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        },
+        "restore_all": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        }
+      },
+      "tied_full_winner_cases": 0
+    },
+    "0.5": {
+      "cases": 30,
+      "cases_with_positive_omitted_full_winner_grade": 30,
+      "initial_certificate_cases": 0,
+      "methods": {
+        "lexicographic": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.9637305699481865,
+            "mean": 0.9398377499215905,
+            "median": 0.9410929262727201,
+            "min": 0.8837209302325582,
+            "q05_nearest_rank": 0.9030470914127424,
+            "q95_nearest_rank": 0.9619565217391305
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 372,
+            "mean": 339.4,
+            "median": 338.0,
+            "min": 304,
+            "q05_nearest_rank": 320,
+            "q95_nearest_rank": 360
+          }
+        },
+        "oracle": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.30569948186528495,
+            "mean": 0.274060907803731,
+            "median": 0.2753099089413413,
+            "min": 0.23351648351648352,
+            "q05_nearest_rank": 0.2548476454293629,
+            "q95_nearest_rank": 0.2949061662198391
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 118,
+            "mean": 99.0,
+            "median": 99.0,
+            "min": 85,
+            "q05_nearest_rank": 90,
+            "q95_nearest_rank": 110
+          }
+        },
+        "randomized": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.9896373056994818,
+            "mean": 0.9405254221761318,
+            "median": 0.943924334036849,
+            "min": 0.8723404255319149,
+            "q05_nearest_rank": 0.8812154696132597,
+            "q95_nearest_rank": 0.9835164835164835
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 382,
+            "mean": 339.56666666666666,
+            "median": 342.5,
+            "min": 312,
+            "q05_nearest_rank": 315,
+            "q95_nearest_rank": 361
+          }
+        },
+        "restore_all": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 1.0,
+            "mean": 1.0,
+            "median": 1.0,
+            "min": 1.0,
+            "q05_nearest_rank": 1.0,
+            "q95_nearest_rank": 1.0
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 386,
+            "mean": 361.06666666666666,
+            "median": 362.0,
+            "min": 337,
+            "q05_nearest_rank": 341,
+            "q95_nearest_rank": 383
+          }
+        },
+        "selector_blind": {
+          "certificate_cases": 30,
+          "certificate_rate_all_cases": 1.0,
+          "fraction_omitted_retrieved": {
+            "count": 30,
+            "max": 0.657608695652174,
+            "mean": 0.5768137046589451,
+            "median": 0.5804687736505918,
+            "min": 0.48703170028818443,
+            "q05_nearest_rank": 0.5195530726256983,
+            "q95_nearest_rank": 0.6353591160220995
+          },
+          "query_count_all_cases": {
+            "count": 30,
+            "max": 242,
+            "mean": 208.5,
+            "median": 210.0,
+            "min": 169,
+            "q05_nearest_rank": 182,
+            "q95_nearest_rank": 241
+          }
+        }
+      },
+      "omitted_grade_count": {
+        "count": 30,
+        "max": 386,
+        "mean": 361.06666666666666,
+        "median": 362.0,
+        "min": 337,
+        "q05_nearest_rank": 341,
+        "q95_nearest_rank": 383
+      },
+      "oracle_null_cases": 0,
+      "paired_selector_minus_baseline_queries": {
+        "lexicographic": {
+          "count": 30,
+          "max": -108,
+          "mean": -130.9,
+          "median": -130.0,
+          "min": -155,
+          "q05_nearest_rank": -151,
+          "q95_nearest_rank": -109
+        },
+        "randomized": {
+          "count": 30,
+          "max": -90,
+          "mean": -131.06666666666666,
+          "median": -131.5,
+          "min": -155,
+          "q05_nearest_rank": -153,
+          "q95_nearest_rank": -101
+        },
+        "restore_all": {
+          "count": 30,
+          "max": -126,
+          "mean": -152.56666666666666,
+          "median": -152.5,
+          "min": -178,
+          "q05_nearest_rank": -172,
+          "q95_nearest_rank": -132
+        }
+      },
+      "paired_selector_minus_oracle_queries": {
+        "nonnull_case_count": 30,
+        "summary": {
+          "count": 30,
+          "max": 143,
+          "mean": 109.5,
+          "median": 110.0,
+          "min": 78,
+          "q05_nearest_rank": 86,
+          "q95_nearest_rank": 136
+        }
+      },
+      "positive_omitted_full_winner_grade_count": {
+        "count": 30,
+        "max": 34,
+        "mean": 25.8,
+        "median": 25.5,
+        "min": 20,
+        "q05_nearest_rank": 21,
+        "q95_nearest_rank": 34
+      },
+      "selector_query_cost_cases_vs_baseline": {
+        "lexicographic": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        },
+        "randomized": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        },
+        "restore_all": {
+          "equal": 0,
+          "higher": 0,
+          "lower": 30
+        }
+      },
+      "tied_full_winner_cases": 0
+    }
+  },
+  "retrieval_seed_rule": "2026101800 + 1000 * zero_based_rate_index + seed_index",
+  "sampling": "Independent Bernoulli omission at every cell; all cases retained without resampling.",
+  "seeds_per_rate": 30,
+  "strict_tolerance": "1/1000000000000",
+  "target": "Unique strict maximizer of equally weighted full recorded-grade means.",
+  "task_count": 60,
+  "validation": {
+    "all_cases_retained": true,
+    "all_certificates_checked_against_exact_full_means_and_intervals": true,
+    "case_count": 90,
+    "complete_repeat_canonical_aggregate_byte_identical": true,
+    "oracle_cost_no_greater_than_every_policy_cost": true,
+    "published_raw_grade_or_identity_rows": false
+  },
+  "winner_recovery_sha256": "208bb766e9bfdbe6d3eacd73c912f5aa65b4123107e2246dac36315523ce1122"
+}

@@ -12,10 +12,22 @@ def main():
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument('--consumer-metadata',type=Path,help='Private output of consumer_reuse/acquire_consumer.py')
  p.add_argument('--session-shards',type=Path,help='Private pinned v2 Parquet shard directory; PyArrow required')
+ p.add_argument('--replay-stress',action='store_true',help='Recompute all 90 artificial recovery masks; standard library, about a minute')
  a=p.parse_args();checks={}
  actual=json.loads(run(['winner_recovery.py','run_accounting/wildclaw_released_pairs.jsonl']))
  if actual!=json.loads((ROOT/'winner_recovery_results.json').read_text()):raise ValueError('Packaged recovery result differs')
  run(['verify_winner_recovery.py']);checks['recovery']='Packaged ledger replay, exhaustive fixtures and tolerance regression passed; not raw extraction validation.'
+ saved=json.loads((ROOT/'recovery_stress_results.json').read_text())
+ for key,name in [('frozen_plan_sha256','recovery_stress_plan.md'),('program_sha256','recovery_stress.py'),('input_sha256','run_accounting/wildclaw_released_pairs.jsonl'),('winner_recovery_sha256','winner_recovery.py'),('mask_reference_audit_sha256','mask_reference_audit.py')]:
+  if hashlib.sha256((ROOT/name).read_bytes()).hexdigest()!=saved[key]:raise ValueError('Stress provenance hash differs: '+name)
+ if saved['case_count']!=90 or sum(row['cases'] for row in saved['rates'].values())!=90:raise ValueError('Stress cases incomplete')
+ checks['stress']='Packaged provenance hashes and all-case coverage verified; use --replay-stress for query replay.'
+ if a.replay_stress:
+  from recovery_stress import experiment
+  replay=experiment();replay['validation']['complete_repeat_canonical_aggregate_byte_identical']=True
+  if json.dumps(replay,sort_keys=True,allow_nan=False)!=json.dumps(saved,sort_keys=True,allow_nan=False):raise ValueError('Stress replay differs from packaged results')
+  checks['stress']='All 90 query simulations and exact certificate checks replayed; artificial missingness on the same recorded roster.'
+
  with tempfile.TemporaryDirectory(prefix='aes_evidence_check_') as tmp:
   if a.consumer_metadata:
    cache=a.consumer_metadata.resolve()
