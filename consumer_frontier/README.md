@@ -25,17 +25,16 @@ The checker independently verifies unique source/slot/consumer keys, source atte
 
 ## Reproduce
 
-Acquire private metadata using the adjacent consumer-reuse acquisition script and its pinned full-data checksum. Keep extracted metadata and source/consumer rows private. With the pinned source checkout already acquired, run from the project root:
+Acquire private metadata using the adjacent consumer-reuse acquisition script and its pinned full-data checksum. Keep extracted metadata and source/consumer rows private. Acquire the seven public implementation files from immutable GitHub URLs with an explicit local destination:
 
 ```sh
-python3 submission/reproducibility/consumer_frontier/check_frontier.py \
-  --consumer /private/tmp/aes_messier_verified_metadata.jsonl \
-  --ledger submission/reproducibility/run_accounting/cmu_attempts.jsonl \
-  --slots submission/reproducibility/run_accounting/cmu_search_slots.jsonl \
-  --manifest submission/reproducibility/consumer_reuse/source_manifest.json \
-  --source-root /private/tmp/aes_consumer_sources/messier \
-  --out submission/reproducibility/consumer_frontier
+python3 consumer_frontier/acquire_sources.py --out /YOUR/PRIVATE/SOURCE_DIRECTORY
+python3 verify_new_evidence.py \
+  --consumer-metadata /YOUR/PRIVATE/ACQUIRED_METADATA.jsonl \
+  --consumer-source-root /YOUR/PRIVATE/SOURCE_DIRECTORY
 ```
+
+Run from the reproducibility package directory. Acquisition verifies every file hash before saving and refuses to overwrite a differing existing file. It downloads implementation code only. The unified command compares the freshly computed component results and coverage with published outputs in temporary storage. The lower-level checker accepts explicit --consumer, --ledger, --slots, --manifest, --source-root and --out paths. Temporary session directories are examples, not required inputs.
 
 The code uses standard-library Python and existing recorded grades only. No inference, API calls, downloads, or dependency installation occurs in the replay. Public outputs contain own code, aggregate results, documentation, and hashes; no raw consumer/source rows.
 
