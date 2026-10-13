@@ -1,0 +1,7 @@
+# Citation audit - 12 October 2026
+
+The final primary short paper has15unique real references, allcited, alphabeticallyordered inauthor-yearstyle. Officialpublicationtitles/authors/years, versionedlinks and source roles werechecked. TenarXivmetadataDOIs verified. Manski DOI10.2307/145818 matchespublisherissue24(3),343-360; VLDB2000primaryPDF confirms144-155. GatedCMUdocumentationwascheckedusingauthorizedaccessatexactrevisionandoriginalhashes; restrictedcontentsarenotpackagedhere.
+
+Citationplacementswereimproved: GeneralAgentBenchpaper supportsassociation, pinnedCMUdocumentation supports retentioncounts; cleaning-summarycontradictioncites itsactualsource. Rabanserv3Table2exactconsistencyformulaverified; ownC_Knotation/finiteboundapplicationidentified. Messiermean->max->mean verifiedagainstpinnedcode; ourconsumercountsandsensitivitiesremainnewauditresults, not historicalpublishedresults. Wild/HAL/WangpreprintsandWilddatasetlinks versionpinned. Datasetaccountattributionstandardized.
+
+No fabricated reference or remainingcitationdefectfoundwithinscope. Manski fulltextrestricted; metadata/DOIverifiedandfinitebounddirectlyderived, not claimedasaverbatimprintedformula. Theauditdoesnotcertifyindependentachievement, unseenretriesoruniversalaccuracy. No OpenReviewupload/submissionperformed.
